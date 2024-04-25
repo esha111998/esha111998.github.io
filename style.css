@@ -189,13 +189,14 @@
     flex-wrap: wrap;
   }
   .service-info{
-    margin:20px 0px 100px 0px;
+    margin:20px 0px 20px 0px;
   }
   .service-cont{
     display:flex;
     margin:10px 30px;
     flex-direction:column;
     align-items:center;
+    white-space: nowrap;
   }
   .services-cont>svg{
     width:100px;
@@ -318,10 +319,11 @@
   }
   .contact{
     position:relative;
+    background: rgb(231 231 235);
   }
-  .contact>img{
+  /* .contact>img{
     width:100%;
-  }
+  } */
   #ic40w5 > p{
     color:#16163F;
     line-height:1.8em;
@@ -446,6 +448,7 @@
   }
   #iyohgi{
     margin:0 0px 0px 0px;
+    padding: 100px 50px 100px 50px;
   }
   #ic40w5{
     margin:26px 0px 40px 0px;
@@ -490,8 +493,16 @@
   }
 
   .contact-details{
-    color: black;
-    align-self: flex-start;
+    color: #16163F;
+  }
+
+  .service-desc>li{
+    text-align: left;
+    font-size: 12px;
+  }
+
+  ul{
+    padding: 0px;
   }
 
   @media (max-width: 992px){
