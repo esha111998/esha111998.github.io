@@ -53,7 +53,31 @@
     border: 1px solid #ccc;
     border-radius:4px;
     padding:13px;
-    color:white;
+    color: black;
+    background-color: white;
+  }
+  input:focus-visible, select:focus-visible{
+    border: 1px solid #9E3FFD;
+    outline-color: #9E3FFD;
+    outline-style: auto;
+    outline-width: 1px;
+  }
+  select{
+    width:100%;
+    /* background:rgb(69, 69, 71); */
+    margin-top:5px;
+    /* outline:none; */
+    /* border:none; */
+    border: 1px solid #ccc;
+    border-radius:4px;
+    padding:13px;
+    color: black;
+    height: 43px;
+    background-color: white;
+  }
+  option{
+    color: grey;
+    background-color: white;
   }
   .col-2>a{
     font-size:19px;
@@ -442,6 +466,12 @@
     font-size:20px;
     margin:0px 0px 20px 0px;
   }
+  #i78bq-2-3{
+    color:#9e3ffd;
+    font-size:20px;
+    margin:0px 0px 30px 0px;
+    align-self: center;
+  }
   #iqrh3-2-2{
     color:#16163f;
     font-size:36px;
@@ -506,14 +536,12 @@
   }
 
   #customer-form{
-    position:absolute;
-    right:10%;
-    top:8%;
-    padding: 10px;
-    width: 300px;
+    padding: 20px;
+    width: 400px;
     background: whitesmoke;
     font-size: 14px;
     color: dimgray;
+    border-radius: 5px;
   }
 
   #submit-btn{
@@ -538,6 +566,49 @@
   ul{
     padding: 0px;
   }
+
+  /* modal css starts*/
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 250px;
+    height: 200px;
+    gap: 30px;
+    border-radius: 10px;
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* modal css ends */
 
   @media (max-width: 992px){
     .menu-box{
@@ -638,7 +709,7 @@
     }
   }
   @media (max-width: 575px){
-    #max-width-content{
+    #max-width-content, #fill-form-img-div{
       display: none;
     }
     #iu06p{
