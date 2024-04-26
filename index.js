@@ -1,8 +1,15 @@
-const path = window.location.pathname;
-let isLocation = false;
-if (path.includes('locations')) isLocation = true;
+function calculatePath() {
+  let path = window.location.pathname;
+  let splittedPath = path.split("/");
+  return [splittedPath.at(-2), splittedPath.at(-1)].join("/"); //handled for both local and sever
+}
 
-let htmlContent = `<noscript>You need to enable JavaScript to run this app.</noscript>
+function onSubmit(values) {
+ console.log('values', values);
+}
+
+function createHtmlContent(isLocation) {
+  return `<noscript>You need to enable JavaScript to run this app.</noscript>
 
 <div id="iu9w" class="navbar-cont">
   <!-- <div id="iyfr81-2" class="resp-menu">
@@ -20,16 +27,22 @@ let htmlContent = `<noscript>You need to enable JavaScript to run this app.</nos
     </div> -->
   <div id="ibulz" class="nav-inner" style="justify-content: space-between;">
     <div class="flex-div row-div" style="gap: 10px;">
-      <img id="i7tv" src=${isLocation ? "../assets/logo.png" : "assets/logo.png"} width="auto" height="100px"></img>
+      <img id="i7tv" src=${
+        isLocation ? "../assets/logo.png" : "assets/logo.png"
+      } width="auto" height="100px"></img>
       <h1 id="max-width-content">Packers and Movers</h1>
     </div>
     <div class="flex-div col-div">
       <div class="flex-div row-div" style="align-self: flex-start;">
-        <img src=${isLocation ? "../assets/phone.svg" : "assets/phone.svg"} width="30px" height="30px"></img>
+        <img src=${
+          isLocation ? "../assets/phone.svg" : "assets/phone.svg"
+        } width="30px" height="30px"></img>
         <h4>33183901801</h4>
       </div>
       <div class="flex-div row-div" style="align-self: flex-start;">
-        <img src=${isLocation ? "../assets/mail.svg" : "assets/mail.svg"} width="30px" height="30px"></img>
+        <img src=${
+          isLocation ? "../assets/mail.svg" : "assets/mail.svg"
+        } width="30px" height="30px"></img>
         <h4 style="margin: 5px;">abc.com</h4>
       </div>
     </div>
@@ -67,19 +80,39 @@ let htmlContent = `<noscript>You need to enable JavaScript to run this app.</nos
   <img id="igitx"
     src="https://static.wixstatic.com/media/84770f_994ffe746a074d1f8a2ec9456a8bf1ff~mv2.png/v1/fill/w_1081,h_960,al_br,q_90,usm_0.66_1.00_0.01,enc_auto/84770f_994ffe746a074d1f8a2ec9456a8bf1ff~mv2.png"
     alt="" fetchpriority="high" />
-  <div id="is6pf">
-    <h1 id="i1itu" data-custom-content="good-advice">
-      The Power of <br id="ie9xy" />Good Advice
-    </h1>
-    <p id="idax7" data-custom-content="description">
-      I'm a paragraph. Click here to add <br id="i8lap" />
-      your own text and edit me.
-    </p>
-    <a id="iz026q-2-2" <!-- href="/#form-2" -->
-      autocomplete="off"
-      data-custom-content="learnMore"
-      class="learn-more"
-      >Contact Us</a>
+  <div class="flex-div row-div">
+    <div id="is6pf">
+      <h1 id="i1itu" data-custom-content="good-advice">
+        The Power of <br id="ie9xy" />Good Advice
+      </h1>
+      <p id="idax7" data-custom-content="description">
+        I'm a paragraph. Click here to add <br id="i8lap" />
+        your own text and edit me.
+      </p>
+      <a id="iz026q-2-2" href="#contact"
+        autocomplete="off"
+        data-custom-content="learnMore"
+        class="learn-more"
+        >Contact Us</a>
+    </div>
+    <div class="card" id="customer-form">
+      <form class="flex-div col-div" style="align-items: inherit;" onsubmit=${onSubmit()}>
+        <label for="name">Name*</label>
+        <input id="name" placeholder="Enter Name" autocomplete="off" required></input>
+        <label for="phone">Phone*</label>
+        <input id="phone" type="tel" placeholder="Enter Phone" autocomplete="off" required></input>
+        <label for="from">Moving From*</label>
+        <select id="from" placeholder="Select Location" autocomplete="off" required>
+          <option>Gurgaon</option>
+          <option>Delhi</option>
+        </select>
+        <label for="to">Moving To*</label>
+        <select id="to" placeholder="Select Location" autocomplete="off" required></select>
+        <label for="moving-date">Request Moving Date*</label>
+        <input id="moving-date" type="date" autocomplete="off" required></input>
+        <button id="submit-btn" type="submit">Submit</button>
+      </form>
+    </div>
   </div>
 </div>
 <div id="services" class="services">
@@ -96,49 +129,49 @@ let htmlContent = `<noscript>You need to enable JavaScript to run this app.</nos
   <div id="i12z9" class="services-box">
     <div id="ilmjk" class="service-cont">
       <ul id="ipekj" class="service-desc">
-        <li><a class="contact-details" href="locations/ahemdabad.html" id="locations/ahemdabad.html">Packers and
+        <li id="locations/ahemdabad.html"><a class="contact-details" href="locations/ahemdabad.html">Packers and
             Movers in Ahemdabad</a></li>
-        <li><a class="contact-details" href="locations/banglore.html" id="locations/banglore.html">Packers and
+        <li id="locations/banglore.html"><a class="contact-details" href="locations/banglore.html">Packers and
             Movers in Banglore</a></li>
-        <li><a class="contact-details" href="locations/chennai.html" id="locations/chennai.html">Packers and
+        <li id="locations/chennai.html"><a class="contact-details" href="locations/chennai.html">Packers and
             Movers in Chennai</a></li>
-        <li><a class="contact-details" href="locations/coimbatore.html" id="locations/coimbatore.html">Packers
+        <li id="locations/coimbatore.html"><a class="contact-details" href="locations/coimbatore.html">Packers
             and Movers in Coimbatore</a></li>
       </ul>
     </div>
     <div id="ilmjk-2" class="service-cont">
       <ul id="ipekj-2" class="service-desc">
-        <li><a class="contact-details" href="locations/delhi.html" id="locations/delhi.html">Packers and Movers
+        <li id="locations/delhi.html"><a class="contact-details" href="locations/delhi.html">Packers and Movers
             in Delhi</a></li>
-        <li><a class="contact-details" href="locations/faridabad.html" id="locations/faridabad.html">Packers and
+        <li id="locations/faridabad.html"><a class="contact-details" href="locations/faridabad.html">Packers and
             Movers in Faridabad</a></li>
-        <li><a class="contact-details" href="locations/ghaziabad.html" id="locations/ghaziabad.html">Packers and
+        <li id="locations/ghaziabad.html"><a class="contact-details" href="locations/ghaziabad.html">Packers and
             Movers in Ghaziabad</a></li>
-        <li><a class="contact-details" href="locations/gurgaon.html" id="locations/gurgaon.html">Packers and
+        <li id="locations/gurgaon.html"><a class="contact-details" href="locations/gurgaon.html">Packers and
             Movers in Gurgaon</a></li>
       </ul>
     </div>
     <div id="ilmjk-3" class="service-cont">
       <ul id="ipekj-3" class="service-desc">
-        <li><a class="contact-details" href="locations/hyderabad.html" id="locations/hyderabad.html">Packers and
+        <li id="locations/hyderabad.html"><a class="contact-details" href="locations/hyderabad.html">Packers and
             Movers in Hyderabad</a></li>
-        <li><a class="contact-details" href="locations/indore.html" id="locations/indore.html">Packers and
+        <li id="locations/indore.html"><a class="contact-details" href="locations/indore.html">Packers and
             Movers in Indore</a></li>
-        <li><a class="contact-details" href="locations/jaipur.html" id="locations/jaipur.html">Packers and
+        <li id="locations/jaipur.html"><a class="contact-details" href="locations/jaipur.html">Packers and
             Movers in Jaipur</a></li>
-        <li><a class="contact-details" href="locations/kolkata.html" id="locations/kolkata.html">Packers and
+        <li id="locations/kolkata.html"><a class="contact-details" href="locations/kolkata.html">Packers and
             Movers in Kolkata</a></li>
       </ul>
     </div>
     <div id="ilmjk-4" class="service-cont">
       <ul id="ipekj-4" class="service-desc">
-        <li><a class="contact-details" href="locations/mumbai.html" id="locations/mumbai.html">Packers and
+        <li id="locations/mumbai.html"><a class="contact-details" href="locations/mumbai.html">Packers and
             Movers in Mumbai</a></li>
-        <li><a class="contact-details" href="locations/noida.html" id="locations/noida.html">Packers and Movers
+        <li id="locations/noida.html"><a class="contact-details" href="locations/noida.html">Packers and Movers
             in Noida</a></li>
-        <li><a class="contact-details" href="locations/pune.html" id="locations/pune.html">Packers and Movers in
+        <li id="locations/pune.html"><a class="contact-details" href="locations/pune.html">Packers and Movers in
             Pune</a></li>
-        <li><a class="contact-details" href="locations/surat.html" id="locations/surat.html">Packers and Movers
+        <li id="locations/surat.html"><a class="contact-details" href="locations/surat.html">Packers and Movers
             in Surat</a></li>
       </ul>
     </div>
@@ -497,11 +530,17 @@ let htmlContent = `<noscript>You need to enable JavaScript to run this app.</nos
           <a class="contact-details" href=“tel:5556667777”>Tel: 555-666-7777</a>
         </div> -->
     <div id="igiuzk">
-      <a id="i2tpy3" href=""><img id="i3gekg" height="30px" width="30px" src=${isLocation ? "../assets/fb.svg" : "assets/fb.svg"} /></a>
-      <a id="i2tpy3-2" href=""><img id="i3gekg-2" height="30px" width="30px" src=${isLocation ? "../assets/insta.svg" : "assets/insta.svg"} /></a>
+      <a id="i2tpy3" href=""><img id="i3gekg" height="30px" width="30px" src=${
+        isLocation ? "../assets/fb.svg" : "assets/fb.svg"
+      } /></a>
+      <a id="i2tpy3-2" href=""><img id="i3gekg-2" height="30px" width="30px" src=${
+        isLocation ? "../assets/insta.svg" : "assets/insta.svg"
+      } /></a>
       <a id="i2tpy3-3" href="mailto:someone@example.com"><img id="i3gekg-2" height="30px" width="30px"
           src=${isLocation ? "../assets/email.svg" : "assets/email.svg"} /></a>
-      <a id="i2tpy3-4" href=“tel:5556667777”><img id="i3gekg-2" height="30px" width="30px" src=${isLocation ? "../assets/tel.svg" : "assets/tel.svg"} /></a>
+      <a id="i2tpy3-4" href=“tel:5556667777”><img id="i3gekg-2" height="30px" width="30px" src=${
+        isLocation ? "../assets/tel.svg" : "assets/tel.svg"
+      } /></a>
     </div>
   </div>
   <!-- </div> -->
@@ -518,16 +557,26 @@ let htmlContent = `<noscript>You need to enable JavaScript to run this app.</nos
     class="HlRz5e Kv1aVt dLPlxY mNGsUM bgImage">
   </wow-image>
 </wix-bg-media>`;
+}
 
-// const path = window.location.pathname;
-// if (path.includes('locations')) htmlContent = htmlContent.replaceAll('assets', '../assets');
+function manageDOM(htmlContent, finalPath) {
+  const container = document.createElement("div");
+  container.innerHTML = htmlContent;
+  document.body.appendChild(container);
+  removeCurrentLocationLI(finalPath);
+}
 
-const container = document.createElement('div');
-container.innerHTML = htmlContent;
-document.body.appendChild(container);
+function removeCurrentLocationLI(finalPath) {
+  const li = document.getElementById(finalPath);
+  li.remove();
+}
 
-console.log('path', path);
-const li = document.getElementById(path);
-console.log('li', li);
-li.remove();
-console.log('end');
+function main() {
+  const finalPath = calculatePath();
+  let isLocation = false;
+  if (finalPath.includes("locations")) isLocation = true;
+  const htmlContent = createHtmlContent(isLocation);
+  manageDOM(htmlContent, finalPath);
+}
+
+main();

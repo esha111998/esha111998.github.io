@@ -46,10 +46,11 @@
   }
   input{
     width:100%;
-    background:rgb(69, 69, 71);
+    /* background:rgb(69, 69, 71); */
     margin-top:5px;
-    outline:none;
-    border:none;
+    /* outline:none; */
+    /* border:none; */
+    border: 1px solid #ccc;
     border-radius:4px;
     padding:13px;
     color:white;
@@ -492,6 +493,39 @@
     flex-direction: column;
   }
 
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  #customer-form{
+    position:absolute;
+    right:10%;
+    top:8%;
+    padding: 10px;
+    width: 300px;
+    background: whitesmoke;
+    font-size: 14px;
+    color: dimgray;
+  }
+
+  #submit-btn{
+    width: -webkit-fill-available;
+    height: 35px;
+    margin-top: 15px;
+    border-radius:4px;
+    color: white;
+    border: #9E3FFD;
+    background-color: #9E3FFD;
+  }
+
   .contact-details{
     color: #16163F;
   }
@@ -551,9 +585,9 @@
     #iqrh3{
       font-size:30px;
     }
-    .services-box{
+    /* .services-box{
       flex-direction:column;
-    }
+    } */
     .service-info{
       margin:20px 0px 57px 0px;
     }
@@ -634,6 +668,10 @@
     }
     #is6pf{
       left:7%;
+      height:auto;
+    }
+    #customer-form{
+      right:7%;
       height:auto;
     }
     .services{
