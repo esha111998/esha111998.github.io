@@ -25,11 +25,11 @@ let htmlContent = `<noscript>You need to enable JavaScript to run this app.</nos
     </div>
     <div class="flex-div col-div">
       <div class="flex-div row-div" style="align-self: flex-start;">
-        <img src=${isLocation ? "../assets/phone.png" : "assets/phone.png"} width="30px" height="30px"></img>
+        <img src=${isLocation ? "../assets/phone.svg" : "assets/phone.svg"} width="30px" height="30px"></img>
         <h4>33183901801</h4>
       </div>
       <div class="flex-div row-div" style="align-self: flex-start;">
-        <img src=${isLocation ? "../assets/mail.png" : "assets/mail.png"} width="30px" height="30px"></img>
+        <img src=${isLocation ? "../assets/mail.svg" : "assets/mail.svg"} width="30px" height="30px"></img>
         <h4 style="margin: 5px;">abc.com</h4>
       </div>
     </div>
@@ -497,11 +497,11 @@ let htmlContent = `<noscript>You need to enable JavaScript to run this app.</nos
           <a class="contact-details" href=“tel:5556667777”>Tel: 555-666-7777</a>
         </div> -->
     <div id="igiuzk">
-      <a id="i2tpy3" href=""><img id="i3gekg" height="30px" width="30px" src=${isLocation ? "../assets/fb.png" : "assets/fb.png"} /></a>
-      <a id="i2tpy3-2" href=""><img id="i3gekg-2" height="30px" width="30px" src=${isLocation ? "../assets/insta.png" : "assets/insta.png"} /></a>
+      <a id="i2tpy3" href=""><img id="i3gekg" height="30px" width="30px" src=${isLocation ? "../assets/fb.svg" : "assets/fb.svg"} /></a>
+      <a id="i2tpy3-2" href=""><img id="i3gekg-2" height="30px" width="30px" src=${isLocation ? "../assets/insta.svg" : "assets/insta.svg"} /></a>
       <a id="i2tpy3-3" href="mailto:someone@example.com"><img id="i3gekg-2" height="30px" width="30px"
-          src=${isLocation ? "../assets/email.png" : "assets/email.png"} /></a>
-      <a id="i2tpy3-4" href=“tel:5556667777”><img id="i3gekg-2" height="30px" width="30px" src=${isLocation ? "../assets/tel.png" : "assets/tel.png"} /></a>
+          src=${isLocation ? "../assets/email.svg" : "assets/email.svg"} /></a>
+      <a id="i2tpy3-4" href=“tel:5556667777”><img id="i3gekg-2" height="30px" width="30px" src=${isLocation ? "../assets/tel.svg" : "assets/tel.svg"} /></a>
     </div>
   </div>
   <!-- </div> -->
