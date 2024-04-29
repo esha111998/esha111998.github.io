@@ -552,6 +552,7 @@
     color: white;
     border: #9E3FFD;
     background-color: #9E3FFD;
+    cursor: pointer;
   }
 
   .contact-details{

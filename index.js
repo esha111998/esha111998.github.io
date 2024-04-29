@@ -23,38 +23,81 @@ function closeModal() {
   };
 }
 
-function onSubmit() {
-  const name = document.getElementById("name").value;
-  const phone = document.getElementById("phone").value;
-  const from = document.getElementById("from").value;
-  const to = document.getElementById("to").value;
-  const movingDate = document.getElementById("moving-date").value;
-
-  const subject = `Inquiry | ${name}`;
-  const emailContent = `You got an inquiry! <br /><br /> <b>Name:</b> ${name} <br /> <b>Phone:</b> ${phone} <br /> <b>Moving From:</b> ${from} <br /> <b>Moving To:</b> ${to} <br /> <b>Requested Moving Date:</b> ${movingDate} <br />`;
-  const key = "C658082A837A6EF33562359FC952BB33D40E";
-
-  Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "eshagoyal98@gmail.com",
-    // Password: key,
-    To: "eshagoyal98@gmail.com",
-    From: "eshagoyal98@gmail.com",
-    Subject: subject,
-    Body: emailContent,
-  }).then((message) => {
-    const modalImg = document.getElementById("modal-img");
-    const modalP = document.getElementById("modal-p");
-    const { isLocation } = getPathAndLocation();
-    if (message === "OK") {
-      modalImg.src = isLocation ? "../assets/tick.svg" : "assets/tick.svg";
-      modalP.innerHTML = "Email sent successfully!";
-    } else {
-      modalImg.src = isLocation ? "../assets/cross.svg" : "assets/cross.svg";
-      modalP.innerHTML = "Unable to send email!";
-    }
-    showModal();
+function stopReloadOnSubmit() {
+  const formEle = document.getElementById("inquiry-form");
+  formEle.addEventListener("submit", (e) => {
+    e.preventDefault();
+    onSubmit();
   });
+}
+
+function handleTryCatch(tryOrCatch) {
+  const modalImg = document.getElementById("modal-img");
+  const modalP = document.getElementById("modal-p");
+  const { isLocation } = getPathAndLocation();
+  if (tryOrCatch === "try") {
+    modalImg.src = isLocation ? "../assets/tick.svg" : "assets/tick.svg";
+    modalP.innerHTML = "Thank you! <br /> We will contact you shortly.";
+  } else {
+    modalImg.src = isLocation ? "../assets/cross.svg" : "assets/cross.svg";
+    modalP.innerHTML = "Unable to send request!";
+  }
+  showModal();
+}
+
+function onSubmit() {
+  const URL =
+    "https://script.google.com/macros/s/AKfycbwPxzlmVC94B90DNoTSsBBmEvR5vbgQXkCxkABhn9YlhvwSq89Q20waniT0XQINIBTm/exec";
+
+  const payload = {
+    name: document.getElementById("name").value,
+    phone: document.getElementById("phone").value,
+    fro: document.getElementById("from").value,
+    to: document.getElementById("to").value,
+    movingDate: document.getElementById("moving-date").value,
+    status: "New",
+    remarks: "",
+    followUp: "No",
+  };
+
+  fetch(URL, {
+    method: "POST",
+    body: payload,
+    mode: 'no-cors'
+  })
+    .then((res) => {
+      res.text();
+      handleTryCatch("try");
+    })
+    .catch(() => {
+      handleTryCatch("catch");
+    });
+
+  // const subject = `Inquiry | ${name}`;
+  // const emailContent = `You got an inquiry! <br /><br /> <b>Name:</b> ${name} <br /> <b>Phone:</b> ${phone} <br /> <b>Moving From:</b> ${from} <br /> <b>Moving To:</b> ${to} <br /> <b>Requested Moving Date:</b> ${movingDate} <br />`;
+  // const key = "C658082A837A6EF33562359FC952BB33D40E";
+
+  // Email.send({
+  //   Host: "smtp.elasticemail.com",
+  //   Username: "eshagoyal98@gmail.com",
+  //   // Password: key,
+  //   To: "eshagoyal98@gmail.com",
+  //   From: "eshagoyal98@gmail.com",
+  //   Subject: subject,
+  //   Body: emailContent,
+  // }).then((message) => {
+  //   const modalImg = document.getElementById("modal-img");
+  //   const modalP = document.getElementById("modal-p");
+  //   const { isLocation } = getPathAndLocation();
+  //   if (message === "OK") {
+  //     modalImg.src = isLocation ? "../assets/tick.svg" : "assets/tick.svg";
+  //     modalP.innerHTML = "Email sent successfully!";
+  //   } else {
+  //     modalImg.src = isLocation ? "../assets/cross.svg" : "assets/cross.svg";
+  //     modalP.innerHTML = "Unable to send email!";
+  //   }
+  //   showModal();
+  // });
 }
 
 function createHtmlContent(isLocation) {
@@ -86,7 +129,7 @@ function createHtmlContent(isLocation) {
           <img src=${
             isLocation ? "../assets/phone.svg" : "assets/phone.svg"
           } width="30px" height="30px"></img>
-          <h4>33183901801</h4>
+          <h4>+91-9911198767</h4>
         </div>
         <div class="flex-div row-div" style="align-self: flex-start;">
           <img src=${
@@ -155,7 +198,7 @@ function createHtmlContent(isLocation) {
             }></img>
         </div>
         <div id="customer-form">
-          <form class="flex-div col-div" style="align-items: flex-start;" onsubmit="onSubmit()">
+          <form id="inquiry-form" class="flex-div col-div" style="align-items: flex-start;">
             <label for="name">Name*</label>
             <input id="name" placeholder="Enter Name" autocomplete="off" required></input>
             <label for="phone">Phone*</label>
@@ -182,7 +225,7 @@ function createHtmlContent(isLocation) {
   <div id="services" class="services">
     <div id="iymxg" class="service-info">
       <h2 id="i78bq" data-custom-content="services">
-        OUR SERVICES
+        OUR PRESENCE
       </h2>
       <!-- <p id="iqrh3">
           Taking Your Business to
@@ -591,7 +634,7 @@ function createHtmlContent(isLocation) {
       <p id="iqrh3-2-2" style="margin-bottom: 10px; margin-top: 20px;">Let's Work Together</p>
       <!-- <div class="flex-div col-div" style="font-size: x-large;" id="ic40w5">
             <a class="contact-details" href="mailto:someone@example.com">abc.com</a>
-            <a class="contact-details" href=“tel:5556667777”>Tel: 555-666-7777</a>
+            <a class="contact-details" href=“tel:9911198767">Tel: 9911198767</a>
           </div> -->
       <div id="igiuzk">
         <a id="i2tpy3" href=""><img id="i3gekg" height="30px" width="30px" src=${
@@ -600,11 +643,14 @@ function createHtmlContent(isLocation) {
         <a id="i2tpy3-2" href=""><img id="i3gekg-2" height="30px" width="30px" src=${
           isLocation ? "../assets/insta.svg" : "assets/insta.svg"
         } /></a>
-        <a id="i2tpy3-3" href="mailto:someone@example.com"><img id="i3gekg-2" height="30px" width="30px"
+        <a id="i2tpy3-5" href="https://wa.me/+919911198767" target="_blank"><img id="i3gekg-3" height="30px" width="30px" src=${
+          isLocation ? "../assets/whatsapp.svg" : "assets/whatsapp.svg"
+        } /></a>
+        <a id="i2tpy3-3" href="mailto:someone@example.com"><img id="i3gekg-4" height="30px" width="30px"
             src=${
               isLocation ? "../assets/email.svg" : "assets/email.svg"
             } /></a>
-        <a id="i2tpy3-4" href=“tel:5556667777”><img id="i3gekg-2" height="30px" width="30px" src=${
+        <a href=tel:+919911198767><img id="i3gekg-5" height="30px" width="30px" src=${
           isLocation ? "../assets/tel.svg" : "assets/tel.svg"
         } /></a>
       </div>
@@ -628,30 +674,31 @@ function createHtmlContent(isLocation) {
     <!-- Modal content -->
     <div class="modal-content flex-div col-div">
       <img id="modal-img" width="50px" height="50px"></img>
-      <p id="modal-p"></p>
+      <p id="modal-p" style="text-align: center";></p>
     </div>
   </div>`;
 }
 
-function manageDOM(htmlContent, finalPath) {
+function manageDOM(htmlContent, finalPath, isLocation) {
   const container = document.createElement("div");
   container.innerHTML = htmlContent;
   document.body.appendChild(container);
-  removeCurrentLocationLI(finalPath);
+  if (isLocation) removeCurrentLocationLI(finalPath);
 }
 
 function removeCurrentLocationLI(finalPath) {
   const li = document.getElementById(finalPath);
-  li.remove();
+  li?.remove();
 }
 
 function main() {
   const { finalPath, isLocation } = getPathAndLocation();
   const htmlContent = createHtmlContent(isLocation);
-  manageDOM(htmlContent, finalPath);
+  manageDOM(htmlContent, finalPath, isLocation);
 }
 
 main();
 
 // Events handling
 closeModal();
+stopReloadOnSubmit();
