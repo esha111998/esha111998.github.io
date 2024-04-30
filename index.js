@@ -47,7 +47,7 @@ function handleTryCatch(tryOrCatch) {
 
 function onSubmit() {
   const URL =
-    "https://script.google.com/macros/s/AKfycbwPxzlmVC94B90DNoTSsBBmEvR5vbgQXkCxkABhn9YlhvwSq89Q20waniT0XQINIBTm/exec";
+    "https://script.google.com/macros/s/AKfycbxvwYGGqjPTBjCNc88DK6Tl1tRu5fG4ilFnKQlG2epPZDJADfxIY_vrnyBNfssAh2Qs/exec";
 
   const payload = {
     name: document.getElementById("name").value,
