@@ -344,7 +344,8 @@
   }
   .contact{
     position:relative;
-    background: rgb(231 231 235);
+    /* background: rgb(231 231 235); */
+    background: #ffae15;
   }
   /* .contact>img{
     width:100%;

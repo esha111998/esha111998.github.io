@@ -44,10 +44,10 @@ function handleTryCatch(tryOrCatch) {
   }
   showModal();
 }
-
+console.log('window', window);
 function onSubmit() {
   const URL =
-    "https://script.google.com/macros/s/AKfycbxvwYGGqjPTBjCNc88DK6Tl1tRu5fG4ilFnKQlG2epPZDJADfxIY_vrnyBNfssAh2Qs/exec";
+    "https://script.google.com/macros/s/AKfycbx3Ya-bsFY_C7JQe4m7udclScBOzXZrcKFN7i28w-AhMD9AUw8PQgyJ0rJ-5CDlhJAF/exec";
 
   const payload = {
     name: document.getElementById("name").value,
@@ -55,49 +55,55 @@ function onSubmit() {
     fro: document.getElementById("from").value,
     to: document.getElementById("to").value,
     movingDate: document.getElementById("moving-date").value,
-    status: "New",
-    remarks: "",
-    followUp: "No",
+    // status: "New",
+    // remarks: "",
+    // followUp: "No",
   };
 
-  fetch(URL, {
-    method: "POST",
-    body: payload,
-    mode: 'no-cors'
-  })
-    .then((res) => {
-      res.text();
-      handleTryCatch("try");
-    })
-    .catch(() => {
-      handleTryCatch("catch");
-    });
+  // fetch(document.getElementById("inquiry-form").action, {
+  //   method: "POST",
+  //   // headers: {
+  //   //   "Content-Type": "application/json",
+  //   // },
+  //   body: new FormData(document.getElementById("inquiry-form")),
+  //   mode: "no-cors",
+  // })
+  //   .then((res) => {
+  //     console.log('res', res);
+  //     res.text();
+  //     console.log('res2', res);
+  //     handleTryCatch("try");
+  //   })
+  //   .catch(() => {
+  //     handleTryCatch("catch");
+  //   });
 
-  // const subject = `Inquiry | ${name}`;
-  // const emailContent = `You got an inquiry! <br /><br /> <b>Name:</b> ${name} <br /> <b>Phone:</b> ${phone} <br /> <b>Moving From:</b> ${from} <br /> <b>Moving To:</b> ${to} <br /> <b>Requested Moving Date:</b> ${movingDate} <br />`;
-  // const key = "C658082A837A6EF33562359FC952BB33D40E";
+  const subject = `Inquiry | ${payload.name}`;
+  const emailContent = `You got an inquiry! <br /><br /> <b>Name:</b> ${payload.name} <br /> <b>Phone:</b> ${payload.phone} <br /> <b>Moving From:</b> ${payload.fro} <br /> <b>Moving To:</b> ${payload.to} <br /> <b>Requested Moving Date:</b> ${payload.movingDate} <br />`;
+  const key = "C658082A837A6EF33562359FC952BB33D40E";
 
-  // Email.send({
-  //   Host: "smtp.elasticemail.com",
-  //   Username: "eshagoyal98@gmail.com",
-  //   // Password: key,
-  //   To: "eshagoyal98@gmail.com",
-  //   From: "eshagoyal98@gmail.com",
-  //   Subject: subject,
-  //   Body: emailContent,
-  // }).then((message) => {
-  //   const modalImg = document.getElementById("modal-img");
-  //   const modalP = document.getElementById("modal-p");
-  //   const { isLocation } = getPathAndLocation();
-  //   if (message === "OK") {
-  //     modalImg.src = isLocation ? "../assets/tick.svg" : "assets/tick.svg";
-  //     modalP.innerHTML = "Email sent successfully!";
-  //   } else {
-  //     modalImg.src = isLocation ? "../assets/cross.svg" : "assets/cross.svg";
-  //     modalP.innerHTML = "Unable to send email!";
-  //   }
-  //   showModal();
-  // });
+  window.Email.send({
+    Host: "smtp.elasticemail.com",
+    Username: "eshagoyal98@gmail.com",
+    Password: key,
+    To: "eshagoyal98@gmail.com",
+    // From: document.getElementById("email").value,
+    From: "tanwarankit04@gmail.com",
+    Subject: subject,
+    Body: emailContent,
+  }).then((message) => {
+    const modalImg = document.getElementById("modal-img");
+    const modalP = document.getElementById("modal-p");
+    const { isLocation } = getPathAndLocation();
+    if (message === "OK") {
+      modalImg.src = isLocation ? "../assets/tick.svg" : "assets/tick.svg";
+      modalP.innerHTML = "Email sent successfully!";
+    } else {
+      modalImg.src = isLocation ? "../assets/cross.svg" : "assets/cross.svg";
+      modalP.innerHTML = "Unable to send email!";
+    }
+    showModal();
+  });
 }
 
 function createHtmlContent(isLocation) {
@@ -194,27 +200,29 @@ function createHtmlContent(isLocation) {
       <div style="display: flex; justify-content: space-around; flex-direction: row;">
         <div id="fill-form-img-div" style="align-self: center;">
             <img height="auto" width="400px" src=${
-              isLocation ? "../assets/fillForms.svg" : "assets/fillForms.svg"
+              isLocation ? "../assets/2QueryForm.gif" : "assets/2QueryForm.gif"
             }></img>
         </div>
         <div id="customer-form">
-          <form id="inquiry-form" class="flex-div col-div" style="align-items: flex-start;">
+          <form method="post" action="https://script.google.com/macros/s/AKfycbxYR5sdmfJkX45IoQR9rkh8f0-SSNP4J9F7NcxinNSkmGxPSzh_gEgNkqS7WsEg50E8/exec" id="inquiry-form" class="flex-div col-div" style="align-items: flex-start;">
             <label for="name">Name*</label>
-            <input id="name" placeholder="Enter Name" autocomplete="off" required></input>
+            <input id="name" name="name" placeholder="Enter Name" autocomplete="off" required></input>
             <label for="phone">Phone*</label>
-            <input id="phone" type="tel" placeholder="Enter Phone" autocomplete="off" required pattern="[0-9]{10}"></input>
+            <input id="phone" name="phone" type="tel" placeholder="Enter Phone" autocomplete="off" required pattern="[0-9]{10}"></input>
+            <label for="email">Email*</label>
+            <input id="email" name="email" type="email" placeholder="Enter Email" autocomplete="off" required></input>
             <label for="from">Moving From*</label>
-            <select id="from" placeholder="Select Location" autocomplete="off" required>
+            <select id="from" name="fro" placeholder="Select Location" autocomplete="off" required>
               <option value="Gurgaon">Gurgaon</option>
               <option value="Delhi">Delhi</option>
             </select>
             <label for="to">Moving To*</label>
-            <select id="to" placeholder="Select Location" autocomplete="off" required>
+            <select id="to" name="to" placeholder="Select Location" autocomplete="off" required>
               <option value="Gurgaon">Gurgaon</option>
               <option value="Delhi">Delhi</option>
             </select>
             <label for="moving-date">Request Moving Date*</label>
-            <input id="moving-date" type="date" autocomplete="off" required></input>
+            <input id="moving-date" name="movingDate" type="date" autocomplete="off" required></input>
             <button id="submit-btn" type="submit">Submit</button>
           </form>
         </div>
