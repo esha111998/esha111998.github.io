@@ -174,29 +174,56 @@ function createHtmlContent(isLocation) {
         </div> -->
     </div>
   </div>
-  <div id="header" class="header">
-    <img id="igitx"
-      src="https://static.wixstatic.com/media/84770f_994ffe746a074d1f8a2ec9456a8bf1ff~mv2.png/v1/fill/w_1081,h_960,al_br,q_90,usm_0.66_1.00_0.01,enc_auto/84770f_994ffe746a074d1f8a2ec9456a8bf1ff~mv2.png"
-      alt="" fetchpriority="high" />
-    <div id="is6pf">
-      <h1 id="i1itu" data-custom-content="good-advice">
-        The Power of <br id="ie9xy" />Good Advice
-      </h1>
-      <p id="idax7" data-custom-content="description">
-        I'm a paragraph. Click here to add <br id="i8lap" />
-        your own text and edit me.
-      </p>
-      <a id="iz026q-2-2" href="#contact"
-        autocomplete="off"
-        data-custom-content="learnMore"
-        class="learn-more"
-        >Contact Us</a>
+
+  <!-- <div id="header" class="header">
+  <img id="igitx"
+    src="https://static.wixstatic.com/media/84770f_994ffe746a074d1f8a2ec9456a8bf1ff~mv2.png/v1/fill/w_1081,h_960,al_br,q_90,usm_0.66_1.00_0.01,enc_auto/84770f_994ffe746a074d1f8a2ec9456a8bf1ff~mv2.png"
+    alt="" fetchpriority="high" />
+  <div id="is6pf">
+    <h1 id="i1itu" data-custom-content="good-advice">
+      The Power of <br id="ie9xy" />Good Advice
+    </h1>
+    <p id="idax7" data-custom-content="description">
+      I'm a paragraph. Click here to add <br id="i8lap" />
+      your own text and edit me.
+    </p>
+    <a id="iz026q-2-2" href="#contact"
+      autocomplete="off"
+      data-custom-content="learnMore"
+      class="learn-more"
+      >Contact Us</a>
+  </div>
+</div> -->
+
+  <div id="day-night" class="contact" style="background: white;">
+    <div style="display: flex; justify-content: space-between; flex-direction: row; align-items: center;">
+      <div class="fill-form-img-div" style="align-self: center;">  
+        <img height="auto" src=${
+            isLocation
+              ? "../assets/1DayNightTheme.gif"
+              : "assets/1DayNightTheme.gif"
+          }></img>
+      </div>
+      <div style="padding: 20px;">
+        <h1 data-custom-content="good-advice">
+          The Power of <br />Good Advice
+        </h1>
+        <p data-custom-content="description">
+          I'm a paragraph. Click here to add <br id="i8lap" />
+          your own text and edit me.
+        </p>
+        <a id="iz026q-2-2" href="#contact"
+          autocomplete="off"
+          data-custom-content="learnMore"
+          class="learn-more"
+          >Contact Us</a>
+      </div>
     </div>
   </div>
 
   <div id="form-detail" class="contact">
     <div class="iyohgi" class="flex-div col-div" style="align-items: unset;">
-      <h2 class="i78bq-2-3">INQUIRE</h2>
+      <h2 class="i78bq-2-3" style="text-align: center;">INQUIRE</h2>
       <div style="display: flex; justify-content: space-between; flex-direction: row;">
         <div id="customer-form">
           <form method="post" action="https://script.google.com/macros/s/AKfycbxYR5sdmfJkX45IoQR9rkh8f0-SSNP4J9F7NcxinNSkmGxPSzh_gEgNkqS7WsEg50E8/exec" id="inquiry-form" class="flex-div col-div" style="align-items: flex-start;">
@@ -230,18 +257,54 @@ function createHtmlContent(isLocation) {
     </div>
   </div>
 
-  <div id="contact" class="contact" style="background: #94ddd7;">
+  <div id="take-our-services" class="contact" style="background: #94ddd7;">
     <div class="iyohgi" style="text-align: center;">
       <h2 class="i78bq-2-3">TAKE OUR SERVICES</h2>
       <div style="display: flex; justify-content: space-between; flex-direction: row; align-items: center;">
         <div class="fill-form-img-div" style="align-self: center;">
           <img height="auto" src=${
-            isLocation ? "../assets/3TakeOurServices.gif" : "assets/3TakeOurServices.gif"
+            isLocation
+              ? "../assets/3TakeOurServices.gif"
+              : "assets/3TakeOurServices.gif"
           }></img>
         </div>
         <div>
-          <h2>Worried About Your Next Relocation Due To Busy Schedule??</h2>
-          <h2>Let Us Help You!!</h2>
+          <h4>Worried About Your Next Relocation Due To Busy Schedule??</h4>
+          <h4>Let Us Help You!!</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="our-services" class="contact" style="background: #ffc5a9;">
+    <div class="iyohgi" style="text-align: center;">
+      <h2 class="i78bq-2-3">OUR SERVICES</h2>
+      <div style="display: flex; justify-content: space-between; flex-direction: row; align-items: center;">   
+        <div>
+          <h4>Worried About Your Next Relocation Due To Busy Schedule??</h4>
+          <h4>Let Us Help You!!</h4>
+        </div>
+        <div class="fill-form-img-div" style="align-self: center;">
+          <img height="auto" src=${
+            isLocation ? "../assets/4OurService.gif" : "assets/4OurService.gif"
+          }></img>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="our-team" class="contact" style="background: #6ad5ff;">
+    <div class="iyohgi" style="text-align: center;">
+      <h2 class="i78bq-2-3">OUR TEAM</h2>
+      <div style="display: flex; justify-content: space-between; flex-direction: row; align-items: center;">
+        <div class="fill-form-img-div" style="align-self: center;">
+          <img height="auto" src=${
+            isLocation ? "../assets/5OurTeam.gif" : "assets/5OurTeam.gif"
+          }></img>
+        </div>
+        <div>
+          <h4>Worried About Your Next Relocation Due To Busy Schedule??</h4>
+          <h4>Let Us Help You!!</h4>
         </div>
       </div>
     </div>
@@ -652,39 +715,49 @@ function createHtmlContent(isLocation) {
         </svg>
       </div>
     </div> -->
-  <div id="contact" class="contact">
+  <div id="contact" class="contact" style="background: #0080a1;">
     <!-- <div id="i3skrg-2"> -->
     <div class="iyohgi" style="text-align: center;">
       <h2 id="i78bq-2-2">CONTACT</h2>
-      <p id="iqrh3-2-2" style="margin-bottom: 10px; margin-top: 20px;">Let's Work Together</p>
-      <!-- <div class="flex-div col-div" style="font-size: x-large;" id="ic40w5">
-            <a class="contact-details" href="mailto:someone@example.com">abc.com</a>
-            <a class="contact-details" href=“tel:9911198767">Tel: 9911198767</a>
-          </div> -->
-      <div id="igiuzk">
-        <a id="i2tpy3" href=""><img id="i3gekg" height="30px" width="30px" src=${
-          isLocation ? "../assets/fb.svg" : "assets/fb.svg"
-        } /></a>
-        <a id="i2tpy3-2" href=""><img id="i3gekg-2" height="30px" width="30px" src=${
-          isLocation ? "../assets/insta.svg" : "assets/insta.svg"
-        } /></a>
-        <a id="i2tpy3-5" href="https://wa.me/+919911198767" target="_blank"><img id="i3gekg-3" height="30px" width="30px" src=${
-          isLocation ? "../assets/whatsapp.svg" : "assets/whatsapp.svg"
-        } /></a>
-        <a id="i2tpy3-3" href="mailto:someone@example.com"><img id="i3gekg-4" height="30px" width="30px"
-            src=${
-              isLocation ? "../assets/email.svg" : "assets/email.svg"
-            } /></a>
-        <a href=tel:+919911198767><img id="i3gekg-5" height="30px" width="30px" src=${
-          isLocation ? "../assets/tel.svg" : "assets/tel.svg"
-        } /></a>
+      <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+        <div class="fill-form-img-div" style="align-self: center;">
+          <img height="auto" src=${
+            isLocation ? "../assets/6ContactUs.gif" : "assets/6ContactUs.gif"
+          }></img>
+        </div>
+        <div>
+        <p id="iqrh3-2-2" style="margin-bottom: 10px; margin-top: 20px; color: #282626;">Let's Work Together</p>
+        <!-- <div class="flex-div col-div" style="font-size: x-large;" id="ic40w5">
+              <a class="contact-details" href="mailto:someone@example.com">abc.com</a>
+              <a class="contact-details" href=“tel:9911198767">Tel: 9911198767</a>
+            </div> -->
+        <div id="igiuzk">
+          <a id="i2tpy3" href=""><img id="i3gekg" height="30px" width="30px" src=${
+            isLocation ? "../assets/fb.svg" : "assets/fb.svg"
+          } /></a>
+          <a id="i2tpy3-2" href=""><img id="i3gekg-2" height="30px" width="30px" src=${
+            isLocation ? "../assets/insta.svg" : "assets/insta.svg"
+          } /></a>
+          <a id="i2tpy3-5" href="https://wa.me/+919911198767" target="_blank"><img id="i3gekg-3" height="30px" width="30px" src=${
+            isLocation ? "../assets/whatsapp.svg" : "assets/whatsapp.svg"
+          } /></a>
+          <a id="i2tpy3-3" href="mailto:someone@example.com"><img id="i3gekg-4" height="30px" width="30px"
+              src=${
+                isLocation ? "../assets/email.svg" : "assets/email.svg"
+              } /></a>
+          <a href=tel:+919911198767><img id="i3gekg-5" height="30px" width="30px" src=${
+            isLocation ? "../assets/tel.svg" : "assets/tel.svg"
+          } /></a>
+        </div>
       </div>
     </div>
     <!-- </div> -->
   </div>
+
   <div class="copyright-footer">
     <p id="iy2lbi">© 2035 by BizBud. Powered and secured by Wix</p>
   </div>
+
   <wix-bg-media id="bgMedia_comp-kq5dfsdh" data-container-id="comp-kq5dfsdh" data-container-size="0, 0"
     data-page-id="qhya0" data-bg-effect-name="BgParallax" class="SUz0WK">
     <wow-image id="img_comp-kq5dfsdh"
