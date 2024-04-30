@@ -467,7 +467,7 @@
     font-size:20px;
     margin:0px 0px 20px 0px;
   }
-  #i78bq-2-3{
+  .i78bq-2-3{
     color:#9e3ffd;
     font-size:20px;
     margin:0px 0px 30px 0px;
@@ -478,7 +478,7 @@
     font-size:36px;
     font-weight:700;
   }
-  #iyohgi{
+  .iyohgi{
     margin:0 0px 0px 0px;
     padding: 100px 50px 100px 50px;
   }
@@ -704,14 +704,20 @@
     #iqrh3-2-2{
       font-size:30px;
     }
+    .fill-form-img-div>img{
+      width: 200px;
+    }
   }
   @media (max-width:768px){
+    .fill-form-img-div>img{
+      width: 200px;
+    }
     .resp-menu{
       padding:25px 40px 25px 40px;
     }
   }
   @media (max-width: 575px){
-    #max-width-content, #fill-form-img-div{
+    #max-width-content, .fill-form-img-div{
       display: none;
     }
     #iu06p{
@@ -800,7 +806,7 @@
     .clients-box{
       flex-direction:column;
     }
-    #iyohgi{
+    .iyohgi{
       width:100%;
     }
     #i3skrg-2{

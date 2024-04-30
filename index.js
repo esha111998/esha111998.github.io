@@ -44,7 +44,7 @@ function handleTryCatch(tryOrCatch) {
   }
   showModal();
 }
-console.log('window', window);
+console.log("window", window);
 function onSubmit() {
   const URL =
     "https://script.google.com/macros/s/AKfycbx3Ya-bsFY_C7JQe4m7udclScBOzXZrcKFN7i28w-AhMD9AUw8PQgyJ0rJ-5CDlhJAF/exec";
@@ -195,14 +195,9 @@ function createHtmlContent(isLocation) {
   </div>
 
   <div id="form-detail" class="contact">
-    <div id="iyohgi" class="flex-div col-div" style="align-items: unset;">
-      <h2 id="i78bq-2-3">INQUIRE</h2>
-      <div style="display: flex; justify-content: space-around; flex-direction: row;">
-        <div id="fill-form-img-div" style="align-self: center;">
-            <img height="auto" width="400px" src=${
-              isLocation ? "../assets/2QueryForm.gif" : "assets/2QueryForm.gif"
-            }></img>
-        </div>
+    <div class="iyohgi" class="flex-div col-div" style="align-items: unset;">
+      <h2 class="i78bq-2-3">INQUIRE</h2>
+      <div style="display: flex; justify-content: space-between; flex-direction: row;">
         <div id="customer-form">
           <form method="post" action="https://script.google.com/macros/s/AKfycbxYR5sdmfJkX45IoQR9rkh8f0-SSNP4J9F7NcxinNSkmGxPSzh_gEgNkqS7WsEg50E8/exec" id="inquiry-form" class="flex-div col-div" style="align-items: flex-start;">
             <label for="name">Name*</label>
@@ -226,7 +221,29 @@ function createHtmlContent(isLocation) {
             <button id="submit-btn" type="submit">Submit</button>
           </form>
         </div>
+        <div class="fill-form-img-div" style="align-self: center;">
+          <img height="auto" src=${
+            isLocation ? "../assets/2QueryForm.gif" : "assets/2QueryForm.gif"
+          }></img>
+        </div>
       </div>  
+    </div>
+  </div>
+
+  <div id="contact" class="contact" style="background: #94ddd7;">
+    <div class="iyohgi" style="text-align: center;">
+      <h2 class="i78bq-2-3">TAKE OUR SERVICES</h2>
+      <div style="display: flex; justify-content: space-between; flex-direction: row; align-items: center;">
+        <div class="fill-form-img-div" style="align-self: center;">
+          <img height="auto" src=${
+            isLocation ? "../assets/3TakeOurServices.gif" : "assets/3TakeOurServices.gif"
+          }></img>
+        </div>
+        <div>
+          <h2>Worried About Your Next Relocation Due To Busy Schedule??</h2>
+          <h2>Let Us Help You!!</h2>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -637,7 +654,7 @@ function createHtmlContent(isLocation) {
     </div> -->
   <div id="contact" class="contact">
     <!-- <div id="i3skrg-2"> -->
-    <div id="iyohgi" style="text-align: center;">
+    <div class="iyohgi" style="text-align: center;">
       <h2 id="i78bq-2-2">CONTACT</h2>
       <p id="iqrh3-2-2" style="margin-bottom: 10px; margin-top: 20px;">Let's Work Together</p>
       <!-- <div class="flex-div col-div" style="font-size: x-large;" id="ic40w5">
