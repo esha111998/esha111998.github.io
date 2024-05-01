@@ -1,7 +1,7 @@
 *{
     box-sizing:border-box;
     margin:0;
-    font-family:Helvetica, serif;
+    font-family: Comfortaa;
   }
   .navbar-cont{
     width:100%;
@@ -193,9 +193,7 @@
   }
   .services{
     padding:100px 50px;
-    width:95%;
-    text-align:Center;
-    margin:auto;
+    text-align:center;
   }
   #comp-kq5dfsen svg [data-color="1"]{
     fill:#16163F;
@@ -250,7 +248,7 @@
     margin:10px;
   }
   .service-desc{
-    width:75%;
+    width:100%;
     line-height:1.5em;
     text-align:center;
     color:#16163F;
@@ -558,6 +556,10 @@
 
   .contact-details{
     color: #16163F;
+  }
+
+  .border-bottom-class{
+    border-bottom: solid #000000;
   }
 
   .service-desc>li{

@@ -195,14 +195,14 @@ function createHtmlContent(isLocation) {
   </div>
 </div> -->
 
-  <div id="day-night" class="contact" style="background: white;">
+  <div id="day-night" class="contact border-bottom-class" style="background: white;">
     <div style="display: flex; justify-content: space-between; flex-direction: row; align-items: center;">
       <div class="fill-form-img-div" style="align-self: center;">  
         <img height="auto" src=${
-            isLocation
-              ? "../assets/1DayNightTheme.gif"
-              : "assets/1DayNightTheme.gif"
-          }></img>
+          isLocation
+            ? "../assets/1DayNightTheme.gif"
+            : "assets/1DayNightTheme.gif"
+        }></img>
       </div>
       <div style="padding: 20px;">
         <h1 data-custom-content="good-advice">
@@ -221,7 +221,7 @@ function createHtmlContent(isLocation) {
     </div>
   </div>
 
-  <div id="form-detail" class="contact">
+  <div id="form-detail" class="contact border-bottom-class">
     <div class="iyohgi" class="flex-div col-div" style="align-items: unset;">
       <h2 class="i78bq-2-3" style="text-align: center;">INQUIRE</h2>
       <div style="display: flex; justify-content: space-between; flex-direction: row;">
@@ -257,35 +257,43 @@ function createHtmlContent(isLocation) {
     </div>
   </div>
 
-  <div id="take-our-services" class="contact" style="background: #94ddd7;">
+  <div id="take-our-services" class="contact border-bottom-class" style="background: #94ddd7;">
     <div class="iyohgi" style="text-align: center;">
-      <h2 class="i78bq-2-3">TAKE OUR SERVICES</h2>
-      <div style="display: flex; justify-content: space-between; flex-direction: row; align-items: center;">
+      <!--<h2 class="i78bq-2-3">TAKE OUR SERVICES</h2>-->
+      <div style="display: flex; justify-content: space-between; flex-direction: row;">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img height="auto" src=${
+          <img height="400px" src=${
             isLocation
               ? "../assets/3TakeOurServices.gif"
               : "assets/3TakeOurServices.gif"
           }></img>
         </div>
-        <div>
-          <h4>Worried About Your Next Relocation Due To Busy Schedule??</h4>
-          <h4>Let Us Help You!!</h4>
+        <div style="text-align: left;" class="contact-details">
+          <h4>Worried About Your Next Relocation During Busy Schedule??</h4>
+          <h1 style="font-size: xxx-large;">Let Us Help You!!</h1>
         </div>
       </div>
     </div>
   </div>
 
-  <div id="our-services" class="contact" style="background: #ffc5a9;">
+  <div id="our-services" class="contact border-bottom-class" style="background: #ffc7a9;">
     <div class="iyohgi" style="text-align: center;">
-      <h2 class="i78bq-2-3">OUR SERVICES</h2>
-      <div style="display: flex; justify-content: space-between; flex-direction: row; align-items: center;">   
+      <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">What we actually do?</h1>
+      <div style="display: flex; justify-content: space-around; flex-direction: row; align-items: center;">   
         <div>
-          <h4>Worried About Your Next Relocation Due To Busy Schedule??</h4>
-          <h4>Let Us Help You!!</h4>
+          <ul class="service-desc" style="font-size: 18px; line-height: 2.0em;">
+            <li><h2>Packers And Movers</h2></li>
+            <li><h2>Car And Bike Carrier</h2></li>
+            <li><h2>Shipping Service</h2></li>
+            <li><h2>Air Freight Forwarding</h2></li>
+            <li><h2>Sea Freight Forwarding</h2></li>
+            <li><h2>International Relocation</h2></li>
+            <li><h2>Domestic Relocation</h2></li>
+            <li><h2>Warehousing Service</h2></li>
+          </ul>
         </div>
         <div class="fill-form-img-div" style="align-self: center;">
-          <img height="auto" src=${
+          <img width="600px" height="400px" src=${
             isLocation ? "../assets/4OurService.gif" : "assets/4OurService.gif"
           }></img>
         </div>
@@ -293,200 +301,206 @@ function createHtmlContent(isLocation) {
     </div>
   </div>
 
-  <div id="our-team" class="contact" style="background: #6ad5ff;">
+  <div id="our-team" class="contact border-bottom-class" style="background: #5ad5ff;">
     <div class="iyohgi" style="text-align: center;">
-      <h2 class="i78bq-2-3">OUR TEAM</h2>
+      <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">Who we are?</h1>
       <div style="display: flex; justify-content: space-between; flex-direction: row; align-items: center;">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img height="auto" src=${
+          <img height="400px" src=${
             isLocation ? "../assets/5OurTeam.gif" : "assets/5OurTeam.gif"
           }></img>
         </div>
-        <div>
-          <h4>Worried About Your Next Relocation Due To Busy Schedule??</h4>
-          <h4>Let Us Help You!!</h4>
+        <div style="text-align: left;">
+          <h4>We are your highly motivated and professional companions who are going to assist you with the requirements of your next relocation & movement with perfection. Our dedicated team is there to help you out round the clock to make a comfortable move.</h4>
         </div>
       </div>
     </div>
   </div>
 
-  <div id="services" class="services">
+  <div id="services" class="services border-bottom-class" style="margin: 0px;">
     <div id="iymxg" class="service-info">
-      <h2 id="i78bq" data-custom-content="services">
+      <h1 class="i78bq contact-details" style="font-size: xx-large;" data-custom-content="services">
         OUR PRESENCE
-      </h2>
+      </h1>
       <!-- <p id="iqrh3">
           Taking Your Business to
           <br id="im8z6" />
           the Next Level
         </p> -->
     </div>
-    <div id="i12z9" class="services-box">
-      <div id="ilmjk" class="service-cont">
-        <ul id="ipekj" class="service-desc">
-          <li id="locations/ahemdabad.html"><a class="contact-details" href="locations/ahemdabad.html">Packers and
-              Movers in Ahemdabad</a></li>
-          <li id="locations/banglore.html"><a class="contact-details" href="locations/banglore.html">Packers and
-              Movers in Banglore</a></li>
-          <li id="locations/chennai.html"><a class="contact-details" href="locations/chennai.html">Packers and
-              Movers in Chennai</a></li>
-          <li id="locations/coimbatore.html"><a class="contact-details" href="locations/coimbatore.html">Packers
-              and Movers in Coimbatore</a></li>
-        </ul>
+    <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+      <div class="fill-form-img-div" style="align-self: center;">
+        <img height="400px" src=${
+          isLocation ? "../assets/AroundWorld.gif" : "assets/AroundWorld.gif"
+        }></img>
       </div>
-      <div id="ilmjk-2" class="service-cont">
-        <ul id="ipekj-2" class="service-desc">
-          <li id="locations/delhi.html"><a class="contact-details" href="locations/delhi.html">Packers and Movers
-              in Delhi</a></li>
-          <li id="locations/faridabad.html"><a class="contact-details" href="locations/faridabad.html">Packers and
-              Movers in Faridabad</a></li>
-          <li id="locations/ghaziabad.html"><a class="contact-details" href="locations/ghaziabad.html">Packers and
-              Movers in Ghaziabad</a></li>
-          <li id="locations/gurgaon.html"><a class="contact-details" href="locations/gurgaon.html">Packers and
-              Movers in Gurgaon</a></li>
-        </ul>
-      </div>
-      <div id="ilmjk-3" class="service-cont">
-        <ul id="ipekj-3" class="service-desc">
-          <li id="locations/hyderabad.html"><a class="contact-details" href="locations/hyderabad.html">Packers and
-              Movers in Hyderabad</a></li>
-          <li id="locations/indore.html"><a class="contact-details" href="locations/indore.html">Packers and
-              Movers in Indore</a></li>
-          <li id="locations/jaipur.html"><a class="contact-details" href="locations/jaipur.html">Packers and
-              Movers in Jaipur</a></li>
-          <li id="locations/kolkata.html"><a class="contact-details" href="locations/kolkata.html">Packers and
-              Movers in Kolkata</a></li>
-        </ul>
-      </div>
-      <div id="ilmjk-4" class="service-cont">
-        <ul id="ipekj-4" class="service-desc">
-          <li id="locations/mumbai.html"><a class="contact-details" href="locations/mumbai.html">Packers and
-              Movers in Mumbai</a></li>
-          <li id="locations/noida.html"><a class="contact-details" href="locations/noida.html">Packers and Movers
-              in Noida</a></li>
-          <li id="locations/pune.html"><a class="contact-details" href="locations/pune.html">Packers and Movers in
-              Pune</a></li>
-          <li id="locations/surat.html"><a class="contact-details" href="locations/surat.html">Packers and Movers
-              in Surat</a></li>
-        </ul>
-      </div>
-      <!-- <div id="ilmjk-2" class="service-cont">
-          <svg
-            id="i9kl3d"
-        
-            preserveAspectRatio="xMidYMid meet"
-            data-bbox="20 34.606 159.999 126.634"
-            viewBox="20 34.606 159.999 126.634"
-            height="200"
-            width="200"
-            xmlns="http://www.w3.org/2000/svg"
-            data-type="color"
-            role="presentation"
-            aria-hidden="true"
-            aria-labelledby="svgcid-udmxjp18njyw"
-          >
-            <defs id="ib00ls"></defs>
-            <title id="svgcid-udmxjp18njyw"></title>
-            <g id="ih5frb">
-              <path
-                id="iygbjz"
-            
-                clip-rule="evenodd"
-                fill-rule="evenodd"
-                d="M60.163 40.369a5.763 5.763 0 1 1-11.526 0 5.763 5.763 0 0 1 11.526 0z"
-                fill="#000000"
-                data-color="1"
-              ></path>
-              <path
-                id="i7qo8f"
-            
-                d="M37.029 103.69l40.464 40.531a9.606 9.606 0 0 1 0 13.572l-.627.628a9.604 9.604 0 0 1-13.583.011l-.011-.011-40.465-40.531a9.606 9.606 0 0 1 0-13.572l.627-.628a9.604 9.604 0 0 1 13.583-.011c.005.003.008.007.012.011z"
-                fill="#E7E7EB"
-                clip-rule="evenodd"
-                fill-rule="evenodd"
-                data-color="2"
-              ></path>
-              <path
-                id="imtnbf"
-            
-                d="M62.556 144.076L162.971 43.492a9.604 9.604 0 0 1 13.583-.011l.011.011.627.628a9.606 9.606 0 0 1 0 13.572L76.777 158.276a9.604 9.604 0 0 1-13.583.011l-.011-.011-.627-.628a9.604 9.604 0 0 1 0-13.572z"
-                fill="#9E3FFD"
-                clip-rule="evenodd"
-                fill-rule="evenodd"
-                data-color="3"
-              ></path>
-            </g>
-          </svg>
-          <h3 id="iaqap-2" class="service-name">
-            Business Plans
-          </h3>
-          <p id="ipekj-2" class="service-desc">
-            I'm a paragraph. Click here to add your own text and edit me.
-          </p>
+      <div id="i12z9" class="services-box">
+        <div id="ilmjk" class="service-cont">
+          <ul id="ipekj" class="service-desc">
+            <li id="locations/ahemdabad.html"><a class="contact-details" href="locations/ahemdabad.html">Packers and
+                Movers in Ahemdabad</a></li>
+            <li id="locations/banglore.html"><a class="contact-details" href="locations/banglore.html">Packers and
+                Movers in Banglore</a></li>
+            <li id="locations/chennai.html"><a class="contact-details" href="locations/chennai.html">Packers and
+                Movers in Chennai</a></li>
+            <li id="locations/coimbatore.html"><a class="contact-details" href="locations/coimbatore.html">Packers
+                and Movers in Coimbatore</a></li>
+          </ul>
+        </div>
+        <div id="ilmjk-2" class="service-cont">
+          <ul id="ipekj-2" class="service-desc">
+            <li id="locations/delhi.html"><a class="contact-details" href="locations/delhi.html">Packers and Movers
+                in Delhi</a></li>
+            <li id="locations/faridabad.html"><a class="contact-details" href="locations/faridabad.html">Packers and
+                Movers in Faridabad</a></li>
+            <li id="locations/ghaziabad.html"><a class="contact-details" href="locations/ghaziabad.html">Packers and
+                Movers in Ghaziabad</a></li>
+            <li id="locations/gurgaon.html"><a class="contact-details" href="locations/gurgaon.html">Packers and
+                Movers in Gurgaon</a></li>
+          </ul>
         </div>
         <div id="ilmjk-3" class="service-cont">
-          <svg
-            id="ibvrrp"
-        
-            preserveAspectRatio="xMidYMid meet"
-            data-bbox="26.982 26 146.037 148"
-            viewBox="26.982 26 146.037 148"
-            height="200"
-            width="200"
-            xmlns="http://www.w3.org/2000/svg"
-            data-type="color"
-            role="presentation"
-            aria-hidden="true"
-            aria-labelledby="svgcid--q10526lqxiie"
-          >
-            <defs id="iibh3q"></defs>
-            <title id="svgcid--q10526lqxiie"></title>
-            <g id="irul34">
-              <path
-                id="ieb2q3"
-            
-                fill="#16163F"
-                clip-rule="evenodd"
-                fill-rule="evenodd"
-                d="M173.019 168.11a5.89 5.89 0 1 1-11.78 0 5.89 5.89 0 0 1 11.78 0z"
-                data-color="1"
-              ></path>
-              <path
-                id="iis2d6"
-            
-                fill="#16163F"
-                clip-rule="evenodd"
-                fill-rule="evenodd"
-                d="M173.019 168.11a5.89 5.89 0 1 1-11.78 0 5.89 5.89 0 0 1 11.78 0z"
-                data-color="1"
-              ></path>
-              <path
-                id="iy50vo"
-            
-                fill="#E7E7EB"
-                clip-rule="evenodd"
-                fill-rule="evenodd"
-                d="M153.608 59.374v93.252H60.356V59.374h93.252z"
-                data-color="2"
-              ></path>
-              <path
-                id="ixjv2l"
-            
-                fill="#9E3FFD"
-                clip-rule="evenodd"
-                fill-rule="evenodd"
-                d="M92.749 26v65.767H26.982V26h65.767z"
-                data-color="3"
-              ></path>
-            </g>
-          </svg>
-          <h3 id="iaqap-3" class="service-name">
-            Business Plans
-          </h3>
-          <p id="ipekj-3" class="service-desc">
-            I'm a paragraph. Click here to add your own text and edit me.
-          </p>
-        </div> -->
+          <ul id="ipekj-3" class="service-desc">
+            <li id="locations/hyderabad.html"><a class="contact-details" href="locations/hyderabad.html">Packers and
+                Movers in Hyderabad</a></li>
+            <li id="locations/indore.html"><a class="contact-details" href="locations/indore.html">Packers and
+                Movers in Indore</a></li>
+            <li id="locations/jaipur.html"><a class="contact-details" href="locations/jaipur.html">Packers and
+                Movers in Jaipur</a></li>
+            <li id="locations/kolkata.html"><a class="contact-details" href="locations/kolkata.html">Packers and
+                Movers in Kolkata</a></li>
+          </ul>
+        </div>
+        <div id="ilmjk-4" class="service-cont">
+          <ul id="ipekj-4" class="service-desc">
+            <li id="locations/mumbai.html"><a class="contact-details" href="locations/mumbai.html">Packers and
+                Movers in Mumbai</a></li>
+            <li id="locations/noida.html"><a class="contact-details" href="locations/noida.html">Packers and Movers
+                in Noida</a></li>
+            <li id="locations/pune.html"><a class="contact-details" href="locations/pune.html">Packers and Movers in
+                Pune</a></li>
+            <li id="locations/surat.html"><a class="contact-details" href="locations/surat.html">Packers and Movers
+                in Surat</a></li>
+          </ul>
+        </div>
+        <!-- <div id="ilmjk-2" class="service-cont">
+            <svg
+              id="i9kl3d"
+          
+              preserveAspectRatio="xMidYMid meet"
+              data-bbox="20 34.606 159.999 126.634"
+              viewBox="20 34.606 159.999 126.634"
+              height="200"
+              width="200"
+              xmlns="http://www.w3.org/2000/svg"
+              data-type="color"
+              role="presentation"
+              aria-hidden="true"
+              aria-labelledby="svgcid-udmxjp18njyw"
+            >
+              <defs id="ib00ls"></defs>
+              <title id="svgcid-udmxjp18njyw"></title>
+              <g id="ih5frb">
+                <path
+                  id="iygbjz"
+              
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"
+                  d="M60.163 40.369a5.763 5.763 0 1 1-11.526 0 5.763 5.763 0 0 1 11.526 0z"
+                  fill="#000000"
+                  data-color="1"
+                ></path>
+                <path
+                  id="i7qo8f"
+              
+                  d="M37.029 103.69l40.464 40.531a9.606 9.606 0 0 1 0 13.572l-.627.628a9.604 9.604 0 0 1-13.583.011l-.011-.011-40.465-40.531a9.606 9.606 0 0 1 0-13.572l.627-.628a9.604 9.604 0 0 1 13.583-.011c.005.003.008.007.012.011z"
+                  fill="#E7E7EB"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"
+                  data-color="2"
+                ></path>
+                <path
+                  id="imtnbf"
+              
+                  d="M62.556 144.076L162.971 43.492a9.604 9.604 0 0 1 13.583-.011l.011.011.627.628a9.606 9.606 0 0 1 0 13.572L76.777 158.276a9.604 9.604 0 0 1-13.583.011l-.011-.011-.627-.628a9.604 9.604 0 0 1 0-13.572z"
+                  fill="#9E3FFD"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"
+                  data-color="3"
+                ></path>
+              </g>
+            </svg>
+            <h3 id="iaqap-2" class="service-name">
+              Business Plans
+            </h3>
+            <p id="ipekj-2" class="service-desc">
+              I'm a paragraph. Click here to add your own text and edit me.
+            </p>
+          </div>
+          <div id="ilmjk-3" class="service-cont">
+            <svg
+              id="ibvrrp"
+          
+              preserveAspectRatio="xMidYMid meet"
+              data-bbox="26.982 26 146.037 148"
+              viewBox="26.982 26 146.037 148"
+              height="200"
+              width="200"
+              xmlns="http://www.w3.org/2000/svg"
+              data-type="color"
+              role="presentation"
+              aria-hidden="true"
+              aria-labelledby="svgcid--q10526lqxiie"
+            >
+              <defs id="iibh3q"></defs>
+              <title id="svgcid--q10526lqxiie"></title>
+              <g id="irul34">
+                <path
+                  id="ieb2q3"
+              
+                  fill="#16163F"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"
+                  d="M173.019 168.11a5.89 5.89 0 1 1-11.78 0 5.89 5.89 0 0 1 11.78 0z"
+                  data-color="1"
+                ></path>
+                <path
+                  id="iis2d6"
+              
+                  fill="#16163F"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"
+                  d="M173.019 168.11a5.89 5.89 0 1 1-11.78 0 5.89 5.89 0 0 1 11.78 0z"
+                  data-color="1"
+                ></path>
+                <path
+                  id="iy50vo"
+              
+                  fill="#E7E7EB"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"
+                  d="M153.608 59.374v93.252H60.356V59.374h93.252z"
+                  data-color="2"
+                ></path>
+                <path
+                  id="ixjv2l"
+              
+                  fill="#9E3FFD"
+                  clip-rule="evenodd"
+                  fill-rule="evenodd"
+                  d="M92.749 26v65.767H26.982V26h65.767z"
+                  data-color="3"
+                ></path>
+              </g>
+            </svg>
+            <h3 id="iaqap-3" class="service-name">
+              Business Plans
+            </h3>
+            <p id="ipekj-3" class="service-desc">
+              I'm a paragraph. Click here to add your own text and edit me.
+            </p>
+          </div> -->
+      </div>
     </div>
   </div>
   <!-- <div id="i1p8v1" class="service-numbers">
@@ -715,27 +729,27 @@ function createHtmlContent(isLocation) {
         </svg>
       </div>
     </div> -->
-  <div id="contact" class="contact" style="background: #0080a1;">
+  <div id="contact" class="contact border-bottom-class" style="background: #047d9d;">
     <!-- <div id="i3skrg-2"> -->
     <div class="iyohgi" style="text-align: center;">
-      <h2 id="i78bq-2-2">CONTACT</h2>
+      <h1 class="contact-details" style="font-size: xx-large;">Still have doubts?</h1>
       <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img height="auto" src=${
+          <img height="400px" src=${
             isLocation ? "../assets/6ContactUs.gif" : "assets/6ContactUs.gif"
           }></img>
         </div>
         <div>
-        <p id="iqrh3-2-2" style="margin-bottom: 10px; margin-top: 20px; color: #282626;">Let's Work Together</p>
+        <p id="iqrh3-2-2" style="margin-bottom: 10px; margin-top: 20px; color: #282626;">Contact us</p>
         <!-- <div class="flex-div col-div" style="font-size: x-large;" id="ic40w5">
               <a class="contact-details" href="mailto:someone@example.com">abc.com</a>
               <a class="contact-details" href=“tel:9911198767">Tel: 9911198767</a>
             </div> -->
-        <div id="igiuzk">
-          <a id="i2tpy3" href=""><img id="i3gekg" height="30px" width="30px" src=${
+        <div id="igiuzk" class="flex-div row-div">
+          <a id="i2tpy3" href=""><img id="i3gekg" height="38px" width="38px" src=${
             isLocation ? "../assets/fb.svg" : "assets/fb.svg"
           } /></a>
-          <a id="i2tpy3-2" href=""><img id="i3gekg-2" height="30px" width="30px" src=${
+          <a id="i2tpy3-2" href=""><img id="i3gekg-2" height="25px" width="25px" src=${
             isLocation ? "../assets/insta.svg" : "assets/insta.svg"
           } /></a>
           <a id="i2tpy3-5" href="https://wa.me/+919911198767" target="_blank"><img id="i3gekg-3" height="30px" width="30px" src=${
