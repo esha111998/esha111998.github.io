@@ -23,15 +23,17 @@ function closeModal() {
   };
 }
 
-function stopReloadOnSubmit() {
+function onSubmit() {
   const formEle = document.getElementById("inquiry-form");
   formEle.addEventListener("submit", (e) => {
-    e.preventDefault();
-    onSubmit();
+    e.preventDefault(); //prevent page reload on submitting form
+    const submitBtn = document.getElementById("submit-btn");
+    submitBtn.disabled = true;
+    callAPI(formEle, submitBtn);
   });
 }
 
-function handleTryCatch(tryOrCatch) {
+function updateUI(tryOrCatch, submitBtn) {
   const modalImg = document.getElementById("modal-img");
   const modalP = document.getElementById("modal-p");
   const { isLocation } = getPathAndLocation();
@@ -43,67 +45,51 @@ function handleTryCatch(tryOrCatch) {
     modalP.innerHTML = "Unable to send request!";
   }
   showModal();
+  submitBtn.disabled = false;
 }
-console.log("window", window);
-function onSubmit() {
+
+function callAPI(formEle, submitBtn) {
   const URL =
-    "https://script.google.com/macros/s/AKfycbx3Ya-bsFY_C7JQe4m7udclScBOzXZrcKFN7i28w-AhMD9AUw8PQgyJ0rJ-5CDlhJAF/exec";
+    "https://script.google.com/macros/s/AKfycbysbbUN-lRSP13ngDwSbhOuCHOeSnIArp0SbKjpTLnnPNQSWL-On1pa63l7XG0oOWdj/exec";
 
-  const payload = {
-    name: document.getElementById("name").value,
-    phone: document.getElementById("phone").value,
-    fro: document.getElementById("from").value,
-    to: document.getElementById("to").value,
-    movingDate: document.getElementById("moving-date").value,
-    // status: "New",
-    // remarks: "",
-    // followUp: "No",
-  };
+  fetch(URL, {
+    method: "POST",
+    body: new FormData(formEle),
+    mode: "no-cors",
+  })
+    .then(() => {
+      updateUI("try", submitBtn);
+    })
+    .catch(() => {
+      updateUI("catch", submitBtn);
+    });
 
-  // fetch(document.getElementById("inquiry-form").action, {
-  //   method: "POST",
-  //   // headers: {
-  //   //   "Content-Type": "application/json",
-  //   // },
-  //   body: new FormData(document.getElementById("inquiry-form")),
-  //   mode: "no-cors",
-  // })
-  //   .then((res) => {
-  //     console.log('res', res);
-  //     res.text();
-  //     console.log('res2', res);
-  //     handleTryCatch("try");
-  //   })
-  //   .catch(() => {
-  //     handleTryCatch("catch");
-  //   });
+  // const subject = `Inquiry | ${payload.name}`;
+  // const emailContent = `You got an inquiry! <br /><br /> <b>Name:</b> ${payload.name} <br /> <b>Phone:</b> ${payload.phone} <br /> <b>Moving From:</b> ${payload.fro} <br /> <b>Moving To:</b> ${payload.to} <br /> <b>Requested Moving Date:</b> ${payload.movingDate} <br />`;
+  // const key = "C658082A837A6EF33562359FC952BB33D40E";
 
-  const subject = `Inquiry | ${payload.name}`;
-  const emailContent = `You got an inquiry! <br /><br /> <b>Name:</b> ${payload.name} <br /> <b>Phone:</b> ${payload.phone} <br /> <b>Moving From:</b> ${payload.fro} <br /> <b>Moving To:</b> ${payload.to} <br /> <b>Requested Moving Date:</b> ${payload.movingDate} <br />`;
-  const key = "C658082A837A6EF33562359FC952BB33D40E";
-
-  window.Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "eshagoyal98@gmail.com",
-    Password: key,
-    To: "eshagoyal98@gmail.com",
-    // From: document.getElementById("email").value,
-    From: "tanwarankit04@gmail.com",
-    Subject: subject,
-    Body: emailContent,
-  }).then((message) => {
-    const modalImg = document.getElementById("modal-img");
-    const modalP = document.getElementById("modal-p");
-    const { isLocation } = getPathAndLocation();
-    if (message === "OK") {
-      modalImg.src = isLocation ? "../assets/tick.svg" : "assets/tick.svg";
-      modalP.innerHTML = "Email sent successfully!";
-    } else {
-      modalImg.src = isLocation ? "../assets/cross.svg" : "assets/cross.svg";
-      modalP.innerHTML = "Unable to send email!";
-    }
-    showModal();
-  });
+  // window.Email.send({
+  //   Host: "smtp.elasticemail.com",
+  //   Username: "eshagoyal98@gmail.com",
+  //   Password: key,
+  //   To: "eshagoyal98@gmail.com",
+  //   // From: document.getElementById("email").value,
+  //   From: "tanwarankit04@gmail.com",
+  //   Subject: subject,
+  //   Body: emailContent,
+  // }).then((message) => {
+  //   const modalImg = document.getElementById("modal-img");
+  //   const modalP = document.getElementById("modal-p");
+  //   const { isLocation } = getPathAndLocation();
+  //   if (message === "OK") {
+  //     modalImg.src = isLocation ? "../assets/tick.svg" : "assets/tick.svg";
+  //     modalP.innerHTML = "Email sent successfully!";
+  //   } else {
+  //     modalImg.src = isLocation ? "../assets/cross.svg" : "assets/cross.svg";
+  //     modalP.innerHTML = "Unable to send email!";
+  //   }
+  //   showModal();
+  // });
 }
 
 function createHtmlContent(isLocation) {
@@ -223,18 +209,18 @@ function createHtmlContent(isLocation) {
 
   <div id="form-detail" class="contact border-bottom-class">
     <div class="iyohgi" class="flex-div col-div" style="align-items: unset;">
-      <h2 class="i78bq-2-3" style="text-align: center;">INQUIRE</h2>
+      <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large; text-align: center;">Inquire</h1>
       <div style="display: flex; justify-content: space-between; flex-direction: row;">
         <div id="customer-form">
-          <form method="post" action="https://script.google.com/macros/s/AKfycbxYR5sdmfJkX45IoQR9rkh8f0-SSNP4J9F7NcxinNSkmGxPSzh_gEgNkqS7WsEg50E8/exec" id="inquiry-form" class="flex-div col-div" style="align-items: flex-start;">
+          <form id="inquiry-form" class="flex-div col-div" style="align-items: flex-start;">
             <label for="name">Name*</label>
             <input id="name" name="name" placeholder="Enter Name" autocomplete="off" required></input>
             <label for="phone">Phone*</label>
             <input id="phone" name="phone" type="tel" placeholder="Enter Phone" autocomplete="off" required pattern="[0-9]{10}"></input>
-            <label for="email">Email*</label>
-            <input id="email" name="email" type="email" placeholder="Enter Email" autocomplete="off" required></input>
-            <label for="from">Moving From*</label>
-            <select id="from" name="fro" placeholder="Select Location" autocomplete="off" required>
+            <!--<label for="email">Email*</label>
+            <input id="email" name="email" type="email" placeholder="Enter Email" autocomplete="off" required></input> -->
+            <label for="movingFrom">Moving From*</label>
+            <select id="movingFrom" name="movingFrom" placeholder="Select Location" autocomplete="off" required>
               <option value="Gurgaon">Gurgaon</option>
               <option value="Delhi">Delhi</option>
             </select>
@@ -752,7 +738,7 @@ function createHtmlContent(isLocation) {
           <a id="i2tpy3-2" href=""><img id="i3gekg-2" height="25px" width="25px" src=${
             isLocation ? "../assets/insta.svg" : "assets/insta.svg"
           } /></a>
-          <a id="i2tpy3-5" href="https://wa.me/+919911198767" target="_blank"><img id="i3gekg-3" height="30px" width="30px" src=${
+          <a id="i2tpy3-5" href="https://wa.me/+919911198767" target="_blank"><img id="i3gekg-3" height="31px" width="31px" src=${
             isLocation ? "../assets/whatsapp.svg" : "assets/whatsapp.svg"
           } /></a>
           <a id="i2tpy3-3" href="mailto:someone@example.com"><img id="i3gekg-4" height="30px" width="30px"
@@ -813,4 +799,4 @@ main();
 
 // Events handling
 closeModal();
-stopReloadOnSubmit();
+onSubmit();

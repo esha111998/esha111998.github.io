@@ -541,6 +541,7 @@
     font-size: 14px;
     color: dimgray;
     border-radius: 5px;
+    height: 480px;
   }
 
   #submit-btn{
@@ -549,9 +550,15 @@
     margin-top: 15px;
     border-radius:4px;
     color: white;
-    border: #9E3FFD;
-    background-color: #9E3FFD;
+    border: #16163F;
+    background-color: #16163F;
     cursor: pointer;
+  }
+
+  #submit-btn:disabled{
+    border: #3d3d4a;
+    background-color: #3d3d4a;
+    cursor: not-allowed;
   }
 
   .contact-details{
@@ -719,7 +726,7 @@
     }
   }
   @media (max-width: 575px){
-    #max-width-content, .fill-form-img-div{
+    #max-width-content{
       display: none;
     }
     #iu06p{
