@@ -23,10 +23,21 @@ function closeModal() {
   };
 }
 
+function validateDateField() {
+  const dateField = document.getElementById("moving-date");
+  const dateObj = new Date(dateField.value);
+  const currentDate = new Date();
+  if (dateObj < currentDate) {
+    dateField.setCustomValidity("Please enter the future date");
+    dateField.reportValidity();
+  }
+}
+
 function onSubmit() {
   const formEle = document.getElementById("inquiry-form");
   formEle.addEventListener("submit", (e) => {
     e.preventDefault(); //prevent page reload on submitting form
+    validateDateField(); //if date validation fails then onSubmit will not execute further
     const submitBtn = document.getElementById("submit-btn");
     submitBtn.disabled = true;
     callAPI(formEle, submitBtn);
@@ -210,7 +221,7 @@ function createHtmlContent(isLocation) {
   <div id="form-detail" class="contact border-bottom-class">
     <div class="iyohgi" class="flex-div col-div" style="align-items: unset;">
       <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large; text-align: center;">Inquire</h1>
-      <div style="display: flex; justify-content: space-between; flex-direction: row;">
+      <div class="inquire-tos-content">
         <div id="customer-form">
           <form id="inquiry-form" class="flex-div col-div" style="align-items: flex-start;">
             <label for="name">Name*</label>
@@ -246,7 +257,7 @@ function createHtmlContent(isLocation) {
   <div id="take-our-services" class="contact border-bottom-class" style="background: #94ddd7;">
     <div class="iyohgi" style="text-align: center;">
       <!--<h2 class="i78bq-2-3">TAKE OUR SERVICES</h2>-->
-      <div style="display: flex; justify-content: space-between; flex-direction: row;">
+      <div class="inquire-tos-content">
         <div class="fill-form-img-div" style="align-self: center;">
           <img height="400px" src=${
             isLocation
@@ -255,8 +266,14 @@ function createHtmlContent(isLocation) {
           }></img>
         </div>
         <div style="text-align: left;" class="contact-details">
-          <h4>Worried About Your Next Relocation During Busy Schedule??</h4>
-          <h1 style="font-size: xxx-large;">Let Us Help You!!</h1>
+          <h3>Worried About Your Next Relocation During Busy Schedule??</h3><br />
+          <h2 style="font-size: xxx-large;">Let Us Help You!!</h2><br /><br />
+          <p>
+          Moving to a new place? Let us take the stress out of your relocation journey and turn it into a seamless experience you'll remember fondly. At Day Night Packers and Movers, we're not just movers – we're your partners in making your transition smooth, efficient, and worry-free.
+          </p><br /><br />
+          <p>
+          From our transparent pricing and on-time delivery to our friendly and reliable service, we're committed to going above and beyond to exceed your expectations every step of the way.
+          </p>
         </div>
       </div>
     </div>
@@ -265,7 +282,7 @@ function createHtmlContent(isLocation) {
   <div id="our-services" class="contact border-bottom-class" style="background: #ffc7a9;">
     <div class="iyohgi" style="text-align: center;">
       <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">What we actually do?</h1>
-      <div style="display: flex; justify-content: space-around; flex-direction: row; align-items: center;">   
+      <div id="our-services-content">   
         <div>
           <ul class="service-desc" style="font-size: 18px; line-height: 2.0em;">
             <li><h2>Packers And Movers</h2></li>
@@ -290,14 +307,24 @@ function createHtmlContent(isLocation) {
   <div id="our-team" class="contact border-bottom-class" style="background: #5ad5ff;">
     <div class="iyohgi" style="text-align: center;">
       <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">Who we are?</h1>
-      <div style="display: flex; justify-content: space-between; flex-direction: row; align-items: center;">
+      <div id="our-team-content">
         <div class="fill-form-img-div" style="align-self: center;">
           <img height="400px" src=${
             isLocation ? "../assets/5OurTeam.gif" : "assets/5OurTeam.gif"
           }></img>
         </div>
-        <div style="text-align: left;">
-          <h4>We are your highly motivated and professional companions who are going to assist you with the requirements of your next relocation & movement with perfection. Our dedicated team is there to help you out round the clock to make a comfortable move.</h4>
+        <div class="contact-details" style="text-align: left;">
+          <ul gap="2px"><li>At Day Night Packers and Movers, we're your highly motivated and professional companions, dedicated to making your next relocation a stress-free experience.</li><br />
+
+          <li>Our team is here to assist you every step of the way with precision and perfection whether you're moving across town or across the country.</li><br />
+          
+          <li>Team of dedicated professionals trained to handle every aspect of your move, from packing and loading to transportation and unpacking.</li><br />
+          
+          <li>Years of expertise in the industry,  we are committed to providing you with the highest level of service and support. we'll be by your side around the clock.</li></ul><br /><br />
+          
+          <p>Contact us today to experience the difference our dedicated team can make in your next relocation journey.<br /><br /><br />
+          
+          <h2>Let's move forward together!</h2></p>
         </div>
       </div>
     </div>
@@ -306,7 +333,7 @@ function createHtmlContent(isLocation) {
   <div id="services" class="services border-bottom-class" style="margin: 0px;">
     <div id="iymxg" class="service-info">
       <h1 class="i78bq contact-details" style="font-size: xx-large;" data-custom-content="services">
-        OUR PRESENCE
+        Our presence
       </h1>
       <!-- <p id="iqrh3">
           Taking Your Business to
@@ -726,7 +753,7 @@ function createHtmlContent(isLocation) {
           }></img>
         </div>
         <div>
-        <p id="iqrh3-2-2" style="margin-bottom: 10px; margin-top: 20px; color: #282626;">Contact us</p>
+        <p id="iqrh3-2-2" class="contact-details" style="margin-bottom: 10px; margin-top: 20px;">Contact us</p>
         <!-- <div class="flex-div col-div" style="font-size: x-large;" id="ic40w5">
               <a class="contact-details" href="mailto:someone@example.com">abc.com</a>
               <a class="contact-details" href=“tel:9911198767">Tel: 9911198767</a>
@@ -754,11 +781,11 @@ function createHtmlContent(isLocation) {
     <!-- </div> -->
   </div>
 
-  <div class="copyright-footer">
-    <p id="iy2lbi">© 2035 by BizBud. Powered and secured by Wix</p>
+  <div class="copyright-footer" style="background-color: aliceblue;">
+    <p id="iy2lbi">© 2024 powered by Day Night Packers And Movers</p>
   </div>
 
-  <wix-bg-media id="bgMedia_comp-kq5dfsdh" data-container-id="comp-kq5dfsdh" data-container-size="0, 0"
+  <!--<wix-bg-media id="bgMedia_comp-kq5dfsdh" data-container-id="comp-kq5dfsdh" data-container-size="0, 0"
     data-page-id="qhya0" data-bg-effect-name="BgParallax" class="SUz0WK">
     <wow-image id="img_comp-kq5dfsdh"
       data-image-info='{"containerId":"comp-kq5dfsdh","alignType":"bottom_right","displayMode":"fill","targetWidth":980,"targetHeight":960,"isLQIP":true,"imageData":{"width":3840,"height":1800,"uri":"84770f_994ffe746a074d1f8a2ec9456a8bf1ff~mv2.png","name":"","displayMode":"fill"}}'
@@ -766,7 +793,7 @@ function createHtmlContent(isLocation) {
       data-src="https://static.wixstatic.com/media/84770f_994ffe746a074d1f8a2ec9456a8bf1ff~mv2.png/v1/fill/w_1081,h_960,al_br,q_90,usm_0.66_1.00_0.01,enc_auto/84770f_994ffe746a074d1f8a2ec9456a8bf1ff~mv2.png"
       class="HlRz5e Kv1aVt dLPlxY mNGsUM bgImage">
     </wow-image>
-  </wix-bg-media>
+  </wix-bg-media>-->
 
   <div id="modal" class="modal">
     <!-- Modal content -->

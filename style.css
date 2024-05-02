@@ -536,12 +536,28 @@
 
   #customer-form{
     padding: 20px;
-    width: 400px;
     background: whitesmoke;
     font-size: 14px;
-    color: dimgray;
-    border-radius: 5px;
+    color: black;
+    border-radius: 10px;
     height: 480px;
+    border: 2px solid black;
+  }
+
+  input[type="date"]{
+    position: relative;
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
   }
 
   #submit-btn{
@@ -565,9 +581,9 @@
     color: #16163F;
   }
 
-  .border-bottom-class{
+  /* .border-bottom-class{
     border-bottom: solid #000000;
-  }
+  } */
 
   .service-desc>li{
     text-align: left;
@@ -576,6 +592,26 @@
 
   ul{
     padding: 0px;
+  }
+
+  #our-team-content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #our-services-content{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .inquire-tos-content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
   }
 
   /* modal css starts*/
@@ -621,7 +657,15 @@
   }
   /* modal css ends */
 
+  @media (min-width: 992px){
+    #customer-form{
+      width: 350px;
+    }
+  }
   @media (max-width: 992px){
+    #customer-form{
+      width: 350px;
+    }
     .menu-box{
       display:block;
       width:25px;
@@ -726,6 +770,9 @@
     }
   }
   @media (max-width: 575px){
+    #our-team-content, #our-services-content, .inquire-tos-content{
+      flex-direction: column;
+    }
     #max-width-content{
       display: none;
     }
