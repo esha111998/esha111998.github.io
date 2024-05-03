@@ -541,6 +541,7 @@
     color: black;
     border-radius: 10px;
     height: 480px;
+    width: 40%;
     border: 2px solid black;
   }
 
@@ -657,14 +658,9 @@
   }
   /* modal css ends */
 
-  @media (min-width: 992px){
-    #customer-form{
-      width: 350px;
-    }
-  }
   @media (max-width: 992px){
     #customer-form{
-      width: 350px;
+      width: 30%;
     }
     .menu-box{
       display:block;
@@ -758,12 +754,21 @@
       font-size:30px;
     }
     .fill-form-img-div>img{
-      width: 200px;
+      width: 500px;
+      object-fit: cover;
     }
   }
   @media (max-width:768px){
+    #customer-form{
+      width: 40%;
+    }
     .fill-form-img-div>img{
-      width: 200px;
+      width: 275px;
+      object-fit: cover;
+    }
+    #our-team-content, #our-services-content, .inquire-tos-content{
+      gap: 30px;
+      justify-content: center;
     }
     .resp-menu{
       padding:25px 40px 25px 40px;
@@ -772,6 +777,16 @@
   @media (max-width: 575px){
     #our-team-content, #our-services-content, .inquire-tos-content{
       flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+    }
+    .service-cont{
+      white-space: unset;
+    }
+    .fill-form-img-div>img{
+      width: 100%;
+      height: auto;
+      object-fit: cover;
     }
     #max-width-content{
       display: none;
@@ -808,6 +823,7 @@
     #customer-form{
       right:7%;
       height:auto;
+      width: 100%;
     }
     .services{
       padding:60px 15px 80px 15px;
@@ -870,6 +886,14 @@
     }
     #iqrh3-2-2{
       font-size:25px;
+    }
+  }
+  @media (max-width: 250px){
+    #igiuzk{
+      flex-direction: column;
+    }
+    .iyohgi{
+      padding: 5px;
     }
   }
   
