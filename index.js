@@ -195,14 +195,14 @@ function createHtmlContent(isLocation) {
     <div class="iyohgi" style="text-align: center;">
       <div class="inquire-tos-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" width="600px" height="400px" src=${
+          <img alt="" width="600px" height="auto" src=${
             isLocation
               ? "../assets/3TakeOurServices.gif"
               : "assets/3TakeOurServices.gif"
           }></img>
         </div>
         <div style="text-align: left;" class="contact-details">
-          <h3>Worried About Your Next Relocation During Busy Schedule??</h3><br />
+          <p style="font-size: 19px; font-weight: 700;">Worried About Your Next Relocation During Busy Schedule??</p><br />
           <p style="font-size: xxx-large; font-weight: 800;">Let Us Help You!!</p><br /><br />
           <p>
           Moving to a new place? Let us take the stress out of your relocation journey and turn it into a seamless experience you'll remember fondly. At Day Night Packers and Movers, we're not just movers – we're your partners in making your transition smooth, efficient, and worry-free.
@@ -245,7 +245,7 @@ function createHtmlContent(isLocation) {
       <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">Who we are?</h1>
       <div id="our-team-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" width="600px" height="400px" src=${
+          <img alt="" width="600px" height="auto" src=${
             isLocation ? "../assets/5OurTeam.gif" : "assets/5OurTeam.gif"
           }></img>
         </div>
@@ -274,7 +274,7 @@ function createHtmlContent(isLocation) {
     </div>
     <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
       <div class="fill-form-img-div" style="align-self: center;">
-        <img alt="" width="600px" height="400px" src=${
+        <img alt="" width="500px" height="auto" src=${
           isLocation ? "../assets/AroundWorld.gif" : "assets/AroundWorld.gif"
         }></img>
       </div>
@@ -336,7 +336,7 @@ function createHtmlContent(isLocation) {
       <h1 class="contact-details" style="font-size: xx-large;">Still have doubts?</h1>
       <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" width="500px" height="400px" src=${
+          <img alt="" width="500px" height="auto" src=${
             isLocation ? "../assets/6ContactUs.gif" : "assets/6ContactUs.gif"
           }></img>
         </div>
