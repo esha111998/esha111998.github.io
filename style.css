@@ -8,11 +8,11 @@
     position:sticky;
     z-index:100;
     top:0;
-    padding:10px;
+    /* padding:10px; */
     background:rgb(255,255,255);
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
+    /* display:flex; */
+    /* justify-content:space-around; */
+    /* align-items:center; */
     border:1px solid rgb(231,231,235);
   }
   label{
@@ -29,8 +29,8 @@
     background-color: white;
   }
   input:focus-visible, select:focus-visible{
-    border: 1px solid #9E3FFD;
-    outline-color: #9E3FFD;
+    border: 1px solid #ffc452;
+    outline-color: #ffc452;
     outline-style: auto;
     outline-width: 1px;
   }
@@ -50,7 +50,7 @@
   }
   .nav-inner{
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items:center;
     width:100%;
   }
@@ -60,7 +60,7 @@
   .learn-more{
     color:white;
     padding:15px 25px 15px 25px;
-    background:#9E3FFD;
+    background:#ffc452;
     border:1px solid white;
     font-size:20px;
     border-radius:30px;
@@ -150,6 +150,15 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
 
+  .process-cards{
+    min-width: 200px;
+    max-width: 250px;
+    /* height: 50px; */
+    padding: 10px;
+    text-align: center;
+    background-color: #ffae15;
+  }
+
   #customer-form{
     padding: 20px;
     background: whitesmoke;
@@ -181,10 +190,11 @@
     width: -webkit-fill-available;
     height: 35px;
     margin-top: 15px;
-    border-radius:4px;
-    color: white;
-    border: #16163F;
-    background-color: #16163F;
+    border-radius: 4px;
+    color: black;
+    font-weight: 800;
+    border: #ffc452;
+    background-color: #ffc452;
     cursor: pointer;
   }
 
@@ -259,6 +269,94 @@
   }
   /* modal css ends */
 
+  /* carousal css starts */
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  /* carousal css end */
+
   @media (max-width: 992px){
     #customer-form{
       width: 30%;
@@ -295,6 +393,9 @@
     }
   }
   @media (max-width: 575px){
+    .process-cards{
+      align-self: center !important;
+    }
     #our-team-content, #our-services-content, .inquire-tos-content{
       flex-direction: column;
       gap: 30px;
@@ -308,7 +409,7 @@
       height: auto;
       object-fit: cover;
     }
-    #max-width-content{
+    .max-width-content{
       display: none;
     }
     .learn-more{

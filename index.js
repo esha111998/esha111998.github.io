@@ -103,16 +103,34 @@ function callAPI(formEle, submitBtn) {
   // });
 }
 
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
 function createHtmlContent(isLocation) {
   return `
   <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="iu9w" class="navbar-cont">
-    <div id="ibulz" class="nav-inner" style="justify-content: space-between;">
+  <div id="iu9w" class="navbar-cont" style="background: #fffbf6;">
+    <div id="ibulz" class="nav-inner">
       <div class="flex-div row-div" style="gap: 10px;">
         <img alt="" src=${
           isLocation ? "../assets/logo.png" : "assets/logo.png"
         } width="auto" height="100px"></img>
-        <h1 id="max-width-content">Packers and Movers</h1>
+        <div class="flex-div col-div">
+          <div class="flex-div row-div" style="align-self: flex-start;">
+            <h2 class="max-width-content"><i>Day</i></h2>
+            <h2 class="max-width-content" style="color: red;"><i>Night</i></h2>
+          </div>
+            <h2 class="max-width-content"><i>Packers and Movers</i></h2>
+        </div>
       </div>
       <div class="flex-div col-div">
         <div class="flex-div row-div" style="align-self: flex-start;">
@@ -125,7 +143,7 @@ function createHtmlContent(isLocation) {
           <img alt="" src=${
             isLocation ? "../assets/mail.svg" : "assets/mail.svg"
           } width="30px" height="30px"></img>
-          <p style="margin: 5px; font-size: 16px; font-weight: 700;">abc.com</p>
+          <p style="margin: 5px; font-size: 16px; font-weight: 700; line-break: anywhere;">daynightpackersandmovers@gmail.com</p>
         </div>
       </div>
     </div>
@@ -266,6 +284,139 @@ function createHtmlContent(isLocation) {
     </div>
   </div>
 
+  <div id="process-steps" class="contact border-bottom-class" style="background: #94ddd7;">
+    <div class="iyohgi" style="text-align: center;">
+      <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">How it works?</h1>
+      <div class="">
+        <!--<div class="fill-form-img-div" style="align-self: center;">
+          <img alt="" width="600px" height="auto" src=${
+            isLocation
+              ? "../assets/3TakeOurServices.gif"
+              : "assets/3TakeOurServices.gif"
+          }></img>
+        </div>-->
+        <div style="text-align: left; display: flex; flex-direction: column; gap: 40px; padding: 0px 150px 0px 150px;">
+          <div class="card process-cards" style="align-self: flex-start;"><b style="font-size: 30px;">01 </b>  Contact us</div>
+          <div class="card process-cards" style="align-self: flex-end;"><b style="font-size: 30px;">02 </b>  Get a free survey</div>
+          <div class="card process-cards" style="align-self: flex-start;"><b style="font-size: 30px;">03 </b>  Get quotation</div>
+          <div class="card process-cards" style="align-self: flex-end;"><b style="font-size: 30px;">04 </b>  Book us</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="charges-table" class="contact border-bottom-class" style="background: blue;">
+    <div class="iyohgi" style="text-align: center;">
+      <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">Our charges</h1>
+      <div class="flex-div">
+        <table border>
+          <thead style="background: white;">
+            <tr>
+              <td>a</td>
+              <td>b</td>
+              <td>c</td>
+              <td>d</td>
+              <td>e</td>
+              <td>f</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>a</td>
+              <td>b</td>
+              <td>c</td>
+              <td>d</td>
+              <td>e</td>
+              <td>f</td>
+            </tr>
+            <tr>
+              <td>a</td>
+              <td>b</td>
+              <td>c</td>
+              <td>d</td>
+              <td>e</td>
+              <td>f</td>
+            </tr>
+            <tr>
+              <td>a</td>
+              <td>b</td>
+              <td>c</td>
+              <td>d</td>
+              <td>e</td>
+              <td>f</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="client-reviews" class="contact border-bottom-class" style="background: navajowhite;">
+    <div class="iyohgi" style="text-align: center;">
+      <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">What our customers say about us?</h1>
+      <div class="">
+        <!--<div class="fill-form-img-div" style="align-self: center;">
+          <img alt="" width="600px" height="auto" src=${
+            isLocation
+              ? "../assets/3TakeOurServices.gif"
+              : "assets/3TakeOurServices.gif"
+          }></img>
+        </div>-->
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <img alt="" src=${
+              isLocation
+                ? "../assets/client1.jpg"
+                : "assets/client1.jpg"
+            } height="200px" width="200px">
+            <div class="text">Caption Text</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img alt="" src=${
+              isLocation
+                ? "../assets/client2.jpg"
+                : "assets/client2.jpg"
+            } height="200px" width="200px">
+            <div class="text">Caption Two</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img alt="" src=${
+              isLocation
+                ? "../assets/client3.jpg"
+                : "assets/client3.jpg"
+            } height="200px" width="200px">
+            <div class="text">Caption Three</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img alt="" src=${
+              isLocation
+                ? "../assets/client4.jpg"
+                : "assets/client4.jpg"
+            } height="200px" width="200px">
+            <div class="text">Caption Four</div>
+          </div>
+
+          <!-- Next and previous buttons
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div id="services" class="services border-bottom-class" style="margin: 0px;">
     <div id="iymxg" class="service-info">
       <h1 class="i78bq contact-details" style="font-size: xx-large;" data-custom-content="services">
@@ -352,7 +503,7 @@ function createHtmlContent(isLocation) {
           <a id="i2tpy3-5" aria-label="whatsapp" href="https://wa.me/+919911198767" target="_blank"><img alt="chat on whatsapp" id="i3gekg-3" height="31px" width="31px" src=${
             isLocation ? "../assets/whatsapp.svg" : "assets/whatsapp.svg"
           } /></a>
-          <a id="i2tpy3-3" aria-label="email" href="mailto:someone@example.com"><img alt="compose email" id="i3gekg-4" height="30px" width="30px"
+          <a id="i2tpy3-3" aria-label="email" href="mailto:daynightpackersandmovers@gmail.com"><img alt="compose email" id="i3gekg-4" height="30px" width="30px"
               src=${
                 isLocation ? "../assets/email.svg" : "assets/email.svg"
               } /></a>
@@ -399,3 +550,5 @@ main();
 // Events handling
 closeModal();
 onSubmit();
+let slideIndex = 0;
+showSlides();
