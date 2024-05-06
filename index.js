@@ -104,14 +104,18 @@ function callAPI(formEle, submitBtn) {
 }
 
 function showSlides() {
-  let i;
   let slides = document.getElementsByClassName("mySlides");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
@@ -121,7 +125,7 @@ function createHtmlContent(isLocation) {
   <div id="iu9w" class="navbar-cont" style="background: #fffbf6;">
     <div id="ibulz" class="nav-inner">
       <div class="flex-div row-div" style="gap: 10px;">
-        <img alt="" src=${
+        <img alt="" loading="lazy" src=${
           isLocation ? "../assets/logo.png" : "assets/logo.png"
         } width="auto" height="100px"></img>
         <div class="flex-div col-div">
@@ -134,13 +138,13 @@ function createHtmlContent(isLocation) {
       </div>
       <div class="flex-div col-div">
         <div class="flex-div row-div" style="align-self: flex-start;">
-          <img alt="" src=${
+          <img alt="" loading="lazy" src=${
             isLocation ? "../assets/phone.svg" : "assets/phone.svg"
           } width="30px" height="30px"></img>
           <p style="font-size: 16px; font-weight: 700;">+91-9911198767</p>
         </div>
         <div class="flex-div row-div" style="align-self: flex-start;">
-          <img alt="" src=${
+          <img alt="" loading="lazy" src=${
             isLocation ? "../assets/mail.svg" : "assets/mail.svg"
           } width="30px" height="30px"></img>
           <p style="margin: 5px; font-size: 16px; font-weight: 700; line-break: anywhere;">daynightpackersandmovers@gmail.com</p>
@@ -152,7 +156,7 @@ function createHtmlContent(isLocation) {
   <div id="day-night" class="contact border-bottom-class" style="background: white;">
     <div style="display: flex; justify-content: space-between; flex-direction: row; align-items: center;">
       <div class="fill-form-img-div" style="align-self: center;">  
-        <img alt="" width="600px" height="auto" src=${
+        <img alt="" loading="lazy" width="600px" height="auto" src=${
           isLocation
             ? "../assets/1DayNightTheme.gif"
             : "assets/1DayNightTheme.gif"
@@ -201,7 +205,7 @@ function createHtmlContent(isLocation) {
           </form>
         </div>
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" width="600px" height="auto" src=${
+          <img alt="" loading="lazy" width="600px" height="auto" src=${
             isLocation ? "../assets/2QueryForm.gif" : "assets/2QueryForm.gif"
           }></img>
         </div>
@@ -213,7 +217,7 @@ function createHtmlContent(isLocation) {
     <div class="iyohgi" style="text-align: center;">
       <div class="inquire-tos-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" width="600px" height="auto" src=${
+          <img alt="" loading="lazy" width="600px" height="auto" src=${
             isLocation
               ? "../assets/3TakeOurServices.gif"
               : "assets/3TakeOurServices.gif"
@@ -250,7 +254,7 @@ function createHtmlContent(isLocation) {
           </ul>
         </div>
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" width="600px" height="auto" src=${
+          <img alt="" loading="lazy" width="600px" height="auto" src=${
             isLocation ? "../assets/4OurService.gif" : "assets/4OurService.gif"
           }></img>
         </div>
@@ -263,7 +267,7 @@ function createHtmlContent(isLocation) {
       <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">Who we are?</h1>
       <div id="our-team-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" width="600px" height="auto" src=${
+          <img alt="" loading="lazy" width="600px" height="auto" src=${
             isLocation ? "../assets/5OurTeam.gif" : "assets/5OurTeam.gif"
           }></img>
         </div>
@@ -289,7 +293,7 @@ function createHtmlContent(isLocation) {
       <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">How it works?</h1>
       <div class="">
         <!--<div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" width="600px" height="auto" src=${
+          <img alt="" loading="lazy" width="600px" height="auto" src=${
             isLocation
               ? "../assets/3TakeOurServices.gif"
               : "assets/3TakeOurServices.gif"
@@ -356,7 +360,7 @@ function createHtmlContent(isLocation) {
       <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">What our customers say about us?</h1>
       <div class="">
         <!--<div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" width="600px" height="auto" src=${
+          <img alt="" loading="lazy" width="600px" height="auto" src=${
             isLocation
               ? "../assets/3TakeOurServices.gif"
               : "assets/3TakeOurServices.gif"
@@ -365,7 +369,7 @@ function createHtmlContent(isLocation) {
         <div class="slideshow-container">
           <!-- Full-width images with number and caption text -->
           <div class="mySlides fade">
-            <img alt="" src=${
+            <img alt="" loading="lazy" src=${
               isLocation
                 ? "../assets/client1.jpg"
                 : "assets/client1.jpg"
@@ -374,7 +378,7 @@ function createHtmlContent(isLocation) {
           </div>
 
           <div class="mySlides fade">
-            <img alt="" src=${
+            <img alt="" loading="lazy" src=${
               isLocation
                 ? "../assets/client2.jpg"
                 : "assets/client2.jpg"
@@ -383,7 +387,7 @@ function createHtmlContent(isLocation) {
           </div>
 
           <div class="mySlides fade">
-            <img alt="" src=${
+            <img alt="" loading="lazy" src=${
               isLocation
                 ? "../assets/client3.jpg"
                 : "assets/client3.jpg"
@@ -392,7 +396,7 @@ function createHtmlContent(isLocation) {
           </div>
 
           <div class="mySlides fade">
-            <img alt="" src=${
+            <img alt="" loading="lazy" src=${
               isLocation
                 ? "../assets/client4.jpg"
                 : "assets/client4.jpg"
@@ -425,7 +429,7 @@ function createHtmlContent(isLocation) {
     </div>
     <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
       <div class="fill-form-img-div" style="align-self: center;">
-        <img alt="" width="500px" height="auto" src=${
+        <img alt="" loading="lazy" width="500px" height="auto" src=${
           isLocation ? "../assets/AroundWorld.gif" : "assets/AroundWorld.gif"
         }></img>
       </div>
@@ -487,27 +491,27 @@ function createHtmlContent(isLocation) {
       <h1 class="contact-details" style="font-size: xx-large;">Still have doubts?</h1>
       <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" width="500px" height="auto" src=${
+          <img alt="" loading="lazy" width="500px" height="auto" src=${
             isLocation ? "../assets/6ContactUs.gif" : "assets/6ContactUs.gif"
           }></img>
         </div>
         <div>
         <p id="iqrh3-2-2" class="contact-details" style="margin-bottom: 10px; margin-top: 20px;">Contact us</p>
         <div id="igiuzk" class="flex-div row-div">
-          <a id="i2tpy3" aria-label="facebook" href=""><img alt="facebook page link" id="i3gekg" height="38px" width="38px" src=${
+          <a id="i2tpy3" aria-label="facebook" href=""><img alt="facebook page link" loading="lazy" id="i3gekg" height="38px" width="38px" src=${
             isLocation ? "../assets/fb.svg" : "assets/fb.svg"
           } /></a>
-          <a id="i2tpy3-2" aria-label="instagram" href=""><img alt="instagram page link" id="i3gekg-2" height="25px" width="25px" src=${
+          <a id="i2tpy3-2" aria-label="instagram" href=""><img alt="instagram page link" loading="lazy" id="i3gekg-2" height="25px" width="25px" src=${
             isLocation ? "../assets/insta.svg" : "assets/insta.svg"
           } /></a>
-          <a id="i2tpy3-5" aria-label="whatsapp" href="https://wa.me/+919911198767" target="_blank"><img alt="chat on whatsapp" id="i3gekg-3" height="31px" width="31px" src=${
+          <a id="i2tpy3-5" aria-label="whatsapp" href="https://wa.me/+919911198767" target="_blank"><img alt="chat on whatsapp" loading="lazy" id="i3gekg-3" height="31px" width="31px" src=${
             isLocation ? "../assets/whatsapp.svg" : "assets/whatsapp.svg"
           } /></a>
-          <a id="i2tpy3-3" aria-label="email" href="mailto:daynightpackersandmovers@gmail.com"><img alt="compose email" id="i3gekg-4" height="30px" width="30px"
+          <a id="i2tpy3-3" aria-label="email" href="mailto:daynightpackersandmovers@gmail.com"><img alt="compose email" loading="lazy" id="i3gekg-4" height="30px" width="30px"
               src=${
                 isLocation ? "../assets/email.svg" : "assets/email.svg"
               } /></a>
-          <a aria-label="mobile" href=tel:+919911198767><img alt="call" id="i3gekg-5" height="30px" width="30px" src=${
+          <a aria-label="mobile" href=tel:+919911198767><img alt="call" loading="lazy" id="i3gekg-5" height="30px" width="30px" src=${
             isLocation ? "../assets/tel.svg" : "assets/tel.svg"
           } /></a>
         </div>
@@ -521,7 +525,7 @@ function createHtmlContent(isLocation) {
 
   <div id="modal" class="modal">
     <div class="modal-content flex-div col-div">
-      <img alt="" id="modal-img" width="50px" height="50px"></img>
+      <img alt="" loading="lazy" id="modal-img" width="50px" height="50px"></img>
       <p id="modal-p" style="text-align: center";></p>
     </div>
   </div>`;
