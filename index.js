@@ -33,18 +33,22 @@ function validateDateField() {
   }
 }
 
+function processFormSubmission(e) {
+  e.preventDefault(); //prevent page reload on submitting form
+  validateDateField(); //if date validation fails then onSubmit will not execute further
+  const formEle = document.getElementById("inquiry-form");
+  const submitBtn = document.getElementById("submit-btn");
+  submitBtn.disabled = true;
+  callAPI(formEle, submitBtn);
+};
+
 function onSubmit() {
   const formEle = document.getElementById("inquiry-form");
-  formEle.addEventListener("submit", (e) => {
-    e.preventDefault(); //prevent page reload on submitting form
-    validateDateField(); //if date validation fails then onSubmit will not execute further
-    const submitBtn = document.getElementById("submit-btn");
-    submitBtn.disabled = true;
-    callAPI(formEle, submitBtn);
-  });
+  formEle.addEventListener("submit", processFormSubmission);
 }
 
-function updateUI(tryOrCatch, submitBtn) {
+function updateUI(tryOrCatch, submitBtn, formEle) {
+  formEle.removeEventListener("submit", processFormSubmission);
   const modalImg = document.getElementById("modal-img");
   const modalP = document.getElementById("modal-p");
   const { isLocation } = getPathAndLocation();
@@ -69,10 +73,10 @@ function callAPI(formEle, submitBtn) {
     mode: "no-cors",
   })
     .then(() => {
-      updateUI("try", submitBtn);
+      updateUI("try", submitBtn, formEle);
     })
     .catch(() => {
-      updateUI("catch", submitBtn);
+      updateUI("catch", submitBtn, formEle);
     });
 
   // const subject = `Inquiry | ${payload.name}`;
