@@ -129,7 +129,7 @@ function createHtmlContent(isLocation) {
   <div id="iu9w" class="navbar-cont" style="background: #fffbf6;">
     <div id="ibulz" class="nav-inner">
       <div class="flex-div row-div" style="gap: 10px;">
-        <img alt="" loading="lazy" src=${
+        <img alt="" src=${
           isLocation ? "../assets/logo.png" : "assets/logo.png"
         } width="auto" height="100px"></img>
         <div class="flex-div col-div">
@@ -142,13 +142,13 @@ function createHtmlContent(isLocation) {
       </div>
       <div class="flex-div col-div">
         <div class="flex-div row-div" style="align-self: flex-start;">
-          <img alt="" loading="lazy" src=${
+          <img alt="" src=${
             isLocation ? "../assets/phone.svg" : "assets/phone.svg"
           } width="30px" height="30px"></img>
           <p style="font-size: 16px; font-weight: 700;">+91-9911198767</p>
         </div>
         <div class="flex-div row-div" style="align-self: flex-start;">
-          <img alt="" loading="lazy" src=${
+          <img alt="" src=${
             isLocation ? "../assets/mail.svg" : "assets/mail.svg"
           } width="30px" height="30px"></img>
           <p style="margin: 5px; font-size: 16px; font-weight: 700; line-break: anywhere;">daynightpackersandmovers@gmail.com</p>
@@ -160,7 +160,7 @@ function createHtmlContent(isLocation) {
   <div id="day-night" class="contact border-bottom-class" style="background: white;">
     <div style="display: flex; justify-content: space-between; flex-direction: row; align-items: center;">
       <div class="fill-form-img-div" style="align-self: center;">  
-        <img alt="" loading="lazy" width="600px" height="auto" src=${
+        <img alt="" width="600px" height="auto" src=${
           isLocation
             ? "../assets/1DayNightTheme.gif"
             : "assets/1DayNightTheme.gif"
