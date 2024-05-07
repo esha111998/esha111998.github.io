@@ -64,20 +64,34 @@ function updateUI(tryOrCatch, submitBtn, formEle) {
 }
 
 function callAPI(formEle, submitBtn) {
-  const URL =
-    "https://script.google.com/macros/s/AKfycbysbbUN-lRSP13ngDwSbhOuCHOeSnIArp0SbKjpTLnnPNQSWL-On1pa63l7XG0oOWdj/exec";
+  const w = new Worker('worker.js');
+  const data = JSON.parse(JSON.stringify(formEle));
+  w.postMessage(data);
 
-  fetch(URL, {
-    method: "POST",
-    body: new FormData(formEle),
-    mode: "no-cors",
-  })
-    .then(() => {
+  w.onmessage = function(e) {
+    console.log('inside on msg');
+    if (e.data === "success") {
       updateUI("try", submitBtn, formEle);
-    })
-    .catch(() => {
+      w.terminate();
+    } else {
       updateUI("catch", submitBtn, formEle);
-    });
+      w.terminate();
+    }
+  };
+  // const URL =
+  //   "https://script.google.com/macros/s/AKfycbysbbUN-lRSP13ngDwSbhOuCHOeSnIArp0SbKjpTLnnPNQSWL-On1pa63l7XG0oOWdj/exec";
+
+  // fetch(URL, {
+  //   method: "POST",
+  //   body: new FormData(formEle),
+  //   mode: "no-cors",
+  // })
+  //   .then(() => {
+  //     updateUI("try", submitBtn, formEle);
+  //   })
+  //   .catch(() => {
+  //     updateUI("catch", submitBtn, formEle);
+  //   });
 
   // const subject = `Inquiry | ${payload.name}`;
   // const emailContent = `You got an inquiry! <br /><br /> <b>Name:</b> ${payload.name} <br /> <b>Phone:</b> ${payload.phone} <br /> <b>Moving From:</b> ${payload.fro} <br /> <b>Moving To:</b> ${payload.to} <br /> <b>Requested Moving Date:</b> ${payload.movingDate} <br />`;
