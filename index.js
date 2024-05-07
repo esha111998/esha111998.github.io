@@ -62,39 +62,22 @@ function updateUI(tryOrCatch, submitBtn, formEle) {
   showModal();
   submitBtn.disabled = false;
 }
-console.log('LOAD')
+
 function callAPI(formEle, submitBtn) {
-  const w = new Worker('worker.js');
-  const formData = new FormData(formEle)
-  const data = JSON.parse(JSON.stringify(formData));
-  w.postMessage(data);
+  const URL =
+    "https://script.google.com/macros/s/AKfycbysbbUN-lRSP13ngDwSbhOuCHOeSnIArp0SbKjpTLnnPNQSWL-On1pa63l7XG0oOWdj/exec";
 
-  w.onmessage = function(e) {
-    console.log('inside on msg', e);
-    if (e.data === "success") {
-      console.log('in IF');
+  fetch(URL, {
+    method: "POST",
+    body: new FormData(formEle),
+    mode: "no-cors",
+  })
+    .then(() => {
       updateUI("try", submitBtn, formEle);
-      w.terminate();
-    } else {
-      console.log('in ELSE');
+    })
+    .catch(() => {
       updateUI("catch", submitBtn, formEle);
-      w.terminate();
-    }
-  };
-  // const URL =
-  //   "https://script.google.com/macros/s/AKfycbysbbUN-lRSP13ngDwSbhOuCHOeSnIArp0SbKjpTLnnPNQSWL-On1pa63l7XG0oOWdj/exec";
-
-  // fetch(URL, {
-  //   method: "POST",
-  //   body: new FormData(formEle),
-  //   mode: "no-cors",
-  // })
-  //   .then(() => {
-  //     updateUI("try", submitBtn, formEle);
-  //   })
-  //   .catch(() => {
-  //     updateUI("catch", submitBtn, formEle);
-  //   });
+    });
 
   // const subject = `Inquiry | ${payload.name}`;
   // const emailContent = `You got an inquiry! <br /><br /> <b>Name:</b> ${payload.name} <br /> <b>Phone:</b> ${payload.phone} <br /> <b>Moving From:</b> ${payload.fro} <br /> <b>Moving To:</b> ${payload.to} <br /> <b>Requested Moving Date:</b> ${payload.movingDate} <br />`;
