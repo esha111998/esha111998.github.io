@@ -7,7 +7,7 @@ onmessage = function(e) {
     console.log('parsed e', data);
   fetch(URL, {
     method: "POST",
-    body: new FormData(data),
+    body: data,
     mode: "no-cors",
   })
     .then(() => {

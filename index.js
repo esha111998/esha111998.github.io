@@ -62,10 +62,11 @@ function updateUI(tryOrCatch, submitBtn, formEle) {
   showModal();
   submitBtn.disabled = false;
 }
-
+console.log('LOAD')
 function callAPI(formEle, submitBtn) {
   const w = new Worker('worker.js');
-  const data = JSON.parse(JSON.stringify(formEle));
+  const formData = new FormData(formEle)
+  const data = JSON.parse(JSON.stringify(formData));
   w.postMessage(data);
 
   w.onmessage = function(e) {
