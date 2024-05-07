@@ -69,11 +69,13 @@ function callAPI(formEle, submitBtn) {
   w.postMessage(data);
 
   w.onmessage = function(e) {
-    console.log('inside on msg');
+    console.log('inside on msg', e);
     if (e.data === "success") {
+      console.log('in IF');
       updateUI("try", submitBtn, formEle);
       w.terminate();
     } else {
+      console.log('in ELSE');
       updateUI("catch", submitBtn, formEle);
       w.terminate();
     }
