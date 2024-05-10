@@ -124,34 +124,35 @@ function showSlides() {
 }
 
 function createHtmlContent(isLocation) {
+  const brand = "#FF5823";
   return `
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="iu9w" class="navbar-cont" style="background: #fffbf6;">
     <div id="ibulz" class="nav-inner">
-      <div class="flex-div row-div" style="gap: 10px;">
-        <img alt="" src=${
-          isLocation ? "../assets/logo.png" : "assets/logo.png"
+      <div class="flex-div">
+        <img id="logo" alt="" src=${
+          isLocation ? "../assets/logonew.png" : "assets/logonew.png"
         } width="auto" height="100px"></img>
-        <div class="flex-div col-div">
+        <!--<div class="flex-div col-div">
           <div class="flex-div row-div" style="align-self: flex-start;">
             <h2 class="max-width-content"><i>Day</i></h2>
             <h2 class="max-width-content" style="color: red;"><i>Night</i></h2>
           </div>
             <h2 class="max-width-content"><i>Packers and Movers</i></h2>
-        </div>
+        </div>-->
       </div>
       <div class="flex-div col-div">
         <div class="flex-div row-div" style="align-self: flex-start;">
           <img alt="" src=${
             isLocation ? "../assets/phone.svg" : "assets/phone.svg"
           } width="30px" height="30px"></img>
-          <p style="font-size: 16px; font-weight: 700;">+91-9911198767</p>
+          <a aria-label="mobile" href=tel:+919911198767><p style="font-size: 20px; font-weight: 700; color: ${brand}">+91-9911198767</p></a>
         </div>
         <div class="flex-div row-div" style="align-self: flex-start;">
           <img alt="" src=${
             isLocation ? "../assets/mail.svg" : "assets/mail.svg"
           } width="30px" height="30px"></img>
-          <p style="margin: 5px; font-size: 16px; font-weight: 700; line-break: anywhere;">daynightpackersandmovers@gmail.com</p>
+          <a aria-label="email" href="mailto:daynightpackersandmovers@gmail.com"><p style="margin: 5px; font-size: 20px; font-weight: 700; line-break: anywhere; color: ${brand}">daynightpackersandmovers@gmail.com</p></a>
         </div>
       </div>
     </div>
@@ -227,7 +228,7 @@ function createHtmlContent(isLocation) {
               : "assets/3TakeOurServices.gif"
           }></img>
         </div>
-        <div style="text-align: left;" class="contact-details">
+        <div style="text-align: left; margin-top: 50px;" class="contact-details">
           <p style="font-size: 19px; font-weight: 700;">Worried About Your Next Relocation During Busy Schedule??</p><br />
           <p style="font-size: xxx-large; font-weight: 800;">Let Us Help You!!</p><br /><br />
           <p>
@@ -243,7 +244,7 @@ function createHtmlContent(isLocation) {
 
   <div id="our-services" class="contact border-bottom-class" style="background: #ffc7a9;">
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">What we actually do?</h1>
+      <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">Decoding Excellence: Illuminating Our Range of Services. 💼 #ServiceSavvy</h1>
       <div id="our-services-content">   
         <div>
           <ul class="service-desc" style="font-size: 18px; line-height: 2.0em;">
@@ -268,7 +269,7 @@ function createHtmlContent(isLocation) {
 
   <div id="our-team" class="contact border-bottom-class" style="background: #5ad5ff;">
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">Who we are?</h1>
+      <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">United in Purpose, Stronger in Unity. 🌟 Dynamics of our Team</h1>
       <div id="our-team-content">
         <div class="fill-form-img-div" style="align-self: center;">
           <img alt="" loading="lazy" width="600px" height="auto" src=${
@@ -292,76 +293,9 @@ function createHtmlContent(isLocation) {
     </div>
   </div>
 
-  <div id="process-steps" class="contact border-bottom-class" style="background: #94ddd7;">
+  <div id="client-reviews" class="contact border-bottom-class" style="background: #d7e973;">
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">How it works?</h1>
-      <div class="">
-        <!--<div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="600px" height="auto" src=${
-            isLocation
-              ? "../assets/3TakeOurServices.gif"
-              : "assets/3TakeOurServices.gif"
-          }></img>
-        </div>-->
-        <div style="text-align: left; display: flex; flex-direction: column; gap: 40px; padding: 0px 150px 0px 150px;">
-          <div class="card process-cards" style="align-self: flex-start;"><b style="font-size: 30px;">01 </b>  Contact us</div>
-          <div class="card process-cards" style="align-self: flex-end;"><b style="font-size: 30px;">02 </b>  Get a free survey</div>
-          <div class="card process-cards" style="align-self: flex-start;"><b style="font-size: 30px;">03 </b>  Get quotation</div>
-          <div class="card process-cards" style="align-self: flex-end;"><b style="font-size: 30px;">04 </b>  Book us</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="charges-table" class="contact border-bottom-class" style="background: blue;">
-    <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">Our charges</h1>
-      <div class="flex-div">
-        <table border>
-          <thead style="background: white;">
-            <tr>
-              <td>a</td>
-              <td>b</td>
-              <td>c</td>
-              <td>d</td>
-              <td>e</td>
-              <td>f</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>a</td>
-              <td>b</td>
-              <td>c</td>
-              <td>d</td>
-              <td>e</td>
-              <td>f</td>
-            </tr>
-            <tr>
-              <td>a</td>
-              <td>b</td>
-              <td>c</td>
-              <td>d</td>
-              <td>e</td>
-              <td>f</td>
-            </tr>
-            <tr>
-              <td>a</td>
-              <td>b</td>
-              <td>c</td>
-              <td>d</td>
-              <td>e</td>
-              <td>f</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-
-  <div id="client-reviews" class="contact border-bottom-class" style="background: navajowhite;">
-    <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">What our customers say about us?</h1>
+      <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">Voices of Satisfaction: Hear What Our Customers Have to Say! 🌟 #HappyCustomersSpeak</h1>
       <div class="">
         <!--<div class="fill-form-img-div" style="align-self: center;">
           <img alt="" loading="lazy" width="600px" height="auto" src=${
@@ -378,7 +312,9 @@ function createHtmlContent(isLocation) {
                 ? "../assets/client1.jpg"
                 : "assets/client1.jpg"
             } height="200px" width="200px">
-            <div class="text">Caption Text</div>
+            <div class="text">Rahul Maan, Kapurthala, Punjab <br /><br />
+            "Moving with Day Night Packers and Movers was a breeze! From the initial inquiry to the final delivery, their team was professional, efficient, and careful with our belongings. I highly recommend Day Night Packers and Movers for a stress-free moving experience!"
+            </div>
           </div>
 
           <div class="mySlides fade">
@@ -387,7 +323,9 @@ function createHtmlContent(isLocation) {
                 ? "../assets/client2.jpg"
                 : "assets/client2.jpg"
             } height="200px" width="200px">
-            <div class="text">Caption Two</div>
+            <div class="text">Mr. Lakshay Jeet Shah, Bhubaneswar, Orissa <br /><br />
+            "I had a fantastic experience with Day Night Packers and Movers. Their team was punctual, polite, and incredibly hardworking. They handled all of our items with care and precision, ensuring nothing was damaged during the move. Kudos to the team!!"
+            </div>
           </div>
 
           <div class="mySlides fade">
@@ -396,7 +334,9 @@ function createHtmlContent(isLocation) {
                 ? "../assets/client3.jpg"
                 : "assets/client3.jpg"
             } height="200px" width="200px">
-            <div class="text">Caption Three</div>
+            <div class="text">Shalini Dey, Siliguri, West Bengal<br /><br />
+            "Day Night Packers and Movers exceeded my expectations. Their team went above and beyond to ensure my move went smoothly. I'm grateful for their excellent service and would highly recommend them to anyone in need of a moving company."
+            </div>
           </div>
 
           <div class="mySlides fade">
@@ -405,7 +345,9 @@ function createHtmlContent(isLocation) {
                 ? "../assets/client4.jpg"
                 : "assets/client4.jpg"
             } height="200px" width="200px">
-            <div class="text">Caption Four</div>
+            <div class="text">Raj Shekar Reddy, Hyderabad<br /><br />
+            "Day Night Packers and Movers provided exceptional service from start to finish. Their staff was courteous, efficient, and incredibly helpful throughout the entire process. They took the stress out of moving and made sure everything arrived at my new home safely. "
+            </div>
           </div>
 
           <!-- Next and previous buttons
@@ -425,10 +367,77 @@ function createHtmlContent(isLocation) {
     </div>
   </div>
 
-  <div id="services" class="services border-bottom-class" style="margin: 0px;">
+  <div id="charges-table" class="contact border-bottom-class" style="background: #b2b2eb;">
+  <div class="iyohgi" style="text-align: center;">
+    <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">Fair Pricing, Exceptional Value: Exploring Our Transparent Charges. 💰 #QualityMeetsAffordability</h1>
+    <div class="flex-div">
+      <table border>
+        <thead style="background: white;">
+          <tr>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+          </tr>
+          <tr>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+          </tr>
+          <tr>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+  <div id="process-steps" class="contact border-bottom-class" style="background: #94ddd7;">
+    <div class="iyohgi" style="text-align: center;">
+      <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">Unlocking Convenience: The Seamless Steps to Availing Our Services. 🛠️ #CustomerExperience</h1>
+      <div class="">
+        <!--<div class="fill-form-img-div" style="align-self: center;">
+          <img alt="" loading="lazy" width="600px" height="auto" src=${
+            isLocation
+              ? "../assets/3TakeOurServices.gif"
+              : "assets/3TakeOurServices.gif"
+          }></img>
+        </div>-->
+        <div style="text-align: left; display: flex; flex-direction: column; gap: 40px; padding: 0px 150px 0px 150px;">
+          <div class="card process-cards" style="align-self: flex-start;"><b style="font-size: 30px;">01 </b>  Get in Touch for a Seamless Moving Experience! 📦✨ <br />Contact Us Today!</div>
+          <div class="card process-cards" style="align-self: flex-end;"><b style="font-size: 30px;">02 </b>  Planning Your Move? Let's Get Started with a Free Survey and Quotation!</div>
+          <div class="card process-cards" style="align-self: flex-start;"><b style="font-size: 30px;">03 </b>  Ready to Make Your Move? Book with Us Today and Be a part of Smooth Transition!</div>
+          <!--<div class="card process-cards" style="align-self: flex-end;"><b style="font-size: 30px;">04 </b>  Book us</div>-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="services" class="services border-bottom-class iyohgi">
     <div id="iymxg" class="service-info">
       <h1 class="i78bq contact-details" style="font-size: xx-large;" data-custom-content="services">
-        Our presence
+      Everywhere You Need Us to Be: Discovering Our Global Presence. 🌍 #AccessibleInnovation
       </h1>
     </div>
     <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
@@ -492,7 +501,7 @@ function createHtmlContent(isLocation) {
 
   <div id="contact" class="contact border-bottom-class" style="background: #047d9d;">
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="contact-details" style="font-size: xx-large;">Still have doubts?</h1>
+      <h1 class="contact-details" style="font-size: xx-large;">Doubts Dismissed: Let Us Clear the Path to Clarity. 🌟 #ConfidenceInAnswers</h1>
       <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
         <div class="fill-form-img-div" style="align-self: center;">
           <img alt="" loading="lazy" width="500px" height="auto" src=${
