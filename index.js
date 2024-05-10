@@ -142,17 +142,17 @@ function createHtmlContent(isLocation) {
         </div>-->
       </div>
       <div class="flex-div col-div">
-        <div class="flex-div row-div" style="align-self: flex-start;">
-          <img alt="" src=${
+        <div style="align-self: flex-start;">
+        <a aria-label="mobile" class="flex-div row-div" href=tel:+919911198767><img alt="" src=${
             isLocation ? "../assets/phone.svg" : "assets/phone.svg"
           } width="30px" height="30px"></img>
-          <a aria-label="mobile" href=tel:+919911198767><p style="font-size: 20px; font-weight: 700; color: ${brand}">+91-9911198767</p></a>
+          <p style="font-size: 20px; font-weight: 700; color: ${brand}">+91-9911198767</p></a>
         </div>
-        <div class="flex-div row-div" style="align-self: flex-start;">
-          <img alt="" src=${
+        <div style="align-self: flex-start;">
+        <a aria-label="email" class="flex-div row-div" href="mailto:daynightpackersandmovers@gmail.com"><img alt="" src=${
             isLocation ? "../assets/mail.svg" : "assets/mail.svg"
           } width="30px" height="30px"></img>
-          <a aria-label="email" href="mailto:daynightpackersandmovers@gmail.com"><p style="margin: 5px; font-size: 20px; font-weight: 700; line-break: anywhere; color: ${brand}">daynightpackersandmovers@gmail.com</p></a>
+          <p style="margin: 5px; font-size: 20px; font-weight: 700; line-break: anywhere; color: ${brand}">daynightpackersandmovers@gmail.com</p></a>
         </div>
       </div>
     </div>
