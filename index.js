@@ -107,12 +107,13 @@ function callAPI(formEle, submitBtn) {
   // });
 }
 
-function showSlides() {
-  let slides = document.getElementsByClassName("mySlides");
+function showSlides(slideClassName, dotClassName) {
+  console.log('slidecalssname', slideClassName, dotClassName);
+  let slides = document.getElementsByClassName(slideClassName);
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  let dots = document.getElementsByClassName("dot");
+  let dots = document.getElementsByClassName(dotClassName);
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
@@ -120,7 +121,8 @@ function showSlides() {
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  // setTimeout(() => showSlides("day-night-slides", "day-night-dot"), 2000); // Change image every 2 seconds
+  // setTimeout(() => showSlides("mySlides", "dot"), 2000); // Change image every 2 seconds
 }
 
 function createHtmlContent(isLocation) {
@@ -158,7 +160,78 @@ function createHtmlContent(isLocation) {
     </div>
   </div>
 
-  <div id="day-night" class="contact border-bottom-class" style="background: white;">
+  <div id="day-night" class="contact border-bottom-class" style="background: #e2e4f4;">
+    <div class="iyohgi" style="text-align: center;">
+      <div class="">
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <!--<div class="day-night-slides fade">
+            <img alt="" src=${
+              isLocation
+                ? "../assets/1.png"
+                : "assets/1.png"
+            } height="300px" width="300px">
+            <div class="day-night-text">
+              24/7 Dedication: Working Around the Clock to Serve You Better. ⏰ #AlwaysOn
+            </div>
+          </div>-->
+
+          <!--<div class="day-night-slides fade">
+            <img alt="" loading="lazy" src=${
+              isLocation
+                ? "../assets/2.png"
+                : "assets/2.png"
+            } height="300px" width="350px">
+            <div class="day-night-text">Safe and Sound, Every Detail Perfected. 🛡️✨ #ExcellenceAssured
+            </div>
+          </div>-->
+
+          <!--<div class="day-night-slides fade">
+            <img alt="" loading="lazy" src=${
+              isLocation
+                ? "../assets/3.png"
+                : "assets/3.png"
+            } height="300px" width="350px">
+            <div class="day-night-text">Powered by Excellence: Our Arsenal of Resources Ready for You. 💼⚙️ #PreparedForSuccess
+            </div>
+          </div>-->
+
+          <!--<div class="day-night-slides fade">
+            <img alt="" loading="lazy" src=${
+              isLocation
+                ? "../assets/4.png"
+                : "assets/4.png"
+            } height="300px" width="320px">
+            <div class="day-night-text">Your Trusted Partner: Where Every Customer Finds a Companion. 🤝 #CustomerFirst
+            </div>
+          </div>-->
+
+          <div class="day-night-slides fade">
+            <img alt="" loading="lazy" src=${
+              isLocation
+                ? "../assets/5.png"
+                : "assets/5.png"
+            } height="300px" width="320px">
+            <div class="day-night-text">Relax, We've Got You Covered: Ensuring Customer Satisfaction Every Step of the Way. 😌👌 #PeaceOfMindService
+            </div>
+          </div>
+
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="day-night-dot"></span>
+          <span class="day-night-dot"></span>
+          <span class="day-night-dot"></span>
+          <span class="day-night-dot"></span>
+          <span class="day-night-dot"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--<div id="day-night" class="contact border-bottom-class" style="background: white;">
     <div style="display: flex; justify-content: space-between; flex-direction: row; align-items: center;">
       <div class="fill-form-img-div" style="align-self: center;">  
         <img alt="" width="600px" height="auto" src=${
@@ -182,11 +255,11 @@ function createHtmlContent(isLocation) {
           >Contact Us</a>
       </div>
     </div>
-  </div>
+  </div>-->
 
   <div id="form-detail" class="contact border-bottom-class">
     <div class="iyohgi" class="flex-div col-div" style="align-items: unset;">
-      <p class="i78bq-2-3 contact-details" style="font-size: xx-large; text-align: center; border-bottom: 70px;">Relocate with ease! Our professional movers and packers ensure a seamless transition for your home or office. From meticulous packing to safe transportation, trust us for a stress-free move. <b style="font-size: 34px;">Get a quote today!</b></p>
+      <p class="i78bq-2-3 contact-details" style="font-size: x-large; text-align: center; border-bottom: 70px;">Relocate with ease! Our professional movers and packers ensure a seamless transition for your home or office. From meticulous packing to safe transportation, trust us for a stress-free move. <b style="font-size: 34px;">Get a quote today!</b></p>
       <div class="inquire-tos-content">
         <div id="customer-form">
           <form id="inquiry-form" class="flex-div col-div" style="align-items: flex-start;">
@@ -370,42 +443,66 @@ function createHtmlContent(isLocation) {
   <div id="charges-table" class="contact border-bottom-class" style="background: #b2b2eb;">
   <div class="iyohgi" style="text-align: center;">
     <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">Fair Pricing, Exceptional Value: Exploring Our Transparent Charges. 💰 #QualityMeetsAffordability</h1>
-    <div class="flex-div">
-      <table border>
-        <thead style="background: white;">
+    <div style="background: white; overflow-x:auto; border-radius: 5px;">
+      <table style="border-color: white;">
+        <thead style="background: #16163F; color: white;">
           <tr>
-            <td>a</td>
-            <td>b</td>
-            <td>c</td>
-            <td>d</td>
-            <td>e</td>
-            <td>f</td>
+            <td style="border-top-left-radius: 5px;">Shifting Type</td>
+            <td>Upto 50 Kms</td>
+            <td>Upto 500 Kms</td>
+            <td>Upto 1000 Kms</td>
+            <td>Upto 1500 Kms</td>
+            <td style="border-top-right-radius: 5px;">Upto 2500 Kms</td>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>a</td>
-            <td>b</td>
-            <td>c</td>
-            <td>d</td>
-            <td>e</td>
-            <td>f</td>
+          <tr style="background: white;">
+            <td>1 BHK Home</td>
+            <td>Rs 7,000 to 11,000</td>
+            <td>Rs 12,000 to 16,000</td>
+            <td>Rs 20,000 to 25,000</td>
+            <td>Rs 26,000 to 32,000</td>
+            <td>Rs 30,000 to 35,000</td>
           </tr>
-          <tr>
-            <td>a</td>
-            <td>b</td>
-            <td>c</td>
-            <td>d</td>
-            <td>e</td>
-            <td>f</td>
+          <tr style="background: whitesmoke;">
+            <td>2 BHK Home</td>
+            <td>Rs 12,000 to 15,000</td>
+            <td>Rs 20,000 to 23,000</td>
+            <td>Rs 25,000 to 30,000</td>
+            <td>Rs 32,000 to 40,000</td>
+            <td>Rs 40,000 to 45,000</td>
           </tr>
-          <tr>
-            <td>a</td>
-            <td>b</td>
-            <td>c</td>
-            <td>d</td>
-            <td>e</td>
-            <td>f</td>
+          <tr style="background: white;">
+            <td>3 BHK Home</td>
+            <td>Rs 15,000 to 18,000</td>
+            <td>Rs 25,000 to 30,000</td>
+            <td>Rs 35,000 to 40,000</td>
+            <td>Rs 45,000 to 50,000</td>
+            <td>Rs 50,000 to 65,000</td>
+          </tr>
+          <tr style="background: whitesmoke;">
+            <td>4 BHK / Villa</td>
+            <td>Rs 25,000 to 30,000</td>
+            <td>Rs 35,000 to 40,000</td>
+            <td>Rs 50,000 to 60,000</td>
+            <td>Rs 55,000 to 65,000</td>
+            <td>Rs 70,000 to 90,000</td>
+          </tr>
+          <tr style="background: white;">
+            <td>Car Transportation</td>
+            <td>By Road with labor and fuel cost</td>
+            <td>Rs 12,000 to 14,500</td>
+            <td>Rs 17,000 to 20,000</td>
+            <td>Rs 21,000 to 25,000</td>
+            <td>-</td>
+          </tr>
+          <tr style="background: whitesmoke;">
+            <td>Bike Transportation</td>
+            <td>By Road with labor and fuel cost</td>
+            <td>Rs 7,000 to 10,500</td>
+            <td>Rs 10,000 to 15,000</td>
+            <td>Rs 15,000 to 18,000</td>
+            <td>-</td>
           </tr>
         </tbody>
       </table>
@@ -511,20 +608,20 @@ function createHtmlContent(isLocation) {
         <div>
         <p id="iqrh3-2-2" class="contact-details" style="margin-bottom: 10px; margin-top: 20px;">Contact us</p>
         <div id="igiuzk" class="flex-div row-div">
-          <a id="i2tpy3" aria-label="facebook" href=""><img alt="facebook page link" loading="lazy" id="i3gekg" height="38px" width="38px" src=${
+          <a id="i2tpy3" aria-label="facebook" href=""><img alt="facebook page link" loading="lazy" id="i3gekg" height="49px" width="49px" src=${
             isLocation ? "../assets/fb.svg" : "assets/fb.svg"
           } /></a>
-          <a id="i2tpy3-2" aria-label="instagram" href=""><img alt="instagram page link" loading="lazy" id="i3gekg-2" height="25px" width="25px" src=${
+          <a id="i2tpy3-2" aria-label="instagram" href=""><img alt="instagram page link" loading="lazy" id="i3gekg-2" height="33px" width="33px" src=${
             isLocation ? "../assets/insta.svg" : "assets/insta.svg"
           } /></a>
-          <a id="i2tpy3-5" aria-label="whatsapp" href="https://wa.me/+919911198767" target="_blank"><img alt="chat on whatsapp" loading="lazy" id="i3gekg-3" height="31px" width="31px" src=${
+          <a id="i2tpy3-5" aria-label="whatsapp" href="https://wa.me/+919911198767" target="_blank"><img alt="chat on whatsapp" loading="lazy" id="i3gekg-3" height="40px" width="40px" src=${
             isLocation ? "../assets/whatsapp.svg" : "assets/whatsapp.svg"
           } /></a>
-          <a id="i2tpy3-3" aria-label="email" href="mailto:daynightpackersandmovers@gmail.com"><img alt="compose email" loading="lazy" id="i3gekg-4" height="30px" width="30px"
+          <a id="i2tpy3-3" aria-label="email" href="mailto:daynightpackersandmovers@gmail.com"><img alt="compose email" loading="lazy" id="i3gekg-4" height="37px" width="37px"
               src=${
                 isLocation ? "../assets/email.svg" : "assets/email.svg"
               } /></a>
-          <a aria-label="mobile" href=tel:+919911198767><img alt="call" loading="lazy" id="i3gekg-5" height="30px" width="30px" src=${
+          <a aria-label="mobile" href=tel:+919911198767><img alt="call" loading="lazy" id="i3gekg-5" height="37px" width="37px" src=${
             isLocation ? "../assets/tel.svg" : "assets/tel.svg"
           } /></a>
         </div>
@@ -568,4 +665,5 @@ main();
 closeModal();
 onSubmit();
 let slideIndex = 0;
-showSlides();
+showSlides("day-night-slides", "day-night-dot");
+showSlides("mySlides", "dot");
