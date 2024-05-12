@@ -64,12 +64,13 @@ function updateUI(tryOrCatch, submitBtn, formEle) {
 }
 
 function callAPI(formEle, submitBtn) {
+  const formData = new FormData(formEle);
   const URL =
     "https://script.google.com/macros/s/AKfycbytcIOAWBFDsi6fBQphzMs7wOzDpe3tDfv7gYkNGzny7pt058crKy0K48CGv0k5GA3b/exec";
 
   fetch(URL, {
     method: "POST",
-    body: new FormData(formEle),
+    body: formData,
     mode: "no-cors",
   })
     .then(() => {
@@ -252,7 +253,7 @@ function createHtmlContent(isLocation) {
             <label for="moving-date">Request Moving Date*</label>
             <input id="moving-date" name="movingDate" type="date" autocomplete="off" required></input>
             <input id="leadSource" name="leadSource" value="Inquiry Form" style="display: none;"></input>
-            <input id="inquiryDate" name="inquiryDate" type="date" value="${Intl.DateTimeFormat("en-GB").format(new Date())}" style="display: none;"></input>
+            <input id="inquiryDate" name="inquiryDate" value=${Intl.DateTimeFormat('en-GB').format(new Date())} style="display: none;"></input>
             <button id="submit-btn" type="submit">Submit</button>
           </form>
         </div>
