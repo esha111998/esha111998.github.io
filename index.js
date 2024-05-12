@@ -40,7 +40,7 @@ function processFormSubmission(e) {
   const submitBtn = document.getElementById("submit-btn");
   submitBtn.disabled = true;
   callAPI(formEle, submitBtn);
-};
+}
 
 function onSubmit() {
   const formEle = document.getElementById("inquiry-form");
@@ -65,7 +65,7 @@ function updateUI(tryOrCatch, submitBtn, formEle) {
 
 function callAPI(formEle, submitBtn) {
   const URL =
-    "https://script.google.com/macros/s/AKfycbysbbUN-lRSP13ngDwSbhOuCHOeSnIArp0SbKjpTLnnPNQSWL-On1pa63l7XG0oOWdj/exec";
+    "https://script.google.com/macros/s/AKfycbytcIOAWBFDsi6fBQphzMs7wOzDpe3tDfv7gYkNGzny7pt058crKy0K48CGv0k5GA3b/exec";
 
   fetch(URL, {
     method: "POST",
@@ -107,8 +107,15 @@ function callAPI(formEle, submitBtn) {
   // });
 }
 
-function showSlides(slideClassName, dotClassName) {
-  console.log('slidecalssname', slideClassName, dotClassName);
+function currentSlide(slideClassName, dotClassName, slideIndex) {
+  clearTimeout(
+    slideClassName === "day-night-slides" ? dayNightTimeout : slidesTimeout
+  );
+  showSlides(slideClassName, dotClassName, slideIndex);
+}
+
+function showSlides(slideClassName, dotClassName, slideIndex) {
+  let i;
   let slides = document.getElementsByClassName(slideClassName);
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
@@ -118,11 +125,20 @@ function showSlides(slideClassName, dotClassName) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  // setTimeout(() => showSlides("day-night-slides", "day-night-dot"), 2000); // Change image every 2 seconds
-  // setTimeout(() => showSlides("mySlides", "dot"), 2000); // Change image every 2 seconds
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+  if (slideClassName === "day-night-slides") {
+    dayNightTimeout = setTimeout(function () {
+      return showSlides("day-night-slides", "day-night-dot", slideIndex);
+    }, 2000); // Change image every 2 seconds
+  } else {
+    slidesTimeout = setTimeout(function () {
+      return showSlides("mySlides", "dot", slideIndex);
+    }, 2000); // Change image every 2 seconds
+  }
 }
 
 function createHtmlContent(isLocation) {
@@ -135,25 +151,18 @@ function createHtmlContent(isLocation) {
         <img id="logo" alt="" src=${
           isLocation ? "../assets/logonew.png" : "assets/logonew.png"
         } width="auto" height="100px"></img>
-        <!--<div class="flex-div col-div">
-          <div class="flex-div row-div" style="align-self: flex-start;">
-            <h2 class="max-width-content"><i>Day</i></h2>
-            <h2 class="max-width-content" style="color: red;"><i>Night</i></h2>
-          </div>
-            <h2 class="max-width-content"><i>Packers and Movers</i></h2>
-        </div>-->
       </div>
       <div class="flex-div col-div">
         <div style="align-self: flex-start;">
         <a aria-label="mobile" class="flex-div row-div" href=tel:+919911198767><img alt="" src=${
-            isLocation ? "../assets/phone.svg" : "assets/phone.svg"
-          } width="30px" height="30px"></img>
+          isLocation ? "../assets/phone.svg" : "assets/phone.svg"
+        } width="30px" height="30px"></img>
           <p style="font-size: 20px; font-weight: 700; color: ${brand}">+91-9911198767</p></a>
         </div>
         <div style="align-self: flex-start;">
         <a aria-label="email" class="flex-div row-div" href="mailto:daynightpackersandmovers@gmail.com"><img alt="" src=${
-            isLocation ? "../assets/mail.svg" : "assets/mail.svg"
-          } width="30px" height="30px"></img>
+          isLocation ? "../assets/mail.svg" : "assets/mail.svg"
+        } width="30px" height="30px"></img>
           <p style="margin: 5px; font-size: 20px; font-weight: 700; line-break: anywhere; color: ${brand}">daynightpackersandmovers@gmail.com</p></a>
         </div>
       </div>
@@ -164,53 +173,43 @@ function createHtmlContent(isLocation) {
     <div class="iyohgi" style="text-align: center;">
       <div class="">
         <div class="slideshow-container">
-          <!-- Full-width images with number and caption text -->
-          <!--<div class="day-night-slides fade">
-            <img alt="" src=${
-              isLocation
-                ? "../assets/1.png"
-                : "assets/1.png"
+          <div class="day-night-slides fade">
+            <img class="slideImg" alt="" src=${
+              isLocation ? "../assets/1.png" : "assets/1.png"
             } height="300px" width="300px">
             <div class="day-night-text">
               24/7 Dedication: Working Around the Clock to Serve You Better. ⏰ #AlwaysOn
             </div>
-          </div>-->
+          </div>
 
-          <!--<div class="day-night-slides fade">
-            <img alt="" loading="lazy" src=${
-              isLocation
-                ? "../assets/2.png"
-                : "assets/2.png"
+          <div class="day-night-slides fade">
+            <img class="slideImg" alt="" loading="lazy" src=${
+              isLocation ? "../assets/2.png" : "assets/2.png"
             } height="300px" width="350px">
             <div class="day-night-text">Safe and Sound, Every Detail Perfected. 🛡️✨ #ExcellenceAssured
+            <br /><br />
             </div>
-          </div>-->
+          </div>
 
-          <!--<div class="day-night-slides fade">
-            <img alt="" loading="lazy" src=${
-              isLocation
-                ? "../assets/3.png"
-                : "assets/3.png"
+          <div class="day-night-slides fade">
+            <img class="slideImg" alt="" loading="lazy" src=${
+              isLocation ? "../assets/3.png" : "assets/3.png"
             } height="300px" width="350px">
             <div class="day-night-text">Powered by Excellence: Our Arsenal of Resources Ready for You. 💼⚙️ #PreparedForSuccess
             </div>
-          </div>-->
+          </div>
 
-          <!--<div class="day-night-slides fade">
-            <img alt="" loading="lazy" src=${
-              isLocation
-                ? "../assets/4.png"
-                : "assets/4.png"
+          <div class="day-night-slides fade">
+            <img class="slideImg" alt="" loading="lazy" src=${
+              isLocation ? "../assets/4.png" : "assets/4.png"
             } height="300px" width="320px">
             <div class="day-night-text">Your Trusted Partner: Where Every Customer Finds a Companion. 🤝 #CustomerFirst
             </div>
-          </div>-->
+          </div>
 
           <div class="day-night-slides fade">
-            <img alt="" loading="lazy" src=${
-              isLocation
-                ? "../assets/5.png"
-                : "assets/5.png"
+            <img class="slideImg" alt="" loading="lazy" src=${
+              isLocation ? "../assets/5.png" : "assets/5.png"
             } height="300px" width="320px">
             <div class="day-night-text">Relax, We've Got You Covered: Ensuring Customer Satisfaction Every Step of the Way. 😌👌 #PeaceOfMindService
             </div>
@@ -219,43 +218,16 @@ function createHtmlContent(isLocation) {
         </div>
         <br>
 
-        <!-- The dots/circles -->
         <div style="text-align:center">
-          <span class="day-night-dot"></span>
-          <span class="day-night-dot"></span>
-          <span class="day-night-dot"></span>
-          <span class="day-night-dot"></span>
-          <span class="day-night-dot"></span>
+          <span class="day-night-dot" onclick="currentSlide('day-night-slides', 'day-night-dot', 0)"></span>
+          <span class="day-night-dot" onclick="currentSlide('day-night-slides', 'day-night-dot', 1)"></span>
+          <span class="day-night-dot" onclick="currentSlide('day-night-slides', 'day-night-dot', 2)"></span>
+          <span class="day-night-dot" onclick="currentSlide('day-night-slides', 'day-night-dot', 3)"></span>
+          <span class="day-night-dot" onclick="currentSlide('day-night-slides', 'day-night-dot', 4)"></span>
         </div>
       </div>
     </div>
   </div>
-
-  <!--<div id="day-night" class="contact border-bottom-class" style="background: white;">
-    <div style="display: flex; justify-content: space-between; flex-direction: row; align-items: center;">
-      <div class="fill-form-img-div" style="align-self: center;">  
-        <img alt="" width="600px" height="auto" src=${
-          isLocation
-            ? "../assets/1DayNightTheme.gif"
-            : "assets/1DayNightTheme.gif"
-        }></img>
-      </div>
-      <div style="padding: 20px;">
-        <h1 data-custom-content="good-advice">
-          The Power of <br />Good Advice
-        </h1>
-        <p data-custom-content="description">
-          I'm a paragraph. Click here to add <br id="i8lap" />
-          your own text and edit me.
-        </p>
-        <a id="iz026q-2-2" href="#contact"
-          autocomplete="off"
-          data-custom-content="learnMore"
-          class="learn-more"
-          >Contact Us</a>
-      </div>
-    </div>
-  </div>-->
 
   <div id="form-detail" class="contact border-bottom-class">
     <div class="iyohgi" class="flex-div col-div" style="align-items: unset;">
@@ -279,6 +251,8 @@ function createHtmlContent(isLocation) {
             </select>
             <label for="moving-date">Request Moving Date*</label>
             <input id="moving-date" name="movingDate" type="date" autocomplete="off" required></input>
+            <input id="leadSource" name="leadSource" value="Inquiry Form" style="display: none;"></input>
+            <input id="inquiryDate" name="inquiryDate" type="date" value="${Intl.DateTimeFormat("en-GB").format(new Date())}" style="display: none;"></input>
             <button id="submit-btn" type="submit">Submit</button>
           </form>
         </div>
@@ -370,20 +344,11 @@ function createHtmlContent(isLocation) {
     <div class="iyohgi" style="text-align: center;">
       <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">Voices of Satisfaction: Hear What Our Customers Have to Say! 🌟 #HappyCustomersSpeak</h1>
       <div class="">
-        <!--<div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="600px" height="auto" src=${
-            isLocation
-              ? "../assets/3TakeOurServices.gif"
-              : "assets/3TakeOurServices.gif"
-          }></img>
-        </div>-->
         <div class="slideshow-container">
           <!-- Full-width images with number and caption text -->
           <div class="mySlides fade">
             <img alt="" loading="lazy" src=${
-              isLocation
-                ? "../assets/client1.jpg"
-                : "assets/client1.jpg"
+              isLocation ? "../assets/client1.jpg" : "assets/client1.jpg"
             } height="200px" width="200px">
             <div class="text">Rahul Maan, Kapurthala, Punjab <br /><br />
             "Moving with Day Night Packers and Movers was a breeze! From the initial inquiry to the final delivery, their team was professional, efficient, and careful with our belongings. I highly recommend Day Night Packers and Movers for a stress-free moving experience!"
@@ -392,9 +357,7 @@ function createHtmlContent(isLocation) {
 
           <div class="mySlides fade">
             <img alt="" loading="lazy" src=${
-              isLocation
-                ? "../assets/client2.jpg"
-                : "assets/client2.jpg"
+              isLocation ? "../assets/client2.jpg" : "assets/client2.jpg"
             } height="200px" width="200px">
             <div class="text">Mr. Lakshay Jeet Shah, Bhubaneswar, Orissa <br /><br />
             "I had a fantastic experience with Day Night Packers and Movers. Their team was punctual, polite, and incredibly hardworking. They handled all of our items with care and precision, ensuring nothing was damaged during the move. Kudos to the team!!"
@@ -403,9 +366,7 @@ function createHtmlContent(isLocation) {
 
           <div class="mySlides fade">
             <img alt="" loading="lazy" src=${
-              isLocation
-                ? "../assets/client3.jpg"
-                : "assets/client3.jpg"
+              isLocation ? "../assets/client3.jpg" : "assets/client3.jpg"
             } height="200px" width="200px">
             <div class="text">Shalini Dey, Siliguri, West Bengal<br /><br />
             "Day Night Packers and Movers exceeded my expectations. Their team went above and beyond to ensure my move went smoothly. I'm grateful for their excellent service and would highly recommend them to anyone in need of a moving company."
@@ -414,27 +375,22 @@ function createHtmlContent(isLocation) {
 
           <div class="mySlides fade">
             <img alt="" loading="lazy" src=${
-              isLocation
-                ? "../assets/client4.jpg"
-                : "assets/client4.jpg"
+              isLocation ? "../assets/client4.jpg" : "assets/client4.jpg"
             } height="200px" width="200px">
             <div class="text">Raj Shekar Reddy, Hyderabad<br /><br />
             "Day Night Packers and Movers provided exceptional service from start to finish. Their staff was courteous, efficient, and incredibly helpful throughout the entire process. They took the stress out of moving and made sure everything arrived at my new home safely. "
             </div>
           </div>
 
-          <!-- Next and previous buttons
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
         </div>
         <br>
 
         <!-- The dots/circles -->
         <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide('mySlides', 'dot', 0)"></span>
+          <span class="dot" onclick="currentSlide('mySlides', 'dot', 1)"></span>
+          <span class="dot" onclick="currentSlide('mySlides', 'dot', 2)"></span>
+          <span class="dot" onclick="currentSlide('mySlides', 'dot', 3)"></span>
         </div>
       </div>
     </div>
@@ -443,7 +399,7 @@ function createHtmlContent(isLocation) {
   <div id="charges-table" class="contact border-bottom-class" style="background: #b2b2eb;">
   <div class="iyohgi" style="text-align: center;">
     <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">Fair Pricing, Exceptional Value: Exploring Our Transparent Charges. 💰 #QualityMeetsAffordability</h1>
-    <div style="background: white; overflow-x:auto; border-radius: 5px;">
+    <div style="background: white; overflow-x:auto; border-radius: 5px; margin: 30px;">
       <table style="border-color: white;">
         <thead style="background: #16163F; color: white;">
           <tr>
@@ -664,6 +620,9 @@ main();
 // Events handling
 closeModal();
 onSubmit();
+let dayNightTimeout;
+let slidesTimeout;
+let dayNightSlideIndex = 0;
 let slideIndex = 0;
-showSlides("day-night-slides", "day-night-dot");
-showSlides("mySlides", "dot");
+showSlides("day-night-slides", "day-night-dot", dayNightSlideIndex);
+showSlides("mySlides", "dot", slideIndex);
