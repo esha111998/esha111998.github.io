@@ -144,6 +144,107 @@ function showSlides(slideClassName, dotClassName, slideIndex) {
 
 function createHtmlContent(isLocation) {
   const brand = "#FF5823";
+  const locations1 = [
+    "Agra",
+    "Ahemdabad",
+    "Allahbad",
+    "Ambala",
+    "Ankleshwar",
+    "Aurangabad",
+    "Banglore",
+    "Bathinda",
+    "Belapur Mumbai",
+    "Bhiwandi",
+    "Bhopal",
+    "Bhubneswar",
+    "Bhuj",
+    "Bikaner",
+    "Calicut",
+    "Chandigarh",
+    "Chennai",
+    "Cochin",
+    "Coimbtore",
+    "Cuttack",
+  ];
+  const locations2 = [
+    "Delhi",
+    "Dehradun",
+    "Dwarka",
+    "Dwarka Delhi",
+    "Fridabad",
+    "Gandhidham",
+    "Ghaziabad",
+    "Goa",
+    "Guwahati",
+    "Gwalior",
+    "Haridwar",
+    "Hisar",
+    "Hubli",
+    "Hydrabad",
+    "Indore",
+    "Jabalpur",
+    "Jaipur",
+    "Jammu",
+    "Jamnagar",
+    "Jamshedpur",
+  ];
+  const locations3 = [
+    "Jodhpur",
+    "Kalighat",
+    "Kanpur",
+    "Kolhapur",
+    "Kolkata",
+    "Korba",
+    "Kottayam",
+    "Ludhiana",
+    "Lukhnow",
+    "Madipakkam",
+    "Madurai",
+    "Manesar",
+    "Mangalore",
+    "Meemrana",
+    "Meerut",
+    "Mumbai",
+    "Mysore",
+    "Nasik",
+    "Nagpur",
+    "Noida",
+  ];
+  const locations4 = [
+    "Pallnerghata Road",
+    "Panipat",
+    "Patalganga",
+    "Patna",
+    "Pondicherry",
+    "Porur",
+    "Portblair",
+    "Pune",
+    "Raigarh",
+    "Raipur",
+    "Rajkot",
+    "Ranchi",
+    "Rudrapur",
+    "Rourkela",
+    "Sarjapur Road",
+    "Secunerabad",
+    "Siliguri",
+    "Surat",
+    "Thoraipakkam",
+    "Tirupur"
+  ];
+  const locations5 = [
+    "Trichy",
+    "Trivandrum",
+    "Thoraipakkam",
+    "Udaipur",
+    "Vadodra",
+    "Varanasi",
+    "Vapi",
+    "Vijaywada",
+    "Vizag",
+    "Whitefield",
+  ];
+  const allLocations = [...locations1, ...locations2, ...locations3, ...locations4, ...locations5];
   return `
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="iu9w" class="navbar-cont" style="background: #fffbf6;">
@@ -242,18 +343,22 @@ function createHtmlContent(isLocation) {
             <input id="phone" name="phone" type="tel" placeholder="Enter Phone" autocomplete="off" required pattern="[0-9]{10}"></input>
             <label for="movingFrom">Moving From*</label>
             <select id="movingFrom" name="movingFrom" placeholder="Select Location" autocomplete="off" required>
-              <option value="Gurgaon">Gurgaon</option>
-              <option value="Delhi">Delhi</option>
+              ${allLocations.map(loc => {
+                return `<option value="${loc}">${loc}</option>`
+              }).join('')}
             </select>
             <label for="to">Moving To*</label>
             <select id="to" name="to" placeholder="Select Location" autocomplete="off" required>
-              <option value="Gurgaon">Gurgaon</option>
-              <option value="Delhi">Delhi</option>
+              ${allLocations.map(loc => {
+                return `<option value="${loc}">${loc}</option>`
+              }).join('')}
             </select>
             <label for="moving-date">Request Moving Date*</label>
             <input id="moving-date" name="movingDate" type="date" autocomplete="off" required></input>
             <input id="leadSource" name="leadSource" value="Inquiry Form" style="display: none;"></input>
-            <input id="inquiryDate" name="inquiryDate" value=${Intl.DateTimeFormat('en-GB').format(new Date())} style="display: none;"></input>
+            <input id="inquiryDate" name="inquiryDate" value=${Intl.DateTimeFormat(
+              "en-GB"
+            ).format(new Date())} style="display: none;"></input>
             <button id="submit-btn" type="submit">Submit</button>
           </form>
         </div>
@@ -503,18 +608,26 @@ function createHtmlContent(isLocation) {
       <div id="i12z9" class="services-box">
         <div id="ilmjk" class="service-cont">
           <ul id="ipekj" class="service-desc">
-            <li id="locations/ahemdabad.html"><a class="contact-details" href="locations/ahemdabad.html">Packers and
+            ${locations1.map((loc) => {
+              return `<li id="locations/${loc}.html"><a class="contact-details" href="locations/${loc}.html">Packers and
+                  Movers in ${loc}</a></li>`;
+            }).join('')}
+            <!--<li id="locations/ahemdabad.html"><a class="contact-details" href="locations/ahemdabad.html">Packers and
                 Movers in Ahemdabad</a></li>
             <li id="locations/banglore.html"><a class="contact-details" href="locations/banglore.html">Packers and
                 Movers in Banglore</a></li>
             <li id="locations/chennai.html"><a class="contact-details" href="locations/chennai.html">Packers and
                 Movers in Chennai</a></li>
             <li id="locations/coimbatore.html"><a class="contact-details" href="locations/coimbatore.html">Packers
-                and Movers in Coimbatore</a></li>
+                and Movers in Coimbatore</a></li>-->
           </ul>
         </div>
         <div id="ilmjk-2" class="service-cont">
           <ul id="ipekj-2" class="service-desc">
+            ${locations2.map((loc) => {
+              return `<li id="locations/${loc}.html"><a class="contact-details" href="locations/${loc}.html">Packers and Movers in ${loc}</a></li>`;
+            }).join('')}
+            <!--
             <li id="locations/delhi.html"><a class="contact-details" href="locations/delhi.html">Packers and Movers
                 in Delhi</a></li>
             <li id="locations/faridabad.html"><a class="contact-details" href="locations/faridabad.html">Packers and
@@ -522,31 +635,55 @@ function createHtmlContent(isLocation) {
             <li id="locations/ghaziabad.html"><a class="contact-details" href="locations/ghaziabad.html">Packers and
                 Movers in Ghaziabad</a></li>
             <li id="locations/gurgaon.html"><a class="contact-details" href="locations/gurgaon.html">Packers and
-                Movers in Gurgaon</a></li>
+                Movers in Gurgaon</a></li>-->
           </ul>
         </div>
         <div id="ilmjk-3" class="service-cont">
           <ul id="ipekj-3" class="service-desc">
-            <li id="locations/hyderabad.html"><a class="contact-details" href="locations/hyderabad.html">Packers and
+          ${locations3.map((loc) => {
+            return `<li id="locations/${loc}.html"><a class="contact-details" href="locations/${loc}.html">Packers and
+                Movers in ${loc}</a></li>`;
+          }).join('')}
+          <!--  <li id="locations/hyderabad.html"><a class="contact-details" href="locations/hyderabad.html">Packers and
                 Movers in Hyderabad</a></li>
             <li id="locations/indore.html"><a class="contact-details" href="locations/indore.html">Packers and
                 Movers in Indore</a></li>
             <li id="locations/jaipur.html"><a class="contact-details" href="locations/jaipur.html">Packers and
                 Movers in Jaipur</a></li>
             <li id="locations/kolkata.html"><a class="contact-details" href="locations/kolkata.html">Packers and
-                Movers in Kolkata</a></li>
+                Movers in Kolkata</a></li>-->
           </ul>
         </div>
         <div id="ilmjk-4" class="service-cont">
           <ul id="ipekj-4" class="service-desc">
-            <li id="locations/mumbai.html"><a class="contact-details" href="locations/mumbai.html">Packers and
+          ${locations4.map((loc) => {
+            return `<li id="locations/${loc}.html"><a class="contact-details" href="locations/${loc}.html">Packers and
+                Movers in ${loc}</a></li>`;
+          }).join('')}
+          <!-- <li id="locations/mumbai.html"><a class="contact-details" href="locations/mumbai.html">Packers and
                 Movers in Mumbai</a></li>
             <li id="locations/noida.html"><a class="contact-details" href="locations/noida.html">Packers and Movers
                 in Noida</a></li>
             <li id="locations/pune.html"><a class="contact-details" href="locations/pune.html">Packers and Movers in
                 Pune</a></li>
             <li id="locations/surat.html"><a class="contact-details" href="locations/surat.html">Packers and Movers
-                in Surat</a></li>
+                in Surat</a></li>-->
+          </ul>
+        </div>
+        <div id="ilmjk-4" class="service-cont">
+          <ul id="ipekj-4" class="service-desc">
+          ${locations5.map((loc) => {
+            return `<li id="locations/${loc}.html"><a class="contact-details" href="locations/${loc}.html">Packers and
+                Movers in ${loc}</a></li>`;
+          }).join('')}
+          <!-- <li id="locations/mumbai.html"><a class="contact-details" href="locations/mumbai.html">Packers and
+                Movers in Mumbai</a></li>
+            <li id="locations/noida.html"><a class="contact-details" href="locations/noida.html">Packers and Movers
+                in Noida</a></li>
+            <li id="locations/pune.html"><a class="contact-details" href="locations/pune.html">Packers and Movers in
+                Pune</a></li>
+            <li id="locations/surat.html"><a class="contact-details" href="locations/surat.html">Packers and Movers
+                in Surat</a></li>-->
           </ul>
         </div>
       </div>
@@ -565,10 +702,10 @@ function createHtmlContent(isLocation) {
         <div>
         <p id="iqrh3-2-2" class="contact-details" style="margin-bottom: 10px; margin-top: 20px;">Contact us</p>
         <div id="igiuzk" class="flex-div row-div">
-          <a id="i2tpy3" aria-label="facebook" href=""><img alt="facebook page link" loading="lazy" id="i3gekg" height="49px" width="49px" src=${
+          <a id="i2tpy3" aria-label="facebook" href="" target="_blank"><img alt="facebook page link" loading="lazy" id="i3gekg" height="49px" width="49px" src=${
             isLocation ? "../assets/fb.svg" : "assets/fb.svg"
           } /></a>
-          <a id="i2tpy3-2" aria-label="instagram" href=""><img alt="instagram page link" loading="lazy" id="i3gekg-2" height="33px" width="33px" src=${
+          <a id="i2tpy3-2" aria-label="instagram" href="https://www.instagram.com/daynightpackersand/" target="_blank"><img alt="instagram page link" loading="lazy" id="i3gekg-2" height="33px" width="33px" src=${
             isLocation ? "../assets/insta.svg" : "assets/insta.svg"
           } /></a>
           <a id="i2tpy3-5" aria-label="whatsapp" href="https://wa.me/+919911198767" target="_blank"><img alt="chat on whatsapp" loading="lazy" id="i3gekg-3" height="40px" width="40px" src=${
