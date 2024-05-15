@@ -246,6 +246,13 @@
     flex-direction: row;
   }
 
+  #city-section-content{
+    display: flex;
+    gap: 35px;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
   /* modal css starts*/
   /* The Modal (background) */
   .modal {

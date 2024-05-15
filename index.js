@@ -142,7 +142,7 @@ function showSlides(slideClassName, dotClassName, slideIndex) {
   }
 }
 
-function createHtmlContent(isLocation) {
+function createHtmlContent(finalPath, isLocation) {
   const brand = "#FF5823";
   const locations1 = [
     "Agra",
@@ -151,7 +151,7 @@ function createHtmlContent(isLocation) {
     "Ambala",
     "Ankleshwar",
     "Aurangabad",
-    "Banglore",
+    "Bangalore",
     "Bathinda",
     "Belapur Mumbai",
     "Bhiwandi",
@@ -175,6 +175,7 @@ function createHtmlContent(isLocation) {
     "Gandhidham",
     "Ghaziabad",
     "Goa",
+    "Gurgaon",
     "Guwahati",
     "Gwalior",
     "Haridwar",
@@ -186,9 +187,9 @@ function createHtmlContent(isLocation) {
     "Jaipur",
     "Jammu",
     "Jamnagar",
-    "Jamshedpur",
   ];
   const locations3 = [
+    "Jamshedpur",
     "Jodhpur",
     "Kalighat",
     "Kanpur",
@@ -208,9 +209,9 @@ function createHtmlContent(isLocation) {
     "Mysore",
     "Nasik",
     "Nagpur",
-    "Noida",
   ];
   const locations4 = [
+    "Noida",
     "Pallnerghata Road",
     "Panipat",
     "Patalganga",
@@ -230,9 +231,9 @@ function createHtmlContent(isLocation) {
     "Siliguri",
     "Surat",
     "Thoraipakkam",
-    "Tirupur"
   ];
   const locations5 = [
+    "Tirupur",
     "Trichy",
     "Trivandrum",
     "Thoraipakkam",
@@ -244,16 +245,16 @@ function createHtmlContent(isLocation) {
     "Vizag",
     "Whitefield",
   ];
-  const allLocations = [...locations1, ...locations2, ...locations3, ...locations4, ...locations5];
+  const cityName = finalPath?.split('/')?.[1]?.split('.')?.[0];
   return `
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="iu9w" class="navbar-cont" style="background: #fffbf6;">
     <div id="ibulz" class="nav-inner">
-      <div class="flex-div">
+      <a href="https://esha111998.github.io/">
         <img id="logo" alt="" src=${
           isLocation ? "../assets/logonew.png" : "assets/logonew.png"
         } width="auto" height="100px"></img>
-      </div>
+      </a>
       <div class="flex-div col-div">
         <div style="align-self: flex-start;">
         <a aria-label="mobile" class="flex-div row-div" href=tel:+919911198767><img alt="" src=${
@@ -271,7 +272,9 @@ function createHtmlContent(isLocation) {
     </div>
   </div>
 
-  <div id="day-night" class="contact border-bottom-class" style="background: #e2e4f4;">
+  ${
+    !isLocation
+      ? `<div id="day-night" class="contact border-bottom-class" style="background: #e2e4f4;">
     <div class="iyohgi" style="text-align: center;">
       <div class="">
         <div class="slideshow-container">
@@ -329,7 +332,28 @@ function createHtmlContent(isLocation) {
         </div>
       </div>
     </div>
-  </div>
+  </div>`
+      : `<div id="city-section" class="contact border-bottom-class" style="background: #f2f2f2;">
+    <div class="iyohgi" style="text-align: center;">
+      <div id="city-section-content">
+        <div class="fill-form-img-div" style="align-self: center;">
+          <img alt="" loading="lazy" width="400px" height="auto" src=${
+            isLocation
+              ? "../assets/citySection.gif"
+              : "assets/citySection.gif"
+          }></img>
+        </div>
+        <div class="contact-details">
+          <p style="font-size: 30px; font-weight: 700;">Welcome to Day Night Packers and Movers in ${cityName} - Your Trusted Partner in Relocation!</p><br /><br />
+          <p style="font-size: 19px;">At Day Night Packers and Movers, we understand that moving can be a daunting task. Whether you're relocating your home or your business, we are here to make your transition seamless and stress-free.</p><br />
+          <p style="font-size: 19px;">
+          With years of experience in the industry, our team of dedicated professionals is committed to providing top-notch moving and packing services tailored to meet your specific needs. From packing fragile items with the utmost care to transporting your belongings safely to your new destination, we handle every aspect of your move with precision and efficiency.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>`
+  }
 
   <div id="form-detail" class="contact border-bottom-class">
     <div class="iyohgi" class="flex-div col-div" style="align-items: unset;">
@@ -342,17 +366,9 @@ function createHtmlContent(isLocation) {
             <label for="phone">Phone*</label>
             <input id="phone" name="phone" type="tel" placeholder="Enter Phone" autocomplete="off" required pattern="[0-9]{10}"></input>
             <label for="movingFrom">Moving From*</label>
-            <select id="movingFrom" name="movingFrom" placeholder="Select Location" autocomplete="off" required>
-              ${allLocations.map(loc => {
-                return `<option value="${loc}">${loc}</option>`
-              }).join('')}
-            </select>
+            <input id="movingFrom" name="movingFrom" placeholder="Enter Location" autocomplete="off" required></input>
             <label for="to">Moving To*</label>
-            <select id="to" name="to" placeholder="Select Location" autocomplete="off" required>
-              ${allLocations.map(loc => {
-                return `<option value="${loc}">${loc}</option>`
-              }).join('')}
-            </select>
+            <input id="to" name="to" placeholder="Enter Location" autocomplete="off" required></input>
             <label for="moving-date">Request Moving Date*</label>
             <input id="moving-date" name="movingDate" type="date" autocomplete="off" required></input>
             <input id="leadSource" name="leadSource" value="Inquiry Form" style="display: none;"></input>
@@ -608,10 +624,12 @@ function createHtmlContent(isLocation) {
       <div id="i12z9" class="services-box">
         <div id="ilmjk" class="service-cont">
           <ul id="ipekj" class="service-desc">
-            ${locations1.map((loc) => {
-              return `<li id="locations/${loc}.html"><a class="contact-details" href="locations/${loc}.html">Packers and
+            ${locations1
+              .map((loc) => {
+                return `<li id="locations/${loc}.html"><a class="contact-details" href="locations/${loc}.html">Packers and
                   Movers in ${loc}</a></li>`;
-            }).join('')}
+              })
+              .join("")}
             <!--<li id="locations/ahemdabad.html"><a class="contact-details" href="locations/ahemdabad.html">Packers and
                 Movers in Ahemdabad</a></li>
             <li id="locations/banglore.html"><a class="contact-details" href="locations/banglore.html">Packers and
@@ -624,9 +642,11 @@ function createHtmlContent(isLocation) {
         </div>
         <div id="ilmjk-2" class="service-cont">
           <ul id="ipekj-2" class="service-desc">
-            ${locations2.map((loc) => {
-              return `<li id="locations/${loc}.html"><a class="contact-details" href="locations/${loc}.html">Packers and Movers in ${loc}</a></li>`;
-            }).join('')}
+            ${locations2
+              .map((loc) => {
+                return `<li id="locations/${loc}.html"><a class="contact-details" href="locations/${loc}.html">Packers and Movers in ${loc}</a></li>`;
+              })
+              .join("")}
             <!--
             <li id="locations/delhi.html"><a class="contact-details" href="locations/delhi.html">Packers and Movers
                 in Delhi</a></li>
@@ -640,10 +660,12 @@ function createHtmlContent(isLocation) {
         </div>
         <div id="ilmjk-3" class="service-cont">
           <ul id="ipekj-3" class="service-desc">
-          ${locations3.map((loc) => {
-            return `<li id="locations/${loc}.html"><a class="contact-details" href="locations/${loc}.html">Packers and
+          ${locations3
+            .map((loc) => {
+              return `<li id="locations/${loc}.html"><a class="contact-details" href="locations/${loc}.html">Packers and
                 Movers in ${loc}</a></li>`;
-          }).join('')}
+            })
+            .join("")}
           <!--  <li id="locations/hyderabad.html"><a class="contact-details" href="locations/hyderabad.html">Packers and
                 Movers in Hyderabad</a></li>
             <li id="locations/indore.html"><a class="contact-details" href="locations/indore.html">Packers and
@@ -656,10 +678,12 @@ function createHtmlContent(isLocation) {
         </div>
         <div id="ilmjk-4" class="service-cont">
           <ul id="ipekj-4" class="service-desc">
-          ${locations4.map((loc) => {
-            return `<li id="locations/${loc}.html"><a class="contact-details" href="locations/${loc}.html">Packers and
+          ${locations4
+            .map((loc) => {
+              return `<li id="locations/${loc}.html"><a class="contact-details" href="locations/${loc}.html">Packers and
                 Movers in ${loc}</a></li>`;
-          }).join('')}
+            })
+            .join("")}
           <!-- <li id="locations/mumbai.html"><a class="contact-details" href="locations/mumbai.html">Packers and
                 Movers in Mumbai</a></li>
             <li id="locations/noida.html"><a class="contact-details" href="locations/noida.html">Packers and Movers
@@ -672,10 +696,12 @@ function createHtmlContent(isLocation) {
         </div>
         <div id="ilmjk-4" class="service-cont">
           <ul id="ipekj-4" class="service-desc">
-          ${locations5.map((loc) => {
-            return `<li id="locations/${loc}.html"><a class="contact-details" href="locations/${loc}.html">Packers and
+          ${locations5
+            .map((loc) => {
+              return `<li id="locations/${loc}.html"><a class="contact-details" href="locations/${loc}.html">Packers and
                 Movers in ${loc}</a></li>`;
-          }).join('')}
+            })
+            .join("")}
           <!-- <li id="locations/mumbai.html"><a class="contact-details" href="locations/mumbai.html">Packers and
                 Movers in Mumbai</a></li>
             <li id="locations/noida.html"><a class="contact-details" href="locations/noida.html">Packers and Movers
@@ -702,7 +728,7 @@ function createHtmlContent(isLocation) {
         <div>
         <p id="iqrh3-2-2" class="contact-details" style="margin-bottom: 10px; margin-top: 20px;">Contact us</p>
         <div id="igiuzk" class="flex-div row-div">
-          <a id="i2tpy3" aria-label="facebook" href="" target="_blank"><img alt="facebook page link" loading="lazy" id="i3gekg" height="49px" width="49px" src=${
+          <a id="i2tpy3" aria-label="facebook" href="https://www.facebook.com/profile.php?id=61559284304658" target="_blank"><img alt="facebook page link" loading="lazy" id="i3gekg" height="49px" width="49px" src=${
             isLocation ? "../assets/fb.svg" : "assets/fb.svg"
           } /></a>
           <a id="i2tpy3-2" aria-label="instagram" href="https://www.instagram.com/daynightpackersand/" target="_blank"><img alt="instagram page link" loading="lazy" id="i3gekg-2" height="33px" width="33px" src=${
@@ -749,7 +775,7 @@ function removeCurrentLocationLI(finalPath) {
 
 function main() {
   const { finalPath, isLocation } = getPathAndLocation();
-  const htmlContent = createHtmlContent(isLocation);
+  const htmlContent = createHtmlContent(finalPath, isLocation);
   manageDOM(htmlContent, finalPath, isLocation);
 }
 
@@ -758,9 +784,13 @@ main();
 // Events handling
 closeModal();
 onSubmit();
+
 let dayNightTimeout;
-let slidesTimeout;
 let dayNightSlideIndex = 0;
+if (!getPathAndLocation().isLocation) {
+  showSlides("day-night-slides", "day-night-dot", dayNightSlideIndex);
+}
+
+let slidesTimeout;
 let slideIndex = 0;
-showSlides("day-night-slides", "day-night-dot", dayNightSlideIndex);
 showSlides("mySlides", "dot", slideIndex);
