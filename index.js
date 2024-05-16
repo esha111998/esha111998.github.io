@@ -167,8 +167,8 @@ function createHtmlContent(finalPath, isLocation) {
     "Cuttack",
   ];
   const locations2 = [
-    "Delhi",
     "Dehradun",
+    "Delhi",
     "Dwarka",
     "Dwarka Delhi",
     "Fridabad",
@@ -236,7 +236,6 @@ function createHtmlContent(finalPath, isLocation) {
     "Tirupur",
     "Trichy",
     "Trivandrum",
-    "Thoraipakkam",
     "Udaipur",
     "Vadodra",
     "Varanasi",
