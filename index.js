@@ -66,7 +66,7 @@ function updateUI(tryOrCatch, submitBtn, formEle) {
 function callAPI(formEle, submitBtn) {
   const formData = new FormData(formEle);
   const URL =
-    "https://script.google.com/macros/s/AKfycbytcIOAWBFDsi6fBQphzMs7wOzDpe3tDfv7gYkNGzny7pt058crKy0K48CGv0k5GA3b/exec";
+    "https://script.google.com/macros/s/AKfycbzJhx_W2TP08ZwTOWRaQ2u9OWZsWkwyakIpWs_d3xH_2tFv195Y_FAmQkmHQ4LU2SMjnA/exec";
 
   fetch(URL, {
     method: "POST",
