@@ -260,13 +260,13 @@ function createHtmlContent(finalPath, isLocation) {
         <a aria-label="mobile" class="flex-div row-div" href=tel:+919911198767><img alt="" src=${
           isLocation ? "../assets/phone.svg" : "assets/phone.svg"
         } width="30px" height="30px"></img>
-          <p style="font-size: 20px; font-weight: 700; color: ${brand}">+91-9911198767</p></a>
+          <p class="header-font-size" style="font-weight: 700; color: ${brand}">+91-9911198767</p></a>
         </div>
         <div style="align-self: flex-start;">
         <a aria-label="email" class="flex-div row-div" href="mailto:daynightpackersandmovers@gmail.com"><img alt="" src=${
           isLocation ? "../assets/mail.svg" : "assets/mail.svg"
         } width="30px" height="30px"></img>
-          <p style="margin: 5px; font-size: 20px; font-weight: 700; line-break: anywhere; color: ${brand}">daynightpackersandmovers@gmail.com</p></a>
+          <p class="header-font-size" style="margin: 5px; font-weight: 700; line-break: anywhere; color: ${brand}">daynightpackersandmovers@gmail.com</p></a>
         </div>
       </div>
     </div>
@@ -413,7 +413,7 @@ function createHtmlContent(finalPath, isLocation) {
 
   <div id="our-services" class="contact border-bottom-class" style="background: #ffc7a9;">
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">Decoding Excellence: Illuminating Our Range of Services. 💼 #ServiceSavvy</h1>
+      <h1 class="i78bq-2-3 contact-details h1-font-size">Decoding Excellence: Illuminating Our Range of Services. 💼 #ServiceSavvy</h1>
       <div id="our-services-content">   
         <div>
           <ul class="service-desc" style="font-size: 18px; line-height: 2.0em;">
@@ -438,7 +438,7 @@ function createHtmlContent(finalPath, isLocation) {
 
   <div id="our-team" class="contact border-bottom-class" style="background: #5ad5ff;">
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">United in Purpose, Stronger in Unity. 🌟 Dynamics of our Team</h1>
+      <h1 class="i78bq-2-3 contact-details h1-font-size">United in Purpose, Stronger in Unity. 🌟 Dynamics of our Team</h1>
       <div id="our-team-content">
         <div class="fill-form-img-div" style="align-self: center;">
           <img alt="" loading="lazy" width="600px" height="auto" src=${
@@ -464,7 +464,7 @@ function createHtmlContent(finalPath, isLocation) {
 
   <div id="client-reviews" class="contact border-bottom-class" style="background: #d7e973;">
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">Voices of Satisfaction: Hear What Our Customers Have to Say! 🌟 #HappyCustomersSpeak</h1>
+      <h1 class="i78bq-2-3 contact-details h1-font-size">Voices of Satisfaction: Hear What Our Customers Have to Say! 🌟 #HappyCustomersSpeak</h1>
       <div class="">
         <div class="slideshow-container">
           <!-- Full-width images with number and caption text -->
@@ -520,7 +520,7 @@ function createHtmlContent(finalPath, isLocation) {
 
   <div id="charges-table" class="contact border-bottom-class" style="background: #b2b2eb;">
   <div class="iyohgi" style="text-align: center;">
-    <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">Fair Pricing, Exceptional Value: Exploring Our Transparent Charges. 💰 #QualityMeetsAffordability</h1>
+    <h1 class="i78bq-2-3 contact-details h1-font-size">Fair Pricing, Exceptional Value: Exploring Our Transparent Charges. 💰 #QualityMeetsAffordability</h1>
     <div style="background: white; overflow-x:auto; border-radius: 5px; margin: 30px;">
       <table style="border-color: white;">
         <thead style="background: #16163F; color: white;">
@@ -590,7 +590,7 @@ function createHtmlContent(finalPath, isLocation) {
 
   <div id="process-steps" class="contact border-bottom-class" style="background: #94ddd7;">
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details" style="font-size: xx-large;">Unlocking Convenience: The Seamless Steps to Availing Our Services. 🛠️ #CustomerExperience</h1>
+      <h1 class="i78bq-2-3 contact-details h1-font-size">Unlocking Convenience: The Seamless Steps to Availing Our Services. 🛠️ #CustomerExperience</h1>
       <div class="">
         <!--<div class="fill-form-img-div" style="align-self: center;">
           <img alt="" loading="lazy" width="600px" height="auto" src=${
@@ -611,7 +611,7 @@ function createHtmlContent(finalPath, isLocation) {
 
   <div id="services" class="services border-bottom-class iyohgi">
     <div id="iymxg" class="service-info">
-      <h1 class="i78bq contact-details" style="font-size: xx-large;" data-custom-content="services">
+      <h1 class="i78bq contact-details h1-font-size" data-custom-content="services">
       Everywhere You Need Us to Be: Discovering Our Global Presence. 🌍 #AccessibleInnovation
       </h1>
     </div>
@@ -718,7 +718,7 @@ function createHtmlContent(finalPath, isLocation) {
 
   <div id="contact" class="contact border-bottom-class" style="background: #047d9d;">
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="contact-details" style="font-size: xx-large;">Doubts Dismissed: Let Us Clear the Path to Clarity. 🌟 #ConfidenceInAnswers</h1>
+      <h1 class="contact-details h1-font-size">Doubts Dismissed: Let Us Clear the Path to Clarity. 🌟 #ConfidenceInAnswers</h1>
       <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
         <div class="fill-form-img-div" style="align-self: center;">
           <img alt="" loading="lazy" width="500px" height="auto" src=${
