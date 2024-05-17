@@ -249,7 +249,7 @@ function createHtmlContent(finalPath, isLocation) {
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="iu9w" class="navbar-cont" style="background: #fffbf6;">
     <div id="ibulz" class="nav-inner">
-      <a href="https://esha111998.github.io/">
+      <a href="https://daynightpackersmovers.com/">
         <img id="logo" alt="" src=${
           isLocation ? "../assets/logonew.png" : "assets/logonew.png"
         } width="auto" height="100px"></img>
@@ -415,7 +415,7 @@ function createHtmlContent(finalPath, isLocation) {
       <h1 class="i78bq-2-3 contact-details h1-font-size">Decoding Excellence: Illuminating Our Range of Services. 💼 #ServiceSavvy</h1>
       <div id="our-services-content">   
         <div>
-          <ul class="service-desc" style="font-size: 18px; line-height: 2.0em;">
+          <ul class="service-desc" style="line-height: 2.0em;">
             <li><h2>Packers And Movers</h2></li>
             <li><h2>Car And Bike Carrier</h2></li>
             <li><h2>Shipping Service</h2></li>
@@ -749,7 +749,7 @@ function createHtmlContent(finalPath, isLocation) {
   </div>
 
   <div class="copyright-footer" style="background-color: aliceblue;">
-    <p id="iy2lbi">© 2024 powered by Day Night Packers And Movers</p>
+    <p id="iy2lbi">© ${new Date().getFullYear()} powered by Day Night Packers And Movers</p>
   </div>
 
   <div id="modal" class="modal">

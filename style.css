@@ -115,7 +115,7 @@
     color:#16163F;
   }
   .i78bq-2-3{
-    font-size:20px;
+    /* font-size:20px; */
     margin:0px 0px 30px 0px;
     align-self: center;
   }
@@ -134,7 +134,7 @@
   }
 
   .h1-font-size{
-    font-size: xx-large;
+    /* font-size: xx-large; */
   }
 
   .flex-div{
@@ -496,7 +496,7 @@
       font-size: 16px;
     }
     .h1-font-size{
-      font-size: larger;
+      /* font-size: larger; */
     }
   }
   @media (max-width: 290px){
@@ -521,7 +521,7 @@
       font-size: 16px;
     }
     .h1-font-size{
-      font-size: larger;
+      /* font-size: larger; */
     }
   }
   
