@@ -1,3 +1,0 @@
-User-agent: *
-Disallow: index.js               # Disallow access to js file
-Disallow: style.css               # Disallow access to css file
