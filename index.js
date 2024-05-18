@@ -412,7 +412,7 @@ function createHtmlContent(finalPath, isLocation) {
 
   <div id="our-services" class="contact border-bottom-class" style="background: #ffc7a9;">
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details h1-font-size">Decoding Excellence: Illuminating Our Range of Services. 💼 #ServiceSavvy</h1>
+      <h1 class="i78bq-2-3 contact-details h1-font-size">Decoding Excellence: Illuminating Our Range of Services at Day Night Packers and Movers</h1>
       <div id="our-services-content">   
         <div>
           <ul class="service-desc" style="line-height: 2.0em;">
@@ -437,7 +437,7 @@ function createHtmlContent(finalPath, isLocation) {
 
   <div id="our-team" class="contact border-bottom-class" style="background: #5ad5ff;">
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details h1-font-size">United in Purpose, Stronger in Unity. 🌟 Dynamics of our Team</h1>
+      <h1 class="i78bq-2-3 contact-details h1-font-size">United in Purpose, Stronger in Unity. 🌟 Dynamics of Day Night Packers and Movers Team</h1>
       <div id="our-team-content">
         <div class="fill-form-img-div" style="align-self: center;">
           <img alt="" loading="lazy" width="600px" height="auto" src=${
@@ -455,7 +455,7 @@ function createHtmlContent(finalPath, isLocation) {
           
           <p>Contact us today to experience the difference our dedicated team can make in your next relocation journey.<br /><br /><br />
           
-          <h2>Let's move forward together!</h2></p>
+          <h2>Let's move forward with Day Night Packers and Movers!</h2></p>
         </div>
       </div>
     </div>
@@ -463,7 +463,7 @@ function createHtmlContent(finalPath, isLocation) {
 
   <div id="client-reviews" class="contact border-bottom-class" style="background: #d7e973;">
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details h1-font-size">Voices of Satisfaction: Hear What Our Customers Have to Say! 🌟 #HappyCustomersSpeak</h1>
+      <h1 class="i78bq-2-3 contact-details h1-font-size">Voices of Satisfaction: Hear What Customers Have to Say about Day Night Packers and Movers</h1>
       <div class="">
         <div class="slideshow-container">
           <!-- Full-width images with number and caption text -->
@@ -519,7 +519,7 @@ function createHtmlContent(finalPath, isLocation) {
 
   <div id="charges-table" class="contact border-bottom-class" style="background: #b2b2eb;">
   <div class="iyohgi" style="text-align: center;">
-    <h1 class="i78bq-2-3 contact-details h1-font-size">Fair Pricing, Exceptional Value: Exploring Our Transparent Charges. 💰 #QualityMeetsAffordability</h1>
+    <h1 class="i78bq-2-3 contact-details h1-font-size">Fair Pricing, Exceptional Value: Explore Transparent Charges at Day Night packers and Movers</h1>
     <div style="background: white; overflow-x:auto; border-radius: 5px; margin: 30px;">
       <table style="border-color: white;">
         <thead style="background: #16163F; color: white;">
@@ -589,7 +589,7 @@ function createHtmlContent(finalPath, isLocation) {
 
   <div id="process-steps" class="contact border-bottom-class" style="background: #94ddd7;">
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details h1-font-size">Unlocking Convenience: The Seamless Steps to Availing Our Services. 🛠️ #CustomerExperience</h1>
+      <h1 class="i78bq-2-3 contact-details h1-font-size">Unlocking Convenience: The Seamless Steps to Avail Services at Day Night Packers and Movers</h1>
       <div class="">
         <!--<div class="fill-form-img-div" style="align-self: center;">
           <img alt="" loading="lazy" width="600px" height="auto" src=${
@@ -611,7 +611,7 @@ function createHtmlContent(finalPath, isLocation) {
   <div id="services" class="services border-bottom-class iyohgi">
     <div id="iymxg" class="service-info">
       <h1 class="i78bq contact-details h1-font-size" data-custom-content="services">
-      Everywhere You Need Us to Be: Discovering Our Global Presence. 🌍 #AccessibleInnovation
+      Everywhere You Need Us to Be: Discovering Global Presence of Day Night Packers and Movers
       </h1>
     </div>
     <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
@@ -717,7 +717,7 @@ function createHtmlContent(finalPath, isLocation) {
 
   <div id="contact" class="contact border-bottom-class" style="background: #047d9d;">
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="contact-details h1-font-size">Doubts Dismissed: Let Us Clear the Path to Clarity. 🌟 #ConfidenceInAnswers</h1>
+      <h1 class="contact-details h1-font-size">Doubts Dismissed: Let Us Clear the Path to Clarity with Day Night Packers and Movers</h1>
       <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
         <div class="fill-form-img-div" style="align-self: center;">
           <img alt="" loading="lazy" width="500px" height="auto" src=${
