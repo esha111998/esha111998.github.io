@@ -412,7 +412,7 @@ function createHtmlContent(finalPath, isLocation) {
 
   <div id="our-services" class="contact border-bottom-class" style="background: #ffc7a9;">
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details h1-font-size">Decoding Excellence: Illuminating Our Range of Services at Day Night Packers and Movers</h1>
+      <h1 class="i78bq-2-3 contact-details ">Decoding Excellence: Illuminating Our Range of Services at Day Night Packers and Movers</h1>
       <div id="our-services-content">   
         <div>
           <ul class="service-desc" style="line-height: 2.0em;">
@@ -437,7 +437,7 @@ function createHtmlContent(finalPath, isLocation) {
 
   <div id="our-team" class="contact border-bottom-class" style="background: #5ad5ff;">
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details h1-font-size">United in Purpose, Stronger in Unity. 🌟 Dynamics of Day Night Packers and Movers Team</h1>
+      <h1 class="i78bq-2-3 contact-details ">United in Purpose, Stronger in Unity. 🌟 Dynamics of Day Night Packers and Movers Team</h1>
       <div id="our-team-content">
         <div class="fill-form-img-div" style="align-self: center;">
           <img alt="" loading="lazy" width="600px" height="auto" src=${
@@ -463,7 +463,7 @@ function createHtmlContent(finalPath, isLocation) {
 
   <div id="client-reviews" class="contact border-bottom-class" style="background: #d7e973;">
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details h1-font-size">Voices of Satisfaction: Hear What Customers Have to Say about Day Night Packers and Movers</h1>
+      <h1 class="i78bq-2-3 contact-details ">Voices of Satisfaction: Hear What Customers Have to Say about Day Night Packers and Movers</h1>
       <div class="">
         <div class="slideshow-container">
           <!-- Full-width images with number and caption text -->
@@ -519,7 +519,7 @@ function createHtmlContent(finalPath, isLocation) {
 
   <div id="charges-table" class="contact border-bottom-class" style="background: #b2b2eb;">
   <div class="iyohgi" style="text-align: center;">
-    <h1 class="i78bq-2-3 contact-details h1-font-size">Fair Pricing, Exceptional Value: Explore Transparent Charges at Day Night packers and Movers</h1>
+    <h1 class="i78bq-2-3 contact-details ">Fair Pricing, Exceptional Value: Explore Transparent Charges at Day Night packers and Movers</h1>
     <div style="background: white; overflow-x:auto; border-radius: 5px; margin: 30px;">
       <table style="border-color: white;">
         <thead style="background: #16163F; color: white;">
@@ -589,20 +589,12 @@ function createHtmlContent(finalPath, isLocation) {
 
   <div id="process-steps" class="contact border-bottom-class" style="background: #94ddd7;">
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details h1-font-size">Unlocking Convenience: The Seamless Steps to Avail Services at Day Night Packers and Movers</h1>
+      <h1 class="i78bq-2-3 contact-details ">Unlocking Convenience: The Seamless Steps to Avail Services at Day Night Packers and Movers</h1>
       <div class="">
-        <!--<div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="600px" height="auto" src=${
-            isLocation
-              ? "../assets/3TakeOurServices.gif"
-              : "assets/3TakeOurServices.gif"
-          }></img>
-        </div>-->
         <div style="text-align: left; display: flex; flex-direction: column; gap: 40px; padding: 0px 150px 0px 150px;">
           <div class="card process-cards" style="align-self: flex-start;"><b style="font-size: 30px;">01 </b>  Get in Touch for a Seamless Moving Experience! 📦✨ <br />Contact Us Today!</div>
           <div class="card process-cards" style="align-self: flex-end;"><b style="font-size: 30px;">02 </b>  Planning Your Move? Let's Get Started with a Free Survey and Quotation!</div>
           <div class="card process-cards" style="align-self: flex-start;"><b style="font-size: 30px;">03 </b>  Ready to Make Your Move? Book with Us Today and Be a part of Smooth Transition!</div>
-          <!--<div class="card process-cards" style="align-self: flex-end;"><b style="font-size: 30px;">04 </b>  Book us</div>-->
         </div>
       </div>
     </div>
@@ -610,7 +602,7 @@ function createHtmlContent(finalPath, isLocation) {
 
   <div id="services" class="services border-bottom-class iyohgi">
     <div id="iymxg" class="service-info">
-      <h1 class="i78bq contact-details h1-font-size" data-custom-content="services">
+      <h1 class="i78bq contact-details " data-custom-content="services">
       Everywhere You Need Us to Be: Discovering Global Presence of Day Night Packers and Movers
       </h1>
     </div>
@@ -629,14 +621,6 @@ function createHtmlContent(finalPath, isLocation) {
                   Movers in ${loc}</a></li>`;
               })
               .join("")}
-            <!--<li id="locations/ahemdabad.html"><a class="contact-details" href="locations/ahemdabad.html">Packers and
-                Movers in Ahemdabad</a></li>
-            <li id="locations/banglore.html"><a class="contact-details" href="locations/banglore.html">Packers and
-                Movers in Banglore</a></li>
-            <li id="locations/chennai.html"><a class="contact-details" href="locations/chennai.html">Packers and
-                Movers in Chennai</a></li>
-            <li id="locations/coimbatore.html"><a class="contact-details" href="locations/coimbatore.html">Packers
-                and Movers in Coimbatore</a></li>-->
           </ul>
         </div>
         <div id="ilmjk-2" class="service-cont">
@@ -646,15 +630,6 @@ function createHtmlContent(finalPath, isLocation) {
                 return `<li id="locations/${loc}.html"><a class="contact-details" href="locations/${loc}.html">Packers and Movers in ${loc}</a></li>`;
               })
               .join("")}
-            <!--
-            <li id="locations/delhi.html"><a class="contact-details" href="locations/delhi.html">Packers and Movers
-                in Delhi</a></li>
-            <li id="locations/faridabad.html"><a class="contact-details" href="locations/faridabad.html">Packers and
-                Movers in Faridabad</a></li>
-            <li id="locations/ghaziabad.html"><a class="contact-details" href="locations/ghaziabad.html">Packers and
-                Movers in Ghaziabad</a></li>
-            <li id="locations/gurgaon.html"><a class="contact-details" href="locations/gurgaon.html">Packers and
-                Movers in Gurgaon</a></li>-->
           </ul>
         </div>
         <div id="ilmjk-3" class="service-cont">
@@ -665,14 +640,6 @@ function createHtmlContent(finalPath, isLocation) {
                 Movers in ${loc}</a></li>`;
             })
             .join("")}
-          <!--  <li id="locations/hyderabad.html"><a class="contact-details" href="locations/hyderabad.html">Packers and
-                Movers in Hyderabad</a></li>
-            <li id="locations/indore.html"><a class="contact-details" href="locations/indore.html">Packers and
-                Movers in Indore</a></li>
-            <li id="locations/jaipur.html"><a class="contact-details" href="locations/jaipur.html">Packers and
-                Movers in Jaipur</a></li>
-            <li id="locations/kolkata.html"><a class="contact-details" href="locations/kolkata.html">Packers and
-                Movers in Kolkata</a></li>-->
           </ul>
         </div>
         <div id="ilmjk-4" class="service-cont">
@@ -683,14 +650,6 @@ function createHtmlContent(finalPath, isLocation) {
                 Movers in ${loc}</a></li>`;
             })
             .join("")}
-          <!-- <li id="locations/mumbai.html"><a class="contact-details" href="locations/mumbai.html">Packers and
-                Movers in Mumbai</a></li>
-            <li id="locations/noida.html"><a class="contact-details" href="locations/noida.html">Packers and Movers
-                in Noida</a></li>
-            <li id="locations/pune.html"><a class="contact-details" href="locations/pune.html">Packers and Movers in
-                Pune</a></li>
-            <li id="locations/surat.html"><a class="contact-details" href="locations/surat.html">Packers and Movers
-                in Surat</a></li>-->
           </ul>
         </div>
         <div id="ilmjk-4" class="service-cont">
@@ -701,14 +660,6 @@ function createHtmlContent(finalPath, isLocation) {
                 Movers in ${loc}</a></li>`;
             })
             .join("")}
-          <!-- <li id="locations/mumbai.html"><a class="contact-details" href="locations/mumbai.html">Packers and
-                Movers in Mumbai</a></li>
-            <li id="locations/noida.html"><a class="contact-details" href="locations/noida.html">Packers and Movers
-                in Noida</a></li>
-            <li id="locations/pune.html"><a class="contact-details" href="locations/pune.html">Packers and Movers in
-                Pune</a></li>
-            <li id="locations/surat.html"><a class="contact-details" href="locations/surat.html">Packers and Movers
-                in Surat</a></li>-->
           </ul>
         </div>
       </div>
@@ -717,7 +668,7 @@ function createHtmlContent(finalPath, isLocation) {
 
   <div id="contact" class="contact border-bottom-class" style="background: #047d9d;">
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="contact-details h1-font-size">Doubts Dismissed: Let Us Clear the Path to Clarity with Day Night Packers and Movers</h1>
+      <h1 class="contact-details ">Doubts Dismissed: Let Us Clear the Path to Clarity with Day Night Packers and Movers</h1>
       <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
         <div class="fill-form-img-div" style="align-self: center;">
           <img alt="" loading="lazy" width="500px" height="auto" src=${
