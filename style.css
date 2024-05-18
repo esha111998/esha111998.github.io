@@ -497,6 +497,9 @@
       height: auto;
       object-fit: cover;
     }
+    .process-card-parent{
+      padding: 5px !important;
+    }
     .contact-details{
       /* line-break: anywhere; */
     }
