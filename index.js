@@ -282,7 +282,7 @@ function createHtmlContent(finalPath, isLocation) {
               isLocation ? "../assets/1.png" : "assets/1.png"
             } height="300px" width="300px">
             <div class="day-night-text">
-              24/7 Dedication: Working Around the Clock to Serve You Better. ⏰ #AlwaysOn
+              24/7 Dedication: Working Around the Clock to Serve You Better. ⏰ #Always On
             </div>
           </div>
 
@@ -290,7 +290,7 @@ function createHtmlContent(finalPath, isLocation) {
             <img class="slideImg" alt="" loading="lazy" src=${
               isLocation ? "../assets/2.png" : "assets/2.png"
             } height="300px" width="350px">
-            <div class="day-night-text">Safe and Sound, Every Detail Perfected. 🛡️✨ #ExcellenceAssured
+            <div class="day-night-text">Safe and Sound, Every Detail Perfected. 🛡️✨ #Excellence Assured
             <br /><br />
             </div>
           </div>
@@ -299,7 +299,7 @@ function createHtmlContent(finalPath, isLocation) {
             <img class="slideImg" alt="" loading="lazy" src=${
               isLocation ? "../assets/3.png" : "assets/3.png"
             } height="300px" width="350px">
-            <div class="day-night-text">Powered by Excellence: Our Arsenal of Resources Ready for You. 💼⚙️ #PreparedForSuccess
+            <div class="day-night-text">Powered by Excellence: Our Arsenal of Resources Ready for You. 💼⚙️ #Prepared For Success
             </div>
           </div>
 
@@ -307,7 +307,7 @@ function createHtmlContent(finalPath, isLocation) {
             <img class="slideImg" alt="" loading="lazy" src=${
               isLocation ? "../assets/4.png" : "assets/4.png"
             } height="300px" width="320px">
-            <div class="day-night-text">Your Trusted Partner: Where Every Customer Finds a Companion. 🤝 #CustomerFirst
+            <div class="day-night-text">Your Trusted Partner: Where Every Customer Finds a Companion. 🤝 #Customer First
             </div>
           </div>
 
@@ -315,7 +315,7 @@ function createHtmlContent(finalPath, isLocation) {
             <img class="slideImg" alt="" loading="lazy" src=${
               isLocation ? "../assets/5.png" : "assets/5.png"
             } height="300px" width="320px">
-            <div class="day-night-text">Relax, We've Got You Covered: Ensuring Customer Satisfaction Every Step of the Way. 😌👌 #PeaceOfMindService
+            <div class="day-night-text">Relax, We've Got You Covered: Ensuring Customer Satisfaction Every Step of the Way. 😌👌 #Peace Of Mind Service
             </div>
           </div>
 
