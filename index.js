@@ -627,7 +627,7 @@ function createHtmlContent(finalPath, isLocation) {
           <ul id="ipekj-2" class="service-desc">
             ${locations2
               .map((loc) => {
-                return `<li id="locations/${loc}.html"><a class="contact-details" href="locations/${loc}.html">Packers and Movers in ${loc}</a></li>`;
+                return `<li id="locations/${loc}.html"><a class="contact-details" href="https://www.daynightpackersmovers.com/locations/${loc}.html">Packers and Movers in ${loc}</a></li>`;
               })
               .join("")}
           </ul>
@@ -636,7 +636,7 @@ function createHtmlContent(finalPath, isLocation) {
           <ul id="ipekj-3" class="service-desc">
           ${locations3
             .map((loc) => {
-              return `<li id="locations/${loc}.html"><a class="contact-details" href="locations/${loc}.html">Packers and
+              return `<li id="locations/${loc}.html"><a class="contact-details" href="https://www.daynightpackersmovers.com/locations/${loc}.html">Packers and
                 Movers in ${loc}</a></li>`;
             })
             .join("")}
@@ -646,7 +646,7 @@ function createHtmlContent(finalPath, isLocation) {
           <ul id="ipekj-4" class="service-desc">
           ${locations4
             .map((loc) => {
-              return `<li id="locations/${loc}.html"><a class="contact-details" href="locations/${loc}.html">Packers and
+              return `<li id="locations/${loc}.html"><a class="contact-details" href="https://www.daynightpackersmovers.com/locations/${loc}.html">Packers and
                 Movers in ${loc}</a></li>`;
             })
             .join("")}
@@ -656,7 +656,7 @@ function createHtmlContent(finalPath, isLocation) {
           <ul id="ipekj-4" class="service-desc">
           ${locations5
             .map((loc) => {
-              return `<li id="locations/${loc}.html"><a class="contact-details" href="locations/${loc}.html">Packers and
+              return `<li id="locations/${loc}.html"><a class="contact-details" href="https://www.daynightpackersmovers.com/locations/${loc}.html">Packers and
                 Movers in ${loc}</a></li>`;
             })
             .join("")}
