@@ -617,7 +617,7 @@ function createHtmlContent(finalPath, isLocation) {
           <ul id="ipekj" class="service-desc">
             ${locations1
               .map((loc) => {
-                return `<li id="locations/${loc}.html"><a class="contact-details" href="locations/${loc}.html">Packers and
+                return `<li id="locations/${loc}.html"><a class="contact-details" href="https://www.daynightpackersmovers.com/locations/${loc}.html">Packers and
                   Movers in ${loc}</a></li>`;
               })
               .join("")}
