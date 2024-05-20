@@ -244,7 +244,7 @@ function createHtmlContent(finalPath, isLocation) {
     "Vizag",
     "Whitefield",
   ];
-  const cityName = finalPath?.split('/')?.[1]?.split('.')?.[0];
+  const cityName = finalPath?.split("/")?.[1]?.split(".")?.[0];
   return `
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="iu9w" class="navbar-cont" style="background: #fffbf6;">
@@ -337,9 +337,7 @@ function createHtmlContent(finalPath, isLocation) {
       <div id="city-section-content">
         <div class="fill-form-img-div" style="align-self: center;">
           <img alt="" loading="lazy" width="400px" height="auto" src=${
-            isLocation
-              ? "../assets/citySection.gif"
-              : "assets/citySection.gif"
+            isLocation ? "../assets/citySection.gif" : "assets/citySection.gif"
           }></img>
         </div>
         <div class="contact-details">
@@ -372,7 +370,15 @@ function createHtmlContent(finalPath, isLocation) {
             <input id="moving-date" name="movingDate" type="date" autocomplete="off" required></input>
             <input id="leadSource" name="leadSource" value="Inquiry Form" style="display: none;"></input>
             <input id="inquiryDate" name="inquiryDate" value=${Intl.DateTimeFormat(
-              "en-GB"
+              "en-GB",
+              {
+                year: "numeric",
+                month: "2-digit",
+                day: "2-digit",
+                hour: "2-digit",
+                minute: "2-digit",
+                hour12: false,
+              }
             ).format(new Date())} style="display: none;"></input>
             <button id="submit-btn" type="submit">Submit</button>
           </form>
