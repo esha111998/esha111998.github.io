@@ -61,6 +61,7 @@
   }
   a{
     text-decoration:none;
+    color:#16163F;
   }
   .learn-more{
     color:white;
@@ -102,7 +103,7 @@
     position:relative;
     background: #ffae15;
   }
-  #igiuzk>a{
+  .igiuzk>a{
     margin-right:10px;
   }
   .copyright-footer{
@@ -127,6 +128,44 @@
     margin:0 0px 0px 0px;
     padding: 50px;
   }
+
+  span{
+    font-size: 18px;
+  }
+
+  /* collapsible FAQs css start */
+  /* Style the button that is used to open and close the collapsible content */
+  .collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+
+  .active {
+    margin-bottom: 0px;
+  }
+
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 18px 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    margin-bottom: 20px;
+  }
+  /* collapsible css ends */
 
   .header-font-size{
     font-size: 20px;
@@ -481,7 +520,7 @@
     #logo{
       height: 50px;
     }
-    #igiuzk{
+    .igiuzk{
       flex-direction: column;
     }
     .iyohgi{
@@ -506,7 +545,7 @@
     #logo{
       height: 50px;
     }
-    #igiuzk{
+    .igiuzk{
       flex-direction: column;
     }
     .iyohgi{
