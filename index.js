@@ -55,7 +55,6 @@ function updateUI(tryOrCatch, submitBtn, formEle) {
   formEle.removeEventListener("submit", processFormSubmission);
   const modalImg = document.getElementById("modal-img");
   const modalP = document.getElementById("modal-p");
-  const { isLocation } = getPathAndLocation();
   if (tryOrCatch === "try") {
     modalImg.src = isLocation ? "../assets/tick.svg" : "assets/tick.svg";
     modalP.innerHTML = "Thank you! <br /> We will contact you shortly.";
@@ -946,7 +945,6 @@ function removeCurrentLocationLI() {
 }
 
 function main() {
-  // const { finalPath, isLocation, isLink } = getPathAndLocation();
   const htmlContent = createHtmlContent();
   manageDOM(htmlContent);
 }
