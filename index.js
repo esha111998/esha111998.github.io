@@ -452,7 +452,7 @@ function createHtmlContent(finalPath, isLocation, isLink) {
     "Rudrapur",
     "Rourkela",
     "Sarjapur Road",
-    "Secunerabad",
+    "Secunderabad",
     "Siliguri",
     "Surat",
     "Thoraipakkam",
