@@ -396,7 +396,7 @@ function createHtmlContent(finalPath, isLocation, isLink) {
     "Delhi",
     "Dwarka",
     "Dwarka Delhi",
-    "Fridabad",
+    "Faridabad",
     "Gandhidham",
     "Ghaziabad",
     "Goa",
