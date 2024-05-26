@@ -9,6 +9,8 @@ function getPathAndLocation() {
   return { finalPath, isLocation, isLink };
 }
 
+const { finalPath, isLocation, isLink } = getPathAndLocation();
+
 function showModal() {
   const modal = document.getElementById("modal");
   modal.style.display = "block";
@@ -81,33 +83,6 @@ function callAPI(formEle, submitBtn) {
     .catch(() => {
       updateUI("catch", submitBtn, formEle);
     });
-
-  // const subject = `Inquiry | ${payload.name}`;
-  // const emailContent = `You got an inquiry! <br /><br /> <b>Name:</b> ${payload.name} <br /> <b>Phone:</b> ${payload.phone} <br /> <b>Moving From:</b> ${payload.fro} <br /> <b>Moving To:</b> ${payload.to} <br /> <b>Requested Moving Date:</b> ${payload.movingDate} <br />`;
-  // const key = "C658082A837A6EF33562359FC952BB33D40E";
-
-  // window.Email.send({
-  //   Host: "smtp.elasticemail.com",
-  //   Username: "eshagoyal98@gmail.com",
-  //   Password: key,
-  //   To: "eshagoyal98@gmail.com",
-  //   // From: document.getElementById("email").value,
-  //   From: "tanwarankit04@gmail.com",
-  //   Subject: subject,
-  //   Body: emailContent,
-  // }).then((message) => {
-  //   const modalImg = document.getElementById("modal-img");
-  //   const modalP = document.getElementById("modal-p");
-  //   const { isLocation } = getPathAndLocation();
-  //   if (message === "OK") {
-  //     modalImg.src = isLocation ? "../assets/tick.svg" : "assets/tick.svg";
-  //     modalP.innerHTML = "Email sent successfully!";
-  //   } else {
-  //     modalImg.src = isLocation ? "../assets/cross.svg" : "assets/cross.svg";
-  //     modalP.innerHTML = "Unable to send email!";
-  //   }
-  //   showModal();
-  // });
 }
 
 function currentSlide(slideClassName, dotClassName, slideIndex) {
@@ -367,7 +342,7 @@ function getFAQsContent(nested) {
   `;
 }
 
-function createHtmlContent(finalPath, isLocation, isLink) {
+function createHtmlContent() {
   const brand = "#FF5823";
   const locations1 = [
     "Agra",
@@ -956,37 +931,38 @@ function createHtmlContent(finalPath, isLocation, isLink) {
   </div>`;
 }
 
-function manageDOM(htmlContent, finalPath, isLocation) {
+function manageDOM(htmlContent) {
   const container = document.createElement("div");
   container.innerHTML = htmlContent;
   document.body.appendChild(container);
-  if (isLocation) removeCurrentLocationLI(finalPath);
+  if (isLocation) removeCurrentLocationLI();
 }
 
-function removeCurrentLocationLI(finalPath) {
+function removeCurrentLocationLI() {
   const li = document.getElementById(finalPath);
   li?.remove();
 }
 
 function main() {
-  const { finalPath, isLocation, isLink } = getPathAndLocation();
-  const htmlContent = createHtmlContent(finalPath, isLocation, isLink);
-  manageDOM(htmlContent, finalPath, isLocation);
+  // const { finalPath, isLocation, isLink } = getPathAndLocation();
+  const htmlContent = createHtmlContent();
+  manageDOM(htmlContent);
 }
 
 main();
 
-// Events handling
-closeModal();
-onSubmit();
-collapsibleProcessing();
+if (isLink) collapsibleProcessing();
 
 let dayNightTimeout;
 let dayNightSlideIndex = 0;
-if (!getPathAndLocation().isLocation) {
+if (!isLocation && !isLink) {
   showSlides("day-night-slides", "day-night-dot", dayNightSlideIndex);
 }
 
 let slidesTimeout;
 let slideIndex = 0;
-showSlides("mySlides", "dot", slideIndex);
+if (!isLink) {
+  closeModal();
+  onSubmit();
+  showSlides("mySlides", "dot", slideIndex);
+}
