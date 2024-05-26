@@ -614,11 +614,9 @@ function createHtmlContent() {
           <p style="font-size: 19px; font-weight: 700;">Worried About Your Next Relocation During Busy Schedule??</p><br />
           <p style="font-size: xxx-large; font-weight: 800;">Let Us Help You!!</p><br /><br />
           <p>
-          Moving to a new place? Let us take the stress out of your relocation journey and turn it into a seamless experience you'll remember fondly. At Day Night Packers and Movers, we're not just movers – we're your partners in making your transition smooth, efficient, and worry-free.
+          Moving to a new place? Let Day Night Packers and Movers take the stress out of your relocation journey and make it seamless. We're your trusted local and long-distance movers, committed to smooth, efficient, and worry-free transitions. With transparent pricing, on-time delivery, and friendly, reliable moving services, we exceed your expectations every step of the way.
           </p><br /><br />
-          <p>
-          From our transparent pricing and on-time delivery to our friendly and reliable service, we're committed to going above and beyond to exceed your expectations every step of the way.
-          </p>
+          <p> For professional movers, affordable packers, and reliable relocation services, contact us today!</p>
         </div>
       </div>
     </div>
@@ -659,13 +657,17 @@ function createHtmlContent() {
           }></img>
         </div>
         <div class="contact-details" style="text-align: left;">
-          <ul gap="2px"><li style="margin-bottom: 10px;">At Day Night Packers and Movers, we're your highly motivated and professional companions, dedicated to making your next relocation a stress-free experience.</li>
+          <ul style="line-height: 2.0em;"><li><b>Highly Motivated and Professional Companions:</b> Day Night Packers and Movers are dedicated to ensuring your relocation is stress-free.</li>
 
-          <li style="margin-bottom: 10px;">Our team is here to assist you every step of the way with precision and perfection whether you're moving across town or across the country.</li>
+          <li><b>Comprehensive Services:</b> From packing and loading to transportation and unpacking, our team handles every aspect of your move.</li>
           
-          <li style="margin-bottom: 10px;">Team of dedicated professionals trained to handle every aspect of your move, from packing and loading to transportation and unpacking.</li>
+          <li><b>Expertise and Experience:</b> With years of experience in the moving industry, we provide top-notch service and support.</li>
           
-          <li>Years of expertise in the industry, we are committed to providing you with the highest level of service and support. we'll be by your side around the clock.</li></ul><br /><br />
+          <li><b>Local and Long-Distance Moving:</b> Whether you're moving across town or across the country, we've got you covered.</li>
+          
+          <li><b>24/7 Support:</b> We're available round the clock to assist you with your relocation needs.</li>
+          
+          <li><b>Transparent Pricing:</b> No hidden fees, just clear and upfront quotes.</li></ul><br /><br />
           
           <p>Contact us today to experience the difference our dedicated team can make in your next relocation journey.<br /><br /><br />
           
