@@ -345,8 +345,8 @@ function createHtmlContent() {
   const brand = "#FF5823";
   const locations1 = [
     "Agra",
-    "Ahemdabad",
-    "Allahbad",
+    "Ahmedabad",
+    "Allahabad",
     "Ambala",
     "Ankleshwar",
     "Aurangabad",
@@ -355,14 +355,14 @@ function createHtmlContent() {
     "Belapur Mumbai",
     "Bhiwandi",
     "Bhopal",
-    "Bhubneswar",
+    "Bhuvneshwar",
     "Bhuj",
     "Bikaner",
     "Calicut",
     "Chandigarh",
     "Chennai",
     "Cochin",
-    "Coimbtore",
+    "Coimbatore",
     "Cuttack",
   ];
   const locations2 = [
@@ -402,12 +402,12 @@ function createHtmlContent() {
     "Madurai",
     "Manesar",
     "Mangalore",
-    "Meemrana",
     "Meerut",
     "Mumbai",
     "Mysore",
     "Nasik",
     "Nagpur",
+    "Neemrana",
   ];
   const locations4 = [
     "Noida",
@@ -439,7 +439,7 @@ function createHtmlContent() {
     "Vadodra",
     "Varanasi",
     "Vapi",
-    "Vijaywada",
+    "Vijayawada",
     "Vizag",
     "Whitefield",
   ];
