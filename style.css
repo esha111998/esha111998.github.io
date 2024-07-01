@@ -354,7 +354,7 @@
 
   .day-night-text {
     color: #16163F;
-    font-weight: 700;
+    /* font-weight: 700; */
     font-size: x-large;
     padding: 8px 12px;
     /* position: absolute; */

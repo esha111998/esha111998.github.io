@@ -489,7 +489,7 @@ function createHtmlContent() {
               isLocation ? "../assets/1.png" : "assets/1.png"
             } height="300px" width="300px">
             <div class="day-night-text">
-              24/7 Dedication: Working Around the Clock to Serve You Better. ⏰ #Always On
+              24/7 Dedication: <b>Day Night Packers and Movers</b> Working Around the Clock to Serve You Better. ⏰ #Always On
             </div>
           </div>
 
@@ -561,7 +561,7 @@ function createHtmlContent() {
 
   <div id="form-detail" class="contact border-bottom-class">
     <div class="iyohgi" class="flex-div col-div" style="align-items: unset;">
-      <p class="i78bq-2-3 contact-details" style="font-size: x-large; text-align: center; border-bottom: 70px;">Relocate with ease! Our professional movers and packers ensure a seamless transition for your home or office. From meticulous packing to safe transportation, trust us for a stress-free move. <b style="font-size: 34px;">Get a quote today!</b></p>
+      <p class="i78bq-2-3 contact-details" style="font-size: x-large; text-align: center; border-bottom: 70px;">Relocate with ease! Our professional packers and movers ensure a seamless transition for your home or office. From meticulous packing to safe transportation, trust us for a stress-free move. <b style="font-size: 34px;">Get a quote today!</b></p>
       <div class="inquire-tos-content">
         <div id="customer-form">
           <form id="inquiry-form" class="flex-div col-div" style="align-items: flex-start;">
@@ -613,7 +613,7 @@ function createHtmlContent() {
           <p style="font-size: 19px; font-weight: 700;">Worried About Your Next Relocation During Busy Schedule??</p><br />
           <p style="font-size: xxx-large; font-weight: 800;">Let Us Help You!!</p><br /><br />
           <p>
-          Moving to a new place? Let Day Night Packers and Movers take the stress out of your relocation journey and make it seamless. We're your trusted local and long-distance movers, committed to smooth, efficient, and worry-free transitions. With transparent pricing, on-time delivery, and friendly, reliable moving services, we exceed your expectations every step of the way.
+          Moving to a new place and searching for house shifting services? Let Day Night Packers and Movers take the stress out of your relocation journey and make it seamless. We're your trusted local and long-distance movers, committed to smooth, efficient, and worry-free transitions. With transparent pricing, on-time delivery, and friendly, reliable moving services, we exceed your expectations every step of the way.
           </p><br /><br />
           <p> For professional movers, affordable packers, and reliable relocation services, contact us today!</p>
         </div>
@@ -633,7 +633,7 @@ function createHtmlContent() {
             <li><h2>Air Freight Forwarding</h2></li>
             <li><h2>Sea Freight Forwarding</h2></li>
             <li><h2>International Relocation</h2></li>
-            <li><h2>Domestic Relocation</h2></li>
+            <li><h2>Home Shifting Services</h2></li>
             <li><h2>Warehousing Service</h2></li>
           </ul>
         </div>
@@ -687,7 +687,7 @@ function createHtmlContent() {
               isLocation ? "../assets/client1.jpg" : "assets/client1.jpg"
             } height="200px" width="200px">
             <div class="text">Rahul Maan, Kapurthala, Punjab <br /><br />
-            "Moving with Day Night Packers and Movers was a breeze! From the initial inquiry to the final delivery, their team was professional, efficient, and careful with our belongings. I highly recommend Day Night Packers and Movers for a stress-free moving experience!"
+            "Moving with Day Night Packers and Movers was a breeze! From the initial inquiry to the final delivery, their team was professional, efficient, and careful with our belongings. I highly recommend Day Night Packers and Movers for a stress-free moving experience. Undoubtedly, best packers and movers!"
             </div>
           </div>
 
@@ -705,7 +705,7 @@ function createHtmlContent() {
               isLocation ? "../assets/client3.jpg" : "assets/client3.jpg"
             } height="200px" width="200px">
             <div class="text">Shalini Dey, Siliguri, West Bengal<br /><br />
-            "Day Night Packers and Movers exceeded my expectations. Their team went above and beyond to ensure my move went smoothly. I'm grateful for their excellent service and would highly recommend them to anyone in need of a moving company."
+            "Day Night Packers and Movers exceeded my expectations, as I was searching for packers and movers near me. Their team went above and beyond to ensure my move went smoothly. I'm grateful for their excellent service and would highly recommend them to anyone in need of a moving company."
             </div>
           </div>
 
@@ -734,7 +734,7 @@ function createHtmlContent() {
 
   <div id="charges-table" class="contact border-bottom-class" style="background: #b2b2eb;">
   <div class="iyohgi" style="text-align: center;">
-    <h1 class="i78bq-2-3 contact-details ">Fair Pricing, Exceptional Value: Explore Transparent Charges at Day Night packers and Movers</h1>
+    <h1 class="i78bq-2-3 contact-details ">Fair Pricing, Exceptional Value: Explore Packers and Movers Charges at Day Night packers and Movers</h1>
     <div style="background: white; overflow-x:auto; border-radius: 5px; margin: 30px;">
       <table style="border-color: white;">
         <thead style="background: #16163F; color: white;">
