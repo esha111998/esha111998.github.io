@@ -429,13 +429,26 @@
   }
   /* scroll bar css ends */
 
+  .active-menu {
+    border-bottom: 1px solid #FF5823;
+    color: #FF5823;
+  }
+
   @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
   }
   /* carousal css end */
 
+  @media (max-width: 1125px){
+    #menus{
+      display: none;
+    }
+  }
   @media (max-width: 992px){
+    #menus{
+      display: none;
+    }
     #customer-form{
       width: 30%;
     }
@@ -458,6 +471,9 @@
     }
   }
   @media (max-width:768px){
+    #menus{
+      display: none;
+    }
     #customer-form{
       width: 40%;
     }
@@ -471,6 +487,9 @@
     }
   }
   @media (max-width: 575px){
+    #menus{
+      display: none;
+    }
     .process-cards{
       align-self: center !important;
     }
@@ -507,18 +526,15 @@
     .iyohgi{
       width:100%;
     }
-    .contact-details{
-      /* line-break: anywhere; */
-    }
   }
   @media (max-width: 460px){
+    #menus{
+      display: none;
+    }
     .fill-form-img-div>img, .slideImg{
       width: 100%;
       height: auto;
       object-fit: cover;
-    }
-    .contact-details{
-      /* line-break: anywhere; */
     }
     #logo{
       height: 50px;
@@ -542,8 +558,8 @@
     .process-card-parent{
       padding: 5px !important;
     }
-    .contact-details{
-      /* line-break: anywhere; */
+    #menus{
+      display: none;
     }
     #logo{
       height: 50px;

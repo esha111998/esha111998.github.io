@@ -338,6 +338,42 @@ function getFAQsContent() {
   `;
 }
 
+function setActiveTab() {
+  const home = document.getElementById("home");
+  const about = document.getElementById("about");
+  const blogs = document.getElementById("blogs");
+  const faqs = document.getElementById("faqs");
+  const services = document.getElementById("services");
+  const menus = [home, about, blogs, faqs, services];
+
+  if (cityOrLinkName === "" || cityOrLinkName === "index") {
+    for (let i = 0; i < menus; i++) {
+      menus[i].className.replace(" active-menu", "");
+    }
+    home.className += " active-menu";
+  } else if (cityOrLinkName === "about-day-night-packers-movers") {
+    for (let i = 0; i < menus; i++) {
+      menus[i].className.replace(" active-menu", "");
+    }
+    about.className += " active-menu";
+  } else if (cityOrLinkName === "self-preparation-before-shifting") {
+    for (let i = 0; i < menus; i++) {
+      menus[i].className.replace(" active-menu", "");
+    }
+    blogs.className += " active-menu";
+  } else if (cityOrLinkName === "queries-before-shifting") {
+    for (let i = 0; i < menus; i++) {
+      menus[i].className.replace(" active-menu", "");
+    }
+    faqs.className += " active-menu";
+  } else if (window.location.hash === "#services") {
+    for (let i = 0; i < menus; i++) {
+      menus[i].className.replace(" active-menu", "");
+    }
+    services.className += " active-menu";
+  }
+}
+
 function extractLocation(str, startIndex) {
   // Split the string by "-"
   let parts = str.split('-');
@@ -467,6 +503,13 @@ function createHtmlContent() {
           "assets/logonew.png"
         } width="auto" height="100px"></img>
       </a>
+      <div id="menus" class="flex-div row-div" style="gap: 20px;">
+        <a id="home" href="https://www.daynightpackersmovers.com/"><b>Home</b></a>
+        <a id="about" href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html"><b>About Us</b></a>
+        <a id="blogs" href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html"><b>Blogs</b></a>
+        <a id="faqs" href="https://www.daynightpackersmovers.com/queries-before-shifting.html"><b>FAQs</b></a>
+        <a id="services" href="https://www.daynightpackersmovers.com/#our-services"><b>Services</b></a>
+      </div>
       <div class="flex-div col-div">
         <div style="align-self: flex-start;">
         <a aria-label="mobile" class="flex-div row-div" href=tel:+919911198767><img alt="" src=${
@@ -481,6 +524,7 @@ function createHtmlContent() {
           <p class="header-font-size" style="margin: 5px; font-weight: 700; line-break: anywhere; color: ${brand}">daynightpackersandmovers@gmail.com</p></a>
         </div>
       </div>
+      <div></div>
     </div>
   </div>
 
@@ -961,6 +1005,7 @@ function main() {
 }
 
 main();
+setActiveTab();
 
 if (cityOrLinkName === "queries-before-shifting") collapsibleProcessing();
 
