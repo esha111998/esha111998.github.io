@@ -561,7 +561,7 @@ function createHtmlContent() {
           }></img>
         </div>
         <div class="contact-details">
-          <p style="font-size: 30px; font-weight: 700;">Welcome to Day Night Packers and Movers in ${extractLocation(cityOrLinkName, 2)} - Your Trusted Partner in Relocation!</p><br /><br />
+          <p style="font-size: 30px; font-weight: 700;">Welcome to Day Night Packers and Movers in ${extractLocation(cityOrLinkName, 3)} - Your Trusted Partner in Relocation!</p><br /><br />
           <p style="font-size: 19px;">At Day Night Packers and Movers, we understand that moving can be a daunting task. Whether you're relocating your home or your business, we are here to make your transition seamless and stress-free.</p><br />
           <p style="font-size: 19px;">
           With years of experience in the industry, our team of dedicated professionals is committed to providing top-notch moving and packing services tailored to meet your specific needs. From packing fragile items with the utmost care to transporting your belongings safely to your new destination, we handle every aspect of your move with precision and efficiency.
