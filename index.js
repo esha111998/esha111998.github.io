@@ -927,9 +927,9 @@ function createHtmlContent() {
   <div class="copyright-footer" style="background-color: aliceblue;">
     <div class="igiuzk flex-div row-div" style="gap: 20px;">
       <a href="https://www.daynightpackersmovers.com/"><b>Home</b></a>
-      <a href="https://www.daynightpackersmovers.com/links/about-day-night-packers-movers.html"><b>About Us</b></a>
-      <a href="https://www.daynightpackersmovers.com/links/self-preparation-before-shifting.html"><b>Blogs</b></a>
-      <a href="https://www.daynightpackersmovers.com/links/queries-before-shifting.html"><b>FAQs</b></a>
+      <a href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html"><b>About Us</b></a>
+      <a href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html"><b>Blogs</b></a>
+      <a href="https://www.daynightpackersmovers.com/queries-before-shifting.html"><b>FAQs</b></a>
       <a href="https://www.daynightpackersmovers.com/#our-services"><b>Services</b></a>
     </div><br />
     <p id="iy2lbi">© ${new Date().getFullYear()} powered by Day Night Packers And Movers</p>
