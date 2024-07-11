@@ -497,34 +497,41 @@ function createHtmlContent() {
   return `
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="iu9w" class="navbar-cont" style="background: #fffbf6;">
+    
     <div id="ibulz" class="nav-inner">
-      <a href="https://daynightpackersmovers.com/">
-        <img id="logo" alt="" src=${
-          "assets/logonew.png"
-        } width="auto" height="100px"></img>
-      </a>
-      <div id="menus" class="flex-div row-div" style="gap: 20px;">
+      <div>
+        <a href="https://daynightpackersmovers.com/">
+          <img id="logo" alt="" src=${
+            "assets/logonew.png"
+          } width="auto" height="80px"></img>
+        </a>
+      </div>
+      <div id="menus" class="flex-div row-div" style="gap: 30px;">
         <a id="home" href="https://www.daynightpackersmovers.com/"><b>Home</b></a>
         <a id="about" href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html"><b>About Us</b></a>
         <a id="blogs" href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html"><b>Blogs</b></a>
         <a id="faqs" href="https://www.daynightpackersmovers.com/queries-before-shifting.html"><b>FAQs</b></a>
         <a id="services" href="https://www.daynightpackersmovers.com/#our-services"><b>Services</b></a>
       </div>
-      <div class="flex-div col-div">
-        <div style="align-self: flex-start;">
-        <a aria-label="mobile" class="flex-div row-div" href=tel:+919911198767><img alt="" src=${
-          "assets/phone.svg"
-        } width="30px" height="30px"></img>
-          <p class="header-font-size" style="font-weight: 700; color: ${brand}">+91-9911198767</p></a>
+    </div>
+    <div class="nav-inner" style="background: ${brand};">
+      <div style="align-self: center;">
+        <p class="header-font-size" style="margin-left: 15px;">GSTIN: 06CQIPA7897P1ZY</p></a>
+      </div>
+      <div class="flex-div row-div" style="align-self: flex-end; gap: 20px; margin-left: 45px;">
+        <div>
+          <a aria-label="mobile" class="flex-div row-div" href=tel:+919911198767><img alt="" src=${
+            "assets/phone.svg"
+          } width="30px" height="30px"></img>
+          <p class="header-font-size">+91-9911198767</p></a>
         </div>
-        <div style="align-self: flex-start;">
-        <a aria-label="email" class="flex-div row-div" href="mailto:daynightpackersandmovers@gmail.com"><img alt="" src=${
-          "assets/mail.svg"
-        } width="30px" height="30px"></img>
-          <p class="header-font-size" style="margin: 5px; font-weight: 700; line-break: anywhere; color: ${brand}">daynightpackersandmovers@gmail.com</p></a>
+        <div style="align-self: flex-end;">
+          <a aria-label="email" class="flex-div row-div" href="mailto:daynightpackersandmovers@gmail.com"><img alt="" src=${
+            "assets/mail.svg"
+          } width="30px" height="30px"></img>
+          <p class="header-font-size" style="line-break: anywhere;">daynightpackersandmovers@gmail.com</p></a>
         </div>
       </div>
-      <div></div>
     </div>
   </div>
 
