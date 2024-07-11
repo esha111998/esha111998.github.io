@@ -514,21 +514,21 @@ function createHtmlContent() {
         <a id="services" href="https://www.daynightpackersmovers.com/#our-services"><b>Services</b></a>
       </div>
     </div>
-    <div class="nav-inner" style="background: ${brand};">
+    <div class="get-in-touch nav-inner" style="background: ${brand};">
       <div style="align-self: center;">
         <p class="header-font-size" style="margin-left: 15px;">GSTIN: 06CQIPA7897P1ZY</p></a>
       </div>
-      <div class="flex-div row-div" style="align-self: flex-end; gap: 20px; margin-left: 45px;">
+      <div class="get-in-touch flex-div row-div">
         <div>
           <a aria-label="mobile" class="flex-div row-div" href=tel:+919911198767><img alt="" src=${
             "assets/phone.svg"
-          } width="30px" height="30px"></img>
+          } width="20px" height="20px"></img>
           <p class="header-font-size">+91-9911198767</p></a>
         </div>
         <div style="align-self: flex-end;">
           <a aria-label="email" class="flex-div row-div" href="mailto:daynightpackersandmovers@gmail.com"><img alt="" src=${
             "assets/mail.svg"
-          } width="30px" height="30px"></img>
+          } width="20px" height="20px"></img>
           <p class="header-font-size" style="line-break: anywhere;">daynightpackersandmovers@gmail.com</p></a>
         </div>
       </div>
