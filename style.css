@@ -476,10 +476,61 @@
     color: black;
     gap: 35px;
   }
+  #menu-btn {
+    display: none;
+  }
 
   .get-in-touch {
     gap: 20px;
   }
+
+  /*#side-panel css */
+  #side-panel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  #side-panel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  #side-panel a:hover {
+    color: #f1f1f1;
+  }
+  
+  #side-panel .closebtn {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    color: #FF5823;
+    background-color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  /* .openbtn:hover {
+    background-color:#444;
+  } */
+  /*#side-panel css ends */
 
   @keyframes fade {
     from {opacity: .4}
@@ -488,9 +539,6 @@
   /* carousal css end */
 
   @media (max-width: 1125px){
-    #menus{
-      display: none;
-    }
     .services-box, #city-section-content, #our-team-content, #our-services-content, #get-a-quote,
     .inquire-tos-content, #take-our-service-content, #table-parent, #process-steps-content, .nav-inner {
       width: 100%;
@@ -500,6 +548,9 @@
   @media (max-width: 992px){
     #menus{
       display: none;
+    }
+    #menu-btn {
+      display: block;
     }
     #customer-form{
       width: 30%;

@@ -380,6 +380,14 @@ function setActiveTab() {
   }
 }
 
+function openNav() {
+  document.getElementById("side-panel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("side-panel").style.width = "0";
+}
+
 function extractLocation(str, startIndex) {
   // Split the string by "-"
   let parts = str.split('-');
@@ -520,7 +528,16 @@ function createHtmlContent() {
         <a id="services" href="https://www.daynightpackersmovers.com/#our-services"><b>Services</b></a>
         <a id="contact-us" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html"><b>Contact Us</b></a>
       </div>
-
+      <div id="menu-btn">
+        <div id="side-panel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+        <button class="openbtn" onclick="openNav()">☰</button>
+      </div>
     </div>
     <div class="get-in-touch" style="background: ${brand}; width: 100%">
       <div class="nav-inner">
