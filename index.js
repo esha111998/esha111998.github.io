@@ -122,9 +122,7 @@ function getAboutUsContent() {
       <h1 class="i78bq-2-3 contact-details">About Us - Day Night Packers And Movers</h1>
       <div id="city-section-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${
-            "assets/ABOUTUS.jpg"
-          }></img>
+          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/ABOUTUS.jpg"}></img>
         </div>
         <div class="contact-details" style="text-align: left;">
           <p>Welcome to Day Night Packers And Movers, your trusted partner for all your moving needs. With years of experience in the industry, we have established ourselves as a reliable and professional moving company dedicated to providing top-notch moving and packing services.</p><br /><br />
@@ -177,9 +175,7 @@ function getBlogsContent() {
       <h1 class="i78bq-2-3 contact-details">Blogs</h1>
       <div id="city-section-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${
-            "assets/BLOG.jpg"
-          }></img>
+          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/BLOG.jpg"}></img>
         </div>
         <div class="contact-details" style="text-align: left;">
           <p style="margin-bottom: 5px; font-size: 22px;">
@@ -286,9 +282,7 @@ function getFAQsContent() {
       <h1 class="i78bq-2-3 contact-details">FAQs</h1>
       <div id="city-section-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${
-            "assets/FAQs.jpg"
-          }></img>
+          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/FAQs.jpg"}></img>
         </div>
         <div class="contact-details" style="text-align: left;">
           <button type="button" class="collapsible">What services do you offer as a moving and packers company?</button>
@@ -390,19 +384,19 @@ function closeNav() {
 
 function extractLocation(str, startIndex) {
   // Split the string by "-"
-  let parts = str.split('-');
-  
+  let parts = str.split("-");
+
   // Initialize an empty array to collect parts of the location name
   let location = [];
-  
+
   // Iterate over the parts, starting from the third one (index 2)
   for (let i = startIndex; i < parts.length; i++) {
-      // Capitalize the first letter of each part and push it to the array
-      location.push(parts[i][0].toUpperCase() + parts[i].slice(1));
+    // Capitalize the first letter of each part and push it to the array
+    location.push(parts[i][0].toUpperCase() + parts[i].slice(1));
   }
-  
+
   // Join the array into a string with spaces in between
-  return location.join(' ');
+  return location.join(" ");
 }
 
 function createHtmlContent() {
@@ -515,9 +509,7 @@ function createHtmlContent() {
     <div id="ibulz" class="nav-inner">
       <div>
         <a href="https://daynightpackersmovers.com/">
-          <img id="logo" alt="" src=${
-            "assets/logonew.png"
-          } width="auto" height="80px"></img>
+          <img id="logo" alt="" src=${"assets/logonew.png"} width="auto" height="80px"></img>
         </a>
       </div>
       <div id="menus" class="flex-div row-div" style="gap: 30px;">
@@ -531,10 +523,12 @@ function createHtmlContent() {
       <div id="menu-btn">
         <div id="side-panel">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
+          <a id="home" href="https://www.daynightpackersmovers.com/"><b>Home</b></a>
+          <a id="about" href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html"><b>About Us</b></a>
+          <a id="blogs" href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html"><b>Blogs</b></a>
+          <a id="faqs" href="https://www.daynightpackersmovers.com/queries-before-shifting.html"><b>FAQs</b></a>
+          <a id="services" href="https://www.daynightpackersmovers.com/#our-services"><b>Services</b></a>
+          <a id="contact-us" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html"><b>Contact Us</b></a>
         </div>
         <button class="openbtn" onclick="openNav()">☰</button>
       </div>
@@ -546,15 +540,11 @@ function createHtmlContent() {
         </div>
         <div class="get-in-touch flex-div row-div">
           <div>
-            <a aria-label="mobile" class="flex-div row-div" href=tel:+919911198767><img alt="" src=${
-              "assets/phone.svg"
-            } width="20px" height="20px"></img>
+            <a aria-label="mobile" class="flex-div row-div" href=tel:+919911198767><img alt="" src=${"assets/phone.svg"} width="20px" height="20px"></img>
             <p class="header-font-size">+91-9911198767</p></a>
           </div>
           <div style="align-self: flex-end;">
-            <a aria-label="email" class="flex-div row-div" href="mailto:daynightpackersandmovers@gmail.com"><img alt="" src=${
-              "assets/mail.svg"
-            } width="20px" height="20px"></img>
+            <a aria-label="email" class="flex-div row-div" href="mailto:daynightpackersandmovers@gmail.com"><img alt="" src=${"assets/mail.svg"} width="20px" height="20px"></img>
             <p class="header-font-size" style="line-break: anywhere;">daynightpackersandmovers@gmail.com</p></a>
           </div>
         </div>
@@ -576,43 +566,33 @@ function createHtmlContent() {
       <div class="">
         <div class="slideshow-container">
           <div class="day-night-slides fade">
-            <img class="slideImg" alt="" src=${
-              "assets/1.png"
-            } height="300px" width="300px">
+            <img class="slideImg" alt="" src=${"assets/1.png"} height="300px" width="300px">
             <div class="day-night-text">
               24/7 Dedication: <b>Day Night Packers and Movers</b> Working Around the Clock to Serve You Better. ⏰ #Always On
             </div>
           </div>
 
           <div class="day-night-slides fade">
-            <img class="slideImg" alt="" loading="lazy" src=${
-              "assets/2.png"
-            } height="300px" width="350px">
+            <img class="slideImg" alt="" loading="lazy" src=${"assets/2.png"} height="300px" width="350px">
             <div class="day-night-text">Safe and Sound, Every Detail Perfected. 🛡️✨ #Excellence Assured
             <br /><br />
             </div>
           </div>
 
           <div class="day-night-slides fade">
-            <img class="slideImg" alt="" loading="lazy" src=${
-              "assets/3.png"
-            } height="300px" width="350px">
+            <img class="slideImg" alt="" loading="lazy" src=${"assets/3.png"} height="300px" width="350px">
             <div class="day-night-text">Powered by Excellence: Our Arsenal of Resources Ready for You. 💼⚙️ #Prepared For Success
             </div>
           </div>
 
           <div class="day-night-slides fade">
-            <img class="slideImg" alt="" loading="lazy" src=${
-              "assets/4.png"
-            } height="300px" width="320px">
+            <img class="slideImg" alt="" loading="lazy" src=${"assets/4.png"} height="300px" width="320px">
             <div class="day-night-text">Your Trusted Partner: Where Every Customer Finds a Companion. 🤝 #Customer First
             </div>
           </div>
 
           <div class="day-night-slides fade">
-            <img class="slideImg" alt="" loading="lazy" src=${
-              "assets/5.png"
-            } height="300px" width="320px">
+            <img class="slideImg" alt="" loading="lazy" src=${"assets/5.png"} height="300px" width="320px">
             <div class="day-night-text">Relax, We've Got You Covered: Ensuring Customer Satisfaction Every Step of the Way. 😌👌 #Peace Of Mind Service
             </div>
           </div>
@@ -635,12 +615,13 @@ function createHtmlContent() {
     <div class="iyohgi" style="text-align: center;">
       <div id="city-section-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${
-            "assets/citySection.gif"
-          }></img>
+          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/citySection.gif"}></img>
         </div>
         <div class="contact-details">
-          <p style="font-size: 30px; font-weight: 700;">Welcome to Day Night Packers and Movers in ${extractLocation(cityOrLinkName, 3)} - Your Trusted Partner in Relocation!</p><br /><br />
+          <p style="font-size: 30px; font-weight: 700;">Welcome to Day Night Packers and Movers in ${extractLocation(
+            cityOrLinkName,
+            3
+          )} - Your Trusted Partner in Relocation!</p><br /><br />
           <p style="font-size: 19px;">At Day Night Packers and Movers, we understand that moving can be a daunting task. Whether you're relocating your home or your business, we are here to make your transition seamless and stress-free.</p><br />
           <p style="font-size: 19px;">
           With years of experience in the industry, our team of dedicated professionals is committed to providing top-notch moving and packing services tailored to meet your specific needs. From packing fragile items with the utmost care to transporting your belongings safely to your new destination, we handle every aspect of your move with precision and efficiency.
@@ -649,7 +630,7 @@ function createHtmlContent() {
       </div>
     </div>
   </div>`
-          : ``
+            : ``
         }
 
   <div id="form-detail" class="contact border-bottom-class">
@@ -684,22 +665,19 @@ function createHtmlContent() {
           </form>
         </div>
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="600px" height="auto" src=${
-            "assets/2QueryForm.gif"
-          }></img>
+          <img alt="" loading="lazy" width="600px" height="auto" src=${"assets/2QueryForm.gif"}></img>
         </div>
       </div>  
     </div>
   </div>
 
-  ${cityOrLinkName !== "contact-day-night-packers-movers" ?
-  `<div id="take-our-services" class="contact border-bottom-class" style="background: #94ddd7;">
+  ${
+    cityOrLinkName !== "contact-day-night-packers-movers"
+      ? `<div id="take-our-services" class="contact border-bottom-class" style="background: #94ddd7;">
     <div class="iyohgi" style="text-align: center;">
       <div class="inquire-tos-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="600px" height="auto" src=${
-            "assets/3TakeOurServices.gif"
-          }></img>
+          <img alt="" loading="lazy" width="600px" height="auto" src=${"assets/3TakeOurServices.gif"}></img>
         </div>
         <div id="take-our-service-content" class="contact-details">
           <p style="font-size: 19px; font-weight: 700;">Worried About Your Next Relocation During Busy Schedule??</p><br />
@@ -730,9 +708,7 @@ function createHtmlContent() {
           </ul>
         </div>
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="600px" height="auto" src=${
-            "assets/4OurService.gif"
-          }></img>
+          <img alt="" loading="lazy" width="600px" height="auto" src=${"assets/4OurService.gif"}></img>
         </div>
       </div>
     </div>
@@ -743,9 +719,7 @@ function createHtmlContent() {
       <h2 class="i78bq-2-3 contact-details ">United in Purpose, Stronger in Unity. 🌟 Dynamics of Day Night Packers and Movers Team</h2>
       <div id="our-team-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="600px" height="auto" src=${
-            "assets/5OurTeam.gif"
-          }></img>
+          <img alt="" loading="lazy" width="600px" height="auto" src=${"assets/5OurTeam.gif"}></img>
         </div>
         <div class="contact-details" style="text-align: left;">
           <ul style="line-height: 2.0em;"><li><b>Highly Motivated and Professional Companions:</b> Day Night Packers and Movers are dedicated to ensuring your relocation is stress-free.</li>
@@ -775,36 +749,28 @@ function createHtmlContent() {
         <div class="slideshow-container">
           <!-- Full-width images with number and caption text -->
           <div class="mySlides fade">
-            <img alt="" loading="lazy" src=${
-              "assets/client1.jpg"
-            } height="200px" width="200px">
+            <img alt="" loading="lazy" src=${"assets/client1.jpg"} height="200px" width="200px">
             <div class="text">Rahul Maan, Kapurthala, Punjab <br /><br />
             "Moving with Day Night Packers and Movers was a breeze! From the initial inquiry to the final delivery, their team was professional, efficient, and careful with our belongings. I highly recommend Day Night Packers and Movers for a stress-free moving experience. Undoubtedly, best packers and movers!"
             </div>
           </div>
 
           <div class="mySlides fade">
-            <img alt="" loading="lazy" src=${
-              "assets/client2.jpg"
-            } height="200px" width="200px">
+            <img alt="" loading="lazy" src=${"assets/client2.jpg"} height="200px" width="200px">
             <div class="text">Mr. Lakshay Jeet Shah, Bhubaneswar, Orissa <br /><br />
             "I had a fantastic experience with Day Night Packers and Movers. Their team was punctual, polite, and incredibly hardworking. They handled all of our items with care and precision, ensuring nothing was damaged during the move. Kudos to the team!!"
             </div>
           </div>
 
           <div class="mySlides fade">
-            <img alt="" loading="lazy" src=${
-              "assets/client3.jpg"
-            } height="200px" width="200px">
+            <img alt="" loading="lazy" src=${"assets/client3.jpg"} height="200px" width="200px">
             <div class="text">Shalini Dey, Siliguri, West Bengal<br /><br />
             "Day Night Packers and Movers exceeded my expectations, as I was searching for packers and movers near me. Their team went above and beyond to ensure my move went smoothly. I'm grateful for their excellent service and would highly recommend them to anyone in need of a moving company."
             </div>
           </div>
 
           <div class="mySlides fade">
-            <img alt="" loading="lazy" src=${
-              "assets/client4.jpg"
-            } height="200px" width="200px">
+            <img alt="" loading="lazy" src=${"assets/client4.jpg"} height="200px" width="200px">
             <div class="text">Raj Shekar Reddy, Hyderabad<br /><br />
             "Day Night Packers and Movers provided exceptional service from start to finish. Their staff was courteous, efficient, and incredibly helpful throughout the entire process. They took the stress out of moving and made sure everything arrived at my new home safely. "
             </div>
@@ -915,9 +881,7 @@ function createHtmlContent() {
     </div>
     <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
       <div class="fill-form-img-div" style="align-self: center;">
-        <img alt="" loading="lazy" width="500px" height="auto" src=${
-          "assets/AroundWorld.gif"
-        }></img>
+        <img alt="" loading="lazy" width="500px" height="auto" src=${"assets/AroundWorld.gif"}></img>
       </div>
       <div id="i12z9" class="services-box">
         <div id="ilmjk" class="service-cont">
@@ -934,7 +898,10 @@ function createHtmlContent() {
           <ul id="ipekj-2" class="service-desc">
             ${locations2
               .map((loc) => {
-                return `<li id="packers-movers-in-${loc}"><a class="contact-details" href="https://www.daynightpackersmovers.com/packers-movers-in-${loc}.html">Packers and Movers in ${extractLocation(loc, 0)}</a></li>`;
+                return `<li id="packers-movers-in-${loc}"><a class="contact-details" href="https://www.daynightpackersmovers.com/packers-movers-in-${loc}.html">Packers and Movers in ${extractLocation(
+                  loc,
+                  0
+                )}</a></li>`;
               })
               .join("")}
           </ul>
@@ -972,35 +939,27 @@ function createHtmlContent() {
       </div>
     </div>
   </div>`
-  : ``}
-  `}
+      : ``
+  }
+  `
+  }
 
   <div id="contact" class="contact border-bottom-class" style="background: #047d9d;">
     <div class="iyohgi" style="text-align: center;">
       <h2 class="contact-details ">Doubts Dismissed: Let Us Clear the Path to Clarity with Day Night Packers and Movers</h2>
       <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="500px" height="auto" src=${
-            "assets/6ContactUs.gif"
-          }></img>
+          <img alt="" loading="lazy" width="500px" height="auto" src=${"assets/6ContactUs.gif"}></img>
         </div>
         <div>
         <p id="iqrh3-2-2" class="contact-details" style="margin-bottom: 10px; margin-top: 20px;">Contact us</p>
         <div class="igiuzk flex-div row-div">
-          <a id="i2tpy3" aria-label="facebook" href="https://www.facebook.com/profile.php?id=61559284304658" target="_blank"><img alt="facebook page link" loading="lazy" id="i3gekg" height="49px" width="49px" src=${
-            "assets/fb.svg"
-          } /></a>
-          <a id="i2tpy3-2" aria-label="instagram" href="https://www.instagram.com/daynightpackersand/" target="_blank"><img alt="instagram page link" loading="lazy" id="i3gekg-2" height="33px" width="33px" src=${
-            "assets/insta.svg"
-          } /></a>
-          <a id="i2tpy3-5" aria-label="whatsapp" href="https://wa.me/+919911198767" target="_blank"><img alt="chat on whatsapp" loading="lazy" id="i3gekg-3" height="40px" width="40px" src=${
-            "assets/whatsapp.svg"
-          } /></a>
+          <a id="i2tpy3" aria-label="facebook" href="https://www.facebook.com/profile.php?id=61559284304658" target="_blank"><img alt="facebook page link" loading="lazy" id="i3gekg" height="49px" width="49px" src=${"assets/fb.svg"} /></a>
+          <a id="i2tpy3-2" aria-label="instagram" href="https://www.instagram.com/daynightpackersand/" target="_blank"><img alt="instagram page link" loading="lazy" id="i3gekg-2" height="33px" width="33px" src=${"assets/insta.svg"} /></a>
+          <a id="i2tpy3-5" aria-label="whatsapp" href="https://wa.me/+919911198767" target="_blank"><img alt="chat on whatsapp" loading="lazy" id="i3gekg-3" height="40px" width="40px" src=${"assets/whatsapp.svg"} /></a>
           <a id="i2tpy3-3" aria-label="email" href="mailto:daynightpackersandmovers@gmail.com"><img alt="compose email" loading="lazy" id="i3gekg-4" height="37px" width="37px"
               src=${"assets/email.svg"} /></a>
-          <a aria-label="mobile" href=tel:+919911198767><img alt="call" loading="lazy" id="i3gekg-5" height="37px" width="37px" src=${
-            "assets/tel.svg"
-          } /></a>
+          <a aria-label="mobile" href=tel:+919911198767><img alt="call" loading="lazy" id="i3gekg-5" height="37px" width="37px" src=${"assets/tel.svg"} /></a>
         </div>
       </div>
     </div>
@@ -1056,7 +1015,11 @@ if (cityOrLinkName === "" || cityOrLinkName === "index") {
 
 let slidesTimeout;
 let slideIndex = 0;
-if (cityOrLinkName !== "queries-before-shifting" && cityOrLinkName !== "self-preparation-before-shifting" && cityOrLinkName !== "about-day-night-packers-movers") {
+if (
+  cityOrLinkName !== "queries-before-shifting" &&
+  cityOrLinkName !== "self-preparation-before-shifting" &&
+  cityOrLinkName !== "about-day-night-packers-movers"
+) {
   closeModal();
   onSubmit();
   showSlides("mySlides", "dot", slideIndex);
