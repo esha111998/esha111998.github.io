@@ -344,7 +344,8 @@ function setActiveTab() {
   const blogs = document.getElementById("blogs");
   const faqs = document.getElementById("faqs");
   const services = document.getElementById("services");
-  const menus = [home, about, blogs, faqs, services];
+  const contactUs = document.getElementById("contact-us");
+  const menus = [home, about, blogs, faqs, services, contactUs];
 
   if (cityOrLinkName === "" || cityOrLinkName === "index") {
     for (let i = 0; i < menus; i++) {
@@ -371,6 +372,11 @@ function setActiveTab() {
       menus[i].className.replace(" active-menu", "");
     }
     services.className += " active-menu";
+  } else if (cityOrLinkName === "contact-day-night-packers-movers") {
+    for (let i = 0; i < menus; i++) {
+      menus[i].className.replace(" active-menu", "");
+    }
+    contactUs.className += " active-menu";
   }
 }
 
@@ -512,24 +518,28 @@ function createHtmlContent() {
         <a id="blogs" href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html"><b>Blogs</b></a>
         <a id="faqs" href="https://www.daynightpackersmovers.com/queries-before-shifting.html"><b>FAQs</b></a>
         <a id="services" href="https://www.daynightpackersmovers.com/#our-services"><b>Services</b></a>
+        <a id="contact-us" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html"><b>Contact Us</b></a>
       </div>
+
     </div>
-    <div class="get-in-touch nav-inner" style="background: ${brand};">
-      <div style="align-self: center;">
-        <p class="header-font-size" style="margin-left: 15px;">GSTIN: 06CQIPA7897P1ZY</p></a>
-      </div>
-      <div class="get-in-touch flex-div row-div">
-        <div>
-          <a aria-label="mobile" class="flex-div row-div" href=tel:+919911198767><img alt="" src=${
-            "assets/phone.svg"
-          } width="20px" height="20px"></img>
-          <p class="header-font-size">+91-9911198767</p></a>
+    <div class="get-in-touch" style="background: ${brand}; width: 100%">
+      <div class="nav-inner">
+        <div style="align-self: center;">
+          <p class="header-font-size" style="margin-left: 15px;">GSTIN: 06CQIPA7897P1ZY</p></a>
         </div>
-        <div style="align-self: flex-end;">
-          <a aria-label="email" class="flex-div row-div" href="mailto:daynightpackersandmovers@gmail.com"><img alt="" src=${
-            "assets/mail.svg"
-          } width="20px" height="20px"></img>
-          <p class="header-font-size" style="line-break: anywhere;">daynightpackersandmovers@gmail.com</p></a>
+        <div class="get-in-touch flex-div row-div">
+          <div>
+            <a aria-label="mobile" class="flex-div row-div" href=tel:+919911198767><img alt="" src=${
+              "assets/phone.svg"
+            } width="20px" height="20px"></img>
+            <p class="header-font-size">+91-9911198767</p></a>
+          </div>
+          <div style="align-self: flex-end;">
+            <a aria-label="email" class="flex-div row-div" href="mailto:daynightpackersandmovers@gmail.com"><img alt="" src=${
+              "assets/mail.svg"
+            } width="20px" height="20px"></img>
+            <p class="header-font-size" style="line-break: anywhere;">daynightpackersandmovers@gmail.com</p></a>
+          </div>
         </div>
       </div>
     </div>
@@ -603,7 +613,8 @@ function createHtmlContent() {
       </div>
     </div>
   </div>`
-            : `<div id="city-section" class="contact border-bottom-class" style="background: #f2f2f2;">
+            : cityOrLinkName !== "contact-day-night-packers-movers"
+            ? `<div id="city-section" class="contact border-bottom-class" style="background: #f2f2f2;">
     <div class="iyohgi" style="text-align: center;">
       <div id="city-section-content">
         <div class="fill-form-img-div" style="align-self: center;">
@@ -621,11 +632,12 @@ function createHtmlContent() {
       </div>
     </div>
   </div>`
+          : ``
         }
 
   <div id="form-detail" class="contact border-bottom-class">
     <div class="iyohgi" class="flex-div col-div" style="align-items: unset;">
-      <p class="i78bq-2-3 contact-details" style="font-size: x-large; text-align: center; border-bottom: 70px;">Relocate with ease! Our professional packers and movers ensure a seamless transition for your home or office. From meticulous packing to safe transportation, trust us for a stress-free move. <b style="font-size: 34px;">Get a quote today!</b></p>
+      <div id="get-a-quote"><p class="i78bq-2-3 contact-details" style="font-size: x-large; text-align: center; border-bottom: 70px;">Relocate with ease! Our professional packers and movers ensure a seamless transition for your home or office. From meticulous packing to safe transportation, trust us for a stress-free move. <b style="font-size: 34px;">Get a quote today!</b></p></div>
       <div class="inquire-tos-content">
         <div id="customer-form">
           <form id="inquiry-form" class="flex-div col-div" style="align-items: flex-start;">
@@ -663,7 +675,8 @@ function createHtmlContent() {
     </div>
   </div>
 
-  <div id="take-our-services" class="contact border-bottom-class" style="background: #94ddd7;">
+  ${cityOrLinkName !== "contact-day-night-packers-movers" ?
+  `<div id="take-our-services" class="contact border-bottom-class" style="background: #94ddd7;">
     <div class="iyohgi" style="text-align: center;">
       <div class="inquire-tos-content">
         <div class="fill-form-img-div" style="align-self: center;">
@@ -671,7 +684,7 @@ function createHtmlContent() {
             "assets/3TakeOurServices.gif"
           }></img>
         </div>
-        <div style="text-align: left; margin-top: 50px;" class="contact-details">
+        <div id="take-our-service-content" class="contact-details">
           <p style="font-size: 19px; font-weight: 700;">Worried About Your Next Relocation During Busy Schedule??</p><br />
           <p style="font-size: xxx-large; font-weight: 800;">Let Us Help You!!</p><br /><br />
           <p>
@@ -797,7 +810,7 @@ function createHtmlContent() {
   <div id="charges-table" class="contact border-bottom-class" style="background: #b2b2eb;">
   <div class="iyohgi" style="text-align: center;">
     <h2 class="i78bq-2-3 contact-details ">Fair Pricing, Exceptional Value: Explore Packers and Movers Charges at Day Night packers and Movers</h2>
-    <div style="background: white; overflow-x:auto; border-radius: 5px; margin: 30px;">
+    <div id="table-parent">
       <table style="border-color: white;">
         <thead style="background: #16163F; color: white;">
           <tr>
@@ -867,8 +880,8 @@ function createHtmlContent() {
   <div id="process-steps" class="contact border-bottom-class" style="background: #94ddd7;">
     <div class="iyohgi" style="text-align: center;">
       <h2 class="i78bq-2-3 contact-details ">Unlocking Convenience: The Seamless Steps to Avail Services at Day Night Packers and Movers</h2>
-      <div class="">
-        <div style="text-align: left; display: flex; flex-direction: column; gap: 40px; padding: 0px 150px 0px 150px;"class="process-card-parent">
+      <div id="process-steps-content">
+        <div style="text-align: left; display: flex; flex-direction: column; gap: 40px; padding: 0px 150px 0px 150px;" class="process-card-parent">
           <div class="card process-cards" style="align-self: flex-start;"><b style="font-size: 30px;">01 </b>  Get in Touch for a Seamless Moving Experience! 📦✨ <br />Contact Us Today!</div>
           <div class="card process-cards" style="align-self: flex-end;"><b style="font-size: 30px;">02 </b>  Planning Your Move? Let's Get Started with a Free Survey and Quotation!</div>
           <div class="card process-cards" style="align-self: flex-start;"><b style="font-size: 30px;">03 </b>  Ready to Make Your Move? Book with Us Today and Be a part of Smooth Transition!</div>
@@ -942,7 +955,8 @@ function createHtmlContent() {
       </div>
     </div>
   </div>`
-  }
+  : ``}
+  `}
 
   <div id="contact" class="contact border-bottom-class" style="background: #047d9d;">
     <div class="iyohgi" style="text-align: center;">
@@ -982,6 +996,7 @@ function createHtmlContent() {
       <a href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html"><b>Blogs</b></a>
       <a href="https://www.daynightpackersmovers.com/queries-before-shifting.html"><b>FAQs</b></a>
       <a href="https://www.daynightpackersmovers.com/#our-services"><b>Services</b></a>
+      <a href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html"><b>Contact Us</b></a>
     </div><br />
     <p id="iy2lbi">© ${new Date().getFullYear()} powered by Day Night Packers And Movers</p>
   </div>

@@ -58,7 +58,8 @@
     display:flex;
     justify-content:space-around;
     align-items:center;
-    width:100%;
+    width:1150px;
+    margin: auto;
     padding: 5px;
   }
   a{
@@ -78,7 +79,7 @@
     text-align:center;
   }
   .services-box{
-    width:100%;
+    width:1150px;
     display:flex;
     margin:auto;
     justify-content:space-between;
@@ -278,9 +279,11 @@
 
   #our-team-content{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
     align-items: center;
+    margin: auto;
+    width: 1150px;
   }
 
   #our-services-content{
@@ -288,12 +291,41 @@
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
+    margin: auto;
+    width: 1150px;
   }
 
   .inquire-tos-content{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
+    margin: auto;
+    width: 1150px;
+  }
+
+  #take-our-service-content {
+    text-align: left;
+    margin-top: 50px;
+    width: 50%;
+  }
+
+  #table-parent {
+    background: white;
+    overflow-x:auto;
+    border-radius: 5px;
+    margin: 30px;
+    margin: auto;
+    width: 1150px;
+  }
+
+  #process-steps-content {
+    margin: auto;
+    width: 1150px;
+  }
+
+  #get-a-quote {
+    margin: auto;
+    width: 1150px;
   }
 
   #city-section-content{
@@ -301,6 +333,8 @@
     gap: 35px;
     justify-content: space-between;
     flex-direction: column;
+    width: 1150px;
+    margin: auto;
   }
 
   /* modal css starts*/
@@ -440,12 +474,7 @@
 
   #menus {
     color: black;
-    font-size: x-large;
-    /* align-self: flex-start; */
-    /* justify-content: flex-end; */
     gap: 35px;
-    /* width: 35.33%; */
-    /* padding-top: 15px; */
   }
 
   .get-in-touch {
@@ -461,6 +490,11 @@
   @media (max-width: 1125px){
     #menus{
       display: none;
+    }
+    .services-box, #city-section-content, #our-team-content, #our-services-content, #get-a-quote,
+    .inquire-tos-content, #take-our-service-content, #table-parent, #process-steps-content, .nav-inner {
+      width: 100%;
+      margin: none;
     }
   }
   @media (max-width: 992px){
@@ -546,6 +580,13 @@
       text-align: center;
       gap: 0px;
     }
+    #take-our-service-content {
+      width: 100%;
+    }
+    #process-steps-content {
+      margin: none;
+      width: 100%
+    }
   }
   @media (max-width: 460px){
     #menus{
@@ -572,6 +613,13 @@
       flex-direction: column;
       text-align: center;
       gap: 0px;
+    }
+    #take-our-service-content {
+      width: 100%;
+    }
+    #process-steps-content {
+      margin: none;
+      width: 100%
     }
   }
   @media (max-width: 290px){
@@ -602,6 +650,13 @@
       flex-direction: column;
       text-align: center;
       gap: 0px;
+    }
+    #take-our-service-content {
+      width: 100%;
+    }
+    #process-steps-content {
+      margin: none;
+      width: 100%
     }
   }
   
