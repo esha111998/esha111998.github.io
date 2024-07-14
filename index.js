@@ -332,6 +332,274 @@ function getFAQsContent() {
   `;
 }
 
+function getInquiryFormContent() {
+  return `
+  <div id="form-detail" class="contact border-bottom-class">
+    <div class="iyohgi" class="flex-div col-div" style="align-items: unset;">
+      <div id="get-a-quote"><p class="i78bq-2-3 contact-details" style="font-size: x-large; text-align: center; border-bottom: 70px;">Relocate with ease! Our professional packers and movers ensure a seamless transition for your home or office. From meticulous packing to safe transportation, trust us for a stress-free move. <b style="font-size: 34px;">Get a quote today!</b></p></div>
+      <div class="inquire-tos-content">
+        <div id="customer-form">
+          <form id="inquiry-form" class="flex-div col-div" style="align-items: flex-start;">
+            <label for="name">Name*</label>
+            <input id="name" name="name" placeholder="Enter Name" autocomplete="off" required></input>
+            <label for="phone">Phone*</label>
+            <input id="phone" name="phone" type="tel" placeholder="Enter Phone" autocomplete="off" required pattern="[0-9]{10}"></input>
+            <label for="movingFrom">Moving From*</label>
+            <input id="movingFrom" name="movingFrom" placeholder="Enter Location" autocomplete="off" required></input>
+            <label for="to">Moving To*</label>
+            <input id="to" name="to" placeholder="Enter Location" autocomplete="off" required></input>
+            <label for="moving-date">Request Moving Date*</label>
+            <input id="moving-date" name="movingDate" type="date" autocomplete="off" required></input>
+            <input id="leadSource" name="leadSource" value="Inquiry Form" style="display: none;"></input>
+            <input id="inquiryDate" name="inquiryDate" value=${Intl.DateTimeFormat(
+              "en-GB",
+              {
+                year: "numeric",
+                month: "2-digit",
+                day: "2-digit",
+                hour: "2-digit",
+                minute: "2-digit",
+                hour12: false,
+              }
+            ).format(new Date())} style="display: none;"></input>
+            <button id="submit-btn" type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="fill-form-img-div" style="align-self: center;">
+          <img alt="" loading="lazy" width="600px" height="auto" src=${"assets/2QueryForm.gif"}></img>
+        </div>
+      </div>  
+    </div>
+  </div>
+  `;
+}
+
+function getPackersMoversServiceContent() {
+  return `
+  <div id="packers-movers-service-content" class="contact border-bottom-class" style="background: #ffffff;">
+    <div class="iyohgi" style="text-align: center;">
+      <h1 class="i78bq-2-3 contact-details">Packers and Movers Services</h1>
+      <div id="city-section-content">
+        <div class="fill-form-img-div" style="align-self: center;">
+          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/BLOG.jpg"}></img>
+        </div>
+        <div class="contact-details" style="text-align: left;">
+          <p>Packers and Movers services involve professional companies that help individuals and businesses relocate their goods from one place to another. These services typically include packing, loading, transporting, unloading, and unpacking items, ensuring that the belongings are moved safely and efficiently. Here’s a breakdown of what you can expect from Packers and Movers services:</p><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>1. Packing Services</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Packing Materials:</b></span> We provide high-quality packing materials like boxes, bubble wrap, packing paper, and tape.</li>          
+          <li><span><b>Expert Packing:</b></span> Professional packers are trained to pack items securely to minimize damage during transit. We use appropriate techniques for different types of items, such as fragile goods, electronics, and furniture.</li>          
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>2. Loading and Unloading</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Loading Equipment:</b></span> We use equipment like dollies, ramps, and straps to safely load and unload items.</li>
+          <li><span><b>Skilled Labour:</b></span> Skilled laborers handle heavy lifting, ensuring that items are moved without damage.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>3. Transportation</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Transport Vehicles:</b></span> We have a fleet of vehicles suitable for different types and volumes of goods.</li>
+          <li><span><b>Tracking Services:</b></span> Day Night Packers And Movers companies offer tracking services so you can monitor the location of your belongings during transit.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>4. Unpacking and Reassembly</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Unpacking Services:</b></span> We help unpack the items at the destination, reducing the stress of setting up your new home or office.</li>
+          <li><span><b>Furniture Reassembly:</b></span> We can also reassemble furniture and other items as needed.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>5. Insurance</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Insurance Coverage:</b></span> Day Night Packers and Movers provide insurance options to cover any potential damage or loss during the move.</li>
+          <li><span><b>Insurance Claims:</b></span> We assist in the claims process if any items are damaged or lost.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>6. Special Services</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Storage Solutions:</b></span> Some companies offer temporary storage solutions if there is a gap between moving out and moving in.</li>
+          <li><span><b>Pet and Vehicle Relocation:</b></span> Specialized services for transporting pets and vehicles.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>7. Domestic and International Moves</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Local Movers:</b></span> Day Night Packers and Movers provide insurance options to cover any potential damage or loss during the move.</li>
+          <li><span><b>Long-Distance Movers:</b></span> We assist in the claims process if any items are damaged or lost.</li>
+          <li><span><b>International Movers:</b></span> Handling customs, international shipping, and delivery.
+          Choosing the Best Packers and Movers</li>
+          </ul><br />
+        </div>
+      </div>
+    </div>
+  </div>
+  `
+  +getInquiryFormContent();
+}
+
+function getCarBikeCarrierServiceContent() {
+  return `
+  <div id="car-bike-carrier-service-content" class="contact border-bottom-class" style="background: #ffffff;">
+    <div class="iyohgi" style="text-align: center;">
+      <h1 class="i78bq-2-3 contact-details">Car and Bike Carrier Services</h1>
+      <div id="city-section-content">
+        <div class="fill-form-img-div" style="align-self: center;">
+          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/BLOG.jpg"}></img>
+        </div>
+        <div class="contact-details" style="text-align: left;">
+          <p>Car and Bike Carrier services involve the safe and efficient transportation of vehicles from one location to another. These services are provided by specialized companies that handle all aspects of vehicle relocation, ensuring that cars and bikes reach their destination in the same condition as they were picked up. Here’s a comprehensive guide to what Car and Bike Carrier services entail:</p><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>1. Types of Vehicle Transportation</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Open Carrier Transport:</b></span> Vehicles are transported on an open trailer, which is cost-effective but exposes vehicles to weather and road conditions.</li>          
+          <li><span><b>Enclosed Carrier Transport:</b></span> Vehicles are transported in an enclosed trailer, offering protection from the elements and road debris, ideal for luxury or vintage cars and bikes.</li>          
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>2. Pickup and Delivery Services</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Door-to-Door Service:</b></span> The vehicle is picked up from your current location and delivered directly to your new address.</li>
+          <li><span><b>Terminal-to-Terminal Service:</b></span> The vehicle is dropped off and picked up at designated terminals, which can be more affordable but less convenient.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>3. Vehicle Inspection and Documentation</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Pre-Transport Inspection:</b></span> A detailed inspection of the vehicle is conducted before transportation to document its current condition.</li>
+          <li><span><b>Bill of Lading:</b></span> A legal document that outlines the details of the transport service, including the vehicle's condition, pickup, and delivery details.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>4. Insurance Coverage</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Basic Insurance:</b></span> Most carriers include basic insurance coverage in their services, protecting against damage during transit.</li>
+          <li><span><b>Additional Insurance:</b></span> Optional insurance for higher coverage limits or to cover specific types of damage.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>5. Specialized Handling</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Luxury and Vintage Vehicles:</b></span> Customized handling procedures for high-value cars and bikes to prevent damage.</li>
+          <li><span><b>Non-Operational Vehicles:</b></span> Services available for transporting vehicles that are not in running condition.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>6. Tracking and Customer Support</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Customer Support:</b></span> Dedicated support teams to answer questions and provide updates throughout the transport process.</li>
+          </ul><br />
+        </div>
+      </div>
+    </div>
+  </div>
+  `
+  +getInquiryFormContent();
+}
+
+function getShippingServiceContent() {
+  return `
+  <div id="shipping-service-content" class="contact border-bottom-class" style="background: #ffffff;">
+    <div class="iyohgi" style="text-align: center;">
+      <h1 class="i78bq-2-3 contact-details">Shipping Services</h1>
+      <div id="city-section-content">
+        <div class="fill-form-img-div" style="align-self: center;">
+          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/BLOG.jpg"}></img>
+        </div>
+        <div class="contact-details" style="text-align: left;">
+          <p>Shipping services involve the transportation of goods from one location to another, whether domestically or internationally. These services are essential for individuals, businesses, and industries that require the efficient and reliable movement of items. Here's an overview of what shipping services entail:</p><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>1. Types of Shipping Services</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Domestic Shipping:</b></span> Transporting goods within the same country. This can be done via road, rail, or domestic air freight.</li>          
+          <li><span><b>International Shipping:</b></span> Transporting goods across international borders, typically involving sea or air freight.</li>          
+          <li><span><b>Express Shipping:</b></span> Fast shipping options for urgent deliveries, often through air freight.</li>          
+          <li><span><b>Economy Shipping:</b></span> Cost-effective shipping options with longer delivery times, usually via ground or sea.</li>          
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>2. Modes of Transport</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Air Freight:</b></span> Fast and reliable, ideal for high-value or time-sensitive shipments.</li>
+          <li><span><b>Sea Freight:</b></span> Cost-effective for large or heavy shipments, though slower than air freight.</li>
+          <li><span><b>Road Transport:</b></span> Flexible and suitable for short to medium distances, within or across borders.</li>
+          <li><span><b>Rail Transport:</b></span> Efficient for large volumes of goods over long distances within a continent.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>3. Shipping Services and Features</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Door-to-Door Service:</b></span> Goods are picked up from the sender’s location and delivered directly to the recipient.</li>
+          <li><span><b>Port-to-Port Service:</b></span> Goods are transported from one port to another, requiring additional arrangements for pickup and delivery.</li>
+          <li><span><b>Customs Clearance:</b></span> Handling of all customs formalities for international shipments.</li>
+          <li><span><b>Tracking and Monitoring:</b></span> Real-time tracking of shipments to monitor their location and status.</li>
+          <li><span><b>Insurance</b></span> Coverage options to protect against loss or damage during transit.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>4. Packaging and Handling</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Professional Packaging:</b></span> Ensuring goods are packed securely to prevent damage during transit.</li>
+          <li><span><b>Special Handling:</b></span> Customized packaging and handling for fragile, hazardous, or high-value items.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>5. Documentation and Compliance</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Shipping Documents:</b></span> Preparation of necessary documents such as bills of lading, commercial invoices, and packing lists.</li>
+          <li><span><b>Regulatory Compliance:</b></span> Ensuring shipments comply with international shipping regulations and standards.</li>
+          </ul><br />
+        </div>
+      </div>
+    </div>
+  </div>
+  `
+  +getInquiryFormContent();
+}
+
+function getAirFreightServiceContent() {
+  return `
+  
+  `
+  +getInquiryFormContent();
+}
+
+function getSeaFreightServiceContent() {
+  return `
+  
+  `
+  +getInquiryFormContent();
+}
+
+function getInternationalRelocationServiceContent() {
+  return `
+  
+  `
+  +getInquiryFormContent();
+}
+
+function getHomeShiftingServiceContent() {
+  return `
+  
+  `
+  +getInquiryFormContent();
+}
+
+function getWarehousingServiceContent() {
+  return `
+  
+  `
+  +getInquiryFormContent();
+}
+
 function setActiveTab() {
   const home = document.getElementById("home");
   const about = document.getElementById("about");
@@ -339,7 +607,82 @@ function setActiveTab() {
   const faqs = document.getElementById("faqs");
   const services = document.getElementById("services");
   const contactUs = document.getElementById("contact-us");
+
+  const packersMovers = document.getElementById("packers-movers");
+  const carBikeCarrier = document.getElementById("car-bike-carrier");
+  const shipping = document.getElementById("shipping");
+  const airFreight = document.getElementById("air-freight");
+  const seaFreight = document.getElementById("sea-freight");
+  const internationalRelocation = document.getElementById(
+    "international-relocation"
+  );
+  const homeShifting = document.getElementById("home-shifting");
+  const warehousing = document.getElementById("warehousing");
+
   const menus = [home, about, blogs, faqs, services, contactUs];
+  const subMenus = [
+    packersMovers,
+    carBikeCarrier,
+    shipping,
+    airFreight,
+    seaFreight,
+    internationalRelocation,
+    homeShifting,
+    warehousing,
+  ];
+
+  const serviceRoutes = [
+    "packers-movers-service",
+    "air-freight-forwarding-service",
+    "sea-freight-forwarding-service",
+    "car-bike-carrier-service",
+    "home-shifting-service",
+    "international-relocation-service",
+    "shipping-service",
+    "warehousing-service"
+  ];
+
+  if (cityOrLinkName === "packers-movers-service") {
+    for (let i = 0; i < subMenus.length; i++) {
+      subMenus[i].className.replace(" active-dropdown-options", "");
+    }
+    packersMovers.className += " active-dropdown-options";
+  } else if (cityOrLinkName === "air-freight-forwarding-service") {
+    for (let i = 0; i < subMenus.length; i++) {
+      subMenus[i].className.replace(" active-dropdown-options", "");
+    }
+    airFreight.className += " active-dropdown-options";
+  } else if (cityOrLinkName === "sea-freight-forwarding-service") {
+    for (let i = 0; i < subMenus.length; i++) {
+      subMenus[i].className.replace(" active-dropdown-options", "");
+    }
+    seaFreight.className += " active-dropdown-options";
+  } else if (cityOrLinkName === "car-bike-carrier-service") {
+    for (let i = 0; i < subMenus.length; i++) {
+      subMenus[i].className.replace(" active-dropdown-options", "");
+    }
+    carBikeCarrier.className += " active-dropdown-options";
+  } else if (cityOrLinkName === "home-shifting-service") {
+    for (let i = 0; i < subMenus.length; i++) {
+      subMenus[i].className.replace(" active-dropdown-options", "");
+    }
+    homeShifting.className += " active-dropdown-options";
+  } else if (cityOrLinkName === "international-relocation-service") {
+    for (let i = 0; i < subMenus.length; i++) {
+      subMenus[i].className.replace(" active-dropdown-options", "");
+    }
+    internationalRelocation.className += " active-dropdown-options";
+  } else if (cityOrLinkName === "shipping-service") {
+    for (let i = 0; i < subMenus.length; i++) {
+      subMenus[i].className.replace(" active-dropdown-options", "");
+    }
+    shipping.className += " active-dropdown-options";
+  } else if (cityOrLinkName === "warehousing-service") {
+    for (let i = 0; i < subMenus.length; i++) {
+      subMenus[i].className.replace(" active-dropdown-options", "");
+    }
+    warehousing.className += " active-dropdown-options";
+  }
 
   if (cityOrLinkName === "" || cityOrLinkName === "index") {
     for (let i = 0; i < menus; i++) {
@@ -361,7 +704,7 @@ function setActiveTab() {
       menus[i].className.replace(" active-menu", "");
     }
     faqs.className += " active-menu";
-  } else if (window.location.hash === "#services") {
+  } else if (serviceRoutes.includes(cityOrLinkName)) {
     for (let i = 0; i < menus; i++) {
       menus[i].className.replace(" active-menu", "");
     }
@@ -517,7 +860,19 @@ function createHtmlContent() {
         <a id="about" href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html"><b>About Us</b></a>
         <a id="blogs" href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html"><b>Blogs</b></a>
         <a id="faqs" href="https://www.daynightpackersmovers.com/queries-before-shifting.html"><b>FAQs</b></a>
-        <a id="services" href="https://www.daynightpackersmovers.com/#our-services"><b>Services</b></a>
+        <div class="dropdown">
+          <a href="javascript:void(0)" id="services"><b>Services</b></a>
+          <div class="dropdown-content">
+            <a id="packers-movers" href="https://www.daynightpackersmovers.com/packers-movers-service.html">Packers And Movers</a>
+            <a id="car-bike-carrier" href="https://www.daynightpackersmovers.com/car-bike-carrier-service.html">Car And Bike Carrier</a>
+            <a id="shipping" href="https://www.daynightpackersmovers.com/shipping-service.html">Shipping Service</a>
+            <a id="air-freight" href="https://www.daynightpackersmovers.com/air-freight-forwarding-service.html">Air Freight Forwarding</a>
+            <a id="sea-freight" href="https://www.daynightpackersmovers.com/sea-freight-forwarding-service.html">Sea Freight Forwarding</a>
+            <a id="international-relocation" href="https://www.daynightpackersmovers.com/international-relocation-service.html">International Relocation</a>
+            <a id="home-shifting" href="https://www.daynightpackersmovers.com/home-shifting-service.html">Home Shifting Services</a>
+            <a id="warehousing" href="https://www.daynightpackersmovers.com/warehousing-service.html">Warehousing Service</a>
+          </div>
+        </div>
         <a id="contact-us" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html"><b>Contact Us</b></a>
       </div>
       <div id="menu-btn">
@@ -527,14 +882,26 @@ function createHtmlContent() {
           <a id="about" href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html"><b>About Us</b></a>
           <a id="blogs" href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html"><b>Blogs</b></a>
           <a id="faqs" href="https://www.daynightpackersmovers.com/queries-before-shifting.html"><b>FAQs</b></a>
-          <a id="services" href="https://www.daynightpackersmovers.com/#our-services"><b>Services</b></a>
+          <div class="dropdown">
+            <a href="javascript:void(0)" id="services"><b>Services</b></a>
+            <div class="dropdown-content">
+              <a id="packers-movers" href="https://www.daynightpackersmovers.com/packers-movers-service.html">Packers And Movers</a>
+              <a id="car-bike-carrier" href="https://www.daynightpackersmovers.com/car-bike-carrier-service.html">Car And Bike Carrier</a>
+              <a id="shipping" href="https://www.daynightpackersmovers.com/shipping-service.html">Shipping Service</a>
+              <a id="air-freight" href="https://www.daynightpackersmovers.com/air-freight-forwarding-service.html">Air Freight Forwarding</a>
+              <a id="sea-freight" href="https://www.daynightpackersmovers.com/sea-freight-forwarding-service.html">Sea Freight Forwarding</a>
+              <a id="international-relocation" href="https://www.daynightpackersmovers.com/international-relocation-service.html">International Relocation</a>
+              <a id="home-shifting" href="https://www.daynightpackersmovers.com/home-shifting-service.html">Home Shifting Services</a>
+              <a id="warehousing" href="https://www.daynightpackersmovers.com/warehousing-service.html">Warehousing Service</a>
+            </div>
+          </div>
           <a id="contact-us" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html"><b>Contact Us</b></a>
         </div>
         <button class="openbtn" onclick="openNav()">☰</button>
       </div>
     </div>
-    <div class="get-in-touch" style="background: ${brand}; width: 100%">
-      <div class="nav-inner">
+    <div style="background: ${brand}; width: 100%">
+      <div class="nav-inner get-in-touch">
         <div style="align-self: center;">
           <p class="header-font-size" style="margin-left: 15px;">GSTIN: 06CQIPA7897P1ZY</p></a>
         </div>
@@ -559,6 +926,22 @@ function createHtmlContent() {
       ? getBlogsContent()
       : cityOrLinkName === "queries-before-shifting"
       ? getFAQsContent()
+      : cityOrLinkName === "packers-movers-service"
+      ? getPackersMoversServiceContent()
+      : cityOrLinkName === "car-bike-carrier-service"
+      ? getCarBikeCarrierServiceContent()
+      : cityOrLinkName === "shipping-service"
+      ? getShippingServiceContent()
+      : cityOrLinkName === "air-freight-forwarding-service"
+      ? getAirFreightServiceContent()
+      : cityOrLinkName === "sea-freight-forwarding-service"
+      ? getSeaFreightServiceContent()
+      : cityOrLinkName === "international-relocation-service"
+      ? getInternationalRelocationServiceContent()
+      : cityOrLinkName === "home-shifting-service"
+      ? getHomeShiftingServiceContent()
+      : cityOrLinkName === "warehousing-service"
+      ? getWarehousingServiceContent()
       : `${
           cityOrLinkName === "index" || cityOrLinkName === ""
             ? `<div id="day-night" class="contact border-bottom-class" style="background: #e2e4f4;">
@@ -633,43 +1016,7 @@ function createHtmlContent() {
             : ``
         }
 
-  <div id="form-detail" class="contact border-bottom-class">
-    <div class="iyohgi" class="flex-div col-div" style="align-items: unset;">
-      <div id="get-a-quote"><p class="i78bq-2-3 contact-details" style="font-size: x-large; text-align: center; border-bottom: 70px;">Relocate with ease! Our professional packers and movers ensure a seamless transition for your home or office. From meticulous packing to safe transportation, trust us for a stress-free move. <b style="font-size: 34px;">Get a quote today!</b></p></div>
-      <div class="inquire-tos-content">
-        <div id="customer-form">
-          <form id="inquiry-form" class="flex-div col-div" style="align-items: flex-start;">
-            <label for="name">Name*</label>
-            <input id="name" name="name" placeholder="Enter Name" autocomplete="off" required></input>
-            <label for="phone">Phone*</label>
-            <input id="phone" name="phone" type="tel" placeholder="Enter Phone" autocomplete="off" required pattern="[0-9]{10}"></input>
-            <label for="movingFrom">Moving From*</label>
-            <input id="movingFrom" name="movingFrom" placeholder="Enter Location" autocomplete="off" required></input>
-            <label for="to">Moving To*</label>
-            <input id="to" name="to" placeholder="Enter Location" autocomplete="off" required></input>
-            <label for="moving-date">Request Moving Date*</label>
-            <input id="moving-date" name="movingDate" type="date" autocomplete="off" required></input>
-            <input id="leadSource" name="leadSource" value="Inquiry Form" style="display: none;"></input>
-            <input id="inquiryDate" name="inquiryDate" value=${Intl.DateTimeFormat(
-              "en-GB",
-              {
-                year: "numeric",
-                month: "2-digit",
-                day: "2-digit",
-                hour: "2-digit",
-                minute: "2-digit",
-                hour12: false,
-              }
-            ).format(new Date())} style="display: none;"></input>
-            <button id="submit-btn" type="submit">Submit</button>
-          </form>
-        </div>
-        <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="600px" height="auto" src=${"assets/2QueryForm.gif"}></img>
-        </div>
-      </div>  
-    </div>
-  </div>
+  ${getInquiryFormContent()}
 
   ${
     cityOrLinkName !== "contact-day-night-packers-movers"
@@ -697,14 +1044,14 @@ function createHtmlContent() {
       <div id="our-services-content">   
         <div>
           <ul class="service-desc" style="line-height: 2.0em;">
-            <li><h2>Packers And Movers</h2></li>
-            <li><h2>Car And Bike Carrier</h2></li>
-            <li><h2>Shipping Service</h2></li>
-            <li><h2>Air Freight Forwarding</h2></li>
-            <li><h2>Sea Freight Forwarding</h2></li>
-            <li><h2>International Relocation</h2></li>
-            <li><h2>Home Shifting Services</h2></li>
-            <li><h2>Warehousing Service</h2></li>
+            <li><h2><a href="https://www.daynightpackersmovers.com/packers-movers-service.html">Packers And Movers</a></h2></li>
+            <li><h2><a href="https://www.daynightpackersmovers.com/car-bike-carrier-service.html">Car And Bike Carrier</a></h2></li>
+            <li><h2><a href="https://www.daynightpackersmovers.com/shipping-service.html">Shipping Service</a></h2></li>
+            <li><h2><a href="https://www.daynightpackersmovers.com/air-freight-forwarding-service.html">Air Freight Forwarding</a></h2></li>
+            <li><h2><a href="https://www.daynightpackersmovers.com/sea-freight-forwarding-service.html">Sea Freight Forwarding</a></h2></li>
+            <li><h2><a href="https://www.daynightpackersmovers.com/international-relocation-service.html">International Relocation</a></h2></li>
+            <li><h2><a href="https://www.daynightpackersmovers.com/home-shifting-service.html">Home Shifting Services</a></h2></li>
+            <li><h2><a href="https://www.daynightpackersmovers.com/warehousing-service.html">Warehousing Service</a></h2></li>
           </ul>
         </div>
         <div class="fill-form-img-div" style="align-self: center;">
