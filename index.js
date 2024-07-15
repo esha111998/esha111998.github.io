@@ -376,12 +376,12 @@ function getInquiryFormContent() {
 
 function getPackersMoversServiceContent() {
   return `
-  <div id="packers-movers-service-content" class="contact border-bottom-class" style="background: #ffffff;">
+  <div id="packers-movers-service-content" class="contact border-bottom-class" style="background: #f5f5f5;">
     <div class="iyohgi" style="text-align: center;">
       <h1 class="i78bq-2-3 contact-details">Packers and Movers Services</h1>
       <div id="city-section-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/BLOG.jpg"}></img>
+          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/packers-and-movers.jpg"}></img>
         </div>
         <div class="contact-details" style="text-align: left;">
           <p>Packers and Movers services involve professional companies that help individuals and businesses relocate their goods from one place to another. These services typically include packing, loading, transporting, unloading, and unpacking items, ensuring that the belongings are moved safely and efficiently. Here’s a breakdown of what you can expect from Packers and Movers services:</p><br />
@@ -451,7 +451,7 @@ function getCarBikeCarrierServiceContent() {
       <h1 class="i78bq-2-3 contact-details">Car and Bike Carrier Services</h1>
       <div id="city-section-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/BLOG.jpg"}></img>
+          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/car-carrier-services.jpg"}></img>
         </div>
         <div class="contact-details" style="text-align: left;">
           <p>Car and Bike Carrier services involve the safe and efficient transportation of vehicles from one location to another. These services are provided by specialized companies that handle all aspects of vehicle relocation, ensuring that cars and bikes reach their destination in the same condition as they were picked up. Here’s a comprehensive guide to what Car and Bike Carrier services entail:</p><br />
@@ -506,12 +506,12 @@ function getCarBikeCarrierServiceContent() {
 
 function getShippingServiceContent() {
   return `
-  <div id="shipping-service-content" class="contact border-bottom-class" style="background: #ffffff;">
+  <div id="shipping-service-content" class="contact border-bottom-class" style="background: #a8c4e9;">
     <div class="iyohgi" style="text-align: center;">
       <h1 class="i78bq-2-3 contact-details">Shipping Services</h1>
       <div id="city-section-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/BLOG.jpg"}></img>
+          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/shipping-service.jpg"}></img>
         </div>
         <div class="contact-details" style="text-align: left;">
           <p>Shipping services involve the transportation of goods from one location to another, whether domestically or internationally. These services are essential for individuals, businesses, and industries that require the efficient and reliable movement of items. Here's an overview of what shipping services entail:</p><br />
@@ -567,35 +567,301 @@ function getShippingServiceContent() {
 
 function getAirFreightServiceContent() {
   return `
-  
+  <div id="air-freight-service-content" class="contact border-bottom-class" style="color: white; background: #032d3a;">
+    <div class="iyohgi" style="text-align: center;">
+      <h1 class="i78bq-2-3 ">Air Freight Forwarding Services</h1>
+      <div id="city-section-content">
+        <div class="fill-form-img-div" style="align-self: center;">
+          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/air-freight-forwarding.jpg"}></img>
+        </div>
+        <div class="" style="text-align: left;">
+          <p>Air freight forwarding is a service provided by logistics companies that involves the shipment of goods via air transport. This method is chosen for its speed and efficiency, especially for long-distance shipments or when goods need to be delivered urgently.
+          </p><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>How Does Air Freight Forwarding Work?</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Pickup and Packaging:</b></span> The process begins with the pickup of goods from the sender's location. The items are then securely packaged to ensure they withstand the rigors of air transport.</li>          
+          <li><span><b>Documentation and Customs Clearance:</b></span> Proper documentation is prepared, including air waybills, invoices, and any necessary customs forms. Customs clearance is a crucial step, ensuring that goods comply with international regulations and tariffs.</li>          
+          <li><span><b>Transport to Airport:</b></span> The packaged goods are transported to the departure airport, where they are loaded onto a cargo plane.</li>          
+          <li><span><b>Air Transport:</b></span> The cargo is flown to the destination airport. The speed of air freight makes it an ideal choice for time-sensitive shipments.</li>          
+          <li><span><b>Customs Clearance at Destination:</b></span> Upon arrival, the goods undergo customs clearance at the destination country.</li>          
+          <li><span><b>Final Delivery:</b></span> The goods are then transported from the airport to the final destination, completing the delivery process.</li>          
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>Benefits of Air Freight Forwarding</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Speed:</b></span> Air freight is the fastest shipping method, significantly reducing transit times compared to sea or land transport.</li>
+          <li><span><b>Reliability:</b></span> Air freight schedules are highly reliable, with minimal delays.</li>
+          <li><span><b>Global Reach:</b></span> Airlines can reach nearly any destination worldwide, making air freight an excellent choice for international shipping.</li>
+          <li><span><b>Security:</b></span> Airports have stringent security measures, reducing the risk of theft or damage.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>Air Freight Forwarding Services</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Express Air Freight:</b></span> For urgent shipments that require the fastest possible delivery times.</li>
+          <li><span><b>Standard Air Freight:</b></span> A balance between speed and cost, suitable for most commercial shipments.</li>
+          <li><span><b>Charter Services:</b></span> Customized solutions for oversized, urgent, or specialized cargo.</li>
+          <li><span><b>Door-to-Door Services:</b></span> Comprehensive service from the sender’s location to the recipient’s doorstep, handling all logistics and documentation.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>Trends and Challenges in Air Freight Forwarding</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>E-commerce Growth:</b></span> The rise of online shopping has significantly increased the demand for air freight services, particularly for fast delivery of consumer goods.</li>
+          <li><span><b>Sustainability:</b></span> There is growing pressure to reduce the carbon footprint of air transport. Innovations in fuel efficiency and sustainable practices are becoming more important.</li>
+          <li><span><b>Capacity Constraints:</b></span> Limited cargo space on passenger flights and high demand can lead to capacity challenges, affecting prices and availability.</li>
+          </ul><br />
+        </div>
+      </div>
+    </div>
+  </div>
   `
   +getInquiryFormContent();
 }
 
 function getSeaFreightServiceContent() {
   return `
-  
+  <div id="sea-freight-service-content" class="contact border-bottom-class" style="background: #0addb9;">
+    <div class="iyohgi" style="text-align: center;">
+      <h1 class="i78bq-2-3 contact-details">Sea Freight Forwarding Services</h1>
+      <div id="city-section-content">
+        <div class="fill-form-img-div" style="align-self: center;">
+          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/sea-freight-forwarding.jpg"}></img>
+        </div>
+        <div class="contact-details" style="text-align: left;">
+          <p>Shipping services involve the transportation of goods from one location to another, whether domestically or internationally. These services are essential for individuals, businesses, and industries that require the efficient and reliable movement of items. Here's an overview of what shipping services entail:</p><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>1. Types of Shipping Services</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Domestic Shipping:</b></span> Transporting goods within the same country. This can be done via road, rail, or domestic air freight.</li>          
+          <li><span><b>International Shipping:</b></span> Transporting goods across international borders, typically involving sea or air freight.</li>          
+          <li><span><b>Express Shipping:</b></span> Fast shipping options for urgent deliveries, often through air freight.</li>          
+          <li><span><b>Economy Shipping:</b></span> Cost-effective shipping options with longer delivery times, usually via ground or sea.</li>          
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>2. Modes of Transport</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Air Freight:</b></span> Fast and reliable, ideal for high-value or time-sensitive shipments.</li>
+          <li><span><b>Sea Freight:</b></span> Cost-effective for large or heavy shipments, though slower than air freight.</li>
+          <li><span><b>Road Transport:</b></span> Flexible and suitable for short to medium distances, within or across borders.</li>
+          <li><span><b>Rail Transport:</b></span> Efficient for large volumes of goods over long distances within a continent.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>3. Shipping Services and Features</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Door-to-Door Service:</b></span> Goods are picked up from the sender’s location and delivered directly to the recipient.</li>
+          <li><span><b>Port-to-Port Service:</b></span> Goods are transported from one port to another, requiring additional arrangements for pickup and delivery.</li>
+          <li><span><b>Customs Clearance:</b></span> Handling of all customs formalities for international shipments.</li>
+          <li><span><b>Tracking and Monitoring:</b></span> Real-time tracking of shipments to monitor their location and status.</li>
+          <li><span><b>Insurance</b></span> Coverage options to protect against loss or damage during transit.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>4. Packaging and Handling</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Professional Packaging:</b></span> Ensuring goods are packed securely to prevent damage during transit.</li>
+          <li><span><b>Special Handling:</b></span> Customized packaging and handling for fragile, hazardous, or high-value items.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>5. Documentation and Compliance</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Shipping Documents:</b></span> Preparation of necessary documents such as bills of lading, commercial invoices, and packing lists.</li>
+          <li><span><b>Regulatory Compliance:</b></span> Ensuring shipments comply with international shipping regulations and standards.</li>
+          </ul><br />
+        </div>
+      </div>
+    </div>
+  </div>
   `
   +getInquiryFormContent();
 }
 
 function getInternationalRelocationServiceContent() {
   return `
-  
+  <div id="international-relocation-service-content" class="contact border-bottom-class" style="background: #05b574;">
+    <div class="iyohgi" style="text-align: center;">
+      <h1 class="i78bq-2-3 contact-details">Shipping Services</h1>
+      <div id="city-section-content">
+        <div class="fill-form-img-div" style="align-self: center;">
+          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/international-relocation.jpg"}></img>
+        </div>
+        <div class="contact-details" style="text-align: left;">
+          <p>Shipping services involve the transportation of goods from one location to another, whether domestically or internationally. These services are essential for individuals, businesses, and industries that require the efficient and reliable movement of items. Here's an overview of what shipping services entail:</p><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>1. Types of Shipping Services</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Domestic Shipping:</b></span> Transporting goods within the same country. This can be done via road, rail, or domestic air freight.</li>          
+          <li><span><b>International Shipping:</b></span> Transporting goods across international borders, typically involving sea or air freight.</li>          
+          <li><span><b>Express Shipping:</b></span> Fast shipping options for urgent deliveries, often through air freight.</li>          
+          <li><span><b>Economy Shipping:</b></span> Cost-effective shipping options with longer delivery times, usually via ground or sea.</li>          
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>2. Modes of Transport</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Air Freight:</b></span> Fast and reliable, ideal for high-value or time-sensitive shipments.</li>
+          <li><span><b>Sea Freight:</b></span> Cost-effective for large or heavy shipments, though slower than air freight.</li>
+          <li><span><b>Road Transport:</b></span> Flexible and suitable for short to medium distances, within or across borders.</li>
+          <li><span><b>Rail Transport:</b></span> Efficient for large volumes of goods over long distances within a continent.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>3. Shipping Services and Features</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Door-to-Door Service:</b></span> Goods are picked up from the sender’s location and delivered directly to the recipient.</li>
+          <li><span><b>Port-to-Port Service:</b></span> Goods are transported from one port to another, requiring additional arrangements for pickup and delivery.</li>
+          <li><span><b>Customs Clearance:</b></span> Handling of all customs formalities for international shipments.</li>
+          <li><span><b>Tracking and Monitoring:</b></span> Real-time tracking of shipments to monitor their location and status.</li>
+          <li><span><b>Insurance</b></span> Coverage options to protect against loss or damage during transit.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>4. Packaging and Handling</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Professional Packaging:</b></span> Ensuring goods are packed securely to prevent damage during transit.</li>
+          <li><span><b>Special Handling:</b></span> Customized packaging and handling for fragile, hazardous, or high-value items.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>5. Documentation and Compliance</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Shipping Documents:</b></span> Preparation of necessary documents such as bills of lading, commercial invoices, and packing lists.</li>
+          <li><span><b>Regulatory Compliance:</b></span> Ensuring shipments comply with international shipping regulations and standards.</li>
+          </ul><br />
+        </div>
+      </div>
+    </div>
+  </div>
   `
   +getInquiryFormContent();
 }
 
 function getHomeShiftingServiceContent() {
   return `
-  
+  <div id="home-shifting-service-content" class="contact border-bottom-class" style="background: #ffffff;">
+    <div class="iyohgi" style="text-align: center;">
+      <h1 class="i78bq-2-3 contact-details">Shipping Services</h1>
+      <div id="city-section-content">
+        <div class="fill-form-img-div" style="align-self: center;">
+          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/home-shifting-services.jpg"}></img>
+        </div>
+        <div class="contact-details" style="text-align: left;">
+          <p>Shipping services involve the transportation of goods from one location to another, whether domestically or internationally. These services are essential for individuals, businesses, and industries that require the efficient and reliable movement of items. Here's an overview of what shipping services entail:</p><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>1. Types of Shipping Services</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Domestic Shipping:</b></span> Transporting goods within the same country. This can be done via road, rail, or domestic air freight.</li>          
+          <li><span><b>International Shipping:</b></span> Transporting goods across international borders, typically involving sea or air freight.</li>          
+          <li><span><b>Express Shipping:</b></span> Fast shipping options for urgent deliveries, often through air freight.</li>          
+          <li><span><b>Economy Shipping:</b></span> Cost-effective shipping options with longer delivery times, usually via ground or sea.</li>          
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>2. Modes of Transport</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Air Freight:</b></span> Fast and reliable, ideal for high-value or time-sensitive shipments.</li>
+          <li><span><b>Sea Freight:</b></span> Cost-effective for large or heavy shipments, though slower than air freight.</li>
+          <li><span><b>Road Transport:</b></span> Flexible and suitable for short to medium distances, within or across borders.</li>
+          <li><span><b>Rail Transport:</b></span> Efficient for large volumes of goods over long distances within a continent.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>3. Shipping Services and Features</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Door-to-Door Service:</b></span> Goods are picked up from the sender’s location and delivered directly to the recipient.</li>
+          <li><span><b>Port-to-Port Service:</b></span> Goods are transported from one port to another, requiring additional arrangements for pickup and delivery.</li>
+          <li><span><b>Customs Clearance:</b></span> Handling of all customs formalities for international shipments.</li>
+          <li><span><b>Tracking and Monitoring:</b></span> Real-time tracking of shipments to monitor their location and status.</li>
+          <li><span><b>Insurance</b></span> Coverage options to protect against loss or damage during transit.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>4. Packaging and Handling</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Professional Packaging:</b></span> Ensuring goods are packed securely to prevent damage during transit.</li>
+          <li><span><b>Special Handling:</b></span> Customized packaging and handling for fragile, hazardous, or high-value items.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>5. Documentation and Compliance</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Shipping Documents:</b></span> Preparation of necessary documents such as bills of lading, commercial invoices, and packing lists.</li>
+          <li><span><b>Regulatory Compliance:</b></span> Ensuring shipments comply with international shipping regulations and standards.</li>
+          </ul><br />
+        </div>
+      </div>
+    </div>
+  </div>
   `
   +getInquiryFormContent();
 }
 
 function getWarehousingServiceContent() {
   return `
-  
+  <div id="warehousing-service-content" class="contact border-bottom-class" style="background: #ffffff;">
+    <div class="iyohgi" style="text-align: center;">
+      <h1 class="i78bq-2-3 contact-details">Shipping Services</h1>
+      <div id="city-section-content">
+        <div class="fill-form-img-div" style="align-self: center;">
+          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/warehousing-services.jpg"}></img>
+        </div>
+        <div class="contact-details" style="text-align: left;">
+          <p>Shipping services involve the transportation of goods from one location to another, whether domestically or internationally. These services are essential for individuals, businesses, and industries that require the efficient and reliable movement of items. Here's an overview of what shipping services entail:</p><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>1. Types of Shipping Services</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Domestic Shipping:</b></span> Transporting goods within the same country. This can be done via road, rail, or domestic air freight.</li>          
+          <li><span><b>International Shipping:</b></span> Transporting goods across international borders, typically involving sea or air freight.</li>          
+          <li><span><b>Express Shipping:</b></span> Fast shipping options for urgent deliveries, often through air freight.</li>          
+          <li><span><b>Economy Shipping:</b></span> Cost-effective shipping options with longer delivery times, usually via ground or sea.</li>          
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>2. Modes of Transport</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Air Freight:</b></span> Fast and reliable, ideal for high-value or time-sensitive shipments.</li>
+          <li><span><b>Sea Freight:</b></span> Cost-effective for large or heavy shipments, though slower than air freight.</li>
+          <li><span><b>Road Transport:</b></span> Flexible and suitable for short to medium distances, within or across borders.</li>
+          <li><span><b>Rail Transport:</b></span> Efficient for large volumes of goods over long distances within a continent.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>3. Shipping Services and Features</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Door-to-Door Service:</b></span> Goods are picked up from the sender’s location and delivered directly to the recipient.</li>
+          <li><span><b>Port-to-Port Service:</b></span> Goods are transported from one port to another, requiring additional arrangements for pickup and delivery.</li>
+          <li><span><b>Customs Clearance:</b></span> Handling of all customs formalities for international shipments.</li>
+          <li><span><b>Tracking and Monitoring:</b></span> Real-time tracking of shipments to monitor their location and status.</li>
+          <li><span><b>Insurance</b></span> Coverage options to protect against loss or damage during transit.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>4. Packaging and Handling</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Professional Packaging:</b></span> Ensuring goods are packed securely to prevent damage during transit.</li>
+          <li><span><b>Special Handling:</b></span> Customized packaging and handling for fragile, hazardous, or high-value items.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>5. Documentation and Compliance</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Shipping Documents:</b></span> Preparation of necessary documents such as bills of lading, commercial invoices, and packing lists.</li>
+          <li><span><b>Regulatory Compliance:</b></span> Ensuring shipments comply with international shipping regulations and standards.</li>
+          </ul><br />
+        </div>
+      </div>
+    </div>
+  </div>
   `
   +getInquiryFormContent();
 }
