@@ -632,48 +632,62 @@ function getSeaFreightServiceContent() {
           <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/sea-freight-forwarding.jpg"}></img>
         </div>
         <div class="contact-details" style="text-align: left;">
-          <p>Shipping services involve the transportation of goods from one location to another, whether domestically or internationally. These services are essential for individuals, businesses, and industries that require the efficient and reliable movement of items. Here's an overview of what shipping services entail:</p><br />
+          <p>Sea freight forwarding is the process of organizing shipments of goods from one place to another by sea. It involves a range of activities such as booking cargo space on vessels, preparing and submitting documentation, arranging inland transportation, customs clearance, and cargo insurance.</p><br />
           <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>1. Types of Shipping Services</b><br />
+            <b>Types of Cargo:</b><br />
           </p>
           <ul style="line-height: 2.0em; padding-left: 25px;">
-          <li><span><b>Domestic Shipping:</b></span> Transporting goods within the same country. This can be done via road, rail, or domestic air freight.</li>          
-          <li><span><b>International Shipping:</b></span> Transporting goods across international borders, typically involving sea or air freight.</li>          
-          <li><span><b>Express Shipping:</b></span> Fast shipping options for urgent deliveries, often through air freight.</li>          
-          <li><span><b>Economy Shipping:</b></span> Cost-effective shipping options with longer delivery times, usually via ground or sea.</li>          
+          <li><span><b>Full Container Load (FCL):</b></span> Optimal for large shipments, offering exclusive container use.</li>          
+          <li><span><b>Less than Container Load (LCL):</b></span> Ideal for smaller shipments, sharing container space.</li>          
+          <li><span><b>Bulk Cargo:</b></span> Suited for loose goods, such as grains or minerals.</li>          
           </ul><br />
           <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>2. Modes of Transport</b><br />
+            <b>Documentation:</b><br />
           </p>
           <ul style="line-height: 2.0em; padding-left: 25px;">
-          <li><span><b>Air Freight:</b></span> Fast and reliable, ideal for high-value or time-sensitive shipments.</li>
-          <li><span><b>Sea Freight:</b></span> Cost-effective for large or heavy shipments, though slower than air freight.</li>
-          <li><span><b>Road Transport:</b></span> Flexible and suitable for short to medium distances, within or across borders.</li>
-          <li><span><b>Rail Transport:</b></span> Efficient for large volumes of goods over long distances within a continent.</li>
+          <li><span><b>Bill of Lading (BOL):</b></span> Essential document for sea freight shipping.</li>
+          <li><span><b>Packing List:</b></span> Detailed inventory of shipped goods.</li>
+          <li><span><b>Commercial Invoice:</b></span> Key document for customs clearance.</li>
+          <li><span><b>Certificate of Origin:</b></span> Verifies the country of manufacture.</li>
+          <li><span><b>Customs Documentation:</b></span> Ensures compliance with import regulations.</li>
           </ul><br />
           <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>3. Shipping Services and Features</b><br />
+            <b>Customs Clearance:</b><br />
           </p>
           <ul style="line-height: 2.0em; padding-left: 25px;">
-          <li><span><b>Door-to-Door Service:</b></span> Goods are picked up from the sender’s location and delivered directly to the recipient.</li>
-          <li><span><b>Port-to-Port Service:</b></span> Goods are transported from one port to another, requiring additional arrangements for pickup and delivery.</li>
-          <li><span><b>Customs Clearance:</b></span> Handling of all customs formalities for international shipments.</li>
-          <li><span><b>Tracking and Monitoring:</b></span> Real-time tracking of shipments to monitor their location and status.</li>
-          <li><span><b>Insurance</b></span> Coverage options to protect against loss or damage during transit.</li>
+          <li><span><b>Customs Brokerage Services:</b></span> Professional handling of import/export procedures.</li>
+          <li><span><b>Customs Compliance:</b></span> Ensuring adherence to international trade laws.</li>
+          <li><span><b>Tariff Classification:</b></span> Accurate categorization of goods for duty calculation.</li>
           </ul><br />
           <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>4. Packaging and Handling</b><br />
+            <b>Logistics Coordination:</b><br />
           </p>
           <ul style="line-height: 2.0em; padding-left: 25px;">
-          <li><span><b>Professional Packaging:</b></span> Ensuring goods are packed securely to prevent damage during transit.</li>
-          <li><span><b>Special Handling:</b></span> Customized packaging and handling for fragile, hazardous, or high-value items.</li>
+          <li><span><b>Shipping Lines Coordination:</b></span> Partnering with major shipping lines for efficient transit.</li>
+          <li><span><b>Port Operations:</b></span> Managing cargo handling at ports.</li>
+          <li><span><b>Intermodal Transportation:</b></span> Combining sea, rail, and truck transport for seamless delivery.</li>
           </ul><br />
           <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>5. Documentation and Compliance</b><br />
+            <b>Insurance:</b><br />
           </p>
           <ul style="line-height: 2.0em; padding-left: 25px;">
-          <li><span><b>Shipping Documents:</b></span> Preparation of necessary documents such as bills of lading, commercial invoices, and packing lists.</li>
-          <li><span><b>Regulatory Compliance:</b></span> Ensuring shipments comply with international shipping regulations and standards.</li>
+          <li><span><b>Cargo Insurance:</b></span> Protecting goods against potential transit risks.</li>
+          <li><span><b>Marine Insurance:</b></span> Coverage for sea freight shipments.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>Tracking and Visibility:</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Real-Time Shipment Tracking:</b></span> Monitoring cargo status throughout transit.</li>
+          <li><span><b>Supply Chain Visibility:</b></span> Enhancing transparency in the logistics process.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>Cost Management:</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Shipping Rate Negotiation:</b></span> Securing competitive sea freight rates.</li>
+          <li><span><b>Freight Cost Optimization:</b></span> Reducing overall transportation expenses.</li>
+          <li><span><b>Value-Added Services:</b></span> Offering additional services to enhance shipment efficiency.</li>
           </ul><br />
         </div>
       </div>
@@ -683,119 +697,161 @@ function getSeaFreightServiceContent() {
   +getInquiryFormContent();
 }
 
-function getInternationalRelocationServiceContent() {
-  return `
-  <div id="international-relocation-service-content" class="contact border-bottom-class" style="background: #05b574;">
-    <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details">Shipping Services</h1>
-      <div id="city-section-content">
-        <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/international-relocation.jpg"}></img>
-        </div>
-        <div class="contact-details" style="text-align: left;">
-          <p>Shipping services involve the transportation of goods from one location to another, whether domestically or internationally. These services are essential for individuals, businesses, and industries that require the efficient and reliable movement of items. Here's an overview of what shipping services entail:</p><br />
-          <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>1. Types of Shipping Services</b><br />
-          </p>
-          <ul style="line-height: 2.0em; padding-left: 25px;">
-          <li><span><b>Domestic Shipping:</b></span> Transporting goods within the same country. This can be done via road, rail, or domestic air freight.</li>          
-          <li><span><b>International Shipping:</b></span> Transporting goods across international borders, typically involving sea or air freight.</li>          
-          <li><span><b>Express Shipping:</b></span> Fast shipping options for urgent deliveries, often through air freight.</li>          
-          <li><span><b>Economy Shipping:</b></span> Cost-effective shipping options with longer delivery times, usually via ground or sea.</li>          
-          </ul><br />
-          <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>2. Modes of Transport</b><br />
-          </p>
-          <ul style="line-height: 2.0em; padding-left: 25px;">
-          <li><span><b>Air Freight:</b></span> Fast and reliable, ideal for high-value or time-sensitive shipments.</li>
-          <li><span><b>Sea Freight:</b></span> Cost-effective for large or heavy shipments, though slower than air freight.</li>
-          <li><span><b>Road Transport:</b></span> Flexible and suitable for short to medium distances, within or across borders.</li>
-          <li><span><b>Rail Transport:</b></span> Efficient for large volumes of goods over long distances within a continent.</li>
-          </ul><br />
-          <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>3. Shipping Services and Features</b><br />
-          </p>
-          <ul style="line-height: 2.0em; padding-left: 25px;">
-          <li><span><b>Door-to-Door Service:</b></span> Goods are picked up from the sender’s location and delivered directly to the recipient.</li>
-          <li><span><b>Port-to-Port Service:</b></span> Goods are transported from one port to another, requiring additional arrangements for pickup and delivery.</li>
-          <li><span><b>Customs Clearance:</b></span> Handling of all customs formalities for international shipments.</li>
-          <li><span><b>Tracking and Monitoring:</b></span> Real-time tracking of shipments to monitor their location and status.</li>
-          <li><span><b>Insurance</b></span> Coverage options to protect against loss or damage during transit.</li>
-          </ul><br />
-          <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>4. Packaging and Handling</b><br />
-          </p>
-          <ul style="line-height: 2.0em; padding-left: 25px;">
-          <li><span><b>Professional Packaging:</b></span> Ensuring goods are packed securely to prevent damage during transit.</li>
-          <li><span><b>Special Handling:</b></span> Customized packaging and handling for fragile, hazardous, or high-value items.</li>
-          </ul><br />
-          <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>5. Documentation and Compliance</b><br />
-          </p>
-          <ul style="line-height: 2.0em; padding-left: 25px;">
-          <li><span><b>Shipping Documents:</b></span> Preparation of necessary documents such as bills of lading, commercial invoices, and packing lists.</li>
-          <li><span><b>Regulatory Compliance:</b></span> Ensuring shipments comply with international shipping regulations and standards.</li>
-          </ul><br />
-        </div>
-      </div>
-    </div>
-  </div>
-  `
-  +getInquiryFormContent();
-}
+// function getInternationalRelocationServiceContent() {
+//   return `
+//   <div id="international-relocation-service-content" class="contact border-bottom-class" style="background: #05b574;">
+//     <div class="iyohgi" style="text-align: center;">
+//       <h1 class="i78bq-2-3 contact-details">Shipping Services</h1>
+//       <div id="city-section-content">
+//         <div class="fill-form-img-div" style="align-self: center;">
+//           <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/international-relocation.jpg"}></img>
+//         </div>
+//         <div class="contact-details" style="text-align: left;">
+//           <p>Shipping services involve the transportation of goods from one location to another, whether domestically or internationally. These services are essential for individuals, businesses, and industries that require the efficient and reliable movement of items. Here's an overview of what shipping services entail:</p><br />
+//           <p style="margin-bottom: 5px; font-size: 22px;">
+//             <b>1. Types of Shipping Services</b><br />
+//           </p>
+//           <ul style="line-height: 2.0em; padding-left: 25px;">
+//           <li><span><b>Domestic Shipping:</b></span> Transporting goods within the same country. This can be done via road, rail, or domestic air freight.</li>          
+//           <li><span><b>International Shipping:</b></span> Transporting goods across international borders, typically involving sea or air freight.</li>          
+//           <li><span><b>Express Shipping:</b></span> Fast shipping options for urgent deliveries, often through air freight.</li>          
+//           <li><span><b>Economy Shipping:</b></span> Cost-effective shipping options with longer delivery times, usually via ground or sea.</li>          
+//           </ul><br />
+//           <p style="margin-bottom: 5px; font-size: 22px;">
+//             <b>2. Modes of Transport</b><br />
+//           </p>
+//           <ul style="line-height: 2.0em; padding-left: 25px;">
+//           <li><span><b>Air Freight:</b></span> Fast and reliable, ideal for high-value or time-sensitive shipments.</li>
+//           <li><span><b>Sea Freight:</b></span> Cost-effective for large or heavy shipments, though slower than air freight.</li>
+//           <li><span><b>Road Transport:</b></span> Flexible and suitable for short to medium distances, within or across borders.</li>
+//           <li><span><b>Rail Transport:</b></span> Efficient for large volumes of goods over long distances within a continent.</li>
+//           </ul><br />
+//           <p style="margin-bottom: 5px; font-size: 22px;">
+//             <b>3. Shipping Services and Features</b><br />
+//           </p>
+//           <ul style="line-height: 2.0em; padding-left: 25px;">
+//           <li><span><b>Door-to-Door Service:</b></span> Goods are picked up from the sender’s location and delivered directly to the recipient.</li>
+//           <li><span><b>Port-to-Port Service:</b></span> Goods are transported from one port to another, requiring additional arrangements for pickup and delivery.</li>
+//           <li><span><b>Customs Clearance:</b></span> Handling of all customs formalities for international shipments.</li>
+//           <li><span><b>Tracking and Monitoring:</b></span> Real-time tracking of shipments to monitor their location and status.</li>
+//           <li><span><b>Insurance</b></span> Coverage options to protect against loss or damage during transit.</li>
+//           </ul><br />
+//           <p style="margin-bottom: 5px; font-size: 22px;">
+//             <b>4. Packaging and Handling</b><br />
+//           </p>
+//           <ul style="line-height: 2.0em; padding-left: 25px;">
+//           <li><span><b>Professional Packaging:</b></span> Ensuring goods are packed securely to prevent damage during transit.</li>
+//           <li><span><b>Special Handling:</b></span> Customized packaging and handling for fragile, hazardous, or high-value items.</li>
+//           </ul><br />
+//           <p style="margin-bottom: 5px; font-size: 22px;">
+//             <b>5. Documentation and Compliance</b><br />
+//           </p>
+//           <ul style="line-height: 2.0em; padding-left: 25px;">
+//           <li><span><b>Shipping Documents:</b></span> Preparation of necessary documents such as bills of lading, commercial invoices, and packing lists.</li>
+//           <li><span><b>Regulatory Compliance:</b></span> Ensuring shipments comply with international shipping regulations and standards.</li>
+//           </ul><br />
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+//   `
+//   +getInquiryFormContent();
+// }
 
 function getHomeShiftingServiceContent() {
   return `
   <div id="home-shifting-service-content" class="contact border-bottom-class" style="background: #ffffff;">
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details">Shipping Services</h1>
+      <h1 class="i78bq-2-3 contact-details">Home Shifting Services</h1>
       <div id="city-section-content">
         <div class="fill-form-img-div" style="align-self: center;">
           <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/home-shifting-services.jpg"}></img>
         </div>
         <div class="contact-details" style="text-align: left;">
-          <p>Shipping services involve the transportation of goods from one location to another, whether domestically or internationally. These services are essential for individuals, businesses, and industries that require the efficient and reliable movement of items. Here's an overview of what shipping services entail:</p><br />
+          <p>Home shifting services, also known as residential moving services, help individuals and families relocate their household belongings from one place to another. These services include various aspects of the moving process to ensure a smooth and stress-free transition.</p><br />
           <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>1. Types of Shipping Services</b><br />
+            <b>Pre-Move Planning:</b><br />
           </p>
           <ul style="line-height: 2.0em; padding-left: 25px;">
-          <li><span><b>Domestic Shipping:</b></span> Transporting goods within the same country. This can be done via road, rail, or domestic air freight.</li>          
-          <li><span><b>International Shipping:</b></span> Transporting goods across international borders, typically involving sea or air freight.</li>          
-          <li><span><b>Express Shipping:</b></span> Fast shipping options for urgent deliveries, often through air freight.</li>          
-          <li><span><b>Economy Shipping:</b></span> Cost-effective shipping options with longer delivery times, usually via ground or sea.</li>          
+          <li><span><b>Home Shifting Services:</b></span> Comprehensive solutions for residential moves.</li>          
+          <li><span><b>Moving Consultation:</b></span> Expert advice and planning for an efficient move.</li>          
+          <li><span><b>Moving Checklist:</b></span> Step-by-step guide to prepare for a home shift.</li>          
+          <li><span><b>Home Moving Cost Estimate:</b></span> Detailed budgeting for relocation expenses.</li>          
           </ul><br />
           <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>2. Modes of Transport</b><br />
+            <b>Packing Services:</b><br />
           </p>
           <ul style="line-height: 2.0em; padding-left: 25px;">
-          <li><span><b>Air Freight:</b></span> Fast and reliable, ideal for high-value or time-sensitive shipments.</li>
-          <li><span><b>Sea Freight:</b></span> Cost-effective for large or heavy shipments, though slower than air freight.</li>
-          <li><span><b>Road Transport:</b></span> Flexible and suitable for short to medium distances, within or across borders.</li>
-          <li><span><b>Rail Transport:</b></span> Efficient for large volumes of goods over long distances within a continent.</li>
+          <li><span><b>Professional Packing Services:</b></span> Ensuring safe and secure packing of household items.</li>
+          <li><span><b>Packing Supplies for Moving:</b></span> High-quality materials for protecting belongings.</li>
+          <li><span><b>Custom Packing Solutions:</b></span> Specialized packing for fragile and valuable items.</li>
+          <li><span><b>Labeling and Inventory Management:</b></span> Organized tracking of packed items.</li>
           </ul><br />
           <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>3. Shipping Services and Features</b><br />
+            <b>Transportation:</b><br />
           </p>
           <ul style="line-height: 2.0em; padding-left: 25px;">
-          <li><span><b>Door-to-Door Service:</b></span> Goods are picked up from the sender’s location and delivered directly to the recipient.</li>
-          <li><span><b>Port-to-Port Service:</b></span> Goods are transported from one port to another, requiring additional arrangements for pickup and delivery.</li>
-          <li><span><b>Customs Clearance:</b></span> Handling of all customs formalities for international shipments.</li>
-          <li><span><b>Tracking and Monitoring:</b></span> Real-time tracking of shipments to monitor their location and status.</li>
-          <li><span><b>Insurance</b></span> Coverage options to protect against loss or damage during transit.</li>
+          <li><span><b>Local and Long-Distance Moving:</b></span> Services for both nearby and faraway relocations.</li>
+          <li><span><b>Safe and Secure Transport:</b></span> Ensuring belongings are transported safely.</li>
+          <li><span><b>Door-to-Door Moving Services:</b></span> Comprehensive service from origin to destination.</li>
+          <li><span><b>Moving Truck Rental:</b></span> Options for renting trucks for DIY moves.</li>
           </ul><br />
           <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>4. Packaging and Handling</b><br />
+            <b>Loading and Unloading:</b><br />
           </p>
           <ul style="line-height: 2.0em; padding-left: 25px;">
-          <li><span><b>Professional Packaging:</b></span> Ensuring goods are packed securely to prevent damage during transit.</li>
-          <li><span><b>Special Handling:</b></span> Customized packaging and handling for fragile, hazardous, or high-value items.</li>
+          <li><span><b>Professional Loading Services:</b></span> Expert handling of heavy and bulky items.</li>
+          <li><span><b>Safe Unloading Services:</b></span> Careful placement of belongings in the new home.</li>
+          <li><span><b>Furniture Disassembly and Reassembly:</b></span> Ensuring large items are moved efficiently.</li>
           </ul><br />
           <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>5. Documentation and Compliance</b><br />
+            <b>Storage Solutions:</b><br />
           </p>
           <ul style="line-height: 2.0em; padding-left: 25px;">
-          <li><span><b>Shipping Documents:</b></span> Preparation of necessary documents such as bills of lading, commercial invoices, and packing lists.</li>
-          <li><span><b>Regulatory Compliance:</b></span> Ensuring shipments comply with international shipping regulations and standards.</li>
+          <li><span><b>Short-Term Storage Options:</b></span> Temporary storage for belongings during the move.</li>
+          <li><span><b>Long-Term Storage Services:</b></span> Secure storage for extended periods.</li>
+          <li><span><b>Climate-Controlled Storage:</b></span> Protecting sensitive items from environmental damage.</li>
+          <li><span><b>Secure Storage Facilities:</b></span> Safe keeping of belongings during transit.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>Specialized Moving Services:</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Pet Relocation:</b></span> Safe transportation of pets.</li>
+          <li><span><b>Vehicle Shipping:</b></span> Transporting cars and motorcycles.</li>
+          <li><span><b>Fragile Item Handling:</b></span> Specialized care for delicate items like antiques and artwork.</li>
+          <li><span><b>Heavy Item Moving:</b></span> Expert handling of pianos, pool tables, and other heavy items.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>Insurance:</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Moving Insurance:</b></span> Protecting belongings against potential damage or loss.</li>
+          <li><span><b>Comprehensive Moving Coverage:</b></span> Offering peace of mind during the move.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>Unpacking and Setup:</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Professional Unpacking Services:</b></span> Efficiently unpacking belongings in the new home.</li>
+          <li><span><b>Home Setup Assistance:</b></span> Helping arrange furniture and organize items.</li>
+          <li><span><b>Debris Removal:</b></span> Clearing packing materials and waste post-move.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>Additional Services:</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Cleaning Services:</b></span> Pre-move and post-move cleaning of homes.</li>
+          <li><span><b>Utility Setup:</b></span> Assisting with the setup of utilities like electricity, water, and internet.</li>
+          <li><span><b>Change of Address Assistance:</b></span> Helping update addresses with relevant authorities.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>Customer Support:</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>24/7 Customer Support:</b></span> Assistance throughout the moving process.</li>
+          <li><span><b>Personal Move Coordinator:</b></span> Dedicated support for personalized moving needs.</li>
+          <li><span><b>Tracking and Updates:</b></span> Real-time tracking of the moving progress.</li>
           </ul><br />
         </div>
       </div>
@@ -809,7 +865,7 @@ function getWarehousingServiceContent() {
   return `
   <div id="warehousing-service-content" class="contact border-bottom-class" style="background: #ffffff;">
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details">Shipping Services</h1>
+      <h1 class="i78bq-2-3 contact-details">Warehousing Services</h1>
       <div id="city-section-content">
         <div class="fill-form-img-div" style="align-self: center;">
           <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/warehousing-services.jpg"}></img>
@@ -817,46 +873,98 @@ function getWarehousingServiceContent() {
         <div class="contact-details" style="text-align: left;">
           <p>Shipping services involve the transportation of goods from one location to another, whether domestically or internationally. These services are essential for individuals, businesses, and industries that require the efficient and reliable movement of items. Here's an overview of what shipping services entail:</p><br />
           <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>1. Types of Shipping Services</b><br />
+            <b>Types of Warehousing:</b><br />
           </p>
           <ul style="line-height: 2.0em; padding-left: 25px;">
-          <li><span><b>Domestic Shipping:</b></span> Transporting goods within the same country. This can be done via road, rail, or domestic air freight.</li>          
-          <li><span><b>International Shipping:</b></span> Transporting goods across international borders, typically involving sea or air freight.</li>          
-          <li><span><b>Express Shipping:</b></span> Fast shipping options for urgent deliveries, often through air freight.</li>          
-          <li><span><b>Economy Shipping:</b></span> Cost-effective shipping options with longer delivery times, usually via ground or sea.</li>          
+          <li><span><b>Public Warehousing:</b></span> Flexible storage options available to multiple clients.</li>          
+          <li><span><b>Private Warehousing:</b></span> Dedicated storage facilities owned or leased by a single company.</li>          
+          <li><span><b>Bonded Warehousing:</b></span> Storage for goods awaiting customs clearance.</li>          
+          <li><span><b>Climate-Controlled Warehousing:</b></span> Specialized storage for temperature-sensitive items.</li>          
+          <li><span><b>Distribution Centers:</b></span> Warehouses designed for efficient distribution and logistics.</li>          
           </ul><br />
           <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>2. Modes of Transport</b><br />
+            <b>Storage Solutions:</b><br />
           </p>
           <ul style="line-height: 2.0em; padding-left: 25px;">
-          <li><span><b>Air Freight:</b></span> Fast and reliable, ideal for high-value or time-sensitive shipments.</li>
-          <li><span><b>Sea Freight:</b></span> Cost-effective for large or heavy shipments, though slower than air freight.</li>
-          <li><span><b>Road Transport:</b></span> Flexible and suitable for short to medium distances, within or across borders.</li>
-          <li><span><b>Rail Transport:</b></span> Efficient for large volumes of goods over long distances within a continent.</li>
+          <li><span><b>Long-Term Storage:</b></span> Extended storage solutions for goods.</li>
+          <li><span><b>Short-Term Storage:</b></span> Temporary storage options for inventory.</li>
+          <li><span><b>Bulk Storage:</b></span> Large-scale storage for bulk goods.</li>
+          <li><span><b>Rack Storage:</b></span> Organized storage using racking systems for easy access.</li>
+          <li><span><b>Pallet Storage:</b></span> Efficient storage using pallets for handling and stacking.</li>
           </ul><br />
           <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>3. Shipping Services and Features</b><br />
+            <b>Warehouse Management:</b><br />
           </p>
           <ul style="line-height: 2.0em; padding-left: 25px;">
-          <li><span><b>Door-to-Door Service:</b></span> Goods are picked up from the sender’s location and delivered directly to the recipient.</li>
-          <li><span><b>Port-to-Port Service:</b></span> Goods are transported from one port to another, requiring additional arrangements for pickup and delivery.</li>
-          <li><span><b>Customs Clearance:</b></span> Handling of all customs formalities for international shipments.</li>
-          <li><span><b>Tracking and Monitoring:</b></span> Real-time tracking of shipments to monitor their location and status.</li>
-          <li><span><b>Insurance</b></span> Coverage options to protect against loss or damage during transit.</li>
+          <li><span><b>Warehouse Management Systems (WMS):</b></span> Technology for managing warehouse operations.</li>
+          <li><span><b>Inventory Management:</b></span> Tracking and managing inventory levels.</li>
+          <li><span><b>Order Fulfillment:</b></span> Efficient processing and shipping of customer orders.</li>
+          <li><span><b>Cross-Docking:</b></span> Direct transfer of goods from inbound to outbound transportation.</li>
+          <li><span><b>Kitting and Assembly:</b></span> Combining individual items into ready-to-ship kits.</li>
           </ul><br />
           <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>4. Packaging and Handling</b><br />
+            <b>Logistics and Distribution:</b><br />
           </p>
           <ul style="line-height: 2.0em; padding-left: 25px;">
-          <li><span><b>Professional Packaging:</b></span> Ensuring goods are packed securely to prevent damage during transit.</li>
-          <li><span><b>Special Handling:</b></span> Customized packaging and handling for fragile, hazardous, or high-value items.</li>
+          <li><span><b>Logistics Services:</b></span> Comprehensive logistics management for efficient supply chains.</li>
+          <li><span><b>Third-Party Logistics (3PL):</b></span> Outsourcing logistics and warehousing to specialized providers.</li>
+          <li><span><b>Transportation Services:</b></span> Coordinating transport for inbound and outbound shipments.</li>
+          <li><span><b>Last-Mile Delivery:</b></span> Ensuring timely delivery to the end customer.</li>
+          <li><span><b>Reverse Logistics:</b></span> Managing returns and exchanges efficiently.</li>
           </ul><br />
           <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>5. Documentation and Compliance</b><br />
+            <b>Value-Added Services:</b><br />
           </p>
           <ul style="line-height: 2.0em; padding-left: 25px;">
-          <li><span><b>Shipping Documents:</b></span> Preparation of necessary documents such as bills of lading, commercial invoices, and packing lists.</li>
-          <li><span><b>Regulatory Compliance:</b></span> Ensuring shipments comply with international shipping regulations and standards.</li>
+          <li><span><b>Packaging Services:</b></span> Professional packing and repacking of goods.</li>
+          <li><span><b>Labeling and Barcoding:</b></span> Accurate labeling for easy identification and tracking.</li>
+          <li><span><b>Quality Control:</b></span> Inspecting goods to ensure they meet quality standards.</li>
+          <li><span><b>Custom Solutions:</b></span> Tailored warehousing services to meet specific business needs.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>Security and Safety:</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>24/7 Security:</b></span> Round-the-clock security measures to protect goods.</li>
+          <li><span><b>Fire Safety Systems:</b></span> Advanced fire detection and suppression systems.</li>
+          <li><span><b>Access Control:</b></span> Restricted access to authorized personnel only.</li>
+          <li><span><b>CCTV Monitoring:</b></span> Surveillance cameras for continuous monitoring.</li>
+          <li><span><b>Safety Protocols:</b></span> Ensuring a safe working environment within the warehouse.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>Technology Integration:</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Automated Warehousing:</b></span> Utilizing robotics and automation for efficient operations.</li>
+          <li><span><b>Real-Time Tracking:</b></span> Monitoring goods in real-time for better visibility.</li>
+          <li><span><b>Data Analytics:</b></span> Leveraging data to optimize warehousing and logistics.</li>
+          <li><span><b>IoT Integration:</b></span> Using Internet of Things for smarter warehouse management.</li>
+          <li><span><b>Blockchain for Supply Chain:</b></span> Enhancing transparency and security in the supply chain.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>Specialized Storage:</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Cold Storage:</b></span> Refrigerated warehousing for perishable goods.</li>
+          <li><span><b>Hazardous Materials Storage:</b></span> Safe storage for hazardous and flammable materials.</li>
+          <li><span><b>Document Storage:</b></span> Secure storage for important documents and records.</li>
+          <li><span><b>E-commerce Fulfillment:</b></span> Warehousing services tailored for online retail.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>Customer Support:</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>24/7 Customer Support:</b></span> Assistance for warehousing and logistics queries.</li>
+          <li><span><b>Dedicated Account Managers:</b></span> Personalized support for individual clients.</li>
+          <li><span><b>Service Level Agreements (SLAs):</b></span> Defined service standards for warehousing.</li>
+          </ul><br />
+          <p style="margin-bottom: 5px; font-size: 22px;">
+            <b>Sustainability:</b><br />
+          </p>
+          <ul style="line-height: 2.0em; padding-left: 25px;">
+          <li><span><b>Green Warehousing:</b></span> Eco-friendly practices in warehousing operations.</li>
+          <li><span><b>Energy-Efficient Facilities:</b></span> Reducing energy consumption in warehouses.</li>
+          <li><span><b>Sustainable Packaging:</b></span> Using environmentally friendly packaging materials.</li>
           </ul><br />
         </div>
       </div>
@@ -879,9 +987,9 @@ function setActiveTab() {
   const shipping = document.getElementById("shipping");
   const airFreight = document.getElementById("air-freight");
   const seaFreight = document.getElementById("sea-freight");
-  const internationalRelocation = document.getElementById(
-    "international-relocation"
-  );
+  // const internationalRelocation = document.getElementById(
+  //   "international-relocation"
+  // );
   const homeShifting = document.getElementById("home-shifting");
   const warehousing = document.getElementById("warehousing");
 
@@ -892,7 +1000,7 @@ function setActiveTab() {
     shipping,
     airFreight,
     seaFreight,
-    internationalRelocation,
+    // internationalRelocation,
     homeShifting,
     warehousing,
   ];
@@ -903,7 +1011,7 @@ function setActiveTab() {
     "sea-freight-forwarding-service",
     "car-bike-carrier-service",
     "home-shifting-service",
-    "international-relocation-service",
+    // "international-relocation-service",
     "shipping-service",
     "warehousing-service"
   ];
@@ -933,12 +1041,14 @@ function setActiveTab() {
       subMenus[i].className.replace(" active-dropdown-options", "");
     }
     homeShifting.className += " active-dropdown-options";
-  } else if (cityOrLinkName === "international-relocation-service") {
-    for (let i = 0; i < subMenus.length; i++) {
-      subMenus[i].className.replace(" active-dropdown-options", "");
-    }
-    internationalRelocation.className += " active-dropdown-options";
-  } else if (cityOrLinkName === "shipping-service") {
+  } 
+  // else if (cityOrLinkName === "international-relocation-service") {
+  //   for (let i = 0; i < subMenus.length; i++) {
+  //     subMenus[i].className.replace(" active-dropdown-options", "");
+  //   }
+  //   internationalRelocation.className += " active-dropdown-options";
+  // } 
+  else if (cityOrLinkName === "shipping-service") {
     for (let i = 0; i < subMenus.length; i++) {
       subMenus[i].className.replace(" active-dropdown-options", "");
     }
@@ -1134,7 +1244,7 @@ function createHtmlContent() {
             <a id="shipping" href="https://www.daynightpackersmovers.com/shipping-service.html">Shipping Service</a>
             <a id="air-freight" href="https://www.daynightpackersmovers.com/air-freight-forwarding-service.html">Air Freight Forwarding</a>
             <a id="sea-freight" href="https://www.daynightpackersmovers.com/sea-freight-forwarding-service.html">Sea Freight Forwarding</a>
-            <a id="international-relocation" href="https://www.daynightpackersmovers.com/international-relocation-service.html">International Relocation</a>
+            <!--<a id="international-relocation" href="https://www.daynightpackersmovers.com/international-relocation-service.html">International Relocation</a>-->
             <a id="home-shifting" href="https://www.daynightpackersmovers.com/home-shifting-service.html">Home Shifting Services</a>
             <a id="warehousing" href="https://www.daynightpackersmovers.com/warehousing-service.html">Warehousing Service</a>
           </div>
@@ -1156,7 +1266,7 @@ function createHtmlContent() {
               <a id="shipping" href="https://www.daynightpackersmovers.com/shipping-service.html">Shipping Service</a>
               <a id="air-freight" href="https://www.daynightpackersmovers.com/air-freight-forwarding-service.html">Air Freight Forwarding</a>
               <a id="sea-freight" href="https://www.daynightpackersmovers.com/sea-freight-forwarding-service.html">Sea Freight Forwarding</a>
-              <a id="international-relocation" href="https://www.daynightpackersmovers.com/international-relocation-service.html">International Relocation</a>
+              <!--<a id="international-relocation" href="https://www.daynightpackersmovers.com/international-relocation-service.html">International Relocation</a>-->
               <a id="home-shifting" href="https://www.daynightpackersmovers.com/home-shifting-service.html">Home Shifting Services</a>
               <a id="warehousing" href="https://www.daynightpackersmovers.com/warehousing-service.html">Warehousing Service</a>
             </div>
@@ -1202,8 +1312,8 @@ function createHtmlContent() {
       ? getAirFreightServiceContent()
       : cityOrLinkName === "sea-freight-forwarding-service"
       ? getSeaFreightServiceContent()
-      : cityOrLinkName === "international-relocation-service"
-      ? getInternationalRelocationServiceContent()
+      // : cityOrLinkName === "international-relocation-service"
+      // ? getInternationalRelocationServiceContent()
       : cityOrLinkName === "home-shifting-service"
       ? getHomeShiftingServiceContent()
       : cityOrLinkName === "warehousing-service"
