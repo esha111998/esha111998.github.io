@@ -122,7 +122,7 @@ function getAboutUsContent() {
       <h1 class="i78bq-2-3 contact-details">About Us - Day Night Packers And Movers</h1>
       <div id="city-section-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/ABOUTUS.jpg"}></img>
+          <img alt="" loading="lazy" width="400px" height="auto" src="assets/about-us.jpg"></img>
         </div>
         <div class="contact-details" style="text-align: left;">
           <p>Welcome to Day Night Packers And Movers, your trusted partner for all your moving needs. With years of experience in the industry, we have established ourselves as a reliable and professional moving company dedicated to providing top-notch moving and packing services.</p><br /><br />
@@ -175,7 +175,7 @@ function getBlogsContent() {
       <h1 class="i78bq-2-3 contact-details">Blogs</h1>
       <div id="city-section-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/BLOG.jpg"}></img>
+          <img alt="" loading="lazy" width="400px" height="auto" src="assets/blog.jpg"></img>
         </div>
         <div class="contact-details" style="text-align: left;">
           <p style="margin-bottom: 5px; font-size: 22px;">
@@ -282,7 +282,7 @@ function getFAQsContent() {
       <h1 class="i78bq-2-3 contact-details">FAQs</h1>
       <div id="city-section-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/FAQs.jpg"}></img>
+          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/faqs.jpg"}></img>
         </div>
         <div class="contact-details" style="text-align: left;">
           <button type="button" class="collapsible">What services do you offer as a moving and packers company?</button>
@@ -366,7 +366,7 @@ function getInquiryFormContent() {
           </form>
         </div>
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="600px" height="auto" src=${"assets/2QueryForm.gif"}></img>
+          <img alt="" loading="lazy" width="600px" height="auto" src="assets/delivery-truck.gif"></img>
         </div>
       </div>  
     </div>
@@ -1118,7 +1118,7 @@ function createHtmlContent() {
     <div id="ibulz" class="nav-inner">
       <div>
         <a href="https://daynightpackersmovers.com/">
-          <img id="logo" alt="" src=${"assets/logonew.png"} width="auto" height="80px"></img>
+          <img id="logo" alt="" src=${"assets/logo.png"} width="auto" height="80px"></img>
         </a>
       </div>
       <div id="menus" class="flex-div row-div" style="gap: 30px;">
@@ -1215,33 +1215,33 @@ function createHtmlContent() {
       <div class="">
         <div class="slideshow-container">
           <div class="day-night-slides fade">
-            <img class="slideImg" alt="" src=${"assets/1.png"} height="300px" width="300px">
+            <img class="slideImg" alt="" src="assets/day-night-toggles.png" height="300px" width="300px">
             <div class="day-night-text">
               24/7 Dedication: <b>Day Night Packers and Movers</b> Working Around the Clock to Serve You Better. ⏰ #Always On
             </div>
           </div>
 
           <div class="day-night-slides fade">
-            <img class="slideImg" alt="" loading="lazy" src=${"assets/2.png"} height="300px" width="350px">
+            <img class="slideImg" alt="" loading="lazy" src="assets/delivery-items-checklist.png" height="300px" width="350px">
             <div class="day-night-text">Safe and Sound, Every Detail Perfected. 🛡️✨ #Excellence Assured
             <br /><br />
             </div>
           </div>
 
           <div class="day-night-slides fade">
-            <img class="slideImg" alt="" loading="lazy" src=${"assets/3.png"} height="300px" width="350px">
+            <img class="slideImg" alt="" loading="lazy" src="assets/logistics.png" height="300px" width="350px">
             <div class="day-night-text">Powered by Excellence: Our Arsenal of Resources Ready for You. 💼⚙️ #Prepared For Success
             </div>
           </div>
 
           <div class="day-night-slides fade">
-            <img class="slideImg" alt="" loading="lazy" src=${"assets/4.png"} height="300px" width="320px">
+            <img class="slideImg" alt="" loading="lazy" src="assets/trusted-handshake.png" height="300px" width="320px">
             <div class="day-night-text">Your Trusted Partner: Where Every Customer Finds a Companion. 🤝 #Customer First
             </div>
           </div>
 
           <div class="day-night-slides fade">
-            <img class="slideImg" alt="" loading="lazy" src=${"assets/5.png"} height="300px" width="320px">
+            <img class="slideImg" alt="" loading="lazy" src="assets/relaxing.png" height="300px" width="320px">
             <div class="day-night-text">Relax, We've Got You Covered: Ensuring Customer Satisfaction Every Step of the Way. 😌👌 #Peace Of Mind Service
             </div>
           </div>
@@ -1264,7 +1264,7 @@ function createHtmlContent() {
     <div class="iyohgi" style="text-align: center;">
       <div id="city-section-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/citySection.gif"}></img>
+          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/city-section.gif"}></img>
         </div>
         <div class="contact-details">
           <p style="font-size: 30px; font-weight: 700;">Welcome to Day Night Packers and Movers in ${extractLocation(
@@ -1290,7 +1290,7 @@ function createHtmlContent() {
     <div class="iyohgi" style="text-align: center;">
       <div class="inquire-tos-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="600px" height="auto" src=${"assets/3TakeOurServices.gif"}></img>
+          <img alt="" loading="lazy" width="600px" height="auto" src="assets/take-our-services.gif"></img>
         </div>
         <div id="take-our-service-content" class="contact-details">
           <p style="font-size: 19px; font-weight: 700;">Worried About Your Next Relocation During Busy Schedule??</p><br />
@@ -1321,7 +1321,7 @@ function createHtmlContent() {
           </ul>
         </div>
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="600px" height="auto" src=${"assets/4OurService.gif"}></img>
+          <img alt="" loading="lazy" width="600px" height="auto" src="assets/our-service.gif"></img>
         </div>
       </div>
     </div>
@@ -1332,7 +1332,7 @@ function createHtmlContent() {
       <h2 class="i78bq-2-3 contact-details ">United in Purpose, Stronger in Unity. 🌟 Dynamics of Day Night Packers and Movers Team</h2>
       <div id="our-team-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="600px" height="auto" src=${"assets/5OurTeam.gif"}></img>
+          <img alt="" loading="lazy" width="600px" height="auto" src="assets/our-team.gif"></img>
         </div>
         <div class="contact-details" style="text-align: left;">
           <ul style="line-height: 2.0em;"><li><b>Highly Motivated and Professional Companions:</b> Day Night Packers and Movers are dedicated to ensuring your relocation is stress-free.</li>
@@ -1494,7 +1494,7 @@ function createHtmlContent() {
     </div>
     <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
       <div class="fill-form-img-div" style="align-self: center;">
-        <img alt="" loading="lazy" width="500px" height="auto" src=${"assets/AroundWorld.gif"}></img>
+        <img alt="" loading="lazy" width="500px" height="auto" src="assets/around-world.gif"></img>
       </div>
       <div id="i12z9" class="services-box">
         <div id="ilmjk" class="service-cont">
@@ -1562,7 +1562,7 @@ function createHtmlContent() {
       <h2 class="contact-details ">Doubts Dismissed: Let Us Clear the Path to Clarity with Day Night Packers and Movers</h2>
       <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="500px" height="auto" src=${"assets/6ContactUs.gif"}></img>
+          <img alt="" loading="lazy" width="500px" height="auto" src="assets/contact-us.gif"></img>
         </div>
         <div>
         <p id="iqrh3-2-2" class="contact-details" style="margin-bottom: 10px; margin-top: 20px;">Contact us</p>
