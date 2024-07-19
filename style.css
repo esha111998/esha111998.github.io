@@ -60,7 +60,7 @@
     display:flex;
     justify-content:space-around;
     align-items:center;
-    width:1150px;
+    max-width:1150px;
     margin: auto;
     padding: 5px;
   }
@@ -120,7 +120,7 @@
     text-align:center;
   }
   .services-box{
-    width:1150px;
+    max-width:1150px;
     display:flex;
     margin:auto;
     justify-content:space-between;
@@ -324,7 +324,7 @@
     flex-direction: row;
     align-items: center;
     margin: auto;
-    width: 1150px;
+    max-width: 1150px;
   }
 
   #our-services-content{
@@ -333,7 +333,7 @@
     flex-direction: row;
     align-items: center;
     margin: auto;
-    width: 1150px;
+    max-width: 1150px;
   }
 
   .inquire-tos-content{
@@ -341,7 +341,7 @@
     justify-content: space-around;
     flex-direction: row;
     margin: auto;
-    width: 1150px;
+    max-width: 1150px;
   }
 
   #take-our-service-content {
@@ -356,17 +356,17 @@
     border-radius: 5px;
     margin: 30px;
     margin: auto;
-    width: 1150px;
+    max-width: 1150px;
   }
 
   #process-steps-content {
     margin: auto;
-    width: 1150px;
+    max-width: 1150px;
   }
 
   #get-a-quote {
     margin: auto;
-    width: 1150px;
+    max-width: 1150px;
   }
 
   #city-section-content{
@@ -374,7 +374,7 @@
     gap: 35px;
     justify-content: space-between;
     flex-direction: column;
-    width: 1150px;
+    max-width: 1150px;
     margin: auto;
   }
 
@@ -407,11 +407,49 @@
   /* modal css ends */
 
   /* carousal css starts */
-  /* Slideshow container */
   .slideshow-container {
-    max-width: 1000px;
+    /* max-width: 1000px; */
     /* position: relative; */
     margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .slideImg {
+    height: 650px;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
   }
 
   /* Hide the images by default */
@@ -462,6 +500,26 @@
   .fade {
     animation-name: fade;
     animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  /* carousal css end */
+
+  .slide-right {
+    animation-name: slide-right;
+    animation-duration: 2s;
+  }
+
+  @keyframes slide-right {
+    from {
+      margin-left: -500px;
+    }
+    to {
+      margin-left: 0%;
+    }
   }
 
   /* table css */
@@ -567,19 +625,16 @@
     padding: 10px 15px;
     border: none;
   }
-  /*#side-panel css ends */
-
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  /* carousal css end */
+  /*side-panel css ends */
 
   @media (max-width: 1125px){
     .services-box, #city-section-content, #our-team-content, #our-services-content, #get-a-quote,
     .inquire-tos-content, #take-our-service-content, #table-parent, #process-steps-content, .nav-inner {
       width: 100%;
       margin: none;
+    }
+    .slideImg {
+      height: 650px;
     }
   }
   @media (max-width: 992px){
@@ -606,6 +661,9 @@
       width: 500px;
       object-fit: cover;
     }
+    .slideImg {
+      height: 550px;
+    }
   }
   @media (max-width:768px){
     #menus{
@@ -621,6 +679,9 @@
     #our-team-content, #our-services-content, .inquire-tos-content{
       gap: 30px;
       justify-content: center;
+    }
+    .slideImg {
+      height: 450px;
     }
   }
   @media (max-width: 575px){
@@ -675,15 +736,21 @@
       margin: none;
       width: 100%
     }
+    .slideImg {
+      height: 400px;
+    }
   }
   @media (max-width: 460px){
     #menus{
       display: none;
     }
-    .fill-form-img-div>img, .slideImg{
+    .fill-form-img-div>img {
       width: 100%;
       height: auto;
       object-fit: cover;
+    }
+    .slideImg {
+      height: 300px;
     }
     #logo{
       height: 70px;
@@ -711,10 +778,13 @@
     }
   }
   @media (max-width: 290px){
-    .fill-form-img-div>img, .slideImg{
+    .fill-form-img-div>img {
       width: 100%;
       height: auto;
       object-fit: cover;
+    }
+    .slideImg {
+      height: 200px;
     }
     .process-card-parent{
       padding: 5px !important;

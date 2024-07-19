@@ -8,6 +8,12 @@ function getPathAndLocation() {
 
 const { finalPath, cityOrLinkName } = getPathAndLocation();
 
+// let dayNightTimeout;
+let dayNightSlideIndex = 0;
+
+let slidesTimeout;
+let slideIndex = 0;
+
 function showModal() {
   const modal = document.getElementById("modal");
   modal.style.display = "block";
@@ -81,11 +87,24 @@ function callAPI(formEle, submitBtn) {
     });
 }
 
+function showHidePrevNextBtns(index) {
+  const prevBtn = document.getElementsByClassName("prev")[0];
+  const nextBtn = document.getElementsByClassName("next")[0];
+
+  if (index > 0) prevBtn.style.display = "block";
+  else prevBtn.style.display = "none";
+  if (index < 3) nextBtn.style.display = "block";
+  else nextBtn.style.display = "none";
+}
+
 function currentSlide(slideClassName, dotClassName, slideIndex) {
-  clearTimeout(
-    slideClassName === "day-night-slides" ? dayNightTimeout : slidesTimeout
-  );
+  if (slideClassName === "mySlides") clearTimeout(slidesTimeout);
   showSlides(slideClassName, dotClassName, slideIndex);
+}
+
+function plusSlides(slideIndex) {
+  dayNightSlideIndex += slideIndex;
+  showSlides("day-night-slides", "day-night-dot", dayNightSlideIndex);
 }
 
 function showSlides(slideClassName, dotClassName, slideIndex) {
@@ -105,14 +124,24 @@ function showSlides(slideClassName, dotClassName, slideIndex) {
   if (slides[slideIndex - 1]) slides[slideIndex - 1].style.display = "block";
   if (dots[slideIndex - 1]) dots[slideIndex - 1].className += " active";
   if (slideClassName === "day-night-slides") {
-    dayNightTimeout = setTimeout(function () {
-      return showSlides("day-night-slides", "day-night-dot", slideIndex);
-    }, 2000); // Change image every 2 seconds
-  } else {
+    showHidePrevNextBtns(slideIndex - 1);
+    // dayNightTimeout = setTimeout(function () {
+    //   return showSlides("day-night-slides", "day-night-dot", slideIndex);
+    // }, 2000); // Change image every 2 seconds
+  }
+  if (slideClassName === "mySlides") {
     slidesTimeout = setTimeout(function () {
       return showSlides("mySlides", "dot", slideIndex);
     }, 2000); // Change image every 2 seconds
   }
+}
+
+function applyAnimationWhenInViewport(elementIdOrClass, animation) {
+  const element = document.querySelector(elementIdOrClass);
+  const observer = new IntersectionObserver((entries) => {
+    element.classList.toggle(animation, entries[0].isIntersecting);
+  });
+  observer.observe(element);
 }
 
 function getAboutUsContent() {
@@ -375,7 +404,8 @@ function getInquiryFormContent() {
 }
 
 function getPackersMoversServiceContent() {
-  return `
+  return (
+    `
   <div id="packers-movers-service-content" class="contact border-bottom-class" style="background: #f5f5f5;">
     <div class="iyohgi" style="text-align: center;">
       <h1 class="i78bq-2-3 contact-details">Packers and Movers Services</h1>
@@ -440,12 +470,13 @@ function getPackersMoversServiceContent() {
       </div>
     </div>
   </div>
-  `
-  +getInquiryFormContent();
+  ` + getInquiryFormContent()
+  );
 }
 
 function getCarBikeCarrierServiceContent() {
-  return `
+  return (
+    `
   <div id="car-bike-carrier-service-content" class="contact border-bottom-class" style="background: #ffffff;">
     <div class="iyohgi" style="text-align: center;">
       <h1 class="i78bq-2-3 contact-details">Car and Bike Carrier Services</h1>
@@ -500,12 +531,13 @@ function getCarBikeCarrierServiceContent() {
       </div>
     </div>
   </div>
-  `
-  +getInquiryFormContent();
+  ` + getInquiryFormContent()
+  );
 }
 
 function getShippingServiceContent() {
-  return `
+  return (
+    `
   <div id="shipping-service-content" class="contact border-bottom-class" style="background: #a8c4e9;">
     <div class="iyohgi" style="text-align: center;">
       <h1 class="i78bq-2-3 contact-details">Shipping Services</h1>
@@ -561,12 +593,13 @@ function getShippingServiceContent() {
       </div>
     </div>
   </div>
-  `
-  +getInquiryFormContent();
+  ` + getInquiryFormContent()
+  );
 }
 
 function getAirFreightServiceContent() {
-  return `
+  return (
+    `
   <div id="air-freight-service-content" class="contact border-bottom-class" style="color: white; background: #032d3a;">
     <div class="iyohgi" style="text-align: center;">
       <h1 class="i78bq-2-3 ">Air Freight Forwarding Services</h1>
@@ -618,12 +651,13 @@ function getAirFreightServiceContent() {
       </div>
     </div>
   </div>
-  `
-  +getInquiryFormContent();
+  ` + getInquiryFormContent()
+  );
 }
 
 function getSeaFreightServiceContent() {
-  return `
+  return (
+    `
   <div id="sea-freight-service-content" class="contact border-bottom-class" style="background: #0addb9;">
     <div class="iyohgi" style="text-align: center;">
       <h1 class="i78bq-2-3 contact-details">Sea Freight Forwarding Services</h1>
@@ -693,8 +727,8 @@ function getSeaFreightServiceContent() {
       </div>
     </div>
   </div>
-  `
-  +getInquiryFormContent();
+  ` + getInquiryFormContent()
+  );
 }
 
 // function getInternationalRelocationServiceContent() {
@@ -712,10 +746,10 @@ function getSeaFreightServiceContent() {
 //             <b>1. Types of Shipping Services</b><br />
 //           </p>
 //           <ul style="line-height: 2.0em; padding-left: 25px;">
-//           <li><span><b>Domestic Shipping:</b></span> Transporting goods within the same country. This can be done via road, rail, or domestic air freight.</li>          
-//           <li><span><b>International Shipping:</b></span> Transporting goods across international borders, typically involving sea or air freight.</li>          
-//           <li><span><b>Express Shipping:</b></span> Fast shipping options for urgent deliveries, often through air freight.</li>          
-//           <li><span><b>Economy Shipping:</b></span> Cost-effective shipping options with longer delivery times, usually via ground or sea.</li>          
+//           <li><span><b>Domestic Shipping:</b></span> Transporting goods within the same country. This can be done via road, rail, or domestic air freight.</li>
+//           <li><span><b>International Shipping:</b></span> Transporting goods across international borders, typically involving sea or air freight.</li>
+//           <li><span><b>Express Shipping:</b></span> Fast shipping options for urgent deliveries, often through air freight.</li>
+//           <li><span><b>Economy Shipping:</b></span> Cost-effective shipping options with longer delivery times, usually via ground or sea.</li>
 //           </ul><br />
 //           <p style="margin-bottom: 5px; font-size: 22px;">
 //             <b>2. Modes of Transport</b><br />
@@ -759,7 +793,8 @@ function getSeaFreightServiceContent() {
 // }
 
 function getHomeShiftingServiceContent() {
-  return `
+  return (
+    `
   <div id="home-shifting-service-content" class="contact border-bottom-class" style="background: #ffffff;">
     <div class="iyohgi" style="text-align: center;">
       <h1 class="i78bq-2-3 contact-details">Home Shifting Services</h1>
@@ -857,12 +892,13 @@ function getHomeShiftingServiceContent() {
       </div>
     </div>
   </div>
-  `
-  +getInquiryFormContent();
+  ` + getInquiryFormContent()
+  );
 }
 
 function getWarehousingServiceContent() {
-  return `
+  return (
+    `
   <div id="warehousing-service-content" class="contact border-bottom-class" style="background: #ffffff;">
     <div class="iyohgi" style="text-align: center;">
       <h1 class="i78bq-2-3 contact-details">Warehousing Services</h1>
@@ -970,8 +1006,8 @@ function getWarehousingServiceContent() {
       </div>
     </div>
   </div>
-  `
-  +getInquiryFormContent();
+  ` + getInquiryFormContent()
+  );
 }
 
 function setActiveTab() {
@@ -1013,7 +1049,7 @@ function setActiveTab() {
     "home-shifting-service",
     // "international-relocation-service",
     "shipping-service",
-    "warehousing-service"
+    "warehousing-service",
   ];
 
   if (cityOrLinkName === "packers-movers-service") {
@@ -1041,13 +1077,13 @@ function setActiveTab() {
       subMenus[i].className.replace(" active-dropdown-options", "");
     }
     homeShifting.className += " active-dropdown-options";
-  } 
+  }
   // else if (cityOrLinkName === "international-relocation-service") {
   //   for (let i = 0; i < subMenus.length; i++) {
   //     subMenus[i].className.replace(" active-dropdown-options", "");
   //   }
   //   internationalRelocation.className += " active-dropdown-options";
-  // } 
+  // }
   else if (cityOrLinkName === "shipping-service") {
     for (let i = 0; i < subMenus.length; i++) {
       subMenus[i].className.replace(" active-dropdown-options", "");
@@ -1312,50 +1348,53 @@ function createHtmlContent() {
       ? getAirFreightServiceContent()
       : cityOrLinkName === "sea-freight-forwarding-service"
       ? getSeaFreightServiceContent()
-      // : cityOrLinkName === "international-relocation-service"
+      : // : cityOrLinkName === "international-relocation-service"
       // ? getInternationalRelocationServiceContent()
-      : cityOrLinkName === "home-shifting-service"
+      cityOrLinkName === "home-shifting-service"
       ? getHomeShiftingServiceContent()
       : cityOrLinkName === "warehousing-service"
       ? getWarehousingServiceContent()
       : `${
           cityOrLinkName === "index" || cityOrLinkName === ""
-            ? `<div id="day-night" class="contact border-bottom-class" style="background: #e2e4f4;">
-    <div class="iyohgi" style="text-align: center;">
+            ? `<div id="day-night" class="contact border-bottom-class" style="background: #fffbf6;">
+    <div class="iyohgi" style="text-align: center; padding: 20px 0px;">
       <div class="">
         <div class="slideshow-container">
           <div class="day-night-slides fade">
-            <img class="slideImg" alt="" src="assets/day-night-toggles.png" height="300px" width="300px">
-            <div class="day-night-text">
+            <div class="slideImg" alt="" style="background-image: url('assets/packing-moving.jpg');"></div>
+            <!--<div class="day-night-text">
               24/7 Dedication: <b>Day Night Packers and Movers</b> Working Around the Clock to Serve You Better. ⏰ #Always On
-            </div>
+            </div>-->
           </div>
 
           <div class="day-night-slides fade">
-            <img class="slideImg" alt="" loading="lazy" src="assets/delivery-items-checklist.png" height="300px" width="350px">
-            <div class="day-night-text">Safe and Sound, Every Detail Perfected. 🛡️✨ #Excellence Assured
+            <div class="slideImg" alt="" style="background-image: url('assets/carrying-box.jpg');"></div>
+          <!--<div class="day-night-text">Safe and Sound, Every Detail Perfected. 🛡️✨ #Excellence Assured
             <br /><br />
-            </div>
+            </div>-->
           </div>
 
           <div class="day-night-slides fade">
-            <img class="slideImg" alt="" loading="lazy" src="assets/logistics.png" height="300px" width="350px">
-            <div class="day-night-text">Powered by Excellence: Our Arsenal of Resources Ready for You. 💼⚙️ #Prepared For Success
-            </div>
+            <div class="slideImg" alt="" style="background-image: url('assets/packed-material.jpg');"></div>
+            <!--<div class="day-night-text">Powered by Excellence: Our Arsenal of Resources Ready for You. 💼⚙️ #Prepared For Success
+            </div>-->
           </div>
 
           <div class="day-night-slides fade">
-            <img class="slideImg" alt="" loading="lazy" src="assets/trusted-handshake.png" height="300px" width="320px">
-            <div class="day-night-text">Your Trusted Partner: Where Every Customer Finds a Companion. 🤝 #Customer First
-            </div>
+            <div class="slideImg" alt="" style="background-image: url('assets/warehouse.jpg');"></div>
+            <!--<div class="day-night-text">Your Trusted Partner: Where Every Customer Finds a Companion. 🤝 #Customer First
+            </div>-->
           </div>
 
-          <div class="day-night-slides fade">
+          <!--<div class="day-night-slides fade">
             <img class="slideImg" alt="" loading="lazy" src="assets/relaxing.png" height="300px" width="320px">
             <div class="day-night-text">Relax, We've Got You Covered: Ensuring Customer Satisfaction Every Step of the Way. 😌👌 #Peace Of Mind Service
             </div>
-          </div>
+          </div>-->
 
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
         <br>
 
@@ -1364,7 +1403,7 @@ function createHtmlContent() {
           <span class="day-night-dot" onclick="currentSlide('day-night-slides', 'day-night-dot', 1)"></span>
           <span class="day-night-dot" onclick="currentSlide('day-night-slides', 'day-night-dot', 2)"></span>
           <span class="day-night-dot" onclick="currentSlide('day-night-slides', 'day-night-dot', 3)"></span>
-          <span class="day-night-dot" onclick="currentSlide('day-night-slides', 'day-night-dot', 4)"></span>
+          <!--<span class="day-night-dot" onclick="currentSlide('day-night-slides', 'day-night-dot', 4)"></span>-->
         </div>
       </div>
     </div>
@@ -1403,8 +1442,8 @@ function createHtmlContent() {
           <img alt="" loading="lazy" width="600px" height="auto" src="assets/take-our-services.gif"></img>
         </div>
         <div id="take-our-service-content" class="contact-details">
-          <p style="font-size: 19px; font-weight: 700;">Worried About Your Next Relocation During Busy Schedule??</p><br />
-          <p style="font-size: xxx-large; font-weight: 800;">Let Us Help You!!</p><br /><br />
+          <p style="font-size: 19px; font-weight: 700;" class="fading-text">Worried About Your Next Relocation During Busy Schedule??</p><br />
+          <p style="font-size: xxx-large; font-weight: 800;" class="sliding-text">Let Us Help You!!</p><br /><br />
           <p>
           Moving to a new place and searching for house shifting services? Let Day Night Packers and Movers take the stress out of your relocation journey and make it seamless. We're your trusted local and long-distance movers, committed to smooth, efficient, and worry-free transitions. With transparent pricing, on-time delivery, and friendly, reliable moving services, we exceed your expectations every step of the way.
           </p><br /><br />
@@ -1730,14 +1769,10 @@ setActiveTab();
 
 if (cityOrLinkName === "queries-before-shifting") collapsibleProcessing();
 
-let dayNightTimeout;
-let dayNightSlideIndex = 0;
 if (cityOrLinkName === "" || cityOrLinkName === "index") {
   showSlides("day-night-slides", "day-night-dot", dayNightSlideIndex);
 }
 
-let slidesTimeout;
-let slideIndex = 0;
 if (
   cityOrLinkName !== "queries-before-shifting" &&
   cityOrLinkName !== "self-preparation-before-shifting" &&
@@ -1747,3 +1782,6 @@ if (
   onSubmit();
   showSlides("mySlides", "dot", slideIndex);
 }
+
+applyAnimationWhenInViewport("fading-text", "fade");
+applyAnimationWhenInViewport("fading-text", "slide-right");
