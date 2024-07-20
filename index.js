@@ -99,6 +99,7 @@ function showHidePrevNextBtns(index) {
 
 function currentSlide(slideClassName, dotClassName, slideIndex) {
   if (slideClassName === "mySlides") clearTimeout(slidesTimeout);
+  else dayNightSlideIndex = slideIndex;
   showSlides(slideClassName, dotClassName, slideIndex);
 }
 
@@ -142,6 +143,15 @@ function applyAnimationWhenInViewport(elementIdOrClass, animation) {
     element.classList.toggle(animation, entries[0].isIntersecting);
   });
   observer.observe(element);
+
+  // const screenTop = document.scrollingElement.scrollTop;
+  // const screenBottom = screenTop + innerHeight;
+  // const eleTop = element.getBoundingClientRect().top
+  
+  // if ( eleTop < screenBottom && eleTop < screenTop)
+  // {
+  //   element.children[0].classList.add(animation);
+  // }
 }
 
 function getAboutUsContent() {
@@ -1154,6 +1164,10 @@ function extractLocation(str, startIndex) {
   return location.join(" ");
 }
 
+function navigate(route) {
+  window.location.href = `https://www.daynightpackersmovers.com/${route}.html`;
+}
+
 function createHtmlContent() {
   const brand = "#FF5823";
   const locations1 = [
@@ -1453,25 +1467,64 @@ function createHtmlContent() {
     </div>
   </div>
 
-  <div id="our-services" class="contact border-bottom-class" style="background: #ffc7a9;">
+  <div id="our-services" class="contact border-bottom-class" style="background: #f5f5f5;">
     <div class="iyohgi" style="text-align: center;">
       <h2 class="i78bq-2-3 contact-details ">Decoding Excellence: Illuminating Our Range of Services at Day Night Packers and Movers</h2>
       <div id="our-services-content">   
-        <div>
-          <ul class="service-desc" style="line-height: 2.0em;">
-            <li><h2><a href="https://www.daynightpackersmovers.com/packers-movers-service.html">Packers And Movers</a></h2></li>
-            <li><h2><a href="https://www.daynightpackersmovers.com/car-bike-carrier-service.html">Car And Bike Carrier</a></h2></li>
-            <li><h2><a href="https://www.daynightpackersmovers.com/shipping-service.html">Shipping Service</a></h2></li>
-            <li><h2><a href="https://www.daynightpackersmovers.com/air-freight-forwarding-service.html">Air Freight Forwarding</a></h2></li>
-            <li><h2><a href="https://www.daynightpackersmovers.com/sea-freight-forwarding-service.html">Sea Freight Forwarding</a></h2></li>
-            <li><h2><a href="https://www.daynightpackersmovers.com/international-relocation-service.html">International Relocation</a></h2></li>
-            <li><h2><a href="https://www.daynightpackersmovers.com/home-shifting-service.html">Home Shifting Services</a></h2></li>
-            <li><h2><a href="https://www.daynightpackersmovers.com/warehousing-service.html">Warehousing Service</a></h2></li>
-          </ul>
+        <div class="flex-div row-div" style="flex-wrap: wrap; justify-content: space-around; gap: 20px;">
+          <div class="card service-card flex-div col-div" style="position: relative;">
+            <img src="assets/moving-truck.svg" alt="moving truck" loading="lazy" width="100px" height="100px" />
+            <a class="flip-btn">&#10095;</a>
+            <p>Packers And Movers</p>
+            <button class="service-btn" onclick="navigate('packers-movers-service')">View More</button>
+          </div>
+          <div class="card service-card flex-div col-div" style="position: relative;">
+            <img src="assets/truck-flatbed.svg" alt="moving flatbed" loading="lazy" width="100px" height="100px" />
+            <a class="flip-btn">&#10095;</a>
+            <p>Car And Bike Carrier</p>
+            <button class="service-btn" onclick="navigate('car-bike-carrier-service')">View More</button>
+          </div>
+          <div class="card service-card flex-div col-div" style="position: relative;">
+            <img src="assets/shipping-icon.svg" alt="shipping" loading="lazy" width="100px" height="100px" />
+            <a class="flip-btn">&#10095;</a>
+            <p>Shipping Service</p>
+            <button class="service-btn" onclick="navigate('shipping-service')">View More</button>
+          </div>
+          <div class="card service-card flex-div col-div" style="position: relative;">
+            <img src="assets/plane.svg" alt="plane" loading="lazy" width="100px" height="80px" />
+            <a class="flip-btn">&#10095;</a>
+            <p>Air Freight Forwarding</p>
+            <button class="service-btn" onclick="navigate('air-freight-forwarding-service')">View More</button>
+          </div>
+          <div class="card service-card flex-div col-div" style="position: relative;">
+            <img src="assets/sea-ship-with-containers.svg" alt="sea-ship-with-containers" loading="lazy" width="100px" height="100px" />
+            <a class="flip-btn">&#10095;</a>
+            <p>Sea Freight Forwarding</p>
+            <button class="service-btn" onclick="navigate('sea-freight-forwarding-service')">View More</button>
+          </div>
+          <div class="card service-card flex-div col-div" style="position: relative;">
+            <img src="assets/home.svg" alt="home" loading="lazy" width="100px" height="80px" />
+            <a class="flip-btn">&#10095;</a>
+            <p>Home Shifting Services</p>
+            <button class="service-btn" onclick="navigate('home-shifting-service')">View More</button>
+          </div>
+          <div class="card service-card flex-div col-div" style="position: relative;">
+            <img src="assets/warehouse-hangar.svg" alt="warehouse hangar" loading="lazy" width="100px" height="80px" />
+            <a class="flip-btn">&#10095;</a>
+            <p>Warehousing Service</p>
+            <button class="service-btn" onclick="navigate('warehousing-service')">View More</button>
+          </div>
+          <!--<div class="card service-card"><a href="https://www.daynightpackersmovers.com/car-bike-carrier-service.html">Car And Bike Carrier</a></div>
+          <div class="card service-card"><a href="https://www.daynightpackersmovers.com/shipping-service.html">Shipping Service</a></div>
+          <div class="card service-card"><a href="https://www.daynightpackersmovers.com/air-freight-forwarding-service.html">Air Freight Forwarding</a></div>
+          <div class="card service-card"><a href="https://www.daynightpackersmovers.com/sea-freight-forwarding-service.html">Sea Freight Forwarding</a></div>
+          <div class="card service-card"><a href="https://www.daynightpackersmovers.com/home-shifting-service.html">Home Shifting Services</a></div>
+          <div class="card service-card"><a href="https://www.daynightpackersmovers.com/warehousing-service.html">Warehousing Service</a></div>
+          <li><h2><a href="https://www.daynightpackersmovers.com/international-relocation-service.html">International Relocation</a></li>-->
         </div>
-        <div class="fill-form-img-div" style="align-self: center;">
+        <!--<div class="fill-form-img-div" style="align-self: center;">
           <img alt="" loading="lazy" width="600px" height="auto" src="assets/our-service.gif"></img>
-        </div>
+        </div>-->
       </div>
     </div>
   </div>
@@ -1552,12 +1605,12 @@ function createHtmlContent() {
     </div>
   </div>
 
-  <div id="charges-table" class="contact border-bottom-class" style="background: #b2b2eb;">
+  <div id="charges-table" class="contact border-bottom-class" style="background: ${brand};">
   <div class="iyohgi" style="text-align: center;">
-    <h2 class="i78bq-2-3 contact-details ">Fair Pricing, Exceptional Value: Explore Packers and Movers Charges at Day Night packers and Movers</h2>
+    <h2 class="i78bq-2-3" style="color: white;">Fair Pricing, Exceptional Value: Explore Packers and Movers Charges at Day Night packers and Movers</h2>
     <div id="table-parent">
       <table style="border-color: white;">
-        <thead style="background: #16163F; color: white;">
+        <thead style="background: #262626; color: white;">
           <tr>
             <td style="border-top-left-radius: 5px;">Shifting Type</td>
             <td>Upto 50 Kms</td>
@@ -1576,7 +1629,7 @@ function createHtmlContent() {
             <td>Rs 26,000 to 32,000</td>
             <td>Rs 30,000 to 35,000</td>
           </tr>
-          <tr style="background: whitesmoke;">
+          <tr style="background: #ffede8;">
             <td>2 BHK Home</td>
             <td>Rs 12,000 to 15,000</td>
             <td>Rs 20,000 to 23,000</td>
@@ -1592,7 +1645,7 @@ function createHtmlContent() {
             <td>Rs 45,000 to 50,000</td>
             <td>Rs 50,000 to 65,000</td>
           </tr>
-          <tr style="background: whitesmoke;">
+          <tr style="background: #ffede8;">
             <td>4 BHK / Villa</td>
             <td>Rs 25,000 to 30,000</td>
             <td>Rs 35,000 to 40,000</td>
@@ -1608,7 +1661,7 @@ function createHtmlContent() {
             <td>Rs 21,000 to 25,000</td>
             <td>-</td>
           </tr>
-          <tr style="background: whitesmoke;">
+          <tr style="background: #ffede8;">
             <td>Bike Transportation</td>
             <td>By Road with labor and fuel cost</td>
             <td>Rs 7,000 to 10,500</td>
@@ -1622,9 +1675,9 @@ function createHtmlContent() {
   </div>
 </div>
 
-  <div id="process-steps" class="contact border-bottom-class" style="background: #94ddd7;">
+  <div id="process-steps" class="contact border-bottom-class" style="background: #fddfd6;">
     <div class="iyohgi" style="text-align: center;">
-      <h2 class="i78bq-2-3 contact-details ">Unlocking Convenience: The Seamless Steps to Avail Services at Day Night Packers and Movers</h2>
+      <h2 class="i78bq-2-3 contact-details">Unlocking Convenience: The Seamless Steps to Avail Services at Day Night Packers and Movers</h2>
       <div id="process-steps-content">
         <div style="text-align: left; display: flex; flex-direction: column; gap: 40px; padding: 0px 150px 0px 150px;" class="process-card-parent">
           <div class="card process-cards" style="align-self: flex-start;"><b style="font-size: 30px;">01 </b>  Get in Touch for a Seamless Moving Experience! 📦✨ <br />Contact Us Today!</div>
@@ -1783,5 +1836,5 @@ if (
   showSlides("mySlides", "dot", slideIndex);
 }
 
-applyAnimationWhenInViewport("fading-text", "fade");
-applyAnimationWhenInViewport("fading-text", "slide-right");
+applyAnimationWhenInViewport(".fading-text", "fade");
+applyAnimationWhenInViewport(".sliding-text", "slide-right");

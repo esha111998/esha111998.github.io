@@ -60,6 +60,7 @@
     display:flex;
     justify-content:space-around;
     align-items:center;
+    width:1150px;
     max-width:1150px;
     margin: auto;
     padding: 5px;
@@ -125,6 +126,32 @@
     margin:auto;
     justify-content:space-between;
     flex-wrap: wrap;
+  }
+  .service-card {
+    height: 225px;
+    width: 225px;
+    padding: 10px;
+    background-color: white;
+  }
+  .service-btn {
+    height: 35px;
+    margin-top: 15px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 800;
+    border: 1px solid #FF5823;
+    background-color: #FF5823;
+    cursor: pointer;
+  }
+  .flip-btn {
+    color: black;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    height: 35px;
+    font-weight: 800;
+    background-color: white;
+    cursor: pointer;
   }
   .service-info{
     margin:20px 0px 20px 0px;
@@ -253,7 +280,9 @@
     /* height: 50px; */
     padding: 10px;
     text-align: center;
-    background-color: #ffae15;
+    /* background-color: #ffae15; */
+    background-color: #FF5823;
+    color: white;
   }
 
   #customer-form{
@@ -408,7 +437,6 @@
 
   /* carousal css starts */
   .slideshow-container {
-    /* max-width: 1000px; */
     /* position: relative; */
     margin: auto;
   }
@@ -427,6 +455,7 @@
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    background-color: rgba(0,0,0,0.8);
   }
   
   /* Position the "next button" to the right */
@@ -441,9 +470,9 @@
   }
   
   /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
+  /* .slideImg:hover {
     background-color: rgba(0,0,0,0.8);
-  }
+  } */
 
   .slideImg {
     height: 650px;
@@ -510,12 +539,13 @@
 
   .slide-right {
     animation-name: slide-right;
-    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-duration: 1s;
   }
 
   @keyframes slide-right {
     from {
-      margin-left: -500px;
+      margin-left: -550px;
     }
     to {
       margin-left: 0%;
