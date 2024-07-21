@@ -156,8 +156,26 @@ function applyAnimationWhenInViewport(elementIdOrClass, animation) {
 
 function getAboutUsContent() {
   return `
-  <div id="about-us" class="contact border-bottom-class" style="background: #65b2d1;">
-    <div class="iyohgi" style="text-align: center;">
+  <section id="about-us" class="contact border-bottom-class" style="background: #000000;">
+    <div class="cover-img flex-div row-div" style="background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/about-packers-movers.jpg');">
+      <div class="card about-us-cards flex-div col-div">
+        <p><b>Our Mission</b></p>
+        <button class="service-btn" onclick="navigate('our-mission')">View More</button>
+      </div>
+      <div class="card about-us-cards flex-div col-div">
+        <p><b>Our Team</b></p>
+        <button class="service-btn" onclick="navigate('our-team')">View More</button>
+      </div>
+      <div class="card about-us-cards flex-div col-div">
+        <p><b>Our Services</b></p>
+        <button class="service-btn" onclick="navigate('our-services')">View More</button>
+      </div>
+      <div class="card about-us-cards flex-div col-div">
+        <p><b>Why Choose Us</b></p>
+        <button class="service-btn" onclick="navigate('why-choose-us')">View More</button>
+      </div>
+    </div>
+    <!--<div class="iyohgi" style="text-align: center;">
       <h1 class="i78bq-2-3 contact-details">About Us - Day Night Packers And Movers</h1>
       <div id="city-section-content">
         <div class="fill-form-img-div" style="align-self: center;">
@@ -202,8 +220,8 @@ function getAboutUsContent() {
 
         </div>
       </div>
-    </div>
-  </div>
+    </div>-->
+  </section>
   `;
 }
 
@@ -1474,43 +1492,43 @@ function createHtmlContent() {
         <div class="flex-div row-div" style="flex-wrap: wrap; justify-content: space-around; gap: 20px;">
           <div class="card service-card flex-div col-div" style="position: relative;">
             <img src="assets/moving-truck.svg" alt="moving truck" loading="lazy" width="100px" height="100px" />
-            <a class="flip-btn">&#10095;</a>
+            
             <p>Packers And Movers</p>
             <button class="service-btn" onclick="navigate('packers-movers-service')">View More</button>
           </div>
           <div class="card service-card flex-div col-div" style="position: relative;">
             <img src="assets/truck-flatbed.svg" alt="moving flatbed" loading="lazy" width="100px" height="100px" />
-            <a class="flip-btn">&#10095;</a>
+            
             <p>Car And Bike Carrier</p>
             <button class="service-btn" onclick="navigate('car-bike-carrier-service')">View More</button>
           </div>
           <div class="card service-card flex-div col-div" style="position: relative;">
             <img src="assets/shipping-icon.svg" alt="shipping" loading="lazy" width="100px" height="100px" />
-            <a class="flip-btn">&#10095;</a>
+            
             <p>Shipping Service</p>
             <button class="service-btn" onclick="navigate('shipping-service')">View More</button>
           </div>
           <div class="card service-card flex-div col-div" style="position: relative;">
             <img src="assets/plane.svg" alt="plane" loading="lazy" width="100px" height="80px" />
-            <a class="flip-btn">&#10095;</a>
+            
             <p>Air Freight Forwarding</p>
             <button class="service-btn" onclick="navigate('air-freight-forwarding-service')">View More</button>
           </div>
           <div class="card service-card flex-div col-div" style="position: relative;">
             <img src="assets/sea-ship-with-containers.svg" alt="sea-ship-with-containers" loading="lazy" width="100px" height="100px" />
-            <a class="flip-btn">&#10095;</a>
+            
             <p>Sea Freight Forwarding</p>
             <button class="service-btn" onclick="navigate('sea-freight-forwarding-service')">View More</button>
           </div>
           <div class="card service-card flex-div col-div" style="position: relative;">
             <img src="assets/home.svg" alt="home" loading="lazy" width="100px" height="80px" />
-            <a class="flip-btn">&#10095;</a>
+            
             <p>Home Shifting Services</p>
             <button class="service-btn" onclick="navigate('home-shifting-service')">View More</button>
           </div>
           <div class="card service-card flex-div col-div" style="position: relative;">
             <img src="assets/warehouse-hangar.svg" alt="warehouse hangar" loading="lazy" width="100px" height="80px" />
-            <a class="flip-btn">&#10095;</a>
+            
             <p>Warehousing Service</p>
             <button class="service-btn" onclick="navigate('warehousing-service')">View More</button>
           </div>
@@ -1771,6 +1789,9 @@ function createHtmlContent() {
         <div class="igiuzk flex-div row-div">
           <a id="i2tpy3" aria-label="facebook" href="https://www.facebook.com/profile.php?id=61559284304658" target="_blank"><img alt="facebook page link" loading="lazy" id="i3gekg" height="49px" width="49px" src=${"assets/fb.svg"} /></a>
           <a id="i2tpy3-2" aria-label="instagram" href="https://www.instagram.com/daynightpackersand/" target="_blank"><img alt="instagram page link" loading="lazy" id="i3gekg-2" height="33px" width="33px" src=${"assets/insta.svg"} /></a>
+          <a id="i2tpy3-2" aria-label="youtube" href="https://www.youtube.com/@DayNightPackersandMovers" target="_blank"><img alt="youtube page link" loading="lazy" id="i3gekg-2" height="33px" width="33px" src=${"assets/youtube.svg"} /></a>
+          <a id="i2tpy3-2" aria-label="linkedin" href="https://www.linkedin.com/in/day-night-packers-and-movers-a5488a31a" target="_blank"><img alt="linkedin page link" loading="lazy" id="i3gekg-2" height="50px" width="48px" src=${"assets/linkedin.svg"} /></a>
+          <a id="i2tpy3-2" aria-label="X/twitter" href="https://x.com/daynightpackers" target="_blank"><img alt="X/twitter page link" loading="lazy" id="i3gekg-2" height="33px" width="33px" src=${"assets/twitter-x.svg"} /></a>
           <a id="i2tpy3-5" aria-label="whatsapp" href="https://wa.me/+919911198767" target="_blank"><img alt="chat on whatsapp" loading="lazy" id="i3gekg-3" height="40px" width="40px" src=${"assets/whatsapp.svg"} /></a>
           <a id="i2tpy3-3" aria-label="email" href="mailto:daynightpackersandmovers@gmail.com"><img alt="compose email" loading="lazy" id="i3gekg-4" height="37px" width="37px"
               src=${"assets/email.svg"} /></a>
