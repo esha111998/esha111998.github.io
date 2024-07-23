@@ -170,7 +170,7 @@ function getAboutUsContent() {
         </div>
         <div class="card about-us-cards flex-div col-div">
           <p><b>Our Services</b></p>
-          <button class="service-btn" onclick="navigate('our-services')">View More</button>
+          <button class="service-btn" onclick="navigate('our-service')">View More</button>
         </div>
         <div class="card about-us-cards flex-div col-div">
           <p><b>Why Choose Us</b></p>
@@ -1231,7 +1231,7 @@ function setActiveTab() {
       menus[i].className.replace(" active-menu", "");
     }
     faqs.className += " active-menu";
-  } else if (serviceRoutes.includes(cityOrLinkName)) {
+  } else if (serviceRoutes.includes(cityOrLinkName) || cityOrLinkName === "day-night-packers-movers-services") {
     for (let i = 0; i < menus; i++) {
       menus[i].className.replace(" active-menu", "");
     }
@@ -1392,7 +1392,7 @@ function createHtmlContent() {
         <a id="blogs" href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html"><b>Blogs</b></a>
         <a id="faqs" href="https://www.daynightpackersmovers.com/queries-before-shifting.html"><b>FAQs</b></a>
         <div class="dropdown">
-          <a href="javascript:void(0)" id="services"><b>Services</b></a>
+          <a href="https://www.daynightpackersmovers.com/day-night-packers-movers-services.html" id="services"><b>Services</b></a>
           <div class="dropdown-content">
             <a id="packers-movers" href="https://www.daynightpackersmovers.com/packers-movers-service.html">Packers And Movers</a>
             <a id="car-bike-carrier" href="https://www.daynightpackersmovers.com/car-bike-carrier-service.html">Car And Bike Carrier</a>
@@ -1413,7 +1413,8 @@ function createHtmlContent() {
           <a id="about" href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html"><b>About Us</b></a>
           <a id="blogs" href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html"><b>Blogs</b></a>
           <a id="faqs" href="https://www.daynightpackersmovers.com/queries-before-shifting.html"><b>FAQs</b></a>
-          <div class="dropdown">
+          <a id="services" href="https://www.daynightpackersmovers.com/day-night-packers-movers-services.html"><b>Services</b></a>
+          <!--<div class="dropdown">
             <a href="javascript:void(0)" id="services"><b>Services</b></a>
             <div class="dropdown-content">
               <a id="packers-movers" href="https://www.daynightpackersmovers.com/packers-movers-service.html">Packers And Movers</a>
@@ -1421,11 +1422,11 @@ function createHtmlContent() {
               <a id="shipping" href="https://www.daynightpackersmovers.com/shipping-service.html">Shipping Service</a>
               <a id="air-freight" href="https://www.daynightpackersmovers.com/air-freight-forwarding-service.html">Air Freight Forwarding</a>
               <a id="sea-freight" href="https://www.daynightpackersmovers.com/sea-freight-forwarding-service.html">Sea Freight Forwarding</a>
-              <!--<a id="international-relocation" href="https://www.daynightpackersmovers.com/international-relocation-service.html">International Relocation</a>-->
+              <a id="international-relocation" href="https://www.daynightpackersmovers.com/international-relocation-service.html">International Relocation</a>
               <a id="home-shifting" href="https://www.daynightpackersmovers.com/home-shifting-service.html">Home Shifting Services</a>
               <a id="warehousing" href="https://www.daynightpackersmovers.com/warehousing-service.html">Warehousing Service</a>
             </div>
-          </div>
+          </div>-->
           <a id="contact-us" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html"><b>Contact Us</b></a>
         </div>
         <button class="openbtn" onclick="openNav()">☰</button>
@@ -1488,10 +1489,13 @@ function createHtmlContent() {
       <div class="">
         <div class="slideshow-container">
           <div class="day-night-slides fade">
-            <div class="slideImg" alt="" style="background-image: url('assets/packing-moving.jpg');"></div>
-            <!--<div class="day-night-text">
-              24/7 Dedication: <b>Day Night Packers and Movers</b> Working Around the Clock to Serve You Better. ⏰ #Always On
-            </div>-->
+            <div class="slideImg" alt="" style="position: relative; background-image: linear-gradient(rgb(255 255 255 / 56%), rgb(0 0 0 / 62%)), url('assets/packing-moving.jpg');">
+              <div class="day-night-text">
+                <p>Welcome To</p>
+                <img id="logo-on-slides" src="assets/logo.png"></img>
+                <p>Your Moving Partner</p>
+              </div>
+            </div>
           </div>
 
           <div class="day-night-slides fade">
