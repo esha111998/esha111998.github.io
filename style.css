@@ -136,13 +136,14 @@
     background-color: #cbc7c7;
   }
   .about-us-cards {
-    height: 175px;
+    height: 200px;
     background-color: black;
-    opacity: 0.6;
+    opacity: 0.8;
     color: white;
   }
   .about-us-cards:hover {
     background-color: #FF5823;
+    opacity: 1;
   }
   .service-btn {
     height: 35px;
@@ -570,7 +571,6 @@
     padding: 20px;
     justify-content: space-around;
     height: 650px;
-    flex-wrap: wrap;
   }
 
   /* table css */
@@ -677,6 +677,12 @@
     border: none;
   }
   /*side-panel css ends */
+
+  .heading {
+    color: white;
+    /* font-size: xxx-large; */
+    text-align: center;
+  }
 
   @media (max-width: 1125px){
     .services-box, #city-section-content, #our-team-content, #our-services-content, #get-a-quote,
@@ -793,6 +799,9 @@
     .cover-img {
       height: 850px;
     }
+    .about-us-cards {
+      height: 175px;
+    }
   }
   @media (max-width: 460px){
     #menus{
@@ -832,6 +841,12 @@
     }
     .cover-img {
       height: 850px;
+    }
+    .heading {
+      font-size: revert;
+    }
+    .about-us-cards {
+      height: 175px;
     }
   }
   @media (max-width: 290px){

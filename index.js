@@ -157,22 +157,25 @@ function applyAnimationWhenInViewport(elementIdOrClass, animation) {
 function getAboutUsContent() {
   return `
   <section id="about-us" class="contact border-bottom-class" style="background: #000000;">
-    <div class="cover-img flex-div row-div" style="background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/about-packers-movers.jpg');">
-      <div class="card about-us-cards flex-div col-div">
-        <p><b>Our Mission</b></p>
-        <button class="service-btn" onclick="navigate('our-mission')">View More</button>
-      </div>
-      <div class="card about-us-cards flex-div col-div">
-        <p><b>Our Team</b></p>
-        <button class="service-btn" onclick="navigate('our-team')">View More</button>
-      </div>
-      <div class="card about-us-cards flex-div col-div">
-        <p><b>Our Services</b></p>
-        <button class="service-btn" onclick="navigate('our-services')">View More</button>
-      </div>
-      <div class="card about-us-cards flex-div col-div">
-        <p><b>Why Choose Us</b></p>
-        <button class="service-btn" onclick="navigate('why-choose-us')">View More</button>
+    <div class="cover-img flex-div col-div" style="justify-content: center; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/about-packers-movers.jpg');">
+      <h1 class="heading">About Us</h1>
+      <div class="flex-div row-div" style="margin-top: 30px; gap: 20px; flex-wrap: wrap;">
+        <div class="card about-us-cards flex-div col-div">
+          <p><b>Our Mission</b></p>
+          <button class="service-btn" onclick="navigate('our-mission')">View More</button>
+        </div>
+        <div class="card about-us-cards flex-div col-div">
+          <p><b>Our Team</b></p>
+          <button class="service-btn" onclick="navigate('our-team')">View More</button>
+        </div>
+        <div class="card about-us-cards flex-div col-div">
+          <p><b>Our Services</b></p>
+          <button class="service-btn" onclick="navigate('our-services')">View More</button>
+        </div>
+        <div class="card about-us-cards flex-div col-div">
+          <p><b>Why Choose Us</b></p>
+          <button class="service-btn" onclick="navigate('why-choose-us')">View More</button>
+        </div>
       </div>
     </div>
     <!--<div class="iyohgi" style="text-align: center;">
@@ -221,6 +224,90 @@ function getAboutUsContent() {
         </div>
       </div>
     </div>-->
+  </section>
+  `;
+}
+
+function getOurMissionContent() {
+  return `
+  <section>
+    <div class="cover-img flex-div col-div" style="justify-content: center; color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/our-mission.jpg');">
+      <h1 class="heading">Our Mission</h1>
+      <p style="margin-top: 30px;">
+      Our mission is to make your household shifting experience as smooth and stress-free as possible. We understand that moving can be a daunting task, and our goal is to handle every aspect of your move with care and efficiency. From the moment you search for "household shifting services near me" and contact us to the final delivery at your new location, we strive to exceed your expectations with our commitment to excellence. We achieve this through:</p><br /><br />
+      <ul style="align-self: flex-start;">
+        <li>Expertly trained movers who handle your belongings with utmost care.</li>
+        <li>Timely and reliable service ensuring your move stays on schedule.</li>
+        <li>Years of experience in handling moves of all sizes and complexities.</li>
+        <li>A customer-first approach, ensuring your satisfaction from start to finish.</li>
+        <li>Transparent communication and pricing, ensuring no surprises along the way.</li>
+      </ul>
+      <p style="margin-top: 20px; align-self: flex-start;">Choose Day Night Packers And Movers for a hassle-free moving experience that you can trust.</p>
+    </div>
+  </section>
+  `;
+}
+
+function getOurTeamContent() {
+  return `
+  <section>
+    <div class="cover-img flex-div col-div" style="justify-content: center; color: white; align-items: flex-start; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/our-team.jpg');">
+      
+        <h1 style="align-self: center; margin-bottom: 30px;" class="heading">Our Team</h1>
+        <ul style="line-height: 2.0em;">
+          <li><b>Highly Motivated and Professional Companions:</b> Day Night Packers and Movers are dedicated to ensuring your relocation is stress-free.</li>
+          <li><b>Expertise and Experience:</b> With years of experience in the moving industry, we provide top-notch service and support.</li>
+          
+          <li><b>Local and Long-Distance Moving:</b> Whether you're moving across town or across the country, we've got you covered.</li>
+          
+          <li><b>24/7 Support:</b> We're available round the clock to assist you with your relocation needs.</li>
+          
+          <li><b>Transparent Pricing:</b> No hidden fees, just clear and upfront quotes.</li>
+        </ul>
+        <p style="margin-top: 30px;">Let's move forward with Day Night Packers and Movers. <b><a style="color: white;" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html">Contact us today!</a></b></p>
+    </div>
+  </section>
+  `;
+}
+
+function getOurServiceContent() {
+  return `
+  <section>
+    <div class="cover-img flex-div col-div" style="justify-content: center; color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/our-services.jpg');">
+      <h1 class="heading">Our Service</h1>
+      <p style="align-self: flex-start; margin-bottom: 20px; margin-top: 30px;">At Day Night Packers And Movers, we offer a comprehensive range of moving services to cater to your specific needs:
+          </p><br />
+          <p><b>Residential Moving:</b> Whether you're moving across the street or across the country, our professional movers ensure your belongings are transported safely and securely.<br /><br />
+
+          <b>Packing Services:</b> Our expert packers use high-quality materials and techniques to protect your items during transit.<br /><br />
+
+          <b>Storage Solutions:</b> Our secure storage facilities provide short-term and long-term solutions for your belongings.<br /><br />
+
+          <b>Long-Distance Moving:</b> Our experienced movers handle all the logistics of long-distance moves, ensuring your possessions arrive on time and in perfect condition.<br /><br />
+
+        </div>
+  </section>
+  `;
+}
+
+function getWhyChooseUsContent() {
+  return `
+  <section>
+    <div class="cover-img flex-div col-div" style="justify-content: center; color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/why-choose-us.jpg');">
+      <h1 class="heading">Why Choose Us?</h1>
+      <p style="align-self: flex-start; margin-bottom: 5px; margin-top: 30px;">Choosing Day Night Packers And Movers means choosing a team of experienced movers, dedicated to providing exceptional service. Here are a few reasons why our customers trust us with their moves:</p><br /><br />
+        
+        <p><b>Professionalism:</b> Our movers are trained professionals who handle your belongings with the utmost care and respect.<br /><br />
+
+        <b>Reliability:</b> We pride ourselves on being a reliable moving company that you can count on to show up on time and deliver as promised.<br /><br />
+
+        <b>Experience:</b> With years of experience in the moving industry, we have the knowledge and expertise to handle moves of all sizes and complexities.<br /><br />
+
+        <b>Customer Satisfaction:</b> We go above and beyond to ensure that our clients are happy with our services from start to finish.<br /><br />
+
+        <b>Transparent Pricing:</b> Our competitive and transparent pricing quotes provide a clear understanding of the costs involved.<br />
+      </p>  
+    </div>
   </section>
   `;
 }
@@ -1366,6 +1453,14 @@ function createHtmlContent() {
   ${
     cityOrLinkName === "about-day-night-packers-movers"
       ? getAboutUsContent()
+      : cityOrLinkName === "our-mission"
+      ? getOurMissionContent()
+      : cityOrLinkName === "our-team"
+      ? getOurTeamContent()
+      : cityOrLinkName === "our-service"
+      ? getOurServiceContent()
+      : cityOrLinkName === "why-choose-us"
+      ? getWhyChooseUsContent()
       : cityOrLinkName === "self-preparation-before-shifting"
       ? getBlogsContent()
       : cityOrLinkName === "queries-before-shifting"
@@ -1857,5 +1952,5 @@ if (
   showSlides("mySlides", "dot", slideIndex);
 }
 
-applyAnimationWhenInViewport(".fading-text", "fade");
-applyAnimationWhenInViewport(".sliding-text", "slide-right");
+// applyAnimationWhenInViewport(".fading-text", "fade");
+// applyAnimationWhenInViewport(".sliding-text", "slide-right");
