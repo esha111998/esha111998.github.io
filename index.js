@@ -147,7 +147,7 @@ function applyAnimationWhenInViewport(elementIdOrClass, animation) {
   // const screenTop = document.scrollingElement.scrollTop;
   // const screenBottom = screenTop + innerHeight;
   // const eleTop = element.getBoundingClientRect().top
-  
+
   // if ( eleTop < screenBottom && eleTop < screenTop)
   // {
   //   element.children[0].classList.add(animation);
@@ -235,7 +235,7 @@ function getOurMissionContent() {
       <h1 class="heading">Our Mission</h1>
       <p style="margin-top: 30px;">
       Our mission is to make your household shifting experience as smooth and stress-free as possible. We understand that moving can be a daunting task, and our goal is to handle every aspect of your move with care and efficiency. From the moment you search for "household shifting services near me" and contact us to the final delivery at your new location, we strive to exceed your expectations with our commitment to excellence. We achieve this through:</p><br /><br />
-      <ul style="align-self: flex-start;">
+      <ul class="sub-menus-ul" style="align-self: flex-start;">
         <li>Expertly trained movers who handle your belongings with utmost care.</li>
         <li>Timely and reliable service ensuring your move stays on schedule.</li>
         <li>Years of experience in handling moves of all sizes and complexities.</li>
@@ -254,8 +254,8 @@ function getOurTeamContent() {
     <div class="cover-img flex-div col-div" style="justify-content: center; color: white; align-items: flex-start; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/our-team.jpg');">
       
         <h1 style="align-self: center; margin-bottom: 30px;" class="heading">Our Team</h1>
-        <ul style="line-height: 2.0em;">
-          <li><b>Highly Motivated and Professional Companions:</b> Day Night Packers and Movers are dedicated to ensuring your relocation is stress-free.</li>
+        <ul  class="sub-menus-ul" style="line-height: 2.0em;">
+          <li><b>Highly Motivated Companions:</b> Day Night Packers and Movers are dedicated to ensuring your relocation is stress-free.</li>
           <li><b>Expertise and Experience:</b> With years of experience in the moving industry, we provide top-notch service and support.</li>
           
           <li><b>Local and Long-Distance Moving:</b> Whether you're moving across town or across the country, we've got you covered.</li>
@@ -314,10 +314,32 @@ function getWhyChooseUsContent() {
 
 function getBlogsContent() {
   return `
-  <div id="blogs" class="contact border-bottom-class" style="background: #ffffff;">
-    <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details">Blogs</h1>
-      <div id="city-section-content">
+  <div id="blogs" class="contact border-bottom-class">
+    <div class="iyohgi cover-img flex-div col-div" style="color: white; text-align: center; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/blogs.jpg');">
+      <h1 class="i78bq-2-3">Blogs</h1>
+      <div class="flex-div row-div" style="margin-top: 30px; gap: 20px; flex-wrap: wrap;">
+        <div class="card blogs-cards flex-div col-div">
+          <p><b>Ultimate Checklist</b></p>
+          <button class="service-btn" onclick="navigate('ultimate-checklist')">View More</button>
+        </div>
+        <div class="card blogs-cards flex-div col-div">
+          <p><b>Packing Tips</b></p>
+          <button class="service-btn" onclick="navigate('packing-tips')">View More</button>
+        </div>
+        <div class="card blogs-cards flex-div col-div">
+          <p><b>FAQs</b></p>
+          <button class="service-btn" onclick="navigate('queries-before-shifting')">View More</button>
+        </div>
+        <div class="card blogs-cards flex-div col-div">
+          <p><b>Why Only Us</b></p>
+          <button class="service-btn" onclick="navigate('why-us')">View More</button>
+        </div>
+        <div class="card blogs-cards flex-div col-div">
+          <p><b>Long Distance Moving</b></p>
+          <button class="service-btn" onclick="navigate('long-distance-moving')">View More</button>
+        </div>
+      </div>
+      <!--<div id="city-section-content">
         <div class="fill-form-img-div" style="align-self: center;">
           <img alt="" loading="lazy" width="400px" height="auto" src="assets/blog.jpg"></img>
         </div>
@@ -397,7 +419,7 @@ function getBlogsContent() {
           </ul>
           </p>
         </div>
-      </div>
+      </div>-->
     </div>
   </div>
   `;
@@ -1129,7 +1151,6 @@ function setActiveTab() {
   const home = document.getElementById("home");
   const about = document.getElementById("about");
   const blogs = document.getElementById("blogs");
-  const faqs = document.getElementById("faqs");
   const services = document.getElementById("services");
   const contactUs = document.getElementById("contact-us");
 
@@ -1144,8 +1165,19 @@ function setActiveTab() {
   const homeShifting = document.getElementById("home-shifting");
   const warehousing = document.getElementById("warehousing");
 
-  const menus = [home, about, blogs, faqs, services, contactUs];
-  const subMenus = [
+  const mission = document.getElementById("our-mission");
+  const team = document.getElementById("our-team");
+  const service = document.getElementById("our-service");
+  const whyChooseUs = document.getElementById("why-choose-us");
+
+  const checklist = document.getElementById("ultimate-checklist");
+  const packingTips = document.getElementById("packing-tips");
+  const faqs = document.getElementById("faqs");
+  const whyUs = document.getElementById("why-us");
+  const longDistanceMove = document.getElementById("long-distance-moving");
+
+  const menus = [home, about, blogs, services, contactUs];
+  const serviceSubMenus = [
     packersMovers,
     carBikeCarrier,
     shipping,
@@ -1155,6 +1187,10 @@ function setActiveTab() {
     homeShifting,
     warehousing,
   ];
+
+  const aboutUsSubMenus = [mission, team, service, whyChooseUs];
+
+  const blogsSubMenus = [checklist, packingTips, faqs, whyUs, longDistanceMove];
 
   const serviceRoutes = [
     "packers-movers-service",
@@ -1167,48 +1203,112 @@ function setActiveTab() {
     "warehousing-service",
   ];
 
+  const aboutUsRoutes = [
+    "our-mission",
+    "our-team",
+    "our-service",
+    "why-choose-us",
+  ];
+
+  const blogsRoutes = [
+    "ultimate-checklist",
+    "packing-tips",
+    "queries-before-shifting",
+    "why-us",
+    "long-distance-moving",
+  ];
+
   if (cityOrLinkName === "packers-movers-service") {
-    for (let i = 0; i < subMenus.length; i++) {
-      subMenus[i].className.replace(" active-dropdown-options", "");
+    for (let i = 0; i < serviceSubMenus.length; i++) {
+      serviceSubMenus[i].className.replace(" active-dropdown-options", "");
     }
     packersMovers.className += " active-dropdown-options";
   } else if (cityOrLinkName === "air-freight-forwarding-service") {
-    for (let i = 0; i < subMenus.length; i++) {
-      subMenus[i].className.replace(" active-dropdown-options", "");
+    for (let i = 0; i < serviceSubMenus.length; i++) {
+      serviceSubMenus[i].className.replace(" active-dropdown-options", "");
     }
     airFreight.className += " active-dropdown-options";
   } else if (cityOrLinkName === "sea-freight-forwarding-service") {
-    for (let i = 0; i < subMenus.length; i++) {
-      subMenus[i].className.replace(" active-dropdown-options", "");
+    for (let i = 0; i < serviceSubMenus.length; i++) {
+      serviceSubMenus[i].className.replace(" active-dropdown-options", "");
     }
     seaFreight.className += " active-dropdown-options";
   } else if (cityOrLinkName === "car-bike-carrier-service") {
-    for (let i = 0; i < subMenus.length; i++) {
-      subMenus[i].className.replace(" active-dropdown-options", "");
+    for (let i = 0; i < serviceSubMenus.length; i++) {
+      serviceSubMenus[i].className.replace(" active-dropdown-options", "");
     }
     carBikeCarrier.className += " active-dropdown-options";
   } else if (cityOrLinkName === "home-shifting-service") {
-    for (let i = 0; i < subMenus.length; i++) {
-      subMenus[i].className.replace(" active-dropdown-options", "");
+    for (let i = 0; i < serviceSubMenus.length; i++) {
+      serviceSubMenus[i].className.replace(" active-dropdown-options", "");
     }
     homeShifting.className += " active-dropdown-options";
   }
   // else if (cityOrLinkName === "international-relocation-service") {
-  //   for (let i = 0; i < subMenus.length; i++) {
-  //     subMenus[i].className.replace(" active-dropdown-options", "");
+  //   for (let i = 0; i < serviceSubMenus.length; i++) {
+  //     serviceSubMenus[i].className.replace(" active-dropdown-options", "");
   //   }
   //   internationalRelocation.className += " active-dropdown-options";
   // }
   else if (cityOrLinkName === "shipping-service") {
-    for (let i = 0; i < subMenus.length; i++) {
-      subMenus[i].className.replace(" active-dropdown-options", "");
+    for (let i = 0; i < serviceSubMenus.length; i++) {
+      serviceSubMenus[i].className.replace(" active-dropdown-options", "");
     }
     shipping.className += " active-dropdown-options";
   } else if (cityOrLinkName === "warehousing-service") {
-    for (let i = 0; i < subMenus.length; i++) {
-      subMenus[i].className.replace(" active-dropdown-options", "");
+    for (let i = 0; i < serviceSubMenus.length; i++) {
+      serviceSubMenus[i].className.replace(" active-dropdown-options", "");
     }
     warehousing.className += " active-dropdown-options";
+  }
+
+  if (cityOrLinkName === "our-mission") {
+    for (let i = 0; i < aboutUsSubMenus.length; i++) {
+      aboutUsSubMenus[i].className.replace(" active-dropdown-options", "");
+    }
+    mission.className += " active-dropdown-options";
+  } else if (cityOrLinkName === "our-team") {
+    for (let i = 0; i < aboutUsSubMenus.length; i++) {
+      aboutUsSubMenus[i].className.replace(" active-dropdown-options", "");
+    }
+    team.className += " active-dropdown-options";
+  } else if (cityOrLinkName === "our-service") {
+    for (let i = 0; i < aboutUsSubMenus.length; i++) {
+      aboutUsSubMenus[i].className.replace(" active-dropdown-options", "");
+    }
+    service.className += " active-dropdown-options";
+  } else if (cityOrLinkName === "why-choose-us") {
+    for (let i = 0; i < aboutUsSubMenus.length; i++) {
+      aboutUsSubMenus[i].className.replace(" active-dropdown-options", "");
+    }
+    whyChooseUs.className += " active-dropdown-options";
+  }
+
+  if (cityOrLinkName === "ultimate-checklist") {
+    for (let i = 0; i < blogsSubMenus.length; i++) {
+      blogsSubMenus[i].className.replace(" active-dropdown-options", "");
+    }
+    checklist.className += " active-dropdown-options";
+  } else if (cityOrLinkName === "packing-tips") {
+    for (let i = 0; i < blogsSubMenus.length; i++) {
+      blogsSubMenus[i].className.replace(" active-dropdown-options", "");
+    }
+    packingTips.className += " active-dropdown-options";
+  } else if (cityOrLinkName === "queries-before-shifting") {
+    for (let i = 0; i < blogsSubMenus.length; i++) {
+      blogsSubMenus[i].className.replace(" active-dropdown-options", "");
+    }
+    faqs.className += " active-dropdown-options";
+  } else if (cityOrLinkName === "why-us") {
+    for (let i = 0; i < blogsSubMenus.length; i++) {
+      blogsSubMenus[i].className.replace(" active-dropdown-options", "");
+    }
+    whyUs.className += " active-dropdown-options";
+  } else if (cityOrLinkName === "long-distance-moving") {
+    for (let i = 0; i < blogsSubMenus.length; i++) {
+      blogsSubMenus[i].className.replace(" active-dropdown-options", "");
+    }
+    longDistanceMove.className += " active-dropdown-options";
   }
 
   if (cityOrLinkName === "" || cityOrLinkName === "index") {
@@ -1216,22 +1316,26 @@ function setActiveTab() {
       menus[i].className.replace(" active-menu", "");
     }
     home.className += " active-menu";
-  } else if (cityOrLinkName === "about-day-night-packers-movers") {
+  } else if (
+    aboutUsRoutes.includes(cityOrLinkName) ||
+    cityOrLinkName === "about-day-night-packers-movers"
+  ) {
     for (let i = 0; i < menus; i++) {
       menus[i].className.replace(" active-menu", "");
     }
     about.className += " active-menu";
-  } else if (cityOrLinkName === "self-preparation-before-shifting") {
+  } else if (
+    blogsRoutes.includes(cityOrLinkName) ||
+    cityOrLinkName === "self-preparation-before-shifting"
+  ) {
     for (let i = 0; i < menus; i++) {
       menus[i].className.replace(" active-menu", "");
     }
     blogs.className += " active-menu";
-  } else if (cityOrLinkName === "queries-before-shifting") {
-    for (let i = 0; i < menus; i++) {
-      menus[i].className.replace(" active-menu", "");
-    }
-    faqs.className += " active-menu";
-  } else if (serviceRoutes.includes(cityOrLinkName) || cityOrLinkName === "day-night-packers-movers-services") {
+  } else if (
+    serviceRoutes.includes(cityOrLinkName) ||
+    cityOrLinkName === "day-night-packers-movers-services"
+  ) {
     for (let i = 0; i < menus; i++) {
       menus[i].className.replace(" active-menu", "");
     }
@@ -1388,9 +1492,25 @@ function createHtmlContent() {
       </div>
       <div id="menus" class="flex-div row-div" style="gap: 30px;">
         <a id="home" href="https://www.daynightpackersmovers.com/"><b>Home</b></a>
-        <a id="about" href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html"><b>About Us</b></a>
-        <a id="blogs" href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html"><b>Blogs</b></a>
-        <a id="faqs" href="https://www.daynightpackersmovers.com/queries-before-shifting.html"><b>FAQs</b></a>
+        <div class="dropdown">
+          <a id="about" href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html"><b>About Us</b></a>
+          <div class="dropdown-content">
+            <a id="our-mission" href="https://www.daynightpackersmovers.com/our-mission.html">Our Mission</a>
+            <a id="our-team" href="https://www.daynightpackersmovers.com/our-team.html">Our Team</a>
+            <a id="our-service" href="https://www.daynightpackersmovers.com/our-service.html">Our Services</a>
+            <a id="why-choose-us" href="https://www.daynightpackersmovers.com/why-choose-us.html">Why Choose Us</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a id="blogs" href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html"><b>Blogs</b></a>
+          <div class="dropdown-content">
+            <a id="ultimate-checklist" href="https://www.daynightpackersmovers.com/ultimate-checklist.html">Ultimate Checklist</a>
+            <a id="packing-tips" href="https://www.daynightpackersmovers.com/packing-tips.html">Packing Tips</a>
+            <a id="faqs" href="https://www.daynightpackersmovers.com/queries-before-shifting.html">FAQs</a>
+            <a id="why-us" href="https://www.daynightpackersmovers.com/why-us.html">Why Only Us</a>
+            <a id="long-distance-moving" href="https://www.daynightpackersmovers.com/long-distance-moving.html">Long Distance Moving</a>
+          </div>
+        </div>
         <div class="dropdown">
           <a href="https://www.daynightpackersmovers.com/day-night-packers-movers-services.html" id="services"><b>Services</b></a>
           <div class="dropdown-content">
@@ -1489,7 +1609,8 @@ function createHtmlContent() {
       <div class="">
         <div class="slideshow-container">
           <div class="day-night-slides fade">
-            <div class="slideImg" alt="" style="position: relative; background-image: linear-gradient(rgb(255 255 255 / 56%), rgb(0 0 0 / 62%)), url('assets/packing-moving.jpg');">
+            <div class="slideImg" alt="" style="position: relative; background-image: url('assets/packing-moving.jpg');">
+            <!--linear-gradient(rgb(255 255 255 / 56%), rgb(0 0 0 / 62%)),-->
               <div class="day-night-text">
                 <p>Welcome To</p>
                 <img id="logo-on-slides" src="assets/logo.png"></img>
@@ -1646,12 +1767,12 @@ function createHtmlContent() {
     </div>
   </div>
 
-  <div id="our-team" class="contact border-bottom-class" style="background: #5ad5ff;">
+  <div id="our-team" class="contact border-bottom-class" style="background: #ffffff;">
     <div class="iyohgi" style="text-align: center;">
       <h2 class="i78bq-2-3 contact-details ">United in Purpose, Stronger in Unity. 🌟 Dynamics of Day Night Packers and Movers Team</h2>
       <div id="our-team-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="600px" height="auto" src="assets/our-team.gif"></img>
+          <img alt="" loading="lazy" width="400px" height="auto" src="assets/our-teams.jpg"></img>
         </div>
         <div class="contact-details" style="text-align: left;">
           <ul style="line-height: 2.0em;"><li><b>Highly Motivated and Professional Companions:</b> Day Night Packers and Movers are dedicated to ensuring your relocation is stress-free.</li>
@@ -1726,7 +1847,7 @@ function createHtmlContent() {
   <div class="iyohgi" style="text-align: center;">
     <h2 class="i78bq-2-3" style="color: white;">Fair Pricing, Exceptional Value: Explore Packers and Movers Charges at Day Night packers and Movers</h2>
     <div id="table-parent">
-      <table style="border-color: white;">
+      <table style="border-color: white; font-size: 12px;">
         <thead style="background: #262626; color: white;">
           <tr>
             <td style="border-top-left-radius: 5px;">Shifting Type</td>
