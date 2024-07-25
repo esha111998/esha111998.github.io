@@ -157,7 +157,7 @@ function applyAnimationWhenInViewport(elementIdOrClass, animation) {
 function getAboutUsContent() {
   return `
   <section id="about-us" class="contact border-bottom-class" style="background: #000000;">
-    <div class="cover-img flex-div col-div" style="justify-content: center; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/about-packers-movers.jpg');">
+    <div class="cover-img flex-div col-div" style="background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/about-packers-movers.webp');">
       <h1 class="heading">About Us</h1>
       <div class="flex-div row-div" style="margin-top: 30px; gap: 20px; flex-wrap: wrap;">
         <div class="card about-us-cards flex-div col-div">
@@ -231,7 +231,7 @@ function getAboutUsContent() {
 function getOurMissionContent() {
   return `
   <section>
-    <div class="cover-img flex-div col-div" style="justify-content: center; color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/our-mission.jpg');">
+    <div class="cover-img flex-div col-div" style="color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/our-mission.webp');">
       <h1 class="heading">Our Mission</h1>
       <p style="margin-top: 30px;">
       Our mission is to make your household shifting experience as smooth and stress-free as possible. We understand that moving can be a daunting task, and our goal is to handle every aspect of your move with care and efficiency. From the moment you search for "household shifting services near me" and contact us to the final delivery at your new location, we strive to exceed your expectations with our commitment to excellence. We achieve this through:</p><br /><br />
@@ -251,7 +251,7 @@ function getOurMissionContent() {
 function getOurTeamContent() {
   return `
   <section>
-    <div class="cover-img flex-div col-div" style="justify-content: center; color: white; align-items: flex-start; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/our-team.jpg');">
+    <div class="cover-img flex-div col-div" style="color: white; align-items: flex-start; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/our-team.webp');">
       
         <h1 style="align-self: center; margin-bottom: 30px;" class="heading">Our Team</h1>
         <ul  class="sub-menus-ul" style="line-height: 2.0em;">
@@ -273,7 +273,7 @@ function getOurTeamContent() {
 function getOurServiceContent() {
   return `
   <section>
-    <div class="cover-img flex-div col-div" style="justify-content: center; color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/our-services.jpg');">
+    <div class="cover-img flex-div col-div" style="color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/our-services.webp');">
       <h1 class="heading">Our Service</h1>
       <p style="align-self: flex-start; margin-bottom: 20px; margin-top: 30px;">At Day Night Packers And Movers, we offer a comprehensive range of moving services to cater to your specific needs:
           </p><br />
@@ -293,7 +293,7 @@ function getOurServiceContent() {
 function getWhyChooseUsContent() {
   return `
   <section>
-    <div class="cover-img flex-div col-div" style="justify-content: center; color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/why-choose-us.jpg');">
+    <div class="cover-img flex-div col-div" style="color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/why-choose-us.webp');">
       <h1 class="heading">Why Choose Us?</h1>
       <p style="align-self: flex-start; margin-bottom: 5px; margin-top: 30px;">Choosing Day Night Packers And Movers means choosing a team of experienced movers, dedicated to providing exceptional service. Here are a few reasons why our customers trust us with their moves:</p><br /><br />
         
@@ -314,9 +314,9 @@ function getWhyChooseUsContent() {
 
 function getBlogsContent() {
   return `
-  <div id="blogs" class="contact border-bottom-class">
-    <div class="iyohgi cover-img flex-div col-div" style="color: white; text-align: center; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/blogs.jpg');">
-      <h1 class="i78bq-2-3">Blogs</h1>
+  <section id="blogs" class="contact border-bottom-class">
+    <div class="iyohgi cover-img flex-div col-div" style="color: white; text-align: center; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/blogs.webp');">
+      <h1 class="heading">Blogs</h1>
       <div class="flex-div row-div" style="margin-top: 30px; gap: 20px; flex-wrap: wrap;">
         <div class="card blogs-cards flex-div col-div">
           <p><b>Ultimate Checklist</b></p>
@@ -421,7 +421,86 @@ function getBlogsContent() {
         </div>
       </div>-->
     </div>
-  </div>
+  </section>
+  `;
+}
+
+function getUltimateChecklistContent() {
+  return `
+  <section>
+    <div class="cover-img flex-div col-div" style="color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/why-choose-us.webp');">
+      <h1 class="heading">The Ultimate Moving Checklist</h1>
+      <p style="align-self: flex-start; margin-bottom: 5px; margin-top: 30px;">Moving can be a daunting task, but with the right preparation, it can be a smooth and stress-free experience. Here’s the ultimate moving checklist to ensure you don’t miss a thing.</p><br /><br /> 
+      <ul style="line-height: 2.0em; padding-left: 25px;">
+        <li><span><b>Eight Weeks Before Moving:</b></span> Start decluttering your home and decide what to keep, sell, or donate. Begin researching professional movers and get quotes.</li>          
+        <li><span><b>Six Weeks Before Moving:</b></span> Gather packing supplies such as boxes, bubble wrap, and tape. Start packing items you don’t use daily.</li>          
+        <li><span><b>Four Weeks Before Moving:</b></span> Confirm your moving date with the moving company. Arrange for packing services if needed.</li>
+        <li><span><b>Two Weeks Before Moving:</b></span> Notify utility companies of your move. Pack an essentials box with items you’ll need immediately after moving.</li>
+        <li><span><b>Moving Day:</b></span> Do a final walk-through of your home to ensure nothing is left behind. Supervise the movers and double-check the inventory list.</li><br />
+      </ul>
+    </div>
+  </section>
+  `;
+}
+
+function getPackingTipsContent() {
+  return `
+  <section>
+    <div class="cover-img flex-div col-div" style="color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/why-choose-us.webp');">
+      <h1 class="heading">Top 10 Packing Tips for a Stress-Free Move</h1>
+      <p style="align-self: flex-start; margin-bottom: 5px; margin-top: 30px;">Packing is one of the most critical aspects of moving. With these top 10 packing tips, you can ensure your belongings are safe and organized.</p><br /><br /> 
+      <ul style="line-height: 2.0em; padding-left: 25px;">
+        <li><span><b>Start Early:</b></span> Begin packing well in advance to avoid last-minute stress.</li>
+        <li><span><b>Use Quality Packing Materials:</b></span> Invest in sturdy boxes, bubble wrap, and packing tape to protect your items.</li>
+        <li><span><b>Label Everything:</b></span> Clearly label each box with its contents and the room it belongs to.</li>
+        <li><span><b>Pack Room by Room:</b></span> Focus on packing one room at a time to stay organized.</li>
+        <li><span><b>Keep Essentials Accessible:</b></span> Pack a separate bag with essentials such as toiletries, medications, and important documents.</li>
+        <li><span><b>Use Wardrobe Boxes:</b></span> These are perfect for transporting clothes without wrinkling them.</li>
+        <li><span><b>Protect Fragile Items:</b></span> Use plenty of padding and mark boxes with fragile items clearly.</li>
+        <li><span><b>Don’t Overpack Boxes:</b></span> Ensure boxes are not too heavy to lift and won’t break under the weight.</li>
+        <li><span><b>Seal Boxes Properly:</b></span> Use packing tape to securely seal each box.</li>
+        <li><span><b>Hire Professional Packers:</b></span> Consider hiring professional packers if you’re short on time or have valuable items.</li><br />
+      </ul>
+    </div>
+  </section>
+  `;
+}
+
+function getLongDistanceMovingContent() {
+  return `
+  <section>
+    <div class="cover-img flex-div col-div" style="color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/why-choose-us.webp');">
+      <h1 class="heading">How to Make Long-Distance Moving Easier</h1>
+      <p style="align-self: flex-start; margin-bottom: 5px; margin-top: 30px;">Long-distance moving comes with its unique set of challenges. Here are some tips to make your cross-country move easier.</p><br /><br /> 
+      <ul style="line-height: 2.0em; padding-left: 25px;">
+        <li><span><b>Plan Ahead:</b></span> Start planning your move as early as possible to avoid last-minute issues.</li>
+        <li><span><b>Choose the Right Movers:</b></span> Hire experienced long-distance movers who are licensed and insured.</li>
+        <li><span><b>Stay Organized:</b></span> Keep a detailed inventory of your belongings and important documents.</li>
+        <li><span><b>Pack Smart:</b></span> Use proper packing materials and techniques to protect your items during transit.</li>
+        <li><span><b>Take Care of Utilities:</b></span> Arrange for utility services to be disconnected at your old home and connected at your new one.</li>
+        <li><span><b>Stay in Touch with Your Movers:</b></span> Maintain open communication with your moving company to stay updated on the status of your move.</li>
+        <li><span><b>Prepare for the Unexpected:</b></span> Have a contingency plan in case of delays or other issues.</li> 
+      </ul>
+    </div>
+  </section>
+  `;
+}
+
+function getWhyUsContent() {
+  return `
+  <section>
+    <div class="cover-img flex-div col-div" style="color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/why-choose-us.webp');">
+      <h1 class="heading">Why You Should Consider Professional Packing Services</h1>
+      <p style="align-self: flex-start; margin-bottom: 5px; margin-top: 30px;">Packing can be one of the most time-consuming parts of moving. Here’s why you should consider hiring professional packing services.</p><br /><br /> 
+      <ul style="line-height: 2.0em; padding-left: 25px;">
+        <li><span><b>Save Time:</b></span> Professional packers can efficiently pack your entire home in a fraction of the time it would take you.</li>
+        <li><span><b>Ensure Safety:</b></span> They use high-quality packing materials and techniques to protect your belongings.</li>
+        <li><span><b>Reduce Stress:</b></span> Letting professionals handle the packing frees up your time and reduces moving-related stress.</li>
+        <li><span><b>Experience and Expertise:</b></span> Professional packers have the experience to pack items of all shapes and sizes securely.</li>
+        <li><span><b>Insurance Coverage:</b></span> Many moving companies offer insurance options for items packed by their professionals, providing peace of mind.</li><br />
+      </ul>
+    </div>
+  </section>
   `;
 }
 
@@ -443,12 +522,12 @@ function collapsibleProcessing() {
 
 function getFAQsContent() {
   return `
-  <div id="faq" class="contact border-bottom-class" style="background: #ffffff;">
+  <section id="faq" class="contact border-bottom-class" style="background: #ffffff;">
     <div class="iyohgi" style="text-align: center;">
       <h1 class="i78bq-2-3 contact-details">FAQs</h1>
       <div id="city-section-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/faqs.jpg"}></img>
+          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/faqs.webp"}></img>
         </div>
         <div class="contact-details" style="text-align: left;">
           <button type="button" class="collapsible">What services do you offer as a moving and packers company?</button>
@@ -494,7 +573,7 @@ function getFAQsContent() {
         </div>
       </div>
     </div>
-  </div>
+  </section>
   `;
 }
 
@@ -532,7 +611,7 @@ function getInquiryFormContent() {
           </form>
         </div>
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="600px" height="auto" src="assets/delivery-truck.gif"></img>
+          <img alt="" loading="lazy" width="600px" height="auto" src="assets/delivery-truck.webp"></img>
         </div>
       </div>  
     </div>
@@ -548,7 +627,7 @@ function getPackersMoversServiceContent() {
       <h1 class="i78bq-2-3 contact-details">Packers and Movers Services</h1>
       <div id="city-section-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/packers-and-movers.jpg"}></img>
+          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/packers-and-movers.webp"}></img>
         </div>
         <div class="contact-details" style="text-align: left;">
           <p>Packers and Movers services involve professional companies that help individuals and businesses relocate their goods from one place to another. These services typically include packing, loading, transporting, unloading, and unpacking items, ensuring that the belongings are moved safely and efficiently. Here’s a breakdown of what you can expect from Packers and Movers services:</p><br />
@@ -619,7 +698,7 @@ function getCarBikeCarrierServiceContent() {
       <h1 class="i78bq-2-3 contact-details">Car and Bike Carrier Services</h1>
       <div id="city-section-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/car-carrier-services.jpg"}></img>
+          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/car-carrier-services.webp"}></img>
         </div>
         <div class="contact-details" style="text-align: left;">
           <p>Car and Bike Carrier services involve the safe and efficient transportation of vehicles from one location to another. These services are provided by specialized companies that handle all aspects of vehicle relocation, ensuring that cars and bikes reach their destination in the same condition as they were picked up. Here’s a comprehensive guide to what Car and Bike Carrier services entail:</p><br />
@@ -680,7 +759,7 @@ function getShippingServiceContent() {
       <h1 class="i78bq-2-3 contact-details">Shipping Services</h1>
       <div id="city-section-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/shipping-service.jpg"}></img>
+          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/shipping-service.webp"}></img>
         </div>
         <div class="contact-details" style="text-align: left;">
           <p>Shipping services involve the transportation of goods from one location to another, whether domestically or internationally. These services are essential for individuals, businesses, and industries that require the efficient and reliable movement of items. Here's an overview of what shipping services entail:</p><br />
@@ -742,7 +821,7 @@ function getAirFreightServiceContent() {
       <h1 class="i78bq-2-3 ">Air Freight Forwarding Services</h1>
       <div id="city-section-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/air-freight-forwarding.jpg"}></img>
+          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/air-freight-forwarding.webp"}></img>
         </div>
         <div class="" style="text-align: left;">
           <p>Air freight forwarding is a service provided by logistics companies that involves the shipment of goods via air transport. This method is chosen for its speed and efficiency, especially for long-distance shipments or when goods need to be delivered urgently.
@@ -800,7 +879,7 @@ function getSeaFreightServiceContent() {
       <h1 class="i78bq-2-3 contact-details">Sea Freight Forwarding Services</h1>
       <div id="city-section-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/sea-freight-forwarding.jpg"}></img>
+          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/sea-freight-forwarding.webp"}></img>
         </div>
         <div class="contact-details" style="text-align: left;">
           <p>Sea freight forwarding is the process of organizing shipments of goods from one place to another by sea. It involves a range of activities such as booking cargo space on vessels, preparing and submitting documentation, arranging inland transportation, customs clearance, and cargo insurance.</p><br />
@@ -875,7 +954,7 @@ function getSeaFreightServiceContent() {
 //       <h1 class="i78bq-2-3 contact-details">Shipping Services</h1>
 //       <div id="city-section-content">
 //         <div class="fill-form-img-div" style="align-self: center;">
-//           <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/international-relocation.jpg"}></img>
+//           <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/international-relocation.webp"}></img>
 //         </div>
 //         <div class="contact-details" style="text-align: left;">
 //           <p>Shipping services involve the transportation of goods from one location to another, whether domestically or internationally. These services are essential for individuals, businesses, and industries that require the efficient and reliable movement of items. Here's an overview of what shipping services entail:</p><br />
@@ -937,7 +1016,7 @@ function getHomeShiftingServiceContent() {
       <h1 class="i78bq-2-3 contact-details">Home Shifting Services</h1>
       <div id="city-section-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/home-shifting-services.jpg"}></img>
+          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/home-shifting-services.webp"}></img>
         </div>
         <div class="contact-details" style="text-align: left;">
           <p>Home shifting services, also known as residential moving services, help individuals and families relocate their household belongings from one place to another. These services include various aspects of the moving process to ensure a smooth and stress-free transition.</p><br />
@@ -1041,7 +1120,7 @@ function getWarehousingServiceContent() {
       <h1 class="i78bq-2-3 contact-details">Warehousing Services</h1>
       <div id="city-section-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/warehousing-services.jpg"}></img>
+          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/warehousing-services.webp"}></img>
         </div>
         <div class="contact-details" style="text-align: left;">
           <p>Shipping services involve the transportation of goods from one location to another, whether domestically or internationally. These services are essential for individuals, businesses, and industries that require the efficient and reliable movement of items. Here's an overview of what shipping services entail:</p><br />
@@ -1487,7 +1566,7 @@ function createHtmlContent() {
     <div id="ibulz" class="nav-inner">
       <div>
         <a href="https://daynightpackersmovers.com/">
-          <img id="logo" alt="" src=${"assets/logo.png"} width="auto" height="80px"></img>
+          <img id="logo" alt="" src=${"assets/logo.webp"} width="auto" height="80px"></img>
         </a>
       </div>
       <div id="menus" class="flex-div row-div" style="gap: 30px;">
@@ -1584,6 +1663,14 @@ function createHtmlContent() {
       ? getWhyChooseUsContent()
       : cityOrLinkName === "self-preparation-before-shifting"
       ? getBlogsContent()
+      : cityOrLinkName === "ultimate-checklist"
+      ? getUltimateChecklistContent()
+      : cityOrLinkName === "packing-tips"
+      ? getPackingTipsContent()
+      : cityOrLinkName === "why-us"
+      ? getWhyUsContent()
+      : cityOrLinkName === "long-distance-moving"
+      ? getLongDistanceMovingContent()
       : cityOrLinkName === "queries-before-shifting"
       ? getFAQsContent()
       : cityOrLinkName === "packers-movers-service"
@@ -1609,31 +1696,31 @@ function createHtmlContent() {
       <div class="">
         <div class="slideshow-container">
           <div class="day-night-slides fade">
-            <div class="slideImg" alt="" style="position: relative; background-image: url('assets/packing-moving.jpg');">
+            <div class="slideImg" alt="" style="position: relative; background-image: url('assets/packing-moving.webp');">
             <!--linear-gradient(rgb(255 255 255 / 56%), rgb(0 0 0 / 62%)),-->
               <div class="day-night-text">
                 <p>Welcome To</p>
-                <img id="logo-on-slides" src="assets/logo.png"></img>
+                <img id="logo-on-slides" src="assets/logo.webp"></img>
                 <p>Your Moving Partner</p>
               </div>
             </div>
           </div>
 
           <div class="day-night-slides fade">
-            <div class="slideImg" alt="" style="background-image: url('assets/carrying-box.jpg');"></div>
+            <div class="slideImg" alt="" style="background-image: url('assets/carrying-box.webp');"></div>
           <!--<div class="day-night-text">Safe and Sound, Every Detail Perfected. 🛡️✨ #Excellence Assured
             <br /><br />
             </div>-->
           </div>
 
           <div class="day-night-slides fade">
-            <div class="slideImg" alt="" style="background-image: url('assets/packed-material.jpg');"></div>
+            <div class="slideImg" alt="" style="background-image: url('assets/packed-material.webp');"></div>
             <!--<div class="day-night-text">Powered by Excellence: Our Arsenal of Resources Ready for You. 💼⚙️ #Prepared For Success
             </div>-->
           </div>
 
           <div class="day-night-slides fade">
-            <div class="slideImg" alt="" style="background-image: url('assets/warehouse.jpg');"></div>
+            <div class="slideImg" alt="" style="background-image: url('assets/warehouse.webp');"></div>
             <!--<div class="day-night-text">Your Trusted Partner: Where Every Customer Finds a Companion. 🤝 #Customer First
             </div>-->
           </div>
@@ -1665,7 +1752,7 @@ function createHtmlContent() {
     <div class="iyohgi" style="text-align: center;">
       <div id="city-section-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/city-section.gif"}></img>
+          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/city-section.webp"}></img>
         </div>
         <div class="contact-details">
           <p style="font-size: 30px; font-weight: 700;">Welcome to Day Night Packers and Movers in ${extractLocation(
@@ -1691,7 +1778,7 @@ function createHtmlContent() {
     <div class="iyohgi" style="text-align: center;">
       <div class="inquire-tos-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="600px" height="auto" src="assets/take-our-services.gif"></img>
+          <img alt="" loading="lazy" width="600px" height="auto" src="assets/take-our-services.webp"></img>
         </div>
         <div id="take-our-service-content" class="contact-details">
           <p style="font-size: 19px; font-weight: 700;" class="fading-text">Worried About Your Next Relocation During Busy Schedule??</p><br />
@@ -1761,7 +1848,7 @@ function createHtmlContent() {
           <li><h2><a href="https://www.daynightpackersmovers.com/international-relocation-service.html">International Relocation</a></li>-->
         </div>
         <!--<div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="600px" height="auto" src="assets/our-service.gif"></img>
+          <img alt="" loading="lazy" width="600px" height="auto" src="assets/our-service.webp"></img>
         </div>-->
       </div>
     </div>
@@ -1772,7 +1859,7 @@ function createHtmlContent() {
       <h2 class="i78bq-2-3 contact-details ">United in Purpose, Stronger in Unity. 🌟 Dynamics of Day Night Packers and Movers Team</h2>
       <div id="our-team-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src="assets/our-teams.jpg"></img>
+          <img alt="" loading="lazy" width="400px" height="auto" src="assets/our-teams.webp"></img>
         </div>
         <div class="contact-details" style="text-align: left;">
           <ul style="line-height: 2.0em;"><li><b>Highly Motivated and Professional Companions:</b> Day Night Packers and Movers are dedicated to ensuring your relocation is stress-free.</li>
@@ -1802,28 +1889,28 @@ function createHtmlContent() {
         <div class="slideshow-container">
           <!-- Full-width images with number and caption text -->
           <div class="mySlides fade">
-            <img alt="" loading="lazy" src=${"assets/client1.jpg"} height="200px" width="200px">
+            <img alt="" loading="lazy" src=${"assets/client1.webp"} height="200px" width="200px">
             <div class="text">Rahul Maan, Kapurthala, Punjab <br /><br />
             "Moving with Day Night Packers and Movers was a breeze! From the initial inquiry to the final delivery, their team was professional, efficient, and careful with our belongings. I highly recommend Day Night Packers and Movers for a stress-free moving experience. Undoubtedly, best packers and movers!"
             </div>
           </div>
 
           <div class="mySlides fade">
-            <img alt="" loading="lazy" src=${"assets/client2.jpg"} height="200px" width="200px">
+            <img alt="" loading="lazy" src=${"assets/client2.webp"} height="200px" width="200px">
             <div class="text">Mr. Lakshay Jeet Shah, Bhubaneswar, Orissa <br /><br />
             "I had a fantastic experience with Day Night Packers and Movers. Their team was punctual, polite, and incredibly hardworking. They handled all of our items with care and precision, ensuring nothing was damaged during the move. Kudos to the team!!"
             </div>
           </div>
 
           <div class="mySlides fade">
-            <img alt="" loading="lazy" src=${"assets/client3.jpg"} height="200px" width="200px">
+            <img alt="" loading="lazy" src=${"assets/client3.webp"} height="200px" width="200px">
             <div class="text">Shalini Dey, Siliguri, West Bengal<br /><br />
             "Day Night Packers and Movers exceeded my expectations, as I was searching for packers and movers near me. Their team went above and beyond to ensure my move went smoothly. I'm grateful for their excellent service and would highly recommend them to anyone in need of a moving company."
             </div>
           </div>
 
           <div class="mySlides fade">
-            <img alt="" loading="lazy" src=${"assets/client4.jpg"} height="200px" width="200px">
+            <img alt="" loading="lazy" src=${"assets/client4.webp"} height="200px" width="200px">
             <div class="text">Raj Shekar Reddy, Hyderabad<br /><br />
             "Day Night Packers and Movers provided exceptional service from start to finish. Their staff was courteous, efficient, and incredibly helpful throughout the entire process. They took the stress out of moving and made sure everything arrived at my new home safely. "
             </div>
@@ -1934,7 +2021,7 @@ function createHtmlContent() {
     </div>
     <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
       <div class="fill-form-img-div" style="align-self: center;">
-        <img alt="" loading="lazy" width="500px" height="auto" src="assets/around-world.gif"></img>
+        <img alt="" loading="lazy" width="500px" height="auto" src="assets/around-world.webp"></img>
       </div>
       <div id="i12z9" class="services-box">
         <div id="ilmjk" class="service-cont">
@@ -2002,7 +2089,7 @@ function createHtmlContent() {
       <h2 class="contact-details ">Doubts Dismissed: Let Us Clear the Path to Clarity with Day Night Packers and Movers</h2>
       <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="500px" height="auto" src="assets/contact-us.gif"></img>
+          <img alt="" loading="lazy" width="500px" height="auto" src="assets/contact-us.webp"></img>
         </div>
         <div>
         <p id="iqrh3-2-2" class="contact-details" style="margin-bottom: 10px; margin-top: 20px;">Contact us</p>
