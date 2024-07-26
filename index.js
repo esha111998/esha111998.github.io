@@ -1570,7 +1570,7 @@ function createHtmlContent() {
     
     <div id="ibulz" class="nav-inner">
       <div>
-        <button style="padding: 0px; background: inherit; border: none;" onclick="navigate('index')">
+        <button id="logo-btn" aria-labelledby="logo" style="padding: 0px; background: inherit; border: none;" onclick="navigate('index')">
           <img id="logo" alt="" src=${"assets/logo.webp"} width="auto" height="80px"></img>
         </button>
       </div>
@@ -2101,9 +2101,9 @@ function createHtmlContent() {
         <div class="igiuzk flex-div row-div">
           <a id="i2tpy3" aria-label="facebook" href="https://www.facebook.com/profile.php?id=61559284304658" target="_blank"><img alt="facebook page link" loading="lazy" id="i3gekg" height="49px" width="49px" src=${"assets/fb.svg"} /></a>
           <a id="i2tpy3-2" aria-label="instagram" href="https://www.instagram.com/daynightpackersand/" target="_blank"><img alt="instagram page link" loading="lazy" id="i3gekg-2" height="33px" width="33px" src=${"assets/insta.svg"} /></a>
-          <a id="i2tpy3-2" aria-label="youtube" href="https://www.youtube.com/@DayNightPackersandMovers" target="_blank"><img alt="youtube page link" loading="lazy" id="i3gekg-2" height="33px" width="33px" src=${"assets/youtube.svg"} /></a>
-          <a id="i2tpy3-2" aria-label="linkedin" href="https://www.linkedin.com/in/day-night-packers-and-movers-a5488a31a" target="_blank"><img alt="linkedin page link" loading="lazy" id="i3gekg-2" height="50px" width="48px" src=${"assets/linkedin.svg"} /></a>
-          <a id="i2tpy3-2" aria-label="X/twitter" href="https://x.com/daynightpackers" target="_blank"><img alt="X/twitter page link" loading="lazy" id="i3gekg-2" height="33px" width="33px" src=${"assets/twitter-x.svg"} /></a>
+          <a id="i2tpy3-6" aria-label="youtube" href="https://www.youtube.com/@DayNightPackersandMovers" target="_blank"><img alt="youtube page link" loading="lazy" id="i3gekg-2" height="33px" width="33px" src=${"assets/youtube.svg"} /></a>
+          <a id="i2tpy3-7" aria-label="linkedin" href="https://www.linkedin.com/in/day-night-packers-and-movers-a5488a31a" target="_blank"><img alt="linkedin page link" loading="lazy" id="i3gekg-2" height="50px" width="48px" src=${"assets/linkedin.svg"} /></a>
+          <a id="i2tpy3-8" aria-label="X/twitter" href="https://x.com/daynightpackers" target="_blank"><img alt="X/twitter page link" loading="lazy" id="i3gekg-2" height="33px" width="33px" src=${"assets/twitter-x.svg"} /></a>
           <a id="i2tpy3-5" aria-label="whatsapp" href="https://wa.me/+919911198767" target="_blank"><img alt="chat on whatsapp" loading="lazy" id="i3gekg-3" height="40px" width="40px" src=${"assets/whatsapp.svg"} /></a>
           <a id="i2tpy3-3" aria-label="email" href="mailto:daynightpackersandmovers@gmail.com"><img alt="compose email" loading="lazy" id="i3gekg-4" height="37px" width="37px"
               src=${"assets/email.svg"} /></a>
