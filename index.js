@@ -1227,11 +1227,11 @@ function getWarehousingServiceContent() {
 }
 
 function setActiveTab() {
-  const home = document.getElementById("home");
-  const about = document.getElementById("about");
-  const blogs = document.getElementById("blogs");
-  const services = document.getElementById("services");
-  const contactUs = document.getElementById("contact-us");
+  const home = document.getElementsByClassName("home");
+  const about = document.getElementsByClassName("about");
+  const blogs = document.getElementsByClassName("blogs");
+  const services = document.getElementsByClassName("services");
+  const contactUs = document.getElementsByClassName("contact-us");
 
   const packersMovers = document.getElementById("packers-movers");
   const carBikeCarrier = document.getElementById("car-bike-carrier");
@@ -1394,7 +1394,8 @@ function setActiveTab() {
     for (let i = 0; i < menus; i++) {
       menus[i].className.replace(" active-menu", "");
     }
-    home.className += " active-menu";
+    home[0].className += " active-menu";
+    home[1].className += " active-menu";
   } else if (
     aboutUsRoutes.includes(cityOrLinkName) ||
     cityOrLinkName === "about-day-night-packers-movers"
@@ -1402,7 +1403,8 @@ function setActiveTab() {
     for (let i = 0; i < menus; i++) {
       menus[i].className.replace(" active-menu", "");
     }
-    about.className += " active-menu";
+    about[0].className += " active-menu";
+    about[1].className += " active-menu";
   } else if (
     blogsRoutes.includes(cityOrLinkName) ||
     cityOrLinkName === "self-preparation-before-shifting"
@@ -1410,7 +1412,8 @@ function setActiveTab() {
     for (let i = 0; i < menus; i++) {
       menus[i].className.replace(" active-menu", "");
     }
-    blogs.className += " active-menu";
+    blogs[0].className += " active-menu";
+    blogs[1].className += " active-menu";
   } else if (
     serviceRoutes.includes(cityOrLinkName) ||
     cityOrLinkName === "day-night-packers-movers-services"
@@ -1418,12 +1421,14 @@ function setActiveTab() {
     for (let i = 0; i < menus; i++) {
       menus[i].className.replace(" active-menu", "");
     }
-    services.className += " active-menu";
+    services[0].className += " active-menu";
+    services[1].className += " active-menu";
   } else if (cityOrLinkName === "contact-day-night-packers-movers") {
     for (let i = 0; i < menus; i++) {
       menus[i].className.replace(" active-menu", "");
     }
-    contactUs.className += " active-menu";
+    contactUs[0].className += " active-menu";
+    contactUs[1].className += " active-menu";
   }
 }
 
@@ -1565,14 +1570,14 @@ function createHtmlContent() {
     
     <div id="ibulz" class="nav-inner">
       <div>
-        <a href="https://daynightpackersmovers.com/">
+        <button style="padding: 0px; background: inherit; border: none;" onclick="navigate('index')">
           <img id="logo" alt="" src=${"assets/logo.webp"} width="auto" height="80px"></img>
-        </a>
+        </button>
       </div>
       <div id="menus" class="flex-div row-div" style="gap: 30px;">
-        <a id="home" href="https://www.daynightpackersmovers.com/"><b>Home</b></a>
+        <a class="home" href="https://www.daynightpackersmovers.com/"><b>Home</b></a>
         <div class="dropdown">
-          <a id="about" href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html"><b>About Us</b></a>
+          <a class="about" href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html"><b>About Us</b></a>
           <div class="dropdown-content">
             <a id="our-mission" href="https://www.daynightpackersmovers.com/our-mission.html">Our Mission</a>
             <a id="our-team" href="https://www.daynightpackersmovers.com/our-team.html">Our Team</a>
@@ -1581,7 +1586,7 @@ function createHtmlContent() {
           </div>
         </div>
         <div class="dropdown">
-          <a id="blogs" href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html"><b>Blogs</b></a>
+          <a class="blogs" href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html"><b>Blogs</b></a>
           <div class="dropdown-content">
             <a id="ultimate-checklist" href="https://www.daynightpackersmovers.com/ultimate-checklist.html">Ultimate Checklist</a>
             <a id="packing-tips" href="https://www.daynightpackersmovers.com/packing-tips.html">Packing Tips</a>
@@ -1591,7 +1596,7 @@ function createHtmlContent() {
           </div>
         </div>
         <div class="dropdown">
-          <a href="https://www.daynightpackersmovers.com/day-night-packers-movers-services.html" id="services"><b>Services</b></a>
+          <a href="https://www.daynightpackersmovers.com/day-night-packers-movers-services.html" class="services"><b>Services</b></a>
           <div class="dropdown-content">
             <a id="packers-movers" href="https://www.daynightpackersmovers.com/packers-movers-service.html">Packers And Movers</a>
             <a id="car-bike-carrier" href="https://www.daynightpackersmovers.com/car-bike-carrier-service.html">Car And Bike Carrier</a>
@@ -1603,16 +1608,16 @@ function createHtmlContent() {
             <a id="warehousing" href="https://www.daynightpackersmovers.com/warehousing-service.html">Warehousing Service</a>
           </div>
         </div>
-        <a id="contact-us" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html"><b>Contact Us</b></a>
+        <a class="contact-us" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html"><b>Contact Us</b></a>
       </div>
       <div id="menu-btn">
         <div id="side-panel">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-          <a id="home" href="https://www.daynightpackersmovers.com/"><b>Home</b></a>
-          <a id="about" href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html"><b>About Us</b></a>
-          <a id="blogs" href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html"><b>Blogs</b></a>
-          <a id="faqs" href="https://www.daynightpackersmovers.com/queries-before-shifting.html"><b>FAQs</b></a>
-          <a id="services" href="https://www.daynightpackersmovers.com/day-night-packers-movers-services.html"><b>Services</b></a>
+          <button class="closebtn" onclick="closeNav()">×</button>
+          <a class="home" href="https://www.daynightpackersmovers.com/"><b>Home</b></a>
+          <a class="about" href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html"><b>About Us</b></a>
+          <a class="blogs" href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html"><b>Blogs</b></a>
+          <a class="faqs" href="https://www.daynightpackersmovers.com/queries-before-shifting.html"><b>FAQs</b></a>
+          <a class="services" href="https://www.daynightpackersmovers.com/day-night-packers-movers-services.html"><b>Services</b></a>
           <!--<div class="dropdown">
             <a href="javascript:void(0)" id="services"><b>Services</b></a>
             <div class="dropdown-content">
@@ -1626,7 +1631,7 @@ function createHtmlContent() {
               <a id="warehousing" href="https://www.daynightpackersmovers.com/warehousing-service.html">Warehousing Service</a>
             </div>
           </div>-->
-          <a id="contact-us" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html"><b>Contact Us</b></a>
+          <a class="contact-us" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html"><b>Contact Us</b></a>
         </div>
         <button class="openbtn" onclick="openNav()">☰</button>
       </div>
@@ -1700,7 +1705,7 @@ function createHtmlContent() {
             <!--linear-gradient(rgb(255 255 255 / 56%), rgb(0 0 0 / 62%)),-->
               <div class="day-night-text">
                 <p>Welcome To</p>
-                <img id="logo-on-slides" src="assets/logo.webp"></img>
+                <img id="logo-on-slides" alt="day night packers and movers logo" src="assets/logo.webp"></img>
                 <p>Your Moving Partner</p>
               </div>
             </div>
@@ -1732,8 +1737,8 @@ function createHtmlContent() {
           </div>-->
 
           <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+          <button class="next" onclick="plusSlides(1)">&#10095;</button>
         </div>
         <br>
 
