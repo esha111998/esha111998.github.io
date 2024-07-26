@@ -1570,7 +1570,7 @@ function createHtmlContent() {
     
     <div id="ibulz" class="nav-inner">
       <div>
-        <button id="logo-btn" aria-labelledby="logo" style="padding: 0px; background: inherit; border: none;" onclick="navigate('index')">
+        <button id="logo-btn" aria-label="logo" style="padding: 0px; background: inherit; border: none;" onclick="navigate('index')">
           <img id="logo" alt="" src=${"assets/logo.webp"} width="auto" height="80px"></img>
         </button>
       </div>
