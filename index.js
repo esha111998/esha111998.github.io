@@ -428,7 +428,7 @@ function getBlogsContent() {
 function getUltimateChecklistContent() {
   return `
   <section>
-    <div class="cover-img flex-div col-div" style="color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/why-choose-us.webp');">
+    <div class="cover-img flex-div col-div" style="color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/check-list.webp');">
       <h1 class="heading">The Ultimate Moving Checklist</h1>
       <p style="align-self: flex-start; margin-bottom: 5px; margin-top: 30px;">Moving can be a daunting task, but with the right preparation, it can be a smooth and stress-free experience. Here’s the ultimate moving checklist to ensure you don’t miss a thing.</p><br /><br /> 
       <ul style="line-height: 2.0em; padding-left: 25px;">
@@ -446,7 +446,7 @@ function getUltimateChecklistContent() {
 function getPackingTipsContent() {
   return `
   <section>
-    <div class="cover-img flex-div col-div" style="color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/why-choose-us.webp');">
+    <div class="cover-img flex-div col-div" style="color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/packing-tips.webp');">
       <h1 class="heading">Top 10 Packing Tips for a Stress-Free Move</h1>
       <p style="align-self: flex-start; margin-bottom: 5px; margin-top: 30px;">Packing is one of the most critical aspects of moving. With these top 10 packing tips, you can ensure your belongings are safe and organized.</p><br /><br /> 
       <ul style="line-height: 2.0em; padding-left: 25px;">
@@ -469,7 +469,7 @@ function getPackingTipsContent() {
 function getLongDistanceMovingContent() {
   return `
   <section>
-    <div class="cover-img flex-div col-div" style="color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/why-choose-us.webp');">
+    <div class="cover-img flex-div col-div" style="color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/long-distance-moving.webp');">
       <h1 class="heading">How to Make Long-Distance Moving Easier</h1>
       <p style="align-self: flex-start; margin-bottom: 5px; margin-top: 30px;">Long-distance moving comes with its unique set of challenges. Here are some tips to make your cross-country move easier.</p><br /><br /> 
       <ul style="line-height: 2.0em; padding-left: 25px;">
@@ -489,7 +489,7 @@ function getLongDistanceMovingContent() {
 function getWhyUsContent() {
   return `
   <section>
-    <div class="cover-img flex-div col-div" style="color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/why-choose-us.webp');">
+    <div class="cover-img flex-div col-div" style="color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/professional-packing-services.webp');">
       <h1 class="heading">Why You Should Consider Professional Packing Services</h1>
       <p style="align-self: flex-start; margin-bottom: 5px; margin-top: 30px;">Packing can be one of the most time-consuming parts of moving. Here’s why you should consider hiring professional packing services.</p><br /><br /> 
       <ul style="line-height: 2.0em; padding-left: 25px;">
@@ -1800,49 +1800,63 @@ function createHtmlContent() {
   <div id="our-services" class="contact border-bottom-class" style="background: #f5f5f5;">
     <div class="iyohgi" style="text-align: center;">
       <h2 class="i78bq-2-3 contact-details ">Decoding Excellence: Illuminating Our Range of Services at Day Night Packers and Movers</h2>
-      <div id="our-services-content">   
+      <div id="our-services-content">
         <div class="flex-div row-div" style="flex-wrap: wrap; justify-content: space-around; gap: 20px;">
-          <div class="card service-card flex-div col-div" style="position: relative;">
-            <img src="assets/moving-truck.svg" alt="moving truck" loading="lazy" width="100px" height="100px" />
-            
-            <p>Packers And Movers</p>
-            <button class="service-btn" onclick="navigate('packers-movers-service')">View More</button>
+          <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
+            <img class="service-cards-img" src="assets/packers-movers-service.webp" alt="packers and movers" loading="lazy" />
+            <div class="container">
+              <h3>Packers And Movers</h3>
+              <p></p>
+              <button class="service-btn" onclick="navigate('packers-movers-service')">View More</button>
+            </div>
           </div>
-          <div class="card service-card flex-div col-div" style="position: relative;">
-            <img src="assets/truck-flatbed.svg" alt="moving flatbed" loading="lazy" width="100px" height="100px" />
-            
-            <p>Car And Bike Carrier</p>
-            <button class="service-btn" onclick="navigate('car-bike-carrier-service')">View More</button>
+          <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
+            <img class="service-cards-img" src="assets/car-carrier-truck.webp" alt="car carrier truck" loading="lazy" />
+            <div class="container">
+              <h3>Car And Bike Carrier</h3>
+              <p></p>
+              <button class="service-btn" onclick="navigate('car-bike-carrier-service')">View More</button>
+            </div>
           </div>
-          <div class="card service-card flex-div col-div" style="position: relative;">
-            <img src="assets/shipping-icon.svg" alt="shipping" loading="lazy" width="100px" height="100px" />
-            
-            <p>Shipping Service</p>
-            <button class="service-btn" onclick="navigate('shipping-service')">View More</button>
+          <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
+            <img class="service-cards-img" src="assets/shipping.webp" alt="shipping" loading="lazy" />
+            <div class="container">
+              <h3>Shipping Service</h3>
+              <p></p>
+              <button class="service-btn" onclick="navigate('shipping-service')">View More</button>
+            </div>
           </div>
-          <div class="card service-card flex-div col-div" style="position: relative;">
-            <img src="assets/plane.svg" alt="plane" loading="lazy" width="100px" height="80px" />
-            
-            <p>Air Freight Forwarding</p>
-            <button class="service-btn" onclick="navigate('air-freight-forwarding-service')">View More</button>
+          <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
+            <img class="service-cards-img" src="assets/air-freight-forwarding-service.webp" alt="plane" loading="lazy" />
+            <div class="container">
+              <h3>Air Freight Forwarding</h3>
+              <p></p>
+              <button class="service-btn" onclick="navigate('air-freight-forwarding-service')">View More</button>
+            </div>
           </div>
-          <div class="card service-card flex-div col-div" style="position: relative;">
-            <img src="assets/sea-ship-with-containers.svg" alt="sea-ship-with-containers" loading="lazy" width="100px" height="100px" />
-            
-            <p>Sea Freight Forwarding</p>
-            <button class="service-btn" onclick="navigate('sea-freight-forwarding-service')">View More</button>
+          <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
+            <img class="service-cards-img" src="assets/sea-freight-forwarding-service.webp" alt="sea-ship-with-containers" loading="lazy" />
+            <div class="container">
+              <h3>Sea Freight Forwarding</h3>
+              <p></p>
+              <button class="service-btn" onclick="navigate('sea-freight-forwarding-service')">View More</button>
+            </div>
           </div>
-          <div class="card service-card flex-div col-div" style="position: relative;">
-            <img src="assets/home.svg" alt="home" loading="lazy" width="100px" height="80px" />
-            
-            <p>Home Shifting Services</p>
-            <button class="service-btn" onclick="navigate('home-shifting-service')">View More</button>
+          <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
+            <img class="service-cards-img" src="assets/home-shifting-service.webp" alt="home shifting" loading="lazy" width="100px" height="80px" />
+            <div class="container">
+              <h3>Home Shifting Services</h3>
+              <p></p>
+              <button class="service-btn" onclick="navigate('home-shifting-service')">View More</button>
+            </div>
           </div>
-          <div class="card service-card flex-div col-div" style="position: relative;">
-            <img src="assets/warehouse-hangar.svg" alt="warehouse hangar" loading="lazy" width="100px" height="80px" />
-            
-            <p>Warehousing Service</p>
-            <button class="service-btn" onclick="navigate('warehousing-service')">View More</button>
+          <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
+            <img class="service-cards-img" src="assets/warehouse-service.webp" alt="warehouse" loading="lazy" width="100px" height="80px" />
+            <div class="container">
+              <h3>Warehousing Service</h3>
+              <p></p>
+              <button class="service-btn" onclick="navigate('warehousing-service')">View More</button>
+            </div>
           </div>
           <!--<div class="card service-card"><a href="https://www.daynightpackersmovers.com/car-bike-carrier-service.html">Car And Bike Carrier</a></div>
           <div class="card service-card"><a href="https://www.daynightpackersmovers.com/shipping-service.html">Shipping Service</a></div>
