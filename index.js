@@ -581,7 +581,7 @@ function getInquiryFormContent() {
   return `
   <div id="form-detail" class="contact border-bottom-class">
     <div class="iyohgi" class="flex-div col-div" style="align-items: unset;">
-      <div id="get-a-quote"><p class="i78bq-2-3 contact-details" style="font-size: x-large; text-align: center; border-bottom: 70px;">Relocate with ease! Our professional packers and movers ensure a seamless transition for your home or office. From meticulous packing to safe transportation, trust us for a stress-free move. <b style="font-size: 34px;">Get a quote today!</b></p></div>
+      <div id="get-a-quote"><p class="i78bq-2-3 contact-details" style="font-size: 20px; text-align: center; border-bottom: 70px;">Relocate with ease! Our professional packers and movers ensure a seamless transition for your home or office. From meticulous packing to safe transportation, trust us for a stress-free move. <b style="font-size: 24px;">Get a quote today!</b></p></div>
       <div class="inquire-tos-content">
         <div id="customer-form">
           <form id="inquiry-form" class="flex-div col-div" style="align-items: flex-start;">
@@ -1701,37 +1701,36 @@ function createHtmlContent() {
       <div class="">
         <div class="slideshow-container">
           <div class="day-night-slides fade">
-            <div class="slideImg" alt="" style="position: relative; background-image: url('assets/packing-moving.webp');">
+            <div class="slideImg" alt="best packers movers" style="position: relative; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)),url('assets/best-packers-movers.webp');">
             <!--linear-gradient(rgb(255 255 255 / 56%), rgb(0 0 0 / 62%)),-->
               <div class="day-night-text">
                 <p>Welcome To</p>
-                <img id="logo-on-slides" alt="day night packers and movers logo" src="assets/logo.webp"></img>
                 <p>Your Moving Partner</p>
               </div>
             </div>
           </div>
 
           <div class="day-night-slides fade">
-            <div class="slideImg" alt="" style="background-image: url('assets/carrying-box.webp');"></div>
+            <div class="slideImg" alt="boxes shifting to truck" style="background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/boxes-shifting-to-truck.webp');"></div>
           <!--<div class="day-night-text">Safe and Sound, Every Detail Perfected. 🛡️✨ #Excellence Assured
             <br /><br />
             </div>-->
           </div>
 
           <div class="day-night-slides fade">
-            <div class="slideImg" alt="" style="background-image: url('assets/packed-material.webp');"></div>
+            <div class="slideImg" alt="verify checklist" style="background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/verify-checklist.webp');"></div>
             <!--<div class="day-night-text">Powered by Excellence: Our Arsenal of Resources Ready for You. 💼⚙️ #Prepared For Success
             </div>-->
           </div>
 
           <div class="day-night-slides fade">
-            <div class="slideImg" alt="" style="background-image: url('assets/warehouse.webp');"></div>
+            <div class="slideImg" alt="start moving" style="background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/start-moving.webp');"></div>
             <!--<div class="day-night-text">Your Trusted Partner: Where Every Customer Finds a Companion. 🤝 #Customer First
             </div>-->
           </div>
 
           <!--<div class="day-night-slides fade">
-            <img class="slideImg" alt="" loading="lazy" src="assets/relaxing.png" height="300px" width="320px">
+            <img class="slideImg" alt="" loading="lazy" src="assets/start-moving.png" height="300px" width="320px">
             <div class="day-night-text">Relax, We've Got You Covered: Ensuring Customer Satisfaction Every Step of the Way. 😌👌 #Peace Of Mind Service
             </div>
           </div>-->
@@ -1787,7 +1786,7 @@ function createHtmlContent() {
         </div>
         <div id="take-our-service-content" class="contact-details">
           <p style="font-size: 19px; font-weight: 700;" class="fading-text">Worried About Your Next Relocation During Busy Schedule??</p><br />
-          <p style="font-size: xxx-large; font-weight: 800;" class="sliding-text">Let Us Help You!!</p><br /><br />
+          <p style="font-size: 24px; font-weight: 800;" class="sliding-text">Let Us Help You!!</p><br /><br />
           <p>
           Moving to a new place and searching for house shifting services? Let Day Night Packers and Movers take the stress out of your relocation journey and make it seamless. We're your trusted local and long-distance movers, committed to smooth, efficient, and worry-free transitions. With transparent pricing, on-time delivery, and friendly, reliable moving services, we exceed your expectations every step of the way.
           </p><br /><br />
@@ -1797,7 +1796,7 @@ function createHtmlContent() {
     </div>
   </div>
 
-  <div id="our-services" class="contact border-bottom-class" style="background: #f5f5f5;">
+  <div id="our-services" class="contact border-bottom-class" style="background: #e9e7e7;">
     <div class="iyohgi" style="text-align: center;">
       <h2 class="i78bq-2-3 contact-details ">Decoding Excellence: Illuminating Our Range of Services at Day Night Packers and Movers</h2>
       <div id="our-services-content">
@@ -1806,56 +1805,56 @@ function createHtmlContent() {
             <img class="service-cards-img" src="assets/packers-movers-service.webp" alt="packers and movers" loading="lazy" />
             <div class="container">
               <h3>Packers And Movers</h3>
-              <p></p>
-              <button class="service-btn" onclick="navigate('packers-movers-service')">View More</button>
+              <p class="service-cards-text">We offer professional packing, transporting, and unpacking services for hassle-free relocations.</p>
+              <div style="text-align: end;"><button class="service-btn" onclick="navigate('packers-movers-service')">View More</button></div>
             </div>
           </div>
           <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
             <img class="service-cards-img" src="assets/car-carrier-truck.webp" alt="car carrier truck" loading="lazy" />
             <div class="container">
               <h3>Car And Bike Carrier</h3>
-              <p></p>
-              <button class="service-btn" onclick="navigate('car-bike-carrier-service')">View More</button>
+              <p class="service-cards-text">Our Car and Bike Carrier service ensures safe, reliable transportation of vehicles with professional handling and care.</p>
+              <div style="text-align: end;"><button class="service-btn" onclick="navigate('car-bike-carrier-service')">View More</button></div>
             </div>
           </div>
           <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
             <img class="service-cards-img" src="assets/shipping.webp" alt="shipping" loading="lazy" />
             <div class="container">
               <h3>Shipping Service</h3>
-              <p></p>
-              <button class="service-btn" onclick="navigate('shipping-service')">View More</button>
+              <p class="service-cards-text">We provide reliable transportation of goods, ensuring timely and secure delivery.</p>
+              <div style="text-align: end;"><button class="service-btn" onclick="navigate('shipping-service')">View More</button></div>
             </div>
           </div>
           <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
-            <img class="service-cards-img" src="assets/air-freight-forwarding-service.webp" alt="plane" loading="lazy" />
+            <img class="service-cards-img" src="assets/air-freight-forwarding-service.webp" alt="plane" loading="lazy" height="185px" />
             <div class="container">
               <h3>Air Freight Forwarding</h3>
-              <p></p>
-              <button class="service-btn" onclick="navigate('air-freight-forwarding-service')">View More</button>
+              <p class="service-cards-text">Our Air Freight Forwarding offers fast, reliable transportation of goods via air, ensuring quick, secure global delivery.</p>
+              <div style="text-align: end;"><button class="service-btn" onclick="navigate('air-freight-forwarding-service')">View More</button></div>
             </div>
           </div>
           <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
             <img class="service-cards-img" src="assets/sea-freight-forwarding-service.webp" alt="sea-ship-with-containers" loading="lazy" />
             <div class="container">
               <h3>Sea Freight Forwarding</h3>
-              <p></p>
-              <button class="service-btn" onclick="navigate('sea-freight-forwarding-service')">View More</button>
+              <p class="service-cards-text">We provide cost-effective, reliable shipping of large volumes of goods internationally via ocean transport.</p>
+              <div style="text-align: end;"><button class="service-btn" onclick="navigate('sea-freight-forwarding-service')">View More</button></div>
             </div>
           </div>
           <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
-            <img class="service-cards-img" src="assets/home-shifting-service.webp" alt="home shifting" loading="lazy" width="100px" height="80px" />
+            <img class="service-cards-img" src="assets/home-shifting-service.webp" alt="home shifting" loading="lazy" />
             <div class="container">
               <h3>Home Shifting Services</h3>
-              <p></p>
-              <button class="service-btn" onclick="navigate('home-shifting-service')">View More</button>
+              <p class="service-cards-text">Our Home Shifting Services offer packing, transporting, and unpacking of household goods for a hassle-free move.</p>
+              <div style="text-align: end;"><button class="service-btn" onclick="navigate('home-shifting-service')">View More</button></div>
             </div>
           </div>
           <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
-            <img class="service-cards-img" src="assets/warehouse-service.webp" alt="warehouse" loading="lazy" width="100px" height="80px" />
+            <img class="service-cards-img" src="assets/warehouse-service.webp" alt="warehouse" loading="lazy" />
             <div class="container">
               <h3>Warehousing Service</h3>
-              <p></p>
-              <button class="service-btn" onclick="navigate('warehousing-service')">View More</button>
+              <p class="service-cards-text">We provide secure storage solutions for goods, ensuring safety, inventory management, and efficient distribution.</p>
+              <div style="text-align: end;"><button class="service-btn" onclick="navigate('warehousing-service')">View More</button></div>
             </div>
           </div>
           <!--<div class="card service-card"><a href="https://www.daynightpackersmovers.com/car-bike-carrier-service.html">Car And Bike Carrier</a></div>
