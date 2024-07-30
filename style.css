@@ -304,7 +304,7 @@
     font-size: 14px;
     color: black;
     border-radius: 10px;
-    height: 480px;
+    height: 540px;
     width: 30%;
     border: 2px solid black;
   }
@@ -353,7 +353,7 @@
 
   .service-desc>li{
     text-align: left;
-    font-size: 12px;
+    font-size: 13px;
   }
 
   ul{
@@ -451,7 +451,7 @@
 
   /* carousal css starts */
   .slideshow-container {
-    /* position: relative; */
+    position: relative;
     margin: auto;
   }
   
@@ -459,7 +459,7 @@
   .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 45%;
     width: auto;
     margin-top: -22px;
     padding: 16px;
@@ -490,7 +490,7 @@
   } */
 
   .slideImg {
-    height: 650px;
+    height: 550px;
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -719,7 +719,7 @@
       margin: none;
     }
     .slideImg {
-      height: 650px;
+      height: 550px;
     }
   }
   @media (max-width: 992px){
@@ -747,7 +747,7 @@
       object-fit: cover;
     }
     .slideImg {
-      height: 550px;
+      height: 445px;
     }
     .day-night-text {
       font-size: 22px;
@@ -763,6 +763,7 @@
     }
     #customer-form{
       width: 40%;
+      padding: 15px;
     }
     .fill-form-img-div>img{
       width: 275px;
@@ -773,7 +774,7 @@
       justify-content: center;
     }
     .slideImg {
-      height: 450px;
+      height: 345px;
     }
     .header-font-size{
       font-size: 11px;
@@ -843,7 +844,7 @@
       width: 100%
     }
     .slideImg {
-      height: 400px;
+      height: 250px;
     }
     .cover-img {
       height: 850px;
@@ -866,7 +867,7 @@
       object-fit: cover;
     }
     .slideImg {
-      height: 300px;
+      height: 200px;
     }
     #logo{
       height: 70px;
@@ -911,6 +912,11 @@
     .sub-menus-ul {
       padding: 0px;
     }
+    .prev, .next {
+      padding: 10px;
+      font-size: 14px;
+      top: 50%;
+    }
   }
   @media (max-width: 290px){
     .fill-form-img-div>img {
@@ -919,7 +925,7 @@
       object-fit: cover;
     }
     .slideImg {
-      height: 200px;
+      height: 150px;
     }
     .process-card-parent{
       padding: 5px !important;
@@ -957,6 +963,11 @@
     }
     #logo-on-slides {
       height: 30px
+    }
+    .prev, .next {
+      padding: 5px;
+      font-size: 14px;
+      top: 50%;
     }
   }
   

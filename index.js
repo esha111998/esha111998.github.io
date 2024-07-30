@@ -1805,7 +1805,7 @@ function createHtmlContent() {
             <img class="service-cards-img" src="assets/packers-movers-service.webp" alt="packers and movers" loading="lazy" />
             <div class="container">
               <h3>Packers And Movers</h3>
-              <p class="service-cards-text">We offer professional packing, transporting, and unpacking services for hassle-free relocations.</p>
+              <p class="service-cards-text">Professional packing, transport, and unpacking for hassle-free relocations.</p>
               <div style="text-align: end;"><button class="service-btn" onclick="navigate('packers-movers-service')">View More</button></div>
             </div>
           </div>
@@ -1813,7 +1813,7 @@ function createHtmlContent() {
             <img class="service-cards-img" src="assets/car-carrier-truck.webp" alt="car carrier truck" loading="lazy" />
             <div class="container">
               <h3>Car And Bike Carrier</h3>
-              <p class="service-cards-text">Our Car and Bike Carrier service ensures safe, reliable transportation of vehicles with professional handling and care.</p>
+              <p class="service-cards-text">Safe, reliable vehicle transport with professional handling and care.</p>
               <div style="text-align: end;"><button class="service-btn" onclick="navigate('car-bike-carrier-service')">View More</button></div>
             </div>
           </div>
@@ -1829,7 +1829,7 @@ function createHtmlContent() {
             <img class="service-cards-img" src="assets/air-freight-forwarding-service.webp" alt="plane" loading="lazy" height="185px" />
             <div class="container">
               <h3>Air Freight Forwarding</h3>
-              <p class="service-cards-text">Our Air Freight Forwarding offers fast, reliable transportation of goods via air, ensuring quick, secure global delivery.</p>
+              <p class="service-cards-text">Fast, reliable air freight for secure, global delivery with optimized efficiency.</p>
               <div style="text-align: end;"><button class="service-btn" onclick="navigate('air-freight-forwarding-service')">View More</button></div>
             </div>
           </div>
@@ -1837,7 +1837,7 @@ function createHtmlContent() {
             <img class="service-cards-img" src="assets/sea-freight-forwarding-service.webp" alt="sea-ship-with-containers" loading="lazy" />
             <div class="container">
               <h3>Sea Freight Forwarding</h3>
-              <p class="service-cards-text">We provide cost-effective, reliable shipping of large volumes of goods internationally via ocean transport.</p>
+              <p class="service-cards-text">Cost-effective, reliable international shipping of large goods via ocean transport.</p>
               <div style="text-align: end;"><button class="service-btn" onclick="navigate('sea-freight-forwarding-service')">View More</button></div>
             </div>
           </div>
@@ -1845,7 +1845,7 @@ function createHtmlContent() {
             <img class="service-cards-img" src="assets/home-shifting-service.webp" alt="home shifting" loading="lazy" />
             <div class="container">
               <h3>Home Shifting Services</h3>
-              <p class="service-cards-text">Our Home Shifting Services offer packing, transporting, and unpacking of household goods for a hassle-free move.</p>
+              <p class="service-cards-text">Home Shifting Services: packing, transporting, unpacking for a hassle-free move.</p>
               <div style="text-align: end;"><button class="service-btn" onclick="navigate('home-shifting-service')">View More</button></div>
             </div>
           </div>
@@ -1853,7 +1853,7 @@ function createHtmlContent() {
             <img class="service-cards-img" src="assets/warehouse-service.webp" alt="warehouse" loading="lazy" />
             <div class="container">
               <h3>Warehousing Service</h3>
-              <p class="service-cards-text">We provide secure storage solutions for goods, ensuring safety, inventory management, and efficient distribution.</p>
+              <p class="service-cards-text">Secure storage solutions: safety, inventory management, and efficient distribution.</p>
               <div style="text-align: end;"><button class="service-btn" onclick="navigate('warehousing-service')">View More</button></div>
             </div>
           </div>
@@ -1900,7 +1900,7 @@ function createHtmlContent() {
     </div>
   </div>
 
-  <div id="client-reviews" class="contact border-bottom-class" style="background: #d7e973;">
+  <div id="client-reviews" class="contact border-bottom-class" style="background: #e9e7e7;">
     <div class="iyohgi" style="text-align: center;">
       <h2 class="i78bq-2-3 contact-details ">Voices of Satisfaction: Hear What Customers Have to Say about Day Night Packers and Movers</h2>
       <div class="">
@@ -1948,11 +1948,11 @@ function createHtmlContent() {
     </div>
   </div>
 
-  <div id="charges-table" class="contact border-bottom-class" style="background: ${brand};">
+  <div id="charges-table" class="contact border-bottom-class" style="background: white;">
   <div class="iyohgi" style="text-align: center;">
     <h2 class="i78bq-2-3" style="color: white;">Fair Pricing, Exceptional Value: Explore Packers and Movers Charges at Day Night packers and Movers</h2>
     <div id="table-parent">
-      <table style="border-color: white; font-size: 12px;">
+      <table style="border-color: #878181; font-size: 12px;">
         <thead style="background: #262626; color: white;">
           <tr>
             <td style="border-top-left-radius: 5px;">Shifting Type</td>
@@ -2018,7 +2018,7 @@ function createHtmlContent() {
   </div>
 </div>
 
-  <div id="process-steps" class="contact border-bottom-class" style="background: #fddfd6;">
+  <div id="process-steps" class="contact border-bottom-class" style="background: #e9e7e7;">
     <div class="iyohgi" style="text-align: center;">
       <h2 class="i78bq-2-3 contact-details">Unlocking Convenience: The Seamless Steps to Avail Services at Day Night Packers and Movers</h2>
       <div id="process-steps-content">
@@ -2032,9 +2032,9 @@ function createHtmlContent() {
   </div>
 
   <div id="services" class="services border-bottom-class iyohgi">
-    <div id="iymxg" class="service-info">
-      <h2 class="i78bq contact-details " data-custom-content="services">
-      Everywhere You Need Us to Be: Discovering Global Presence of Day Night Packers and Movers
+    <div id="iymxg" class="service-info" style="text-align: center;">
+      <h2 class="i78bq contact-details" data-custom-content="services">
+        Everywhere You Need Us to Be: Discovering Global Presence of Day Night Packers and Movers
       </h2>
     </div>
     <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
