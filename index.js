@@ -315,7 +315,7 @@ function getWhyChooseUsContent() {
 function getBlogsContent() {
   return `
   <section id="blogs" class="contact border-bottom-class">
-    <div class="iyohgi cover-img flex-div col-div" style="color: white; text-align: center; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/blogs.webp');">
+    <div class="iyohgi cover-img flex-div col-div" style="color: white; text-align: center; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/delivery-person-getting-parcel-out-delivery.webp');">
       <h1 class="heading">Blogs</h1>
       <div class="flex-div row-div" style="margin-top: 30px; gap: 20px; flex-wrap: wrap;">
         <div class="card blogs-cards flex-div col-div">
@@ -619,16 +619,100 @@ function getInquiryFormContent() {
   `;
 }
 
+function getServicesContent() {
+  return `
+<div id="our-services" class="contact border-bottom-class" style="background: #e9e7e7;">
+  <div class="iyohgi" style="text-align: center;">
+    ${
+      cityOrLinkName === "day-night-packers-movers-services"
+        ? `<h1 class="i78bq-2-3 contact-details">Services</h1>`
+        : `<h2 class="i78bq-2-3 contact-details">Decoding Excellence: Illuminating Our Range of Services at Day Night Packers and Movers</h2>`
+    }
+    <div id="our-services-content">
+      <div class="flex-div row-div" style="flex-wrap: wrap; justify-content: space-around; gap: 20px;">
+        <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
+          <img class="service-cards-img" src="assets/packers-movers-service.webp" alt="packers and movers" loading="lazy" />
+          <div class="container">
+            <h3>Packers And Movers</h3>
+            <p class="service-cards-text">Professional packing, transport, and unpacking for hassle-free relocations.</p>
+            <div style="text-align: end;"><button class="service-btn" onclick="navigate('packers-movers-service')">View More</button></div>
+          </div>
+        </div>
+        <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
+          <img class="service-cards-img" src="assets/car-carrier-truck.webp" alt="car carrier truck" loading="lazy" />
+          <div class="container">
+            <h3>Car And Bike Carrier</h3>
+            <p class="service-cards-text">Safe, reliable vehicle transport with professional handling and care.</p>
+            <div style="text-align: end;"><button class="service-btn" onclick="navigate('car-bike-carrier-service')">View More</button></div>
+          </div>
+        </div>
+        <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
+          <img class="service-cards-img" src="assets/shipping.webp" alt="shipping" loading="lazy" />
+          <div class="container">
+            <h3>Shipping Service</h3>
+            <p class="service-cards-text">We provide reliable transportation of goods, ensuring timely and secure delivery.</p>
+            <div style="text-align: end;"><button class="service-btn" onclick="navigate('shipping-service')">View More</button></div>
+          </div>
+        </div>
+        <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
+          <img class="service-cards-img" src="assets/air-freight-forwarding-service.webp" alt="plane" loading="lazy" height="185px" />
+          <div class="container">
+            <h3>Air Freight Forwarding</h3>
+            <p class="service-cards-text">Fast, reliable air freight for secure, global delivery with optimized efficiency.</p>
+            <div style="text-align: end;"><button class="service-btn" onclick="navigate('air-freight-forwarding-service')">View More</button></div>
+          </div>
+        </div>
+        <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
+          <img class="service-cards-img" src="assets/sea-freight-forwarding-service.webp" alt="sea-ship-with-containers" loading="lazy" />
+          <div class="container">
+            <h3>Sea Freight Forwarding</h3>
+            <p class="service-cards-text">Cost-effective, reliable international shipping of large goods via ocean transport.</p>
+            <div style="text-align: end;"><button class="service-btn" onclick="navigate('sea-freight-forwarding-service')">View More</button></div>
+          </div>
+        </div>
+        <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
+          <img class="service-cards-img" src="assets/home-shifting-service.webp" alt="home shifting" loading="lazy" />
+          <div class="container">
+            <h3>Home Shifting Services</h3>
+            <p class="service-cards-text">Home Shifting Services: packing, transporting, unpacking for a hassle-free move.</p>
+            <div style="text-align: end;"><button class="service-btn" onclick="navigate('home-shifting-service')">View More</button></div>
+          </div>
+        </div>
+        <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
+          <img class="service-cards-img" src="assets/warehouse-service.webp" alt="warehouse" loading="lazy" />
+          <div class="container">
+            <h3>Warehousing Service</h3>
+            <p class="service-cards-text">Secure storage solutions: safety, inventory management, and efficient distribution.</p>
+            <div style="text-align: end;"><button class="service-btn" onclick="navigate('warehousing-service')">View More</button></div>
+          </div>
+        </div>
+        <!--<div class="card service-card"><a href="https://www.daynightpackersmovers.com/car-bike-carrier-service.html">Car And Bike Carrier</a></div>
+        <div class="card service-card"><a href="https://www.daynightpackersmovers.com/shipping-service.html">Shipping Service</a></div>
+        <div class="card service-card"><a href="https://www.daynightpackersmovers.com/air-freight-forwarding-service.html">Air Freight Forwarding</a></div>
+        <div class="card service-card"><a href="https://www.daynightpackersmovers.com/sea-freight-forwarding-service.html">Sea Freight Forwarding</a></div>
+        <div class="card service-card"><a href="https://www.daynightpackersmovers.com/home-shifting-service.html">Home Shifting Services</a></div>
+        <div class="card service-card"><a href="https://www.daynightpackersmovers.com/warehousing-service.html">Warehousing Service</a></div>
+        <li><h2><a href="https://www.daynightpackersmovers.com/international-relocation-service.html">International Relocation</a></li>-->
+      </div>
+      <!--<div class="fill-form-img-div" style="align-self: center;">
+        <img alt="" loading="lazy" width="600px" height="auto" src="assets/our-service.webp"></img>
+      </div>-->
+    </div>
+  </div>
+</div>
+  `;
+}
+
 function getPackersMoversServiceContent() {
   return (
     `
-  <div id="packers-movers-service-content" class="contact border-bottom-class" style="background: #f5f5f5;">
+  <div id="packers-movers-service-content" class="contact border-bottom-class" style="background: #f5f5f5;">  
+    <div class="cover-img flex-div col-div" style="color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/packers-movers-service.webp');">
+      <p style="font-size: xxx-large; font-weight: 700; margin-bottom: 20px;">Packers and Movers Services</p>
+      <h1>Professional packing, transport, and unpacking for hassle-free relocations.</h1>
+    </div>
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details">Packers and Movers Services</h1>
       <div id="city-section-content">
-        <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/packers-and-movers.webp"}></img>
-        </div>
         <div class="contact-details" style="text-align: left;">
           <p>Packers and Movers services involve professional companies that help individuals and businesses relocate their goods from one place to another. These services typically include packing, loading, transporting, unloading, and unpacking items, ensuring that the belongings are moved safely and efficiently. Here’s a breakdown of what you can expect from Packers and Movers services:</p><br />
           <p style="margin-bottom: 5px; font-size: 22px;">
@@ -694,12 +778,12 @@ function getCarBikeCarrierServiceContent() {
   return (
     `
   <div id="car-bike-carrier-service-content" class="contact border-bottom-class" style="background: #ffffff;">
+    <div class="cover-img flex-div col-div" style="color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/car-carrier-truck.webp');">
+      <p style="font-size: xxx-large; font-weight: 700; margin-bottom: 20px;">Car And Bike Carrier</p>
+      <h1>Safe, reliable vehicle transport with professional handling and care.</h1>
+    </div>
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details">Car and Bike Carrier Services</h1>
       <div id="city-section-content">
-        <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/car-carrier-services.webp"}></img>
-        </div>
         <div class="contact-details" style="text-align: left;">
           <p>Car and Bike Carrier services involve the safe and efficient transportation of vehicles from one location to another. These services are provided by specialized companies that handle all aspects of vehicle relocation, ensuring that cars and bikes reach their destination in the same condition as they were picked up. Here’s a comprehensive guide to what Car and Bike Carrier services entail:</p><br />
           <p style="margin-bottom: 5px; font-size: 22px;">
@@ -755,12 +839,12 @@ function getShippingServiceContent() {
   return (
     `
   <div id="shipping-service-content" class="contact border-bottom-class" style="background: #a8c4e9;">
+    <div class="cover-img flex-div col-div" style="color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/shipping.webp');">
+      <p style="font-size: xxx-large; font-weight: 700; margin-bottom: 20px;">Shipping Service</p>
+      <h1>We provide reliable transportation of goods, ensuring timely and secure delivery.</h1>
+    </div>
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details">Shipping Services</h1>
       <div id="city-section-content">
-        <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/shipping-service.webp"}></img>
-        </div>
         <div class="contact-details" style="text-align: left;">
           <p>Shipping services involve the transportation of goods from one location to another, whether domestically or internationally. These services are essential for individuals, businesses, and industries that require the efficient and reliable movement of items. Here's an overview of what shipping services entail:</p><br />
           <p style="margin-bottom: 5px; font-size: 22px;">
@@ -817,12 +901,12 @@ function getAirFreightServiceContent() {
   return (
     `
   <div id="air-freight-service-content" class="contact border-bottom-class" style="color: white; background: #032d3a;">
+    <div class="cover-img flex-div col-div" style="color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/air-freight-forwarding-service.webp');">
+      <p style="font-size: xxx-large; font-weight: 700; margin-bottom: 20px;">Air Freight Forwarding</p>
+      <h1>Fast, reliable air freight for secure, global delivery with optimized efficiency.</h1>
+    </div>
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 ">Air Freight Forwarding Services</h1>
       <div id="city-section-content">
-        <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/air-freight-forwarding.webp"}></img>
-        </div>
         <div class="" style="text-align: left;">
           <p>Air freight forwarding is a service provided by logistics companies that involves the shipment of goods via air transport. This method is chosen for its speed and efficiency, especially for long-distance shipments or when goods need to be delivered urgently.
           </p><br />
@@ -875,12 +959,12 @@ function getSeaFreightServiceContent() {
   return (
     `
   <div id="sea-freight-service-content" class="contact border-bottom-class" style="background: #0addb9;">
+    <div class="cover-img flex-div col-div" style="color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/sea-freight-forwarding-service.webp');">
+      <p style="font-size: xxx-large; font-weight: 700; margin-bottom: 20px;">Sea Freight Forwarding</p>
+      <h1>Cost-effective, reliable international shipping of large goods via ocean transport.</h1>
+    </div>
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details">Sea Freight Forwarding Services</h1>
       <div id="city-section-content">
-        <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/sea-freight-forwarding.webp"}></img>
-        </div>
         <div class="contact-details" style="text-align: left;">
           <p>Sea freight forwarding is the process of organizing shipments of goods from one place to another by sea. It involves a range of activities such as booking cargo space on vessels, preparing and submitting documentation, arranging inland transportation, customs clearance, and cargo insurance.</p><br />
           <p style="margin-bottom: 5px; font-size: 22px;">
@@ -1012,12 +1096,12 @@ function getHomeShiftingServiceContent() {
   return (
     `
   <div id="home-shifting-service-content" class="contact border-bottom-class" style="background: #ffffff;">
+    <div class="cover-img flex-div col-div" style="color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/home-shifting-service.webp');">
+      <p style="font-size: xxx-large; font-weight: 700; margin-bottom: 20px;">Home Shifting Services</p>
+      <h1>Home Shifting Services: packing, transporting, unpacking for a hassle-free move.</h1>
+    </div>
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details">Home Shifting Services</h1>
       <div id="city-section-content">
-        <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/home-shifting-services.webp"}></img>
-        </div>
         <div class="contact-details" style="text-align: left;">
           <p>Home shifting services, also known as residential moving services, help individuals and families relocate their household belongings from one place to another. These services include various aspects of the moving process to ensure a smooth and stress-free transition.</p><br />
           <p style="margin-bottom: 5px; font-size: 22px;">
@@ -1116,12 +1200,12 @@ function getWarehousingServiceContent() {
   return (
     `
   <div id="warehousing-service-content" class="contact border-bottom-class" style="background: #ffffff;">
+    <div class="cover-img flex-div col-div" style="color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/warehouse-service.webp');">
+      <p style="font-size: xxx-large; font-weight: 700; margin-bottom: 20px;">Warehousing Service</p>
+      <h1>Secure storage solutions: safety, inventory management, and efficient distribution.</h1>
+    </div>
     <div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details">Warehousing Services</h1>
       <div id="city-section-content">
-        <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src=${"assets/warehousing-services.webp"}></img>
-        </div>
         <div class="contact-details" style="text-align: left;">
           <p>Shipping services involve the transportation of goods from one location to another, whether domestically or internationally. These services are essential for individuals, businesses, and industries that require the efficient and reliable movement of items. Here's an overview of what shipping services entail:</p><br />
           <p style="margin-bottom: 5px; font-size: 22px;">
@@ -1751,6 +1835,8 @@ function createHtmlContent() {
       </div>
     </div>
   </div>`
+            : cityOrLinkName === "day-night-packers-movers-services"
+            ? getServicesContent()
             : cityOrLinkName !== "contact-day-night-packers-movers"
             ? `<div id="city-section" class="contact border-bottom-class" style="background: #f2f2f2;">
     <div class="iyohgi" style="text-align: center;">
@@ -1777,7 +1863,8 @@ function createHtmlContent() {
   ${getInquiryFormContent()}
 
   ${
-    cityOrLinkName !== "contact-day-night-packers-movers"
+    cityOrLinkName !== "contact-day-night-packers-movers" &&
+    cityOrLinkName !== "day-night-packers-movers-services"
       ? `<div id="take-our-services" class="contact border-bottom-class" style="background: #94ddd7;">
     <div class="iyohgi" style="text-align: center;">
       <div class="inquire-tos-content">
@@ -1796,88 +1883,14 @@ function createHtmlContent() {
     </div>
   </div>
 
-  <div id="our-services" class="contact border-bottom-class" style="background: #e9e7e7;">
-    <div class="iyohgi" style="text-align: center;">
-      <h2 class="i78bq-2-3 contact-details ">Decoding Excellence: Illuminating Our Range of Services at Day Night Packers and Movers</h2>
-      <div id="our-services-content">
-        <div class="flex-div row-div" style="flex-wrap: wrap; justify-content: space-around; gap: 20px;">
-          <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
-            <img class="service-cards-img" src="assets/packers-movers-service.webp" alt="packers and movers" loading="lazy" />
-            <div class="container">
-              <h3>Packers And Movers</h3>
-              <p class="service-cards-text">Professional packing, transport, and unpacking for hassle-free relocations.</p>
-              <div style="text-align: end;"><button class="service-btn" onclick="navigate('packers-movers-service')">View More</button></div>
-            </div>
-          </div>
-          <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
-            <img class="service-cards-img" src="assets/car-carrier-truck.webp" alt="car carrier truck" loading="lazy" />
-            <div class="container">
-              <h3>Car And Bike Carrier</h3>
-              <p class="service-cards-text">Safe, reliable vehicle transport with professional handling and care.</p>
-              <div style="text-align: end;"><button class="service-btn" onclick="navigate('car-bike-carrier-service')">View More</button></div>
-            </div>
-          </div>
-          <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
-            <img class="service-cards-img" src="assets/shipping.webp" alt="shipping" loading="lazy" />
-            <div class="container">
-              <h3>Shipping Service</h3>
-              <p class="service-cards-text">We provide reliable transportation of goods, ensuring timely and secure delivery.</p>
-              <div style="text-align: end;"><button class="service-btn" onclick="navigate('shipping-service')">View More</button></div>
-            </div>
-          </div>
-          <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
-            <img class="service-cards-img" src="assets/air-freight-forwarding-service.webp" alt="plane" loading="lazy" height="185px" />
-            <div class="container">
-              <h3>Air Freight Forwarding</h3>
-              <p class="service-cards-text">Fast, reliable air freight for secure, global delivery with optimized efficiency.</p>
-              <div style="text-align: end;"><button class="service-btn" onclick="navigate('air-freight-forwarding-service')">View More</button></div>
-            </div>
-          </div>
-          <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
-            <img class="service-cards-img" src="assets/sea-freight-forwarding-service.webp" alt="sea-ship-with-containers" loading="lazy" />
-            <div class="container">
-              <h3>Sea Freight Forwarding</h3>
-              <p class="service-cards-text">Cost-effective, reliable international shipping of large goods via ocean transport.</p>
-              <div style="text-align: end;"><button class="service-btn" onclick="navigate('sea-freight-forwarding-service')">View More</button></div>
-            </div>
-          </div>
-          <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
-            <img class="service-cards-img" src="assets/home-shifting-service.webp" alt="home shifting" loading="lazy" />
-            <div class="container">
-              <h3>Home Shifting Services</h3>
-              <p class="service-cards-text">Home Shifting Services: packing, transporting, unpacking for a hassle-free move.</p>
-              <div style="text-align: end;"><button class="service-btn" onclick="navigate('home-shifting-service')">View More</button></div>
-            </div>
-          </div>
-          <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
-            <img class="service-cards-img" src="assets/warehouse-service.webp" alt="warehouse" loading="lazy" />
-            <div class="container">
-              <h3>Warehousing Service</h3>
-              <p class="service-cards-text">Secure storage solutions: safety, inventory management, and efficient distribution.</p>
-              <div style="text-align: end;"><button class="service-btn" onclick="navigate('warehousing-service')">View More</button></div>
-            </div>
-          </div>
-          <!--<div class="card service-card"><a href="https://www.daynightpackersmovers.com/car-bike-carrier-service.html">Car And Bike Carrier</a></div>
-          <div class="card service-card"><a href="https://www.daynightpackersmovers.com/shipping-service.html">Shipping Service</a></div>
-          <div class="card service-card"><a href="https://www.daynightpackersmovers.com/air-freight-forwarding-service.html">Air Freight Forwarding</a></div>
-          <div class="card service-card"><a href="https://www.daynightpackersmovers.com/sea-freight-forwarding-service.html">Sea Freight Forwarding</a></div>
-          <div class="card service-card"><a href="https://www.daynightpackersmovers.com/home-shifting-service.html">Home Shifting Services</a></div>
-          <div class="card service-card"><a href="https://www.daynightpackersmovers.com/warehousing-service.html">Warehousing Service</a></div>
-          <li><h2><a href="https://www.daynightpackersmovers.com/international-relocation-service.html">International Relocation</a></li>-->
-        </div>
-        <!--<div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="600px" height="auto" src="assets/our-service.webp"></img>
-        </div>-->
-      </div>
-    </div>
-  </div>
+  ${getServicesContent()}
 
   <div id="our-team" class="contact border-bottom-class" style="background: #ffffff;">
     <div class="iyohgi" style="text-align: center;">
       <h2 class="i78bq-2-3 contact-details ">United in Purpose, Stronger in Unity. 🌟 Dynamics of Day Night Packers and Movers Team</h2>
       <div id="our-team-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src="assets/our-teams.webp"></img>
+          <img alt="team work" loading="lazy" width="400px" height="auto" src="assets/team-work.webp"></img>
         </div>
         <div class="contact-details" style="text-align: left;">
           <ul style="line-height: 2.0em;"><li><b>Highly Motivated and Professional Companions:</b> Day Night Packers and Movers are dedicated to ensuring your relocation is stress-free.</li>
@@ -1907,28 +1920,28 @@ function createHtmlContent() {
         <div class="slideshow-container">
           <!-- Full-width images with number and caption text -->
           <div class="mySlides fade">
-            <img alt="" loading="lazy" src=${"assets/client1.webp"} height="200px" width="200px">
+            <img alt="" loading="lazy" src=${"assets/testimonial1.png"} height="200px" width="200px">
             <div class="text">Rahul Maan, Kapurthala, Punjab <br /><br />
             "Moving with Day Night Packers and Movers was a breeze! From the initial inquiry to the final delivery, their team was professional, efficient, and careful with our belongings. I highly recommend Day Night Packers and Movers for a stress-free moving experience. Undoubtedly, best packers and movers!"
             </div>
           </div>
 
           <div class="mySlides fade">
-            <img alt="" loading="lazy" src=${"assets/client2.webp"} height="200px" width="200px">
+            <img alt="" loading="lazy" src=${"assets/testimonial2.png"} height="200px" width="200px">
             <div class="text">Mr. Lakshay Jeet Shah, Bhubaneswar, Orissa <br /><br />
             "I had a fantastic experience with Day Night Packers and Movers. Their team was punctual, polite, and incredibly hardworking. They handled all of our items with care and precision, ensuring nothing was damaged during the move. Kudos to the team!!"
             </div>
           </div>
 
           <div class="mySlides fade">
-            <img alt="" loading="lazy" src=${"assets/client3.webp"} height="200px" width="200px">
+            <img alt="" loading="lazy" src=${"assets/testimonial3.png"} height="200px" width="200px">
             <div class="text">Shalini Dey, Siliguri, West Bengal<br /><br />
             "Day Night Packers and Movers exceeded my expectations, as I was searching for packers and movers near me. Their team went above and beyond to ensure my move went smoothly. I'm grateful for their excellent service and would highly recommend them to anyone in need of a moving company."
             </div>
           </div>
 
           <div class="mySlides fade">
-            <img alt="" loading="lazy" src=${"assets/client4.webp"} height="200px" width="200px">
+            <img alt="" loading="lazy" src=${"assets/testimonial4.png"} height="200px" width="200px">
             <div class="text">Raj Shekar Reddy, Hyderabad<br /><br />
             "Day Night Packers and Movers provided exceptional service from start to finish. Their staff was courteous, efficient, and incredibly helpful throughout the entire process. They took the stress out of moving and made sure everything arrived at my new home safely. "
             </div>
@@ -1950,17 +1963,17 @@ function createHtmlContent() {
 
   <div id="charges-table" class="contact border-bottom-class" style="background: white;">
   <div class="iyohgi" style="text-align: center;">
-    <h2 class="i78bq-2-3" style="color: white;">Fair Pricing, Exceptional Value: Explore Packers and Movers Charges at Day Night packers and Movers</h2>
+    <h2 class="i78bq-2-3 contact-details">Fair Pricing, Exceptional Value: Explore Packers and Movers Charges at Day Night packers and Movers</h2>
     <div id="table-parent">
       <table style="border-color: #878181; font-size: 12px;">
         <thead style="background: #262626; color: white;">
           <tr>
-            <td style="border-top-left-radius: 5px;">Shifting Type</td>
-            <td>Upto 50 Kms</td>
-            <td>Upto 500 Kms</td>
-            <td>Upto 1000 Kms</td>
-            <td>Upto 1500 Kms</td>
-            <td style="border-top-right-radius: 5px;">Upto 2500 Kms</td>
+            <td style="border-top-left-radius: 5px;"><b>Shifting Type</b></td>
+            <td><b>Upto 50 Kms</b></td>
+            <td><b>Upto 500 Kms</b></td>
+            <td><b>Upto 1000 Kms</b></td>
+            <td><b>Upto 1500 Kms</b></td>
+            <td style="border-top-right-radius: 5px;"><b>Upto 2500 Kms</b></td>
           </tr>
         </thead>
         <tbody>
@@ -1998,7 +2011,7 @@ function createHtmlContent() {
           </tr>
           <tr style="background: white;">
             <td>Car Transportation</td>
-            <td>By Road with labor and fuel cost</td>
+            <td>By Road with service and fuel cost</td>
             <td>Rs 12,000 to 14,500</td>
             <td>Rs 17,000 to 20,000</td>
             <td>Rs 21,000 to 25,000</td>
@@ -2006,7 +2019,7 @@ function createHtmlContent() {
           </tr>
           <tr style="background: #ffede8;">
             <td>Bike Transportation</td>
-            <td>By Road with labor and fuel cost</td>
+            <td>By Road with service and fuel cost</td>
             <td>Rs 7,000 to 10,500</td>
             <td>Rs 10,000 to 15,000</td>
             <td>Rs 15,000 to 18,000</td>
