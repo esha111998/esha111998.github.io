@@ -513,13 +513,22 @@
     text-align: center;
   }
 
-  .day-night-text {
-    font-size: 25px;
-    font-weight: 700;
+  .day-night-text-welcome {
     position: absolute;
-    top: 16px;
-    right: 16px;
-    color: #000000;
+    top: 30%;
+    left: 10px;
+    /* transform: translate(-50%, -50%); */
+    color: white;
+    text-align: left;
+  }
+
+  .day-night-text {
+    position: absolute;
+    top: 30%;
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    color: white;
+    text-align: center;
   }
 
   #logo-on-slides {

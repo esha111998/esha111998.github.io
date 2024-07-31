@@ -1314,6 +1314,7 @@ function setActiveTab() {
   const home = document.getElementsByClassName("home");
   const about = document.getElementsByClassName("about");
   const blogs = document.getElementsByClassName("blogs");
+  const faqs = document.getElementsByClassName("faqs");
   const services = document.getElementsByClassName("services");
   const contactUs = document.getElementsByClassName("contact-us");
 
@@ -1335,11 +1336,10 @@ function setActiveTab() {
 
   const checklist = document.getElementById("ultimate-checklist");
   const packingTips = document.getElementById("packing-tips");
-  const faqs = document.getElementById("faqs");
   const whyUs = document.getElementById("why-us");
   const longDistanceMove = document.getElementById("long-distance-moving");
 
-  const menus = [home, about, blogs, services, contactUs];
+  const menus = [home, about, blogs, faqs, services, contactUs];
   const serviceSubMenus = [
     packersMovers,
     carBikeCarrier,
@@ -1353,7 +1353,7 @@ function setActiveTab() {
 
   const aboutUsSubMenus = [mission, team, service, whyChooseUs];
 
-  const blogsSubMenus = [checklist, packingTips, faqs, whyUs, longDistanceMove];
+  const blogsSubMenus = [checklist, packingTips, whyUs, longDistanceMove];
 
   const serviceRoutes = [
     "packers-movers-service",
@@ -1376,7 +1376,6 @@ function setActiveTab() {
   const blogsRoutes = [
     "ultimate-checklist",
     "packing-tips",
-    "queries-before-shifting",
     "why-us",
     "long-distance-moving",
   ];
@@ -1457,11 +1456,6 @@ function setActiveTab() {
       blogsSubMenus[i].className.replace(" active-dropdown-options", "");
     }
     packingTips.className += " active-dropdown-options";
-  } else if (cityOrLinkName === "queries-before-shifting") {
-    for (let i = 0; i < blogsSubMenus.length; i++) {
-      blogsSubMenus[i].className.replace(" active-dropdown-options", "");
-    }
-    faqs.className += " active-dropdown-options";
   } else if (cityOrLinkName === "why-us") {
     for (let i = 0; i < blogsSubMenus.length; i++) {
       blogsSubMenus[i].className.replace(" active-dropdown-options", "");
@@ -1498,6 +1492,12 @@ function setActiveTab() {
     }
     blogs[0].className += " active-menu";
     blogs[1].className += " active-menu";
+  } else if (cityOrLinkName === "queries-before-shifting") {
+    for (let i = 0; i < menus; i++) {
+      menus[i].className.replace(" active-menu", "");
+    }
+    faqs[0].className += " active-menu";
+    faqs[1].className += " active-menu";
   } else if (
     serviceRoutes.includes(cityOrLinkName) ||
     cityOrLinkName === "day-night-packers-movers-services"
@@ -1669,16 +1669,8 @@ function createHtmlContent() {
             <a id="why-choose-us" href="https://www.daynightpackersmovers.com/why-choose-us.html">Why Choose Us</a>
           </div>
         </div>
-        <div class="dropdown">
-          <a class="blogs" href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html"><b>Blogs</b></a>
-          <div class="dropdown-content">
-            <a id="ultimate-checklist" href="https://www.daynightpackersmovers.com/ultimate-checklist.html">Ultimate Checklist</a>
-            <a id="packing-tips" href="https://www.daynightpackersmovers.com/packing-tips.html">Packing Tips</a>
-            <a id="faqs" href="https://www.daynightpackersmovers.com/queries-before-shifting.html">FAQs</a>
-            <a id="why-us" href="https://www.daynightpackersmovers.com/why-us.html">Why Only Us</a>
-            <a id="long-distance-moving" href="https://www.daynightpackersmovers.com/long-distance-moving.html">Long Distance Moving</a>
-          </div>
-        </div>
+        <a class="blogs" href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html"><b>Blogs</b></a>
+        <a class="faqs" href="https://www.daynightpackersmovers.com/queries-before-shifting.html"><b>FAQs</b></a>
         <div class="dropdown">
           <a href="https://www.daynightpackersmovers.com/day-night-packers-movers-services.html" class="services"><b>Services</b></a>
           <div class="dropdown-content">
@@ -1781,36 +1773,45 @@ function createHtmlContent() {
       : `${
           cityOrLinkName === "index" || cityOrLinkName === ""
             ? `<div id="day-night" class="contact border-bottom-class" style="background: #fffbf6;">
-    <div class="iyohgi" style="text-align: center; padding: 20px 0px;">
+    <div class="iyohgi" style="text-align: center; padding: 0px;">
       <div class="">
         <div class="slideshow-container">
           <div class="day-night-slides fade">
             <div class="slideImg" alt="best packers movers" style="position: relative; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)),url('assets/best-packers-movers.webp');">
             <!--linear-gradient(rgb(255 255 255 / 56%), rgb(0 0 0 / 62%)),-->
-              <div class="day-night-text">
-                <p>Welcome To</p>
-                <p>Your Moving Partner</p>
+              <div class="day-night-text-welcome">
+                <p style="font-size: xx-large; font-weight: 700;">Welcome To</p>
+                <h1 style="font-size: xxx-large; font-weight: 700; margin-bottom: 20px;">Day Night Packers And Movers</h1>
+                <p style="font-size: xxx-large; font-weight: 700; margin-bottom: 20px;"><u>Your Moving Partner!</u></p>
               </div>
             </div>
           </div>
 
           <div class="day-night-slides fade">
-            <div class="slideImg" alt="boxes shifting to truck" style="background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/boxes-shifting-to-truck.webp');"></div>
-          <!--<div class="day-night-text">Safe and Sound, Every Detail Perfected. 🛡️✨ #Excellence Assured
-            <br /><br />
-            </div>-->
+            <div class="slideImg" alt="boxes shifting to truck" style="background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/boxes-shifting-to-truck.webp');">
+              <div class="day-night-text">
+                <p style="font-size: xxx-large; font-weight: 700; margin-bottom: 20px;">Your Helping Hand For Your Next Destiny</p>
+                <h1></h1>
+              </div>
+            </div>
           </div>
 
           <div class="day-night-slides fade">
-            <div class="slideImg" alt="verify checklist" style="background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/verify-checklist.webp');"></div>
-            <!--<div class="day-night-text">Powered by Excellence: Our Arsenal of Resources Ready for You. 💼⚙️ #Prepared For Success
-            </div>-->
+            <div class="slideImg" alt="verify checklist" style="background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/verify-checklist.webp');">
+              <div class="day-night-text">
+                <p style="font-size: xxx-large; font-weight: 700; margin-bottom: 20px;">Prepared With Precise Knowledge For Your Smooth Transition</p>
+                <h1></h1>
+              </div>
+            </div>
           </div>
 
           <div class="day-night-slides fade">
-            <div class="slideImg" alt="start moving" style="background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/start-moving.webp');"></div>
-            <!--<div class="day-night-text">Your Trusted Partner: Where Every Customer Finds a Companion. 🤝 #Customer First
-            </div>-->
+            <div class="slideImg" alt="start moving" style="background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/start-moving.webp');">
+            <div class="day-night-text">
+                <p style="font-size: xxx-large; font-weight: 700; margin-bottom: 20px;">Hassle Free Move With Day Night Packers And Movers</p>
+                <h1></h1>
+              </div>
+            </div>
           </div>
 
           <!--<div class="day-night-slides fade">
@@ -1823,15 +1824,14 @@ function createHtmlContent() {
           <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
           <button class="next" onclick="plusSlides(1)">&#10095;</button>
         </div>
-        <br>
 
-        <div style="text-align:center">
+        <!--<div style="text-align:center">
           <span class="day-night-dot" onclick="currentSlide('day-night-slides', 'day-night-dot', 0)"></span>
           <span class="day-night-dot" onclick="currentSlide('day-night-slides', 'day-night-dot', 1)"></span>
           <span class="day-night-dot" onclick="currentSlide('day-night-slides', 'day-night-dot', 2)"></span>
           <span class="day-night-dot" onclick="currentSlide('day-night-slides', 'day-night-dot', 3)"></span>
-          <!--<span class="day-night-dot" onclick="currentSlide('day-night-slides', 'day-night-dot', 4)"></span>-->
-        </div>
+          <span class="day-night-dot" onclick="currentSlide('day-night-slides', 'day-night-dot', 4)"></span>
+        </div>-->
       </div>
     </div>
   </div>`
@@ -1916,7 +1916,10 @@ function createHtmlContent() {
   <div id="client-reviews" class="contact border-bottom-class" style="background: #e9e7e7;">
     <div class="iyohgi" style="text-align: center;">
       <h2 class="i78bq-2-3 contact-details ">Voices of Satisfaction: Hear What Customers Have to Say about Day Night Packers and Movers</h2>
-      <div class="">
+      <div class="flex-div col-div">
+        <div>
+          <img src="assets/google-reviews.webp" alt="google reviews" height="100px" width="200px"></img>
+        </div>
         <div class="slideshow-container">
           <!-- Full-width images with number and caption text -->
           <div class="mySlides fade">
