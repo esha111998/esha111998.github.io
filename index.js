@@ -707,9 +707,9 @@ function getPackersMoversServiceContent() {
   return (
     `
   <div id="packers-movers-service-content" class="contact border-bottom-class" style="background: #f5f5f5;">  
-    <div class="cover-img flex-div col-div" style="color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/packers-movers-service.webp');">
-      <p style="font-size: xxx-large; font-weight: 700; margin-bottom: 20px;">Packers and Movers Services</p>
-      <h1>Professional packing, transport, and unpacking for hassle-free relocations.</h1>
+    <div class="services-bg-img flex-div col-div" style="text-align: center; color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/packers-movers-service.webp');">
+      <p class="x3-p">Packers and Movers Services</p>
+      <h1 class="services-h1">Professional packing, transport, and unpacking for hassle-free relocations.</h1>
     </div>
     <div class="iyohgi" style="text-align: center;">
       <div id="city-section-content">
@@ -778,9 +778,9 @@ function getCarBikeCarrierServiceContent() {
   return (
     `
   <div id="car-bike-carrier-service-content" class="contact border-bottom-class" style="background: #ffffff;">
-    <div class="cover-img flex-div col-div" style="color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/car-carrier-truck.webp');">
-      <p style="font-size: xxx-large; font-weight: 700; margin-bottom: 20px;">Car And Bike Carrier</p>
-      <h1>Safe, reliable vehicle transport with professional handling and care.</h1>
+    <div class="services-bg-img flex-div col-div" style="text-align: center; color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/car-carrier-truck.webp');">
+      <p class="x3-p">Car And Bike Carrier</p>
+      <h1 class="services-h1">Safe, reliable vehicle transport with professional handling and care.</h1>
     </div>
     <div class="iyohgi" style="text-align: center;">
       <div id="city-section-content">
@@ -839,9 +839,9 @@ function getShippingServiceContent() {
   return (
     `
   <div id="shipping-service-content" class="contact border-bottom-class" style="background: #a8c4e9;">
-    <div class="cover-img flex-div col-div" style="color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/shipping.webp');">
-      <p style="font-size: xxx-large; font-weight: 700; margin-bottom: 20px;">Shipping Service</p>
-      <h1>We provide reliable transportation of goods, ensuring timely and secure delivery.</h1>
+    <div class="services-bg-img flex-div col-div" style="text-align: center; color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/shipping.webp');">
+      <p class="x3-p">Shipping Service</p>
+      <h1 class="services-h1">We provide reliable transportation of goods, ensuring timely and secure delivery.</h1>
     </div>
     <div class="iyohgi" style="text-align: center;">
       <div id="city-section-content">
@@ -901,9 +901,9 @@ function getAirFreightServiceContent() {
   return (
     `
   <div id="air-freight-service-content" class="contact border-bottom-class" style="color: white; background: #032d3a;">
-    <div class="cover-img flex-div col-div" style="color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/air-freight-forwarding-service.webp');">
-      <p style="font-size: xxx-large; font-weight: 700; margin-bottom: 20px;">Air Freight Forwarding</p>
-      <h1>Fast, reliable air freight for secure, global delivery with optimized efficiency.</h1>
+    <div class="services-bg-img flex-div col-div" style="text-align: center; color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/air-freight-forwarding-service.webp');">
+      <p class="x3-p">Air Freight Forwarding</p>
+      <h1 class="services-h1">Fast, reliable air freight for secure, global delivery with optimized efficiency.</h1>
     </div>
     <div class="iyohgi" style="text-align: center;">
       <div id="city-section-content">
@@ -959,9 +959,9 @@ function getSeaFreightServiceContent() {
   return (
     `
   <div id="sea-freight-service-content" class="contact border-bottom-class" style="background: #0addb9;">
-    <div class="cover-img flex-div col-div" style="color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/sea-freight-forwarding-service.webp');">
-      <p style="font-size: xxx-large; font-weight: 700; margin-bottom: 20px;">Sea Freight Forwarding</p>
-      <h1>Cost-effective, reliable international shipping of large goods via ocean transport.</h1>
+    <div class="services-bg-img flex-div col-div" style="text-align: center; color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/sea-freight-forwarding-service.webp');">
+      <p  class="x3-p">Sea Freight Forwarding</p>
+      <h1 class="services-h1">Cost-effective, reliable international shipping of large goods via ocean transport.</h1>
     </div>
     <div class="iyohgi" style="text-align: center;">
       <div id="city-section-content">
@@ -1096,9 +1096,9 @@ function getHomeShiftingServiceContent() {
   return (
     `
   <div id="home-shifting-service-content" class="contact border-bottom-class" style="background: #ffffff;">
-    <div class="cover-img flex-div col-div" style="color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/home-shifting-service.webp');">
-      <p style="font-size: xxx-large; font-weight: 700; margin-bottom: 20px;">Home Shifting Services</p>
-      <h1>Home Shifting Services: packing, transporting, unpacking for a hassle-free move.</h1>
+    <div class="services-bg-img flex-div col-div" style="text-align: center; color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/home-shifting-service.webp');">
+      <p  class="x3-p">Home Shifting Services</p>
+      <h1 class="services-h1">Home Shifting Services: packing, transporting, unpacking for a hassle-free move.</h1>
     </div>
     <div class="iyohgi" style="text-align: center;">
       <div id="city-section-content">
@@ -1200,9 +1200,9 @@ function getWarehousingServiceContent() {
   return (
     `
   <div id="warehousing-service-content" class="contact border-bottom-class" style="background: #ffffff;">
-    <div class="cover-img flex-div col-div" style="color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/warehouse-service.webp');">
-      <p style="font-size: xxx-large; font-weight: 700; margin-bottom: 20px;">Warehousing Service</p>
-      <h1>Secure storage solutions: safety, inventory management, and efficient distribution.</h1>
+    <div class="services-bg-img flex-div col-div" style="text-align: center; color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/warehouse-service.webp');">
+      <p class="x3-p">Warehousing Service</p>
+      <h1 class="services-h1">Secure storage solutions: safety, inventory management, and efficient distribution.</h1>
     </div>
     <div class="iyohgi" style="text-align: center;">
       <div id="city-section-content">
@@ -1781,8 +1781,8 @@ function createHtmlContent() {
             <!--linear-gradient(rgb(255 255 255 / 56%), rgb(0 0 0 / 62%)),-->
               <div class="day-night-text-welcome">
                 <p style="font-size: xx-large; font-weight: 700;">Welcome To</p>
-                <h1 style="font-size: xxx-large; font-weight: 700; margin-bottom: 20px;">Day Night Packers And Movers</h1>
-                <p style="font-size: xxx-large; font-weight: 700; margin-bottom: 20px;"><u>Your Moving Partner!</u></p>
+                <h1 class="x3-p">Day Night Packers And Movers</h1>
+                <p class="x3-p"><u>Your Moving Partner!</u></p>
               </div>
             </div>
           </div>
@@ -1790,7 +1790,7 @@ function createHtmlContent() {
           <div class="day-night-slides fade">
             <div class="slideImg" alt="boxes shifting to truck" style="background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/boxes-shifting-to-truck.webp');">
               <div class="day-night-text">
-                <p style="font-size: xxx-large; font-weight: 700; margin-bottom: 20px;">Your Helping Hand For Your Next Destiny</p>
+                <p  class="x3-p">Your Helping Hand For Your Next Destiny</p>
                 <h1></h1>
               </div>
             </div>
@@ -1799,7 +1799,7 @@ function createHtmlContent() {
           <div class="day-night-slides fade">
             <div class="slideImg" alt="verify checklist" style="background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/verify-checklist.webp');">
               <div class="day-night-text">
-                <p style="font-size: xxx-large; font-weight: 700; margin-bottom: 20px;">Prepared With Precise Knowledge For Your Smooth Transition</p>
+                <p  class="x3-p">Prepared With Precise Knowledge For Your Smooth Transition</p>
                 <h1></h1>
               </div>
             </div>
@@ -1808,7 +1808,7 @@ function createHtmlContent() {
           <div class="day-night-slides fade">
             <div class="slideImg" alt="start moving" style="background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/start-moving.webp');">
             <div class="day-night-text">
-                <p style="font-size: xxx-large; font-weight: 700; margin-bottom: 20px;">Hassle Free Move With Day Night Packers And Movers</p>
+                <p  class="x3-p">Hassle Free Move With Day Night Packers And Movers</p>
                 <h1></h1>
               </div>
             </div>
