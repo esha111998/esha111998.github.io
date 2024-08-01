@@ -231,7 +231,7 @@ function getAboutUsContent() {
 function getOurMissionContent() {
   return `
   <section>
-    <div class="cover-img flex-div col-div" style="color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/our-mission.webp');">
+    <div class="cover-img flex-div col-div white" style="text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/our-mission.webp');">
       <h1 class="heading">Our Mission</h1>
       <p style="margin-top: 30px;">
       Our mission is to make your household shifting experience as smooth and stress-free as possible. We understand that moving can be a daunting task, and our goal is to handle every aspect of your move with care and efficiency. From the moment you search for "household shifting services near me" and contact us to the final delivery at your new location, we strive to exceed your expectations with our commitment to excellence. We achieve this through:</p><br /><br />
@@ -251,7 +251,7 @@ function getOurMissionContent() {
 function getOurTeamContent() {
   return `
   <section>
-    <div class="cover-img flex-div col-div" style="color: white; align-items: flex-start; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/our-team.webp');">
+    <div class="cover-img flex-div col-div white" style="align-items: flex-start; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/our-team.webp');">
       
         <h1 style="align-self: center; margin-bottom: 30px;" class="heading">Our Team</h1>
         <ul  class="sub-menus-ul" style="line-height: 2.0em;">
@@ -264,7 +264,7 @@ function getOurTeamContent() {
           
           <li><b>Transparent Pricing:</b> No hidden fees, just clear and upfront quotes.</li>
         </ul>
-        <p style="margin-top: 30px;">Let's move forward with Day Night Packers and Movers. <b><a style="color: white;" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html">Contact us today!</a></b></p>
+        <p style="margin-top: 30px;">Let's move forward with Day Night Packers and Movers. <b><a class="white" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html">Contact us today!</a></b></p>
     </div>
   </section>
   `;
@@ -273,7 +273,7 @@ function getOurTeamContent() {
 function getOurServiceContent() {
   return `
   <section>
-    <div class="cover-img flex-div col-div" style="color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/our-services.webp');">
+    <div class="cover-img flex-div col-div white" style="text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/our-services.webp');">
       <h1 class="heading">Our Service</h1>
       <p style="align-self: flex-start; margin-bottom: 20px; margin-top: 30px;">At Day Night Packers And Movers, we offer a comprehensive range of moving services to cater to your specific needs:
           </p><br />
@@ -293,7 +293,7 @@ function getOurServiceContent() {
 function getWhyChooseUsContent() {
   return `
   <section>
-    <div class="cover-img flex-div col-div" style="color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/why-choose-us.webp');">
+    <div class="cover-img flex-div col-div white" style="text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/why-choose-us.webp');">
       <h1 class="heading">Why Choose Us?</h1>
       <p style="align-self: flex-start; margin-bottom: 5px; margin-top: 30px;">Choosing Day Night Packers And Movers means choosing a team of experienced movers, dedicated to providing exceptional service. Here are a few reasons why our customers trust us with their moves:</p><br /><br />
         
@@ -315,7 +315,7 @@ function getWhyChooseUsContent() {
 function getBlogsContent() {
   return `
   <section id="blogs" class="contact border-bottom-class">
-    <div class="iyohgi cover-img flex-div col-div" style="color: white; text-align: center; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/delivery-person-getting-parcel-out-delivery.webp');">
+    <div class="iyohgi cover-img flex-div col-div white" style="text-align: center; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/delivery-person-getting-parcel-out-delivery.webp');">
       <h1 class="heading">Blogs</h1>
       <div class="flex-div row-div" style="margin-top: 30px; gap: 20px; flex-wrap: wrap;">
         <div class="card blogs-cards flex-div col-div">
@@ -428,7 +428,7 @@ function getBlogsContent() {
 function getUltimateChecklistContent() {
   return `
   <section>
-    <div class="cover-img flex-div col-div" style="color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/check-list.webp');">
+    <div class="cover-img flex-div col-div white" style="text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/check-list.webp');">
       <h1 class="heading">The Ultimate Moving Checklist</h1>
       <p style="align-self: flex-start; margin-bottom: 5px; margin-top: 30px;">Moving can be a daunting task, but with the right preparation, it can be a smooth and stress-free experience. Here’s the ultimate moving checklist to ensure you don’t miss a thing.</p><br /><br /> 
       <ul style="line-height: 2.0em; padding-left: 25px;">
@@ -446,7 +446,7 @@ function getUltimateChecklistContent() {
 function getPackingTipsContent() {
   return `
   <section>
-    <div class="cover-img flex-div col-div" style="color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/packing-tips.webp');">
+    <div class="cover-img flex-div col-div white" style="text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/packing-tips.webp');">
       <h1 class="heading">Top 10 Packing Tips for a Stress-Free Move</h1>
       <p style="align-self: flex-start; margin-bottom: 5px; margin-top: 30px;">Packing is one of the most critical aspects of moving. With these top 10 packing tips, you can ensure your belongings are safe and organized.</p><br /><br /> 
       <ul style="line-height: 2.0em; padding-left: 25px;">
@@ -469,7 +469,7 @@ function getPackingTipsContent() {
 function getLongDistanceMovingContent() {
   return `
   <section>
-    <div class="cover-img flex-div col-div" style="color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/long-distance-moving.webp');">
+    <div class="cover-img flex-div col-div white" style="text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/long-distance-moving.webp');">
       <h1 class="heading">How to Make Long-Distance Moving Easier</h1>
       <p style="align-self: flex-start; margin-bottom: 5px; margin-top: 30px;">Long-distance moving comes with its unique set of challenges. Here are some tips to make your cross-country move easier.</p><br /><br /> 
       <ul style="line-height: 2.0em; padding-left: 25px;">
@@ -489,7 +489,7 @@ function getLongDistanceMovingContent() {
 function getWhyUsContent() {
   return `
   <section>
-    <div class="cover-img flex-div col-div" style="color: white; text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/professional-packing-services.webp');">
+    <div class="cover-img flex-div col-div white" style="text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/professional-packing-services.webp');">
       <h1 class="heading">Why You Should Consider Professional Packing Services</h1>
       <p style="align-self: flex-start; margin-bottom: 5px; margin-top: 30px;">Packing can be one of the most time-consuming parts of moving. Here’s why you should consider hiring professional packing services.</p><br /><br /> 
       <ul style="line-height: 2.0em; padding-left: 25px;">
@@ -707,7 +707,7 @@ function getPackersMoversServiceContent() {
   return (
     `
   <div id="packers-movers-service-content" class="contact border-bottom-class" style="background: #f5f5f5;">  
-    <div class="services-bg-img flex-div col-div" style="text-align: center; color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/packers-movers-service.webp');">
+    <div class="services-bg-img flex-div col-div white" style="text-align: center;  background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/packers-movers-service.webp');">
       <p class="x3-p">Packers and Movers Services</p>
       <h1 class="services-h1">Professional packing, transport, and unpacking for hassle-free relocations.</h1>
     </div>
@@ -778,7 +778,7 @@ function getCarBikeCarrierServiceContent() {
   return (
     `
   <div id="car-bike-carrier-service-content" class="contact border-bottom-class" style="background: #ffffff;">
-    <div class="services-bg-img flex-div col-div" style="text-align: center; color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/car-carrier-truck.webp');">
+    <div class="services-bg-img flex-div col-div white" style="text-align: center;  background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/car-carrier-truck.webp');">
       <p class="x3-p">Car And Bike Carrier</p>
       <h1 class="services-h1">Safe, reliable vehicle transport with professional handling and care.</h1>
     </div>
@@ -839,7 +839,7 @@ function getShippingServiceContent() {
   return (
     `
   <div id="shipping-service-content" class="contact border-bottom-class" style="background: #a8c4e9;">
-    <div class="services-bg-img flex-div col-div" style="text-align: center; color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/shipping.webp');">
+    <div class="services-bg-img flex-div col-div white" style="text-align: center;  background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/shipping.webp');">
       <p class="x3-p">Shipping Service</p>
       <h1 class="services-h1">We provide reliable transportation of goods, ensuring timely and secure delivery.</h1>
     </div>
@@ -900,8 +900,8 @@ function getShippingServiceContent() {
 function getAirFreightServiceContent() {
   return (
     `
-  <div id="air-freight-service-content" class="contact border-bottom-class" style="color: white; background: #032d3a;">
-    <div class="services-bg-img flex-div col-div" style="text-align: center; color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/air-freight-forwarding-service.webp');">
+  <div id="air-freight-service-content" class="contact border-bottom-class white" style="background: #032d3a;">
+    <div class="services-bg-img flex-div col-div white" style="text-align: center;  background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/air-freight-forwarding-service.webp');">
       <p class="x3-p">Air Freight Forwarding</p>
       <h1 class="services-h1">Fast, reliable air freight for secure, global delivery with optimized efficiency.</h1>
     </div>
@@ -959,7 +959,7 @@ function getSeaFreightServiceContent() {
   return (
     `
   <div id="sea-freight-service-content" class="contact border-bottom-class" style="background: #0addb9;">
-    <div class="services-bg-img flex-div col-div" style="text-align: center; color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/sea-freight-forwarding-service.webp');">
+    <div class="services-bg-img flex-div col-div white" style="text-align: center;  background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/sea-freight-forwarding-service.webp');">
       <p  class="x3-p">Sea Freight Forwarding</p>
       <h1 class="services-h1">Cost-effective, reliable international shipping of large goods via ocean transport.</h1>
     </div>
@@ -1096,7 +1096,7 @@ function getHomeShiftingServiceContent() {
   return (
     `
   <div id="home-shifting-service-content" class="contact border-bottom-class" style="background: #ffffff;">
-    <div class="services-bg-img flex-div col-div" style="text-align: center; color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/home-shifting-service.webp');">
+    <div class="services-bg-img flex-div col-div white" style="text-align: center;  background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/home-shifting-service.webp');">
       <p  class="x3-p">Home Shifting Services</p>
       <h1 class="services-h1">Home Shifting Services: packing, transporting, unpacking for a hassle-free move.</h1>
     </div>
@@ -1200,7 +1200,7 @@ function getWarehousingServiceContent() {
   return (
     `
   <div id="warehousing-service-content" class="contact border-bottom-class" style="background: #ffffff;">
-    <div class="services-bg-img flex-div col-div" style="text-align: center; color: white; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/warehouse-service.webp');">
+    <div class="services-bg-img flex-div col-div white" style="text-align: center;  background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/warehouse-service.webp');">
       <p class="x3-p">Warehousing Service</p>
       <h1 class="services-h1">Secure storage solutions: safety, inventory management, and efficient distribution.</h1>
     </div>
@@ -1672,7 +1672,7 @@ function createHtmlContent() {
         <a class="blogs" href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html"><b>Blogs</b></a>
         <a class="faqs" href="https://www.daynightpackersmovers.com/queries-before-shifting.html"><b>FAQs</b></a>
         <div class="dropdown">
-          <a href="https://www.daynightpackersmovers.com/day-night-packers-movers-services.html" class="services"><b>Services</b></a>
+          <a  class="services" href="https://www.daynightpackersmovers.com/day-night-packers-movers-services.html"><b>Services</b></a>
           <div class="dropdown-content">
             <a id="packers-movers" href="https://www.daynightpackersmovers.com/packers-movers-service.html">Packers And Movers</a>
             <a id="car-bike-carrier" href="https://www.daynightpackersmovers.com/car-bike-carrier-service.html">Car And Bike Carrier</a>
@@ -1780,9 +1780,15 @@ function createHtmlContent() {
             <div class="slideImg" alt="best packers movers" style="position: relative; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)),url('assets/best-packers-movers.webp');">
             <!--linear-gradient(rgb(255 255 255 / 56%), rgb(0 0 0 / 62%)),-->
               <div class="day-night-text-welcome">
-                <p style="font-size: xx-large; font-weight: 700;">Welcome To</p>
-                <h1 class="x3-p">Day Night Packers And Movers</h1>
-                <p class="x3-p"><u>Your Moving Partner!</u></p>
+                <p>Welcome To</p>
+                <div class="first-section-text">
+                  <div class="flex-div row-div" style="justify-content: revert; gap: 10px;">
+                    <h1 class="x3-p" style="color: black; margin-bottom: 0px;">Day</h1>
+                    <h1 class="x3-p" style="color: ${brand}; margin-bottom: 0px;">Night</h1>
+                  </div>
+                  <h1 class="x3-p" style="margin-bottom: 0px;">Packers And Movers</h1>
+                </div>
+                <p><u>Your Moving Partner!</u></p>
               </div>
             </div>
           </div>
@@ -1790,7 +1796,7 @@ function createHtmlContent() {
           <div class="day-night-slides fade">
             <div class="slideImg" alt="boxes shifting to truck" style="background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/boxes-shifting-to-truck.webp');">
               <div class="day-night-text">
-                <p  class="x3-p">Your Helping Hand For Your Next Destiny</p>
+                <p class="x3-p">Your Helping Hand in Your Next Destiny</p>
                 <h1></h1>
               </div>
             </div>
@@ -1799,7 +1805,7 @@ function createHtmlContent() {
           <div class="day-night-slides fade">
             <div class="slideImg" alt="verify checklist" style="background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/verify-checklist.webp');">
               <div class="day-night-text">
-                <p  class="x3-p">Prepared With Precise Knowledge For Your Smooth Transition</p>
+                <p class="x3-p">Prepared With Precise Knowledge For Your Smooth Transition</p>
                 <h1></h1>
               </div>
             </div>
@@ -1807,8 +1813,8 @@ function createHtmlContent() {
 
           <div class="day-night-slides fade">
             <div class="slideImg" alt="start moving" style="background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/start-moving.webp');">
-            <div class="day-night-text">
-                <p  class="x3-p">Hassle Free Move With Day Night Packers And Movers</p>
+              <div class="day-night-text">
+                <p class="x3-p">Hassle Free Move With Day Night Packers And Movers</p>
                 <h1></h1>
               </div>
             </div>
@@ -1918,7 +1924,7 @@ function createHtmlContent() {
       <h2 class="i78bq-2-3 contact-details ">Voices of Satisfaction: Hear What Customers Have to Say about Day Night Packers and Movers</h2>
       <div class="flex-div col-div">
         <div>
-          <img src="assets/google-reviews.webp" alt="google reviews" height="100px" width="200px"></img>
+          <img src="assets/google-reviews.webp" alt="google reviews" height="85px" width="200px"></img>
         </div>
         <div class="slideshow-container">
           <!-- Full-width images with number and caption text -->
@@ -1969,7 +1975,7 @@ function createHtmlContent() {
     <h2 class="i78bq-2-3 contact-details">Fair Pricing, Exceptional Value: Explore Packers and Movers Charges at Day Night packers and Movers</h2>
     <div id="table-parent">
       <table style="border-color: #878181; font-size: 12px;">
-        <thead style="background: #262626; color: white;">
+        <thead class="white" style="background: #262626;">
           <tr>
             <td style="border-top-left-radius: 5px;"><b>Shifting Type</b></td>
             <td><b>Upto 50 Kms</b></td>
@@ -2118,7 +2124,53 @@ function createHtmlContent() {
   `
   }
 
-  <div id="contact" class="contact border-bottom-class" style="background: #047d9d;">
+  <div id="contact" class="contact border-bottom-class" style="background: #0f0f0f;">
+    <div class="iyohgi" style="text-align: center;">
+        <div class="flex-div row-div" style="flex-wrap: wrap; align-items: flex-start; justify-content: space-around;">
+          <div class="flex-div col-div">
+            <a class="white" href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html"><b><u>About Us</u></b></a>
+            <ul style="text-align: left; line-height: 2.0em;">
+              <li><a class="white" href="https://www.daynightpackersmovers.com/our-mission.html">Our Mission</a></li>
+              <li><a class="white" href="https://www.daynightpackersmovers.com/our-team.html">Our Team</a></li>
+              <li><a class="white" href="https://www.daynightpackersmovers.com/our-service.html">Our Services</a></li>
+              <li><a class="white" href="https://www.daynightpackersmovers.com/why-choose-us.html">Why Choose Us</a></li>
+            </ul>
+          </div>
+          <div class="flex-div col-div">
+            <a class="white" href="https://www.daynightpackersmovers.com/day-night-packers-movers-services.html"><b><u>Services</u></b></a>
+            <ul style="text-align: left; line-height: 2.0em;">
+              <li><a class="white" href="https://www.daynightpackersmovers.com/packers-movers-service.html">Packers And Movers</a></li>
+              <li><a class="white" href="https://www.daynightpackersmovers.com/car-bike-carrier-service.html">Car And Bike Carrier</a></li>
+              <li><a class="white" href="https://www.daynightpackersmovers.com/shipping-service.html">Shipping Service</a></li>
+              <li><a class="white" href="https://www.daynightpackersmovers.com/air-freight-forwarding-service.html">Air Freight Forwarding</a></li>
+              <li><a class="white" href="https://www.daynightpackersmovers.com/sea-freight-forwarding-service.html">Sea Freight Forwarding</a></li>
+              <li><a class="white" href="https://www.daynightpackersmovers.com/home-shifting-service.html">Home Shifting Services</a></li>
+              <li><a class="white" href="https://www.daynightpackersmovers.com/warehousing-service.html">Warehousing Service</a></li>
+            </ul>
+          </div>
+          <div class="flex-div col-div">
+            <a class="white" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html"><b><u>Contact Us</u></b></a>
+            <a class="white" href="">
+              <p>302, 1st floor, Near Jagmal Singh Stadium,</p>
+              <p> Bhondsi, Gurugram, Haryana, 122102</p>
+            </a>
+            <div class="igiuzk flex-div row-div">
+              <a id="i2tpy3" aria-label="facebook" href="https://www.facebook.com/profile.php?id=61559284304658" target="_blank"><img alt="facebook page link" loading="lazy" id="i3gekg" height="43px" width="43px" src=${"assets/fb.svg"} /></a>
+              <a id="i2tpy3-2" aria-label="instagram" href="https://www.instagram.com/daynightpackersand/" target="_blank"><img alt="instagram page link" loading="lazy" id="i3gekg-2" height="37px" width="37px" src=${"assets/insta.svg"} /></a>
+              <a id="i2tpy3-6" aria-label="youtube" href="https://www.youtube.com/@DayNightPackersandMovers" target="_blank"><img alt="youtube page link" loading="lazy" id="i3gekg-2" height="37px" width="37px" src=${"assets/youtube.svg"} /></a>
+              <a id="i2tpy3-7" aria-label="linkedin" href="https://www.linkedin.com/in/day-night-packers-and-movers-a5488a31a" target="_blank"><img alt="linkedin page link" loading="lazy" id="i3gekg-2" height="37px" width="37px" src=${"assets/linkedin.svg"} /></a>
+              <a id="i2tpy3-8" aria-label="X/twitter" href="https://x.com/daynightpackers" target="_blank"><img alt="X/twitter page link" loading="lazy" id="i3gekg-2" height="37px" width="37px" src=${"assets/twitter-x.svg"} /></a>
+              <a id="i2tpy3-5" aria-label="whatsapp" href="https://wa.me/+919911198767" target="_blank"><img alt="chat on whatsapp" loading="lazy" id="i3gekg-3" height="37px" width="37px" src=${"assets/whatsapp.svg"} /></a>
+              <a id="i2tpy3-3" aria-label="email" href="mailto:daynightpackersandmovers@gmail.com"><img alt="compose email" loading="lazy" id="i3gekg-4" height="37px" width="37px"
+                  src=${"assets/email.svg"} /></a>
+              <a aria-label="mobile" href=tel:+919911198767><img alt="call" loading="lazy" id="i3gekg-5" height="43px" width="43px" src=${"assets/tel.svg"} /></a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  
+  <!--<div id="contact" class="contact border-bottom-class" style="background: #047d9d;">
     <div class="iyohgi" style="text-align: center;">
       <h2 class="contact-details ">Doubts Dismissed: Let Us Clear the Path to Clarity with Day Night Packers and Movers</h2>
       <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
@@ -2140,17 +2192,17 @@ function createHtmlContent() {
         </div>
       </div>
     </div>
-  </div>
+  </div>-->
 
   <div class="copyright-footer" style="background-color: aliceblue;">
-    <div class="igiuzk flex-div row-div" style="gap: 20px;">
+    <!--<div class="igiuzk flex-div row-div" style="gap: 20px;">
       <a href="https://www.daynightpackersmovers.com/"><b>Home</b></a>
       <a href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html"><b>About Us</b></a>
       <a href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html"><b>Blogs</b></a>
       <a href="https://www.daynightpackersmovers.com/queries-before-shifting.html"><b>FAQs</b></a>
       <a href="https://www.daynightpackersmovers.com/#our-services"><b>Services</b></a>
       <a href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html"><b>Contact Us</b></a>
-    </div><br />
+    </div><br />-->
     <p id="iy2lbi">© ${new Date().getFullYear()} powered by Day Night Packers And Movers</p>
   </div>
 

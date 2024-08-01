@@ -513,13 +513,24 @@
     text-align: center;
   }
 
+  .first-section-text {
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+  }
+
   .day-night-text-welcome {
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 10px;
     /* transform: translate(-50%, -50%); */
     color: white;
     text-align: left;
+  }
+
+  .day-night-text-welcome > p {
+    font-size: xx-large;
+    font-weight: 700;
   }
 
   .day-night-text {
@@ -529,6 +540,7 @@
     /* transform: translate(-50%, -50%); */
     color: white;
     text-align: center;
+    width: 100%
   }
 
   #logo-on-slides {
@@ -740,6 +752,10 @@
     width: 100%;
   }
 
+  .white {
+    color: white;
+  }
+
   @media (max-width: 1125px){
     .services-box, #city-section-content, #our-team-content, #our-services-content, #get-a-quote,
     .inquire-tos-content, #take-our-service-content, #table-parent, #process-steps-content, .nav-inner {
@@ -779,7 +795,6 @@
     }
     .day-night-text {
       font-size: 22px;
-      right: 16px;
     }
     #logo-on-slides {
       height: 70px
@@ -813,10 +828,13 @@
     }
     .day-night-text {
       font-size: 20px;
-      right: 15px;
     }
     #logo-on-slides {
       height: 70px
+    }
+    .first-section-text {
+      flex-direction: column;
+      gap: 0px;
     }
   }
   @media (max-width: 575px){
@@ -892,6 +910,13 @@
     .services-h1 {
       font-size: 24px;
     }
+    .day-night-text-welcome > p {
+      font-size: large;
+    }
+    .first-section-text {
+      flex-direction: column;
+      gap: 0px;
+    }
   }
   @media (max-width: 460px){
     #menus{
@@ -940,7 +965,6 @@
     }
     .day-night-text {
       font-size: 15px;
-      right: 10px;
     }
     #logo-on-slides {
       height: 50px
@@ -960,6 +984,13 @@
     }
     .services-h1 {
       font-size: 18px;
+    }
+    .day-night-text-welcome > p {
+      font-size: large;
+    }
+    .first-section-text {
+      flex-direction: column;
+      gap: 0px;
     }
   }
   @media (max-width: 290px){
@@ -1003,7 +1034,6 @@
     }
     .day-night-text {
       font-size: 10px;
-      right: 5px;
     }
     #logo-on-slides {
       height: 30px
@@ -1020,6 +1050,13 @@
     }
     .services-h1 {
       font-size: 18px;
+    }
+    .day-night-text-welcome > p {
+      font-size: large;
+    }
+    .first-section-text {
+      flex-direction: column;
+      gap: 0px;
     }
   }
   
