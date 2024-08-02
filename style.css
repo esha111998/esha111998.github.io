@@ -622,6 +622,9 @@
     padding: revert;
   }
 
+  #contact-us-section li::marker {
+    color: #FF5823;
+  }
 
   /* table css */
   table {
@@ -741,6 +744,7 @@
   .service-cards-img {
     border-radius: 5px 5px 0 0;
     width: 100%;
+    object-fit: cover;
   }
   .service-cards-text {
     font-size: 14px;

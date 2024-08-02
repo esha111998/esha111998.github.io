@@ -313,11 +313,190 @@ function getWhyChooseUsContent() {
 }
 
 function getBlogsContent() {
+  const blogsData = [
+    {
+      imgName: "best-packer-mover",
+      imgAlt: "best packer mover",
+      title: "Ultimate Checklist",
+      content:
+        "Professional packing, transport, and unpacking for hassle-free relocations.",
+      route: "ultimate-checklist",
+    },
+    {
+      imgName: "packed-material",
+      imgAlt: "packed material",
+      title: "Ultimate Checklist",
+      content:
+        "Professional packing, transport, and unpacking for hassle-free relocations.",
+      route: "ultimate-checklist",
+    },
+    {
+      imgName: "professional-packing-service",
+      imgAlt: "professional packing service",
+      title: "Ultimate Checklist",
+      content:
+        "Professional packing, transport, and unpacking for hassle-free relocations.",
+      route: "ultimate-checklist",
+    },
+    {
+      imgName: "packers-movers-uniform",
+      imgAlt: "packers movers uniform",
+      title: "Ultimate Checklist",
+      content:
+        "Professional packing, transport, and unpacking for hassle-free relocations.",
+      route: "ultimate-checklist",
+    },
+    {
+      imgName: "front-view-smiley-delivery-woman-holding-boxes",
+      imgAlt: "front view smiley delivery woman holding boxes",
+      title: "Ultimate Checklist",
+      content:
+        "Professional packing, transport, and unpacking for hassle-free relocations.",
+      route: "ultimate-checklist",
+    },
+    {
+      imgName: "focused",
+      imgAlt: "focused",
+      title: "Ultimate Checklist",
+      content:
+        "Professional packing, transport, and unpacking for hassle-free relocations.",
+      route: "ultimate-checklist",
+    },
+    {
+      imgName: "day-packing",
+      imgAlt: "day packing",
+      title: "Ultimate Checklist",
+      content:
+        "Professional packing, transport, and unpacking for hassle-free relocations.",
+      route: "ultimate-checklist",
+    },
+    {
+      imgName: "checklist",
+      imgAlt: "checklist",
+      title: "Ultimate Checklist",
+      content:
+        "Professional packing, transport, and unpacking for hassle-free relocations.",
+      route: "ultimate-checklist",
+    },
+    {
+      imgName: "counting-boxes",
+      imgAlt: "counting-boxes",
+      title: "Ultimate Checklist",
+      content:
+        "Professional packing, transport, and unpacking for hassle-free relocations.",
+      route: "ultimate-checklist",
+    },
+    {
+      imgName: "shifting-sofa",
+      imgAlt: "shifting sofa",
+      title: "Ultimate Checklist",
+      content:
+        "Professional packing, transport, and unpacking for hassle-free relocations.",
+      route: "ultimate-checklist",
+    },
+    {
+      imgName: "tools",
+      imgAlt: "tools",
+      title: "Ultimate Checklist",
+      content:
+        "Professional packing, transport, and unpacking for hassle-free relocations.",
+      route: "ultimate-checklist",
+    },
+    {
+      imgName: "consulting",
+      imgAlt: "consulting",
+      title: "Ultimate Checklist",
+      content:
+        "Professional packing, transport, and unpacking for hassle-free relocations.",
+      route: "ultimate-checklist",
+    },
+    {
+      imgName: "trusted-packers-movers",
+      imgAlt: "trusted packers movers",
+      title: "Ultimate Checklist",
+      content:
+        "Professional packing, transport, and unpacking for hassle-free relocations.",
+      route: "ultimate-checklist",
+    },
+    {
+      imgName: "front-view-smiley-delivery-man-holding-boxes",
+      imgAlt: "front view smiley delivery man holding boxes",
+      title: "Ultimate Checklist",
+      content:
+        "Professional packing, transport, and unpacking for hassle-free relocations.",
+      route: "ultimate-checklist",
+    },
+    {
+      imgName: "guiding-team",
+      imgAlt: "guiding team",
+      title: "Ultimate Checklist",
+      content:
+        "Professional packing, transport, and unpacking for hassle-free relocations.",
+      route: "ultimate-checklist",
+    },
+    {
+      imgName: "kitchen-items",
+      imgAlt: "kitchen-items",
+      title: "Ultimate Checklist",
+      content:
+        "Professional packing, transport, and unpacking for hassle-free relocations.",
+      route: "ultimate-checklist",
+    },
+    {
+      imgName: "long-distance-moving",
+      imgAlt: "long distance moving",
+      title: "Long Distance Moving",
+      content:
+        "Professional packing, transport, and unpacking for hassle-free relocations.",
+      route: "long-distance-moving",
+    },
+    {
+      imgName: "why-choose-us",
+      imgAlt: "Why Us",
+      title: "Why Us",
+      content:
+        "Professional packing, transport, and unpacking for hassle-free relocations.",
+      route: "why-us",
+    },
+    {
+      imgName: "packing-tips",
+      imgAlt: "packing tips",
+      title: "Packing Tips",
+      content:
+        "Professional packing, transport, and unpacking for hassle-free relocations.",
+      route: "packing-tips",
+    },
+    {
+      imgName: "check-list",
+      imgAlt: "checklist",
+      title: "Ultimate Checklist",
+      content:
+        "Professional packing, transport, and unpacking for hassle-free relocations.",
+      route: "ultimate-checklist",
+    },
+  ];
   return `
-  <section id="blogs" class="contact border-bottom-class">
-    <div class="iyohgi cover-img flex-div col-div white" style="text-align: center; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/delivery-person-getting-parcel-out-delivery.webp');">
+  <section id="blogs" class="contact border-bottom-class" style="background: white;">
+    <div class="iyohgi services-bg-img flex-div col-div" style="background-image: url('assets/packers-and-movers-truck.webp');"></div>
+    <div class="iyohgi flex-div col-div">  
       <h1 class="heading">Blogs</h1>
-      <div class="flex-div row-div" style="margin-top: 30px; gap: 20px; flex-wrap: wrap;">
+      <div class="flex-div row-div" style="flex-wrap: wrap; gap: 50px;">
+        ${blogsData
+          .map((blog) => {
+            return `
+          <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
+            <img class="service-cards-img" height="183px" src="assets/${blog.imgName}.webp" alt=${blog.imgAlt} loading="lazy" />
+            <div class="container">
+              <h3>${blog.title}</h3>
+              <p class="service-cards-text">${blog.content}</p>
+              <div style="text-align: end;"><button class="service-btn" onclick="navigate(${blog.route})">View More</button></div>
+            </div>
+          </div>
+          `;
+          })
+          .join("")}
+      </div>
+      <!--<div class="flex-div row-div" style="margin-top: 30px; gap: 20px; flex-wrap: wrap;">
         <div class="card blogs-cards flex-div col-div">
           <p><b>Ultimate Checklist</b></p>
           <button class="service-btn" onclick="navigate('ultimate-checklist')">View More</button>
@@ -337,87 +516,6 @@ function getBlogsContent() {
         <div class="card blogs-cards flex-div col-div">
           <p><b>Long Distance Moving</b></p>
           <button class="service-btn" onclick="navigate('long-distance-moving')">View More</button>
-        </div>
-      </div>
-      <!--<div id="city-section-content">
-        <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src="assets/blog.jpg"></img>
-        </div>
-        <div class="contact-details" style="text-align: left;">
-          <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>1. The Ultimate Moving Checklist: Everything You Need to Know</b><br />
-          </p>
-          <p>
-          Moving can be a daunting task, but with the right preparation, it can be a smooth and stress-free experience. Here’s the ultimate moving checklist to ensure you don’t miss a thing.<br /><br /><br />
-          <ul style="line-height: 2.0em; padding-left: 25px;">
-          <li><span><b>Eight Weeks Before Moving:</b></span> Start decluttering your home and decide what to keep, sell, or donate. Begin researching professional movers and get quotes.</li>          
-          <li><span><b>Six Weeks Before Moving:</b></span> Gather packing supplies such as boxes, bubble wrap, and tape. Start packing items you don’t use daily.</li>          
-          <li><span><b>Four Weeks Before Moving:</b></span> Confirm your moving date with the moving company. Arrange for packing services if needed.</li>
-          <li><span><b>Two Weeks Before Moving:</b></span> Notify utility companies of your move. Pack an essentials box with items you’ll need immediately after moving.</li>
-          <li><span><b>Moving Day:</b></span> Do a final walk-through of your home to ensure nothing is left behind. Supervise the movers and double-check the inventory list.</li><br />
-          </ul>
-          </p>
-          <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>2. Top 10 Packing Tips for a Stress-Free Move</b><br />
-          </p>
-          <p>
-          Packing is one of the most critical aspects of moving. With these top 10 packing tips, you can ensure your belongings are safe and organized.<br /><br /><br />
-          <ul style="line-height: 2.0em; padding-left: 25px;">
-          <li><span><b>Start Early:</b></span> Begin packing well in advance to avoid last-minute stress.</li>
-          <li><span><b>Use Quality Packing Materials:</b></span> Invest in sturdy boxes, bubble wrap, and packing tape to protect your items.</li>
-          <li><span><b>Label Everything:</b></span> Clearly label each box with its contents and the room it belongs to.</li>
-          <li><span><b>Pack Room by Room:</b></span> Focus on packing one room at a time to stay organized.</li>
-          <li><span><b>Keep Essentials Accessible:</b></span> Pack a separate bag with essentials such as toiletries, medications, and important documents.</li>
-          <li><span><b>Use Wardrobe Boxes:</b></span> These are perfect for transporting clothes without wrinkling them.</li>
-          <li><span><b>Protect Fragile Items:</b></span> Use plenty of padding and mark boxes with fragile items clearly.</li>
-          <li><span><b>Don’t Overpack Boxes:</b></span> Ensure boxes are not too heavy to lift and won’t break under the weight.</li>
-          <li><span><b>Seal Boxes Properly:</b></span> Use packing tape to securely seal each box.</li>
-          <li><span><b>Hire Professional Packers:</b></span> Consider hiring professional packers if you’re short on time or have valuable items.</li><br />
-          </ul>
-          </p>
-          <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>3. How to Choose the Right Moving Company</b><br />
-          </p>
-          <p>
-          Selecting the right moving company can make all the difference in your moving experience. Here’s how to choose a reliable mover.<br /><br /><br />
-          <ul style="line-height: 2.0em; padding-left: 25px;">
-          <li><span><b>Research and Recommendations:</b></span> Ask friends and family for recommendations and read online reviews.</li>
-          <li><span><b>Check Credentials:</b></span> Ensure the moving company is licensed and insured.</li>
-          <li><span><b>Get Multiple Quotes:</b></span> Obtain estimates from several moving companies to compare prices and services.</li>   
-          <li><span><b>Understand the Services Offered:</b></span> Make sure the company provides the services you need, such as packing, storage, or long-distance moving.</li> 
-          <li><span><b>Review the Contract:</b></span> Carefully read the contract before signing and clarify any doubts.</li>
-          <li><span><b>Ask About Hidden Fees:</b></span> Ensure there are no hidden charges that could surprise you later.</li>
-          <li><span><b>Inquire About Their Experience:</b></span> Choose a company with a proven track record in the moving industry.</li><br />
-          </ul>
-          </p>
-          <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>4. Why You Should Consider Professional Packing Services</b><br />
-          </p>
-          <p>
-          Packing can be one of the most time-consuming parts of moving. Here’s why you should consider hiring professional packing services.<br /><br /><br /> 
-          <ul style="line-height: 2.0em; padding-left: 25px;">
-          <li><span><b>Save Time:</b></span> Professional packers can efficiently pack your entire home in a fraction of the time it would take you.</li>
-          <li><span><b>Ensure Safety:</b></span> They use high-quality packing materials and techniques to protect your belongings.</li>
-          <li><span><b>Reduce Stress:</b></span> Letting professionals handle the packing frees up your time and reduces moving-related stress.</li>
-          <li><span><b>Experience and Expertise:</b></span> Professional packers have the experience to pack items of all shapes and sizes securely.</li>
-          <li><span><b>Insurance Coverage:</b></span> Many moving companies offer insurance options for items packed by their professionals, providing peace of mind.</li><br />
-          </ul>
-          </p>
-          <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>5. How to Make Long-Distance Moving Easier</b><br />
-          </p>
-          <p>
-          Long-distance moving comes with its unique set of challenges. Here are some tips to make your cross-country move easier.<br /><br /><br />
-          <ul style="line-height: 2.0em; padding-left: 25px;">
-          <li><span><b>Plan Ahead:</b></span> Start planning your move as early as possible to avoid last-minute issues.</li>
-          <li><span><b>Choose the Right Movers:</b></span> Hire experienced long-distance movers who are licensed and insured.</li>
-          <li><span><b>Stay Organized:</b></span> Keep a detailed inventory of your belongings and important documents.</li>
-          <li><span><b>Pack Smart:</b></span> Use proper packing materials and techniques to protect your items during transit.</li>
-          <li><span><b>Take Care of Utilities:</b></span> Arrange for utility services to be disconnected at your old home and connected at your new one.</li>
-          <li><span><b>Stay in Touch with Your Movers:</b></span> Maintain open communication with your moving company to stay updated on the status of your move.</li>
-          <li><span><b>Prepare for the Unexpected:</b></span> Have a contingency plan in case of delays or other issues.</li> 
-          </ul>
-          </p>
         </div>
       </div>-->
     </div>
@@ -626,7 +724,7 @@ function getServicesContent() {
     ${
       cityOrLinkName === "day-night-packers-movers-services"
         ? `<h1 class="i78bq-2-3 contact-details">Services</h1>`
-        : `<h2 class="i78bq-2-3 contact-details">Decoding Excellence: Illuminating Our Range of Services at Day Night Packers and Movers</h2>`
+        : `<h2 class="i78bq-2-3 contact-details">Available Services At Day Night Packers And Movers</h2>`
     }
     <div id="our-services-content">
       <div class="flex-div row-div" style="flex-wrap: wrap; justify-content: space-around; gap: 20px;">
@@ -1893,7 +1991,7 @@ function createHtmlContent() {
 
   <div id="our-team" class="contact border-bottom-class" style="background: #ffffff;">
     <div class="iyohgi" style="text-align: center;">
-      <h2 class="i78bq-2-3 contact-details ">United in Purpose, Stronger in Unity. 🌟 Dynamics of Day Night Packers and Movers Team</h2>
+      <h2 class="i78bq-2-3 contact-details">Day Night Packers And Movers Team</h2>
       <div id="our-team-content">
         <div class="fill-form-img-div" style="align-self: center;">
           <img alt="team work" loading="lazy" width="400px" height="auto" src="assets/team-work.webp"></img>
@@ -1921,7 +2019,7 @@ function createHtmlContent() {
 
   <div id="client-reviews" class="contact border-bottom-class" style="background: #e9e7e7;">
     <div class="iyohgi" style="text-align: center;">
-      <h2 class="i78bq-2-3 contact-details ">Voices of Satisfaction: Hear What Customers Have to Say about Day Night Packers and Movers</h2>
+      <h2 class="i78bq-2-3 contact-details">Customer Testimonials For Day Night Packers And Movers</h2>
       <div class="flex-div col-div">
         <div>
           <img src="assets/google-reviews.webp" alt="google reviews" height="85px" width="200px"></img>
@@ -1972,7 +2070,7 @@ function createHtmlContent() {
 
   <div id="charges-table" class="contact border-bottom-class" style="background: white;">
   <div class="iyohgi" style="text-align: center;">
-    <h2 class="i78bq-2-3 contact-details">Fair Pricing, Exceptional Value: Explore Packers and Movers Charges at Day Night packers and Movers</h2>
+    <h2 class="i78bq-2-3 contact-details">Movers And Packers Charges</h2>
     <div id="table-parent">
       <table style="border-color: #878181; font-size: 12px;">
         <thead class="white" style="background: #262626;">
@@ -2042,7 +2140,7 @@ function createHtmlContent() {
 
   <div id="process-steps" class="contact border-bottom-class" style="background: #e9e7e7;">
     <div class="iyohgi" style="text-align: center;">
-      <h2 class="i78bq-2-3 contact-details">Unlocking Convenience: The Seamless Steps to Avail Services at Day Night Packers and Movers</h2>
+      <h2 class="i78bq-2-3 contact-details">How To Book Services At Day Night Packers And Movers?</h2>
       <div id="process-steps-content">
         <div style="text-align: left; display: flex; flex-direction: column; gap: 40px; padding: 0px 150px 0px 150px;" class="process-card-parent">
           <div class="card process-cards" style="align-self: flex-start;"><b style="font-size: 30px;">01 </b>  Get in Touch for a Seamless Moving Experience! 📦✨ <br />Contact Us Today!</div>
@@ -2056,7 +2154,7 @@ function createHtmlContent() {
   <div id="services" class="services border-bottom-class iyohgi">
     <div id="iymxg" class="service-info" style="text-align: center;">
       <h2 class="i78bq contact-details" data-custom-content="services">
-        Everywhere You Need Us to Be: Discovering Global Presence of Day Night Packers and Movers
+        Presence of Day Night Packers And Movers
       </h2>
     </div>
     <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
@@ -2124,20 +2222,22 @@ function createHtmlContent() {
   `
   }
 
-  <div id="contact" class="contact border-bottom-class" style="background: #0f0f0f;">
+  <div id="contact-us-section" class="contact border-bottom-class" style="background: #0f0f0f;">
     <div class="iyohgi" style="text-align: center;">
         <div class="flex-div row-div" style="flex-wrap: wrap; align-items: flex-start; justify-content: space-around;">
           <div class="flex-div col-div">
-            <a class="white" href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html"><b><u>About Us</u></b></a>
+            <p class="white" href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html"><b><u>Useful Links</u></b></p>
             <ul style="text-align: left; line-height: 2.0em;">
-              <li><a class="white" href="https://www.daynightpackersmovers.com/our-mission.html">Our Mission</a></li>
-              <li><a class="white" href="https://www.daynightpackersmovers.com/our-team.html">Our Team</a></li>
-              <li><a class="white" href="https://www.daynightpackersmovers.com/our-service.html">Our Services</a></li>
-              <li><a class="white" href="https://www.daynightpackersmovers.com/why-choose-us.html">Why Choose Us</a></li>
+              <li><a class="white" href="https://www.daynightpackersmovers.com/">Home</a>
+              <li><a class="white" href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html">About Us</a></li>
+              <li><a class="white" href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html">Blogs</a></li>
+              <li><a class="white" href="https://www.daynightpackersmovers.com/queries-before-shifting.html">FAQs</a></li>
+              <li><a class="white" href="https://www.daynightpackersmovers.com/day-night-packers-movers-services.html">Services</a></li>
+              <li><a class="white" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html">Contact Us</a></li>
             </ul>
           </div>
           <div class="flex-div col-div">
-            <a class="white" href="https://www.daynightpackersmovers.com/day-night-packers-movers-services.html"><b><u>Services</u></b></a>
+            <p class="white" href="https://www.daynightpackersmovers.com/day-night-packers-movers-services.html"><b><u>Services</u></b></p>
             <ul style="text-align: left; line-height: 2.0em;">
               <li><a class="white" href="https://www.daynightpackersmovers.com/packers-movers-service.html">Packers And Movers</a></li>
               <li><a class="white" href="https://www.daynightpackersmovers.com/car-bike-carrier-service.html">Car And Bike Carrier</a></li>
@@ -2149,7 +2249,7 @@ function createHtmlContent() {
             </ul>
           </div>
           <div class="flex-div col-div">
-            <a class="white" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html"><b><u>Contact Us</u></b></a>
+            <p class="white" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html"><b><u>Contact Us</u></b></p>
             <a class="white" href="">
               <p>302, 1st floor, Near Jagmal Singh Stadium,</p>
               <p> Bhondsi, Gurugram, Haryana, 122102</p>
@@ -2159,7 +2259,7 @@ function createHtmlContent() {
               <a id="i2tpy3-2" aria-label="instagram" href="https://www.instagram.com/daynightpackersand/" target="_blank"><img alt="instagram page link" loading="lazy" id="i3gekg-2" height="37px" width="37px" src=${"assets/insta.svg"} /></a>
               <a id="i2tpy3-6" aria-label="youtube" href="https://www.youtube.com/@DayNightPackersandMovers" target="_blank"><img alt="youtube page link" loading="lazy" id="i3gekg-2" height="37px" width="37px" src=${"assets/youtube.svg"} /></a>
               <a id="i2tpy3-7" aria-label="linkedin" href="https://www.linkedin.com/in/day-night-packers-and-movers-a5488a31a" target="_blank"><img alt="linkedin page link" loading="lazy" id="i3gekg-2" height="37px" width="37px" src=${"assets/linkedin.svg"} /></a>
-              <a id="i2tpy3-8" aria-label="X/twitter" href="https://x.com/daynightpackers" target="_blank"><img alt="X/twitter page link" loading="lazy" id="i3gekg-2" height="37px" width="37px" src=${"assets/twitter-x.svg"} /></a>
+              <a id="i2tpy3-8" aria-label="X/twitter" href="https://x.com/daynightpackers" target="_blank"><img alt="X/twitter page link" loading="lazy" id="i3gekg-2" height="37px" width="37px" src=${"assets/twitter.svg"} /></a>
               <a id="i2tpy3-5" aria-label="whatsapp" href="https://wa.me/+919911198767" target="_blank"><img alt="chat on whatsapp" loading="lazy" id="i3gekg-3" height="37px" width="37px" src=${"assets/whatsapp.svg"} /></a>
               <a id="i2tpy3-3" aria-label="email" href="mailto:daynightpackersandmovers@gmail.com"><img alt="compose email" loading="lazy" id="i3gekg-4" height="37px" width="37px"
                   src=${"assets/email.svg"} /></a>
