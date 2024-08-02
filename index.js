@@ -478,8 +478,8 @@ function getBlogsContent() {
   return `
   <section id="blogs" class="contact border-bottom-class" style="background: white;">
     <div class="iyohgi services-bg-img flex-div col-div" style="background-image: url('assets/packers-and-movers-truck.webp');"></div>
-    <div class="iyohgi flex-div col-div">  
-      <h1 class="heading">Blogs</h1>
+    <div class="iyohgi flex-div col-div" style="gap: 30px;">  
+      <h1><u>Blogs</u></h1>
       <div class="flex-div row-div" style="flex-wrap: wrap; gap: 50px;">
         ${blogsData
           .map((blog) => {
