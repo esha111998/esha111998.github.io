@@ -522,7 +522,7 @@
   .day-night-text-welcome {
     position: absolute;
     top: 20%;
-    left: 10px;
+    left: 20px;
     /* transform: translate(-50%, -50%); */
     color: white;
     text-align: left;
@@ -535,7 +535,7 @@
 
   .day-night-text {
     position: absolute;
-    top: 30%;
+    top: 40%;
     /* left: 50%; */
     /* transform: translate(-50%, -50%); */
     color: white;

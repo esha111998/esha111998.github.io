@@ -178,53 +178,10 @@ function getAboutUsContent() {
         </div>
       </div>
     </div>
-    <!--<div class="iyohgi" style="text-align: center;">
-      <h1 class="i78bq-2-3 contact-details">About Us - Day Night Packers And Movers</h1>
-      <div id="city-section-content">
-        <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="400px" height="auto" src="assets/about-us.jpg"></img>
-        </div>
-        <div class="contact-details" style="text-align: left;">
-          <p>Welcome to Day Night Packers And Movers, your trusted partner for all your moving needs. With years of experience in the industry, we have established ourselves as a reliable and professional moving company dedicated to providing top-notch moving and packing services.</p><br /><br />
-          <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>Our Mission</b><br />
-          </p>
-          <p>Our mission is to make your moving experience as smooth and stress-free as possible. We understand that moving can be a daunting task, and our goal is to handle every aspect of your move with care and efficiency. From the moment you contact us to the final delivery at your new location, we strive to exceed your expectations with our commitment to excellence.</p><br /><br />
-          <p style="margin-bottom: 5px; font-size: 22px;">
-            <b>Our Services</b><br />
-          </p>  
-          <p>At Day Night Packers And Movers, we offer a comprehensive range of moving services to cater to your specific needs:
-          </p><br />
-          <p><b>Residential Moving:</b> Whether you're moving across the street or across the country, our professional movers ensure your belongings are transported safely and securely.<br /><br />
-
-          <b>Commercial Moving:</b> We specialize in office and business relocations, minimizing downtime and ensuring a smooth transition for your company.<br /><br />
-
-          <b>Packing Services:</b> Our expert packers use high-quality materials and techniques to protect your items during transit. We offer full and partial packing services tailored to your needs.<br /><br />
-
-          <b>Storage Solutions:</b> Need storage before, during, or after your move? Our secure storage facilities provide short-term and long-term solutions for your belongings.<br /><br />
-
-          <b>Long-Distance Moving:</b> Moving to a different state? Our experienced movers handle all the logistics of long-distance moves, ensuring your possessions arrive on time and in perfect condition.<br /><br />
-
-          <b>Local Moving:</b> Our local moving services are designed to make your move within the city or region hassle-free and efficient.</p><br /><br />
-
-            <p style="margin-bottom: 5px; font-size: 22px;"><b>Why Choose Us?</b><br /></p>
-
-            <p>Choosing Day Night Packers And Movers means choosing a team of experienced movers who are dedicated to providing exceptional service. Here are a few reasons why our customers trust us with their moves:<br /><br />
-
-            <b>Professionalism:</b> Our movers are trained professionals who handle your belongings with the utmost care and respect.<br /><br />
-
-            <b>Reliability:</b> We pride ourselves on being a reliable moving company that you can count on to show up on time and deliver as promised.<br /><br />
-
-            <b>Experience:</b> With years of experience in the moving industry, we have the knowledge and expertise to handle moves of all sizes and complexities.<br /><br />
-
-            <b>Customer Satisfaction:</b> Our top priority is customer satisfaction. We go above and beyond to ensure that our clients are happy with our services from start to finish.<br /><br />
-
-            <b>Transparent Pricing:</b> We offer competitive and transparent pricing with no hidden fees. Our detailed quotes provide a clear understanding of the costs involved.<br />
-
-        </div>
-      </div>
-    </div>-->
   </section>
+  ${getChargesTableContent()}
+  ${getProcessCardsContent()}
+  ${getOurPresenceContent()}
   `;
 }
 
@@ -245,28 +202,33 @@ function getOurMissionContent() {
       <p style="margin-top: 20px; align-self: flex-start;">Choose Day Night Packers And Movers for a hassle-free moving experience that you can trust.</p>
     </div>
   </section>
+  ${getChargesTableContent()}
+  ${getProcessCardsContent()}
+  ${getOurPresenceContent()}
   `;
 }
 
 function getOurTeamContent() {
   return `
   <section>
-    <div class="cover-img flex-div col-div white" style="align-items: flex-start; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/our-team.webp');">
-      
-        <h1 style="align-self: center; margin-bottom: 30px;" class="heading">Our Team</h1>
-        <ul  class="sub-menus-ul" style="line-height: 2.0em;">
-          <li><b>Highly Motivated Companions:</b> Day Night Packers and Movers are dedicated to ensuring your relocation is stress-free.</li>
-          <li><b>Expertise and Experience:</b> With years of experience in the moving industry, we provide top-notch service and support.</li>
-          
-          <li><b>Local and Long-Distance Moving:</b> Whether you're moving across town or across the country, we've got you covered.</li>
-          
-          <li><b>24/7 Support:</b> We're available round the clock to assist you with your relocation needs.</li>
-          
-          <li><b>Transparent Pricing:</b> No hidden fees, just clear and upfront quotes.</li>
-        </ul>
-        <p style="margin-top: 30px;">Let's move forward with Day Night Packers and Movers. <b><a class="white" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html">Contact us today!</a></b></p>
+    <div class="cover-img flex-div col-div white" style="align-items: flex-start; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/our-team.webp');">      
+      <h1 style="align-self: center; margin-bottom: 30px;" class="heading">Our Team</h1>
+      <ul  class="sub-menus-ul" style="line-height: 2.0em;">
+        <li><b>Highly Motivated Companions:</b> Day Night Packers and Movers are dedicated to ensuring your relocation is stress-free.</li>
+        <li><b>Expertise and Experience:</b> With years of experience in the moving industry, we provide top-notch service and support.</li>
+        
+        <li><b>Local and Long-Distance Moving:</b> Whether you're moving across town or across the country, we've got you covered.</li>
+        
+        <li><b>24/7 Support:</b> We're available round the clock to assist you with your relocation needs.</li>
+        
+        <li><b>Transparent Pricing:</b> No hidden fees, just clear and upfront quotes.</li>
+      </ul>
+      <p style="margin-top: 30px;">Let's move forward with Day Night Packers and Movers. <b><a class="white" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html">Contact us today!</a></b></p>
     </div>
   </section>
+  ${getChargesTableContent()}
+  ${getProcessCardsContent()}
+  ${getOurPresenceContent()}
   `;
 }
 
@@ -276,17 +238,20 @@ function getOurServiceContent() {
     <div class="cover-img flex-div col-div white" style="text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/our-services.webp');">
       <h1 class="heading">Our Service</h1>
       <p style="align-self: flex-start; margin-bottom: 20px; margin-top: 30px;">At Day Night Packers And Movers, we offer a comprehensive range of moving services to cater to your specific needs:
-          </p><br />
-          <p><b>Residential Moving:</b> Whether you're moving across the street or across the country, our professional movers ensure your belongings are transported safely and securely.<br /><br />
+      </p><br />
+      <p><b>Residential Moving:</b> Whether you're moving across the street or across the country, our professional movers ensure your belongings are transported safely and securely.<br /><br />
 
-          <b>Packing Services:</b> Our expert packers use high-quality materials and techniques to protect your items during transit.<br /><br />
+      <b>Packing Services:</b> Our expert packers use high-quality materials and techniques to protect your items during transit.<br /><br />
 
-          <b>Storage Solutions:</b> Our secure storage facilities provide short-term and long-term solutions for your belongings.<br /><br />
+      <b>Storage Solutions:</b> Our secure storage facilities provide short-term and long-term solutions for your belongings.<br /><br />
 
-          <b>Long-Distance Moving:</b> Our experienced movers handle all the logistics of long-distance moves, ensuring your possessions arrive on time and in perfect condition.<br /><br />
+      <b>Long-Distance Moving:</b> Our experienced movers handle all the logistics of long-distance moves, ensuring your possessions arrive on time and in perfect condition.<br /><br />
 
-        </div>
+    </div>
   </section>
+  ${getChargesTableContent()}
+  ${getProcessCardsContent()}
+  ${getOurPresenceContent()}
   `;
 }
 
@@ -309,162 +274,184 @@ function getWhyChooseUsContent() {
       </p>  
     </div>
   </section>
+  ${getChargesTableContent()}
+  ${getProcessCardsContent()}
+  ${getOurPresenceContent()}
   `;
 }
 
-function getBlogsContent() {
+function getBlogsContent(brand) {
   const blogsData = [
     {
       imgName: "best-packer-mover",
       imgAlt: "best packer mover",
-      title: "Ultimate Checklist",
+      title: "Local Moving Guides",
       content:
-        "Professional packing, transport, and unpacking for hassle-free relocations.",
+        "Detailed guides highlighting key aspects of moving to specific neighbourhoods.",
       route: "ultimate-checklist",
+      date: "3 Aug, 24"
     },
     {
       imgName: "packed-material",
       imgAlt: "packed material",
-      title: "Ultimate Checklist",
+      title: "Essential Moving Supplies",
       content:
-        "Professional packing, transport, and unpacking for hassle-free relocations.",
+        "Comprehensive list of necessary items for a smooth and organized move.",
       route: "ultimate-checklist",
+      date: "2 Aug, 24"
     },
     {
       imgName: "professional-packing-service",
       imgAlt: "professional packing service",
-      title: "Ultimate Checklist",
+      title: "Label Boxes",
       content:
-        "Professional packing, transport, and unpacking for hassle-free relocations.",
+        "Effective box labelling techniques for an organized and easy unpacking.",
       route: "ultimate-checklist",
+      date: "3 Jul, 24"
     },
     {
       imgName: "packers-movers-uniform",
       imgAlt: "packers movers uniform",
-      title: "Ultimate Checklist",
+      title: "Moving with Pets",
       content:
-        "Professional packing, transport, and unpacking for hassle-free relocations.",
+        "Tips for ensuring a safe and smooth move with pets.",
       route: "ultimate-checklist",
+      date: "2 Jul, 24"
     },
     {
       imgName: "front-view-smiley-delivery-woman-holding-boxes",
       imgAlt: "front view smiley delivery woman holding boxes",
-      title: "Ultimate Checklist",
+      title: "Safely Packing",
       content:
-        "Professional packing, transport, and unpacking for hassle-free relocations.",
+        "Techniques for securely packing delicate items during a move.",
       route: "ultimate-checklist",
+      date: "3 Jun, 24"
     },
     {
       imgName: "focused",
       imgAlt: "focused",
-      title: "Ultimate Checklist",
+      title: "Moving Day Survival Kit",
       content:
-        "Professional packing, transport, and unpacking for hassle-free relocations.",
+        "Essential items to keep handy for a smooth moving day.",
       route: "ultimate-checklist",
+      date: "2 Jun, 24"
     },
     {
       imgName: "day-packing",
       imgAlt: "day packing",
-      title: "Ultimate Checklist",
+      title: "Packing Electronics",
       content:
-        "Professional packing, transport, and unpacking for hassle-free relocations.",
+        "Protecting and organizing electronic devices during relocation.",
       route: "ultimate-checklist",
+      date: "3 May, 24"
     },
     {
       imgName: "checklist",
       imgAlt: "checklist",
-      title: "Ultimate Checklist",
+      title: "Storage Solutions",
       content:
-        "Professional packing, transport, and unpacking for hassle-free relocations.",
+        "Deciding what to move and finding effective storage options.",
       route: "ultimate-checklist",
+      date: "2 May, 24"
     },
     {
       imgName: "counting-boxes",
       imgAlt: "counting-boxes",
-      title: "Ultimate Checklist",
+      title: "Moving Estimates",
       content:
-        "Professional packing, transport, and unpacking for hassle-free relocations.",
+        "How to interpret moving quotes and estimate costs accurately.",
       route: "ultimate-checklist",
+      date: "3 Apr, 24"
     },
     {
       imgName: "shifting-sofa",
       imgAlt: "shifting sofa",
-      title: "Ultimate Checklist",
+      title: "Budgeting the Move",
       content:
-        "Professional packing, transport, and unpacking for hassle-free relocations.",
+        "Tips and strategies for managing moving expenses and staying on budget.",
       route: "ultimate-checklist",
+      date: "2 Apr, 24"
     },
     {
       imgName: "tools",
       imgAlt: "tools",
-      title: "Ultimate Checklist",
+      title: "DIY Moving",
       content:
-        "Professional packing, transport, and unpacking for hassle-free relocations.",
+        "Planning and executing a successful move without professional help.",
       route: "ultimate-checklist",
+      date: "3 Mar, 24"
     },
     {
       imgName: "consulting",
       imgAlt: "consulting",
-      title: "Ultimate Checklist",
+      title: "Moving in Bad Weather",
       content:
-        "Professional packing, transport, and unpacking for hassle-free relocations.",
+        "Tips for safely handling your move during adverse weather conditions.",
       route: "ultimate-checklist",
+      date: "2 Mar, 24"
     },
     {
       imgName: "trusted-packers-movers",
       imgAlt: "trusted packers movers",
-      title: "Ultimate Checklist",
+      title: "Decluttering Before Move",
       content:
-        "Professional packing, transport, and unpacking for hassle-free relocations.",
+        "Effective strategies for reducing clutter before relocating to a new home.",
       route: "ultimate-checklist",
+      date: "3 Feb, 24"
     },
     {
       imgName: "front-view-smiley-delivery-man-holding-boxes",
       imgAlt: "front view smiley delivery man holding boxes",
-      title: "Ultimate Checklist",
+      title: "Organizing New Location",
       content:
-        "Professional packing, transport, and unpacking for hassle-free relocations.",
+        "Tips for setting up and organizing your new space efficiently.",
       route: "ultimate-checklist",
+      date: "2 Feb, 24"
     },
     {
       imgName: "guiding-team",
       imgAlt: "guiding team",
-      title: "Ultimate Checklist",
+      title: "Eco-Friendly Moving",
       content:
-        "Professional packing, transport, and unpacking for hassle-free relocations.",
+        "Sustainable moving practices and tips for reducing environmental impact.",
       route: "ultimate-checklist",
+      date: "3 Jan, 24"
     },
     {
       imgName: "kitchen-items",
       imgAlt: "kitchen-items",
-      title: "Ultimate Checklist",
+      title: "Customer Success Stories",
       content:
-        "Professional packing, transport, and unpacking for hassle-free relocations.",
+        "Real-life moving experiences showcasing successful and smooth relocations.",
       route: "ultimate-checklist",
+      date: "2 Jan, 24"
     },
     {
       imgName: "long-distance-moving",
       imgAlt: "long distance moving",
       title: "Long Distance Moving",
       content:
-        "Professional packing, transport, and unpacking for hassle-free relocations.",
+        "Essential tips and considerations for a smooth long-distance move.",
       route: "long-distance-moving",
+      date: "3 Dec, 24"
     },
     {
       imgName: "why-choose-us",
       imgAlt: "Why Us",
       title: "Why Us",
       content:
-        "Professional packing, transport, and unpacking for hassle-free relocations.",
+        "Key factors and questions to select a reliable moving company.",
       route: "why-us",
+      date: "2 Dec, 24"
     },
     {
       imgName: "packing-tips",
       imgAlt: "packing tips",
       title: "Packing Tips",
       content:
-        "Professional packing, transport, and unpacking for hassle-free relocations.",
+        "Efficient packing methods to maximize space and protect belongings.",
       route: "packing-tips",
+      date: "3 Nov, 24"
     },
     {
       imgName: "check-list",
@@ -473,6 +460,7 @@ function getBlogsContent() {
       content:
         "Professional packing, transport, and unpacking for hassle-free relocations.",
       route: "ultimate-checklist",
+      date: "2 Nov, 24"
     },
   ];
   return `
@@ -489,37 +477,21 @@ function getBlogsContent() {
             <div class="container">
               <h3>${blog.title}</h3>
               <p class="service-cards-text">${blog.content}</p>
-              <div style="text-align: end;"><button class="service-btn" onclick="navigate(${blog.route})">View More</button></div>
+              <div class="flex-div row-div" style="justify-content: space-between;">
+                <p style="margin-top: 15px; color: ${brand};"><b>${blog.date}</b></p>
+                <button class="service-btn" onclick="navigate(${blog.route})">View More</button>
+              </div>
             </div>
           </div>
           `;
           })
           .join("")}
       </div>
-      <!--<div class="flex-div row-div" style="margin-top: 30px; gap: 20px; flex-wrap: wrap;">
-        <div class="card blogs-cards flex-div col-div">
-          <p><b>Ultimate Checklist</b></p>
-          <button class="service-btn" onclick="navigate('ultimate-checklist')">View More</button>
-        </div>
-        <div class="card blogs-cards flex-div col-div">
-          <p><b>Packing Tips</b></p>
-          <button class="service-btn" onclick="navigate('packing-tips')">View More</button>
-        </div>
-        <div class="card blogs-cards flex-div col-div">
-          <p><b>FAQs</b></p>
-          <button class="service-btn" onclick="navigate('queries-before-shifting')">View More</button>
-        </div>
-        <div class="card blogs-cards flex-div col-div">
-          <p><b>Why Only Us</b></p>
-          <button class="service-btn" onclick="navigate('why-us')">View More</button>
-        </div>
-        <div class="card blogs-cards flex-div col-div">
-          <p><b>Long Distance Moving</b></p>
-          <button class="service-btn" onclick="navigate('long-distance-moving')">View More</button>
-        </div>
-      </div>-->
     </div>
   </section>
+  ${getChargesTableContent()}
+  ${getProcessCardsContent()}
+  ${getOurPresenceContent()}
   `;
 }
 
@@ -538,6 +510,9 @@ function getUltimateChecklistContent() {
       </ul>
     </div>
   </section>
+  ${getChargesTableContent()}
+  ${getProcessCardsContent()}
+  ${getOurPresenceContent()}
   `;
 }
 
@@ -561,6 +536,9 @@ function getPackingTipsContent() {
       </ul>
     </div>
   </section>
+  ${getChargesTableContent()}
+  ${getProcessCardsContent()}
+  ${getOurPresenceContent()}
   `;
 }
 
@@ -581,6 +559,9 @@ function getLongDistanceMovingContent() {
       </ul>
     </div>
   </section>
+  ${getChargesTableContent()}
+  ${getProcessCardsContent()}
+  ${getOurPresenceContent()}
   `;
 }
 
@@ -599,6 +580,9 @@ function getWhyUsContent() {
       </ul>
     </div>
   </section>
+  ${getChargesTableContent()}
+  ${getProcessCardsContent()}
+  ${getOurPresenceContent()}
   `;
 }
 
@@ -672,6 +656,9 @@ function getFAQsContent() {
       </div>
     </div>
   </section>
+  ${getChargesTableContent()}
+  ${getProcessCardsContent()}
+  ${getOurPresenceContent()}
   `;
 }
 
@@ -784,20 +771,278 @@ function getServicesContent() {
             <div style="text-align: end;"><button class="service-btn" onclick="navigate('warehousing-service')">View More</button></div>
           </div>
         </div>
-        <!--<div class="card service-card"><a href="https://www.daynightpackersmovers.com/car-bike-carrier-service.html">Car And Bike Carrier</a></div>
-        <div class="card service-card"><a href="https://www.daynightpackersmovers.com/shipping-service.html">Shipping Service</a></div>
-        <div class="card service-card"><a href="https://www.daynightpackersmovers.com/air-freight-forwarding-service.html">Air Freight Forwarding</a></div>
-        <div class="card service-card"><a href="https://www.daynightpackersmovers.com/sea-freight-forwarding-service.html">Sea Freight Forwarding</a></div>
-        <div class="card service-card"><a href="https://www.daynightpackersmovers.com/home-shifting-service.html">Home Shifting Services</a></div>
-        <div class="card service-card"><a href="https://www.daynightpackersmovers.com/warehousing-service.html">Warehousing Service</a></div>
-        <li><h2><a href="https://www.daynightpackersmovers.com/international-relocation-service.html">International Relocation</a></li>-->
       </div>
-      <!--<div class="fill-form-img-div" style="align-self: center;">
-        <img alt="" loading="lazy" width="600px" height="auto" src="assets/our-service.webp"></img>
-      </div>-->
     </div>
   </div>
 </div>
+${
+  cityOrLinkName === "day-night-packers-movers-services"
+  ? `${getChargesTableContent()} ${getProcessCardsContent()} ${getOurPresenceContent()}`
+  : ``
+}
+
+  `;
+}
+
+function getChargesTableContent() {
+  return `
+  <div id="charges-table" class="contact border-bottom-class" style="background: white;">
+    <div class="iyohgi" style="text-align: center;">
+      <h2 class="i78bq-2-3 contact-details">Movers And Packers Charges</h2>
+      <div id="table-parent">
+        <table style="border-color: #878181; font-size: 12px;">
+          <thead class="white" style="background: #262626;">
+            <tr>
+              <td style="border-top-left-radius: 5px;"><b>Shifting Type</b></td>
+              <td><b>Upto 50 Kms</b></td>
+              <td><b>Upto 500 Kms</b></td>
+              <td><b>Upto 1000 Kms</b></td>
+              <td><b>Upto 1500 Kms</b></td>
+              <td style="border-top-right-radius: 5px;"><b>Upto 2500 Kms</b></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background: white;">
+              <td>1 BHK Home</td>
+              <td>Rs 7,000 to 11,000</td>
+              <td>Rs 12,000 to 16,000</td>
+              <td>Rs 20,000 to 25,000</td>
+              <td>Rs 26,000 to 32,000</td>
+              <td>Rs 30,000 to 35,000</td>
+            </tr>
+            <tr style="background: #ffede8;">
+              <td>2 BHK Home</td>
+              <td>Rs 12,000 to 15,000</td>
+              <td>Rs 20,000 to 23,000</td>
+              <td>Rs 25,000 to 30,000</td>
+              <td>Rs 32,000 to 40,000</td>
+              <td>Rs 40,000 to 45,000</td>
+            </tr>
+            <tr style="background: white;">
+              <td>3 BHK Home</td>
+              <td>Rs 15,000 to 18,000</td>
+              <td>Rs 25,000 to 30,000</td>
+              <td>Rs 35,000 to 40,000</td>
+              <td>Rs 45,000 to 50,000</td>
+              <td>Rs 50,000 to 65,000</td>
+            </tr>
+            <tr style="background: #ffede8;">
+              <td>4 BHK / Villa</td>
+              <td>Rs 25,000 to 30,000</td>
+              <td>Rs 35,000 to 40,000</td>
+              <td>Rs 50,000 to 60,000</td>
+              <td>Rs 55,000 to 65,000</td>
+              <td>Rs 70,000 to 90,000</td>
+            </tr>
+            <tr style="background: white;">
+              <td>Car Transportation</td>
+              <td>By Road with service and fuel cost</td>
+              <td>Rs 12,000 to 14,500</td>
+              <td>Rs 17,000 to 20,000</td>
+              <td>Rs 21,000 to 25,000</td>
+              <td>-</td>
+            </tr>
+            <tr style="background: #ffede8;">
+              <td>Bike Transportation</td>
+              <td>By Road with service and fuel cost</td>
+              <td>Rs 7,000 to 10,500</td>
+              <td>Rs 10,000 to 15,000</td>
+              <td>Rs 15,000 to 18,000</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  `;
+}
+
+function getProcessCardsContent() {
+  return `
+  <div id="process-steps" class="contact border-bottom-class" style="background: #e9e7e7;">
+    <div class="iyohgi" style="text-align: center;">
+      <h2 class="i78bq-2-3 contact-details">How To Book Services At Day Night Packers And Movers?</h2>
+      <div id="process-steps-content">
+        <div style="text-align: left; display: flex; flex-direction: column; gap: 40px; padding: 0px 150px 0px 150px;" class="process-card-parent">
+          <div class="card process-cards" style="align-self: flex-start;"><b style="font-size: 30px;">01 </b> Get in touch for a seamless moving experience! 📦✨ <br /> Share your requirements</div>
+          <div class="card process-cards" style="align-self: flex-end;"><b style="font-size: 30px;">02 </b> Let's get started with a free survey and quotation! Get the best price with us</div>
+          <div class="card process-cards" style="align-self: flex-start;"><b style="font-size: 30px;">03 </b> Ready to make your move? <a href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html">Book with us today</a> and be a part of smooth transition!</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  `;
+}
+
+function getOurPresenceContent() {
+  const locations1 = [
+    "agra",
+    "ahmedabad",
+    "allahabad",
+    "ambala",
+    "ankleshwar",
+    "aurangabad",
+    "bangalore",
+    "bathinda",
+    "belapur Mumbai",
+    "bhiwandi",
+    "bhopal",
+    "bhuvneshwar",
+    "bhuj",
+    "bikaner",
+    "calicut",
+    "chandigarh",
+    "chennai",
+    "cochin",
+    "coimbatore",
+    "cuttack",
+  ];
+  const locations2 = [
+    "dehradun",
+    "delhi",
+    "dwarka",
+    "dwarka-delhi",
+    "faridabad",
+    "gandhidham",
+    "ghaziabad",
+    "goa",
+    "gurgaon",
+    "guwahati",
+    "gwalior",
+    "haridwar",
+    "hisar",
+    "hubli",
+    "hyderabad",
+    "indore",
+    "jabalpur",
+    "jaipur",
+    "jammu",
+    "jamnagar",
+  ];
+  const locations3 = [
+    "jamshedpur",
+    "jodhpur",
+    "kalighat",
+    "kanpur",
+    "kolhapur",
+    "kolkata",
+    "korba",
+    "kottayam",
+    "ludhiana",
+    "lucknow",
+    "madipakkam",
+    "madurai",
+    "manesar",
+    "mangalore",
+    "meerut",
+    "mumbai",
+    "mysore",
+    "nasik",
+    "nagpur",
+    "neemrana",
+  ];
+  const locations4 = [
+    "noida",
+    "pallnerghata-road",
+    "panipat",
+    "patalganga",
+    "patna",
+    "pondicherry",
+    "porur",
+    "portblair",
+    "pune",
+    "raigarh",
+    "raipur",
+    "rajkot",
+    "ranchi",
+    "rudrapur",
+    "rourkela",
+    "sarjapur-road",
+    "secunderabad",
+    "siliguri",
+    "surat",
+    "thoraipakkam",
+  ];
+  const locations5 = [
+    "tirupur",
+    "trichy",
+    "trivandrum",
+    "udaipur",
+    "vadodra",
+    "varanasi",
+    "vapi",
+    "vijayawada",
+    "vizag",
+    "whitefield",
+  ];
+  return `
+  <div id="services" class="services border-bottom-class iyohgi">
+    <div id="iymxg" class="service-info" style="text-align: center;">
+      <h2 class="i78bq contact-details" data-custom-content="services">
+        Presence of Day Night Packers And Movers
+      </h2>
+    </div>
+    <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+      <div class="fill-form-img-div" style="align-self: center;">
+        <img alt="" loading="lazy" width="500px" height="auto" src="assets/around-world.webp"></img>
+      </div>
+      <div id="i12z9" class="services-box">
+        <div id="ilmjk" class="service-cont">
+          <ul id="ipekj" class="service-desc">
+            ${locations1
+              .map((loc) => {
+                return `<li id="packers-movers-in-${loc}"><a class="contact-details" href="https://www.daynightpackersmovers.com/packers-movers-in-${loc}.html">Packers and
+                  Movers in ${extractLocation(loc, 0)}</a></li>`;
+              })
+              .join("")}
+          </ul>
+        </div>
+        <div id="ilmjk-2" class="service-cont">
+          <ul id="ipekj-2" class="service-desc">
+            ${locations2
+              .map((loc) => {
+                return `<li id="packers-movers-in-${loc}"><a class="contact-details" href="https://www.daynightpackersmovers.com/packers-movers-in-${loc}.html">Packers and Movers in ${extractLocation(
+                  loc,
+                  0
+                )}</a></li>`;
+              })
+              .join("")}
+          </ul>
+        </div>
+        <div id="ilmjk-3" class="service-cont">
+          <ul id="ipekj-3" class="service-desc">
+          ${locations3
+            .map((loc) => {
+              return `<li id="packers-movers-in-${loc}"><a class="contact-details" href="https://www.daynightpackersmovers.com/packers-movers-in-${loc}.html">Packers and
+                Movers in ${extractLocation(loc, 0)}</a></li>`;
+            })
+            .join("")}
+          </ul>
+        </div>
+        <div id="ilmjk-4" class="service-cont">
+          <ul id="ipekj-4" class="service-desc">
+          ${locations4
+            .map((loc) => {
+              return `<li id="packers-movers-in-${loc}"><a class="contact-details" href="https://www.daynightpackersmovers.com/packers-movers-in-${loc}.html">Packers and
+                Movers in ${extractLocation(loc, 0)}</a></li>`;
+            })
+            .join("")}
+          </ul>
+        </div>
+        <div id="ilmjk-4" class="service-cont">
+          <ul id="ipekj-4" class="service-desc">
+          ${locations5
+            .map((loc) => {
+              return `<li id="packers-movers-in-${loc}"><a class="contact-details" href="https://www.daynightpackersmovers.com/packers-movers-in-${loc}.html">Packers and
+                Movers in ${extractLocation(loc, 0)}</a></li>`;
+            })
+            .join("")}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
   `;
 }
 
@@ -1645,106 +1890,6 @@ function navigate(route) {
 
 function createHtmlContent() {
   const brand = "#FF5823";
-  const locations1 = [
-    "agra",
-    "ahmedabad",
-    "allahabad",
-    "ambala",
-    "ankleshwar",
-    "aurangabad",
-    "bangalore",
-    "bathinda",
-    "belapur Mumbai",
-    "bhiwandi",
-    "bhopal",
-    "bhuvneshwar",
-    "bhuj",
-    "bikaner",
-    "calicut",
-    "chandigarh",
-    "chennai",
-    "cochin",
-    "coimbatore",
-    "cuttack",
-  ];
-  const locations2 = [
-    "dehradun",
-    "delhi",
-    "dwarka",
-    "dwarka-delhi",
-    "faridabad",
-    "gandhidham",
-    "ghaziabad",
-    "goa",
-    "gurgaon",
-    "guwahati",
-    "gwalior",
-    "haridwar",
-    "hisar",
-    "hubli",
-    "hyderabad",
-    "indore",
-    "jabalpur",
-    "jaipur",
-    "jammu",
-    "jamnagar",
-  ];
-  const locations3 = [
-    "jamshedpur",
-    "jodhpur",
-    "kalighat",
-    "kanpur",
-    "kolhapur",
-    "kolkata",
-    "korba",
-    "kottayam",
-    "ludhiana",
-    "lucknow",
-    "madipakkam",
-    "madurai",
-    "manesar",
-    "mangalore",
-    "meerut",
-    "mumbai",
-    "mysore",
-    "nasik",
-    "nagpur",
-    "neemrana",
-  ];
-  const locations4 = [
-    "noida",
-    "pallnerghata-road",
-    "panipat",
-    "patalganga",
-    "patna",
-    "pondicherry",
-    "porur",
-    "portblair",
-    "pune",
-    "raigarh",
-    "raipur",
-    "rajkot",
-    "ranchi",
-    "rudrapur",
-    "rourkela",
-    "sarjapur-road",
-    "secunderabad",
-    "siliguri",
-    "surat",
-    "thoraipakkam",
-  ];
-  const locations5 = [
-    "tirupur",
-    "trichy",
-    "trivandrum",
-    "udaipur",
-    "vadodra",
-    "varanasi",
-    "vapi",
-    "vijayawada",
-    "vizag",
-    "whitefield",
-  ];
 
   return `
   <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -1841,7 +1986,7 @@ function createHtmlContent() {
       : cityOrLinkName === "why-choose-us"
       ? getWhyChooseUsContent()
       : cityOrLinkName === "self-preparation-before-shifting"
-      ? getBlogsContent()
+      ? getBlogsContent(brand)
       : cityOrLinkName === "ultimate-checklist"
       ? getUltimateChecklistContent()
       : cityOrLinkName === "packing-tips"
@@ -1876,7 +2021,6 @@ function createHtmlContent() {
         <div class="slideshow-container">
           <div class="day-night-slides fade">
             <div class="slideImg" alt="best packers movers" style="position: relative; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)),url('assets/best-packers-movers.webp');">
-            <!--linear-gradient(rgb(255 255 255 / 56%), rgb(0 0 0 / 62%)),-->
               <div class="day-night-text-welcome">
                 <p>Welcome To</p>
                 <div class="first-section-text">
@@ -1894,7 +2038,7 @@ function createHtmlContent() {
           <div class="day-night-slides fade">
             <div class="slideImg" alt="boxes shifting to truck" style="background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/boxes-shifting-to-truck.webp');">
               <div class="day-night-text">
-                <p class="x3-p">Your Helping Hand in Your Next Destiny</p>
+                <p class="x3-p">Your Helping Hand in Your Next Move</p>
                 <h1></h1>
               </div>
             </div>
@@ -1918,24 +2062,10 @@ function createHtmlContent() {
             </div>
           </div>
 
-          <!--<div class="day-night-slides fade">
-            <img class="slideImg" alt="" loading="lazy" src="assets/start-moving.png" height="300px" width="320px">
-            <div class="day-night-text">Relax, We've Got You Covered: Ensuring Customer Satisfaction Every Step of the Way. 😌👌 #Peace Of Mind Service
-            </div>
-          </div>-->
-
           <!-- Next and previous buttons -->
           <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
           <button class="next" onclick="plusSlides(1)">&#10095;</button>
         </div>
-
-        <!--<div style="text-align:center">
-          <span class="day-night-dot" onclick="currentSlide('day-night-slides', 'day-night-dot', 0)"></span>
-          <span class="day-night-dot" onclick="currentSlide('day-night-slides', 'day-night-dot', 1)"></span>
-          <span class="day-night-dot" onclick="currentSlide('day-night-slides', 'day-night-dot', 2)"></span>
-          <span class="day-night-dot" onclick="currentSlide('day-night-slides', 'day-night-dot', 3)"></span>
-          <span class="day-night-dot" onclick="currentSlide('day-night-slides', 'day-night-dot', 4)"></span>
-        </div>-->
       </div>
     </div>
   </div>`
@@ -2068,156 +2198,12 @@ function createHtmlContent() {
     </div>
   </div>
 
-  <div id="charges-table" class="contact border-bottom-class" style="background: white;">
-  <div class="iyohgi" style="text-align: center;">
-    <h2 class="i78bq-2-3 contact-details">Movers And Packers Charges</h2>
-    <div id="table-parent">
-      <table style="border-color: #878181; font-size: 12px;">
-        <thead class="white" style="background: #262626;">
-          <tr>
-            <td style="border-top-left-radius: 5px;"><b>Shifting Type</b></td>
-            <td><b>Upto 50 Kms</b></td>
-            <td><b>Upto 500 Kms</b></td>
-            <td><b>Upto 1000 Kms</b></td>
-            <td><b>Upto 1500 Kms</b></td>
-            <td style="border-top-right-radius: 5px;"><b>Upto 2500 Kms</b></td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr style="background: white;">
-            <td>1 BHK Home</td>
-            <td>Rs 7,000 to 11,000</td>
-            <td>Rs 12,000 to 16,000</td>
-            <td>Rs 20,000 to 25,000</td>
-            <td>Rs 26,000 to 32,000</td>
-            <td>Rs 30,000 to 35,000</td>
-          </tr>
-          <tr style="background: #ffede8;">
-            <td>2 BHK Home</td>
-            <td>Rs 12,000 to 15,000</td>
-            <td>Rs 20,000 to 23,000</td>
-            <td>Rs 25,000 to 30,000</td>
-            <td>Rs 32,000 to 40,000</td>
-            <td>Rs 40,000 to 45,000</td>
-          </tr>
-          <tr style="background: white;">
-            <td>3 BHK Home</td>
-            <td>Rs 15,000 to 18,000</td>
-            <td>Rs 25,000 to 30,000</td>
-            <td>Rs 35,000 to 40,000</td>
-            <td>Rs 45,000 to 50,000</td>
-            <td>Rs 50,000 to 65,000</td>
-          </tr>
-          <tr style="background: #ffede8;">
-            <td>4 BHK / Villa</td>
-            <td>Rs 25,000 to 30,000</td>
-            <td>Rs 35,000 to 40,000</td>
-            <td>Rs 50,000 to 60,000</td>
-            <td>Rs 55,000 to 65,000</td>
-            <td>Rs 70,000 to 90,000</td>
-          </tr>
-          <tr style="background: white;">
-            <td>Car Transportation</td>
-            <td>By Road with service and fuel cost</td>
-            <td>Rs 12,000 to 14,500</td>
-            <td>Rs 17,000 to 20,000</td>
-            <td>Rs 21,000 to 25,000</td>
-            <td>-</td>
-          </tr>
-          <tr style="background: #ffede8;">
-            <td>Bike Transportation</td>
-            <td>By Road with service and fuel cost</td>
-            <td>Rs 7,000 to 10,500</td>
-            <td>Rs 10,000 to 15,000</td>
-            <td>Rs 15,000 to 18,000</td>
-            <td>-</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>
+  ${getChargesTableContent()}
 
-  <div id="process-steps" class="contact border-bottom-class" style="background: #e9e7e7;">
-    <div class="iyohgi" style="text-align: center;">
-      <h2 class="i78bq-2-3 contact-details">How To Book Services At Day Night Packers And Movers?</h2>
-      <div id="process-steps-content">
-        <div style="text-align: left; display: flex; flex-direction: column; gap: 40px; padding: 0px 150px 0px 150px;" class="process-card-parent">
-          <div class="card process-cards" style="align-self: flex-start;"><b style="font-size: 30px;">01 </b>  Get in Touch for a Seamless Moving Experience! 📦✨ <br />Contact Us Today!</div>
-          <div class="card process-cards" style="align-self: flex-end;"><b style="font-size: 30px;">02 </b>  Planning Your Move? Let's Get Started with a Free Survey and Quotation!</div>
-          <div class="card process-cards" style="align-self: flex-start;"><b style="font-size: 30px;">03 </b>  Ready to Make Your Move? Book with Us Today and Be a part of Smooth Transition!</div>
-        </div>
-      </div>
-    </div>
-  </div>
+  ${getProcessCardsContent()}
 
-  <div id="services" class="services border-bottom-class iyohgi">
-    <div id="iymxg" class="service-info" style="text-align: center;">
-      <h2 class="i78bq contact-details" data-custom-content="services">
-        Presence of Day Night Packers And Movers
-      </h2>
-    </div>
-    <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-      <div class="fill-form-img-div" style="align-self: center;">
-        <img alt="" loading="lazy" width="500px" height="auto" src="assets/around-world.webp"></img>
-      </div>
-      <div id="i12z9" class="services-box">
-        <div id="ilmjk" class="service-cont">
-          <ul id="ipekj" class="service-desc">
-            ${locations1
-              .map((loc) => {
-                return `<li id="packers-movers-in-${loc}"><a class="contact-details" href="https://www.daynightpackersmovers.com/packers-movers-in-${loc}.html">Packers and
-                  Movers in ${extractLocation(loc, 0)}</a></li>`;
-              })
-              .join("")}
-          </ul>
-        </div>
-        <div id="ilmjk-2" class="service-cont">
-          <ul id="ipekj-2" class="service-desc">
-            ${locations2
-              .map((loc) => {
-                return `<li id="packers-movers-in-${loc}"><a class="contact-details" href="https://www.daynightpackersmovers.com/packers-movers-in-${loc}.html">Packers and Movers in ${extractLocation(
-                  loc,
-                  0
-                )}</a></li>`;
-              })
-              .join("")}
-          </ul>
-        </div>
-        <div id="ilmjk-3" class="service-cont">
-          <ul id="ipekj-3" class="service-desc">
-          ${locations3
-            .map((loc) => {
-              return `<li id="packers-movers-in-${loc}"><a class="contact-details" href="https://www.daynightpackersmovers.com/packers-movers-in-${loc}.html">Packers and
-                Movers in ${extractLocation(loc, 0)}</a></li>`;
-            })
-            .join("")}
-          </ul>
-        </div>
-        <div id="ilmjk-4" class="service-cont">
-          <ul id="ipekj-4" class="service-desc">
-          ${locations4
-            .map((loc) => {
-              return `<li id="packers-movers-in-${loc}"><a class="contact-details" href="https://www.daynightpackersmovers.com/packers-movers-in-${loc}.html">Packers and
-                Movers in ${extractLocation(loc, 0)}</a></li>`;
-            })
-            .join("")}
-          </ul>
-        </div>
-        <div id="ilmjk-4" class="service-cont">
-          <ul id="ipekj-4" class="service-desc">
-          ${locations5
-            .map((loc) => {
-              return `<li id="packers-movers-in-${loc}"><a class="contact-details" href="https://www.daynightpackersmovers.com/packers-movers-in-${loc}.html">Packers and
-                Movers in ${extractLocation(loc, 0)}</a></li>`;
-            })
-            .join("")}
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>`
-      : ``
+  ${getOurPresenceContent()}
+    `  : ``
   }
   `
   }
