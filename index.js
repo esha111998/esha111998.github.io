@@ -298,43 +298,43 @@ function getBlogsContent(brand) {
       content:
         "Comprehensive list of necessary items for a smooth and organized move.",
       route: "ultimate-checklist",
-      date: "2 Aug, 24"
+      date: "31 Jul, 24"
     },
     {
       imgName: "professional-packing-service",
       imgAlt: "professional packing service",
-      title: "Label Boxes",
+      title: "Customer Success Stories",
       content:
-        "Effective box labelling techniques for an organized and easy unpacking.",
+        "Real-life moving experiences showcasing successful and smooth relocations.",
       route: "ultimate-checklist",
-      date: "3 Jul, 24"
+      date: "29 Jul, 24"
     },
     {
       imgName: "packers-movers-uniform",
       imgAlt: "packers movers uniform",
       title: "Moving with Pets",
       content:
-        "Tips for ensuring a safe and smooth move with pets.",
+        "Tips for ensuring a safe and smooth move with pets. Click to view more",
       route: "ultimate-checklist",
-      date: "2 Jul, 24"
+      date: "15 Jul, 24"
     },
     {
       imgName: "front-view-smiley-delivery-woman-holding-boxes",
       imgAlt: "front view smiley delivery woman holding boxes",
       title: "Safely Packing",
       content:
-        "Techniques for securely packing delicate items during a move.",
+        "Techniques for securely packing delicate items during a move. Click to view more",
       route: "ultimate-checklist",
-      date: "3 Jun, 24"
+      date: "21 Jun, 24"
     },
     {
       imgName: "focused",
       imgAlt: "focused",
       title: "Moving Day Survival Kit",
       content:
-        "Essential items to keep handy for a smooth moving day.",
+        "Essential items to keep handy for a smooth moving day. Click to view more",
       route: "ultimate-checklist",
-      date: "2 Jun, 24"
+      date: "10 Jun, 24"
     },
     {
       imgName: "day-packing",
@@ -343,25 +343,25 @@ function getBlogsContent(brand) {
       content:
         "Protecting and organizing electronic devices during relocation.",
       route: "ultimate-checklist",
-      date: "3 May, 24"
+      date: "30 May, 24"
     },
     {
       imgName: "checklist",
       imgAlt: "checklist",
       title: "Storage Solutions",
       content:
-        "Deciding what to move and finding effective storage options.",
+        "Deciding what to move and finding effective storage options. Click to view more",
       route: "ultimate-checklist",
-      date: "2 May, 24"
+      date: "19 May, 24"
     },
     {
       imgName: "counting-boxes",
       imgAlt: "counting-boxes",
       title: "Moving Estimates",
       content:
-        "How to interpret moving quotes and estimate costs accurately.",
+        "How to interpret moving quotes and estimate costs accurately. Click to view more",
       route: "ultimate-checklist",
-      date: "3 Apr, 24"
+      date: "16 Apr, 24"
     },
     {
       imgName: "shifting-sofa",
@@ -370,7 +370,7 @@ function getBlogsContent(brand) {
       content:
         "Tips and strategies for managing moving expenses and staying on budget.",
       route: "ultimate-checklist",
-      date: "2 Apr, 24"
+      date: "7 Apr, 24"
     },
     {
       imgName: "tools",
@@ -379,7 +379,7 @@ function getBlogsContent(brand) {
       content:
         "Planning and executing a successful move without professional help.",
       route: "ultimate-checklist",
-      date: "3 Mar, 24"
+      date: "26 Mar, 24"
     },
     {
       imgName: "consulting",
@@ -388,7 +388,7 @@ function getBlogsContent(brand) {
       content:
         "Tips for safely handling your move during adverse weather conditions.",
       route: "ultimate-checklist",
-      date: "2 Mar, 24"
+      date: "11 Mar, 24"
     },
     {
       imgName: "trusted-packers-movers",
@@ -397,16 +397,16 @@ function getBlogsContent(brand) {
       content:
         "Effective strategies for reducing clutter before relocating to a new home.",
       route: "ultimate-checklist",
-      date: "3 Feb, 24"
+      date: "19 Feb, 24"
     },
     {
       imgName: "front-view-smiley-delivery-man-holding-boxes",
       imgAlt: "front view smiley delivery man holding boxes",
       title: "Organizing New Location",
       content:
-        "Tips for setting up and organizing your new space efficiently.",
+        "Tips for setting up and organizing your new space efficiently. Click to view more",
       route: "ultimate-checklist",
-      date: "2 Feb, 24"
+      date: "1 Feb, 24"
     },
     {
       imgName: "guiding-team",
@@ -415,34 +415,34 @@ function getBlogsContent(brand) {
       content:
         "Sustainable moving practices and tips for reducing environmental impact.",
       route: "ultimate-checklist",
-      date: "3 Jan, 24"
+      date: "27 Jan, 24"
     },
     {
       imgName: "kitchen-items",
       imgAlt: "kitchen-items",
-      title: "Customer Success Stories",
+      title: "Label Boxes",
       content:
-        "Real-life moving experiences showcasing successful and smooth relocations.",
+        "Effective box labelling techniques for an organized and easy unpacking.",
       route: "ultimate-checklist",
-      date: "2 Jan, 24"
+      date: "11 Jan, 24"
     },
     {
       imgName: "long-distance-moving",
       imgAlt: "long distance moving",
       title: "Long Distance Moving",
       content:
-        "Essential tips and considerations for a smooth long-distance move.",
+        "Essential tips and considerations for a smooth long-distance move. Click to view more",
       route: "long-distance-moving",
-      date: "3 Dec, 24"
+      date: "22 Dec, 23"
     },
     {
       imgName: "why-choose-us",
       imgAlt: "Why Us",
       title: "Why Us",
       content:
-        "Key factors and questions to select a reliable moving company.",
+        "Key factors and questions to select a reliable moving company. Click to view more",
       route: "why-us",
-      date: "2 Dec, 24"
+      date: "7 Dec, 23"
     },
     {
       imgName: "packing-tips",
@@ -451,7 +451,7 @@ function getBlogsContent(brand) {
       content:
         "Efficient packing methods to maximize space and protect belongings.",
       route: "packing-tips",
-      date: "3 Nov, 24"
+      date: "17 Nov, 23"
     },
     {
       imgName: "check-list",
@@ -460,7 +460,7 @@ function getBlogsContent(brand) {
       content:
         "Professional packing, transport, and unpacking for hassle-free relocations.",
       route: "ultimate-checklist",
-      date: "2 Nov, 24"
+      date: "2 Nov, 23"
     },
   ];
   return `
@@ -866,8 +866,8 @@ function getProcessCardsContent() {
       <div id="process-steps-content">
         <div style="text-align: left; display: flex; flex-direction: column; gap: 40px; padding: 0px 150px 0px 150px;" class="process-card-parent">
           <div class="card process-cards" style="align-self: flex-start;"><b style="font-size: 30px;">01 </b> Get in touch for a seamless moving experience! 📦✨ <br /> Share your requirements</div>
-          <div class="card process-cards" style="align-self: flex-end;"><b style="font-size: 30px;">02 </b> Let's get started with a free survey and quotation! Get the best price with us</div>
-          <div class="card process-cards" style="align-self: flex-start;"><b style="font-size: 30px;">03 </b> Ready to make your move? <a href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html">Book with us today</a> and be a part of smooth transition!</div>
+          <div class="card process-cards" style="align-self: flex-end;"><b style="font-size: 30px;">02 </b> Let's get started with a free survey and quotation! <br />Get the best price with us</div>
+          <div class="card process-cards" style="align-self: flex-start;"><b style="font-size: 30px;">03 </b> Ready to make your move? <a href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html"><b>Book with us today</b></a> and be a part of smooth transition!</div>
         </div>
       </div>
     </div>
@@ -2211,6 +2211,10 @@ function createHtmlContent() {
   <div id="contact-us-section" class="contact border-bottom-class" style="background: #0f0f0f;">
     <div class="iyohgi" style="text-align: center;">
         <div class="flex-div row-div" style="flex-wrap: wrap; align-items: flex-start; justify-content: space-around;">
+          <div class="white flex-div col-div">
+            <p><u><b>Why Day Night Packers and Movers</b></u></p>
+            <p>Our mission is to make your household shifting experience as smooth and stress-free as possible. We understand that moving can be a daunting task, and our goal is to handle every aspect of your move with care and efficiency. From the moment you search for "household shifting services near me" and contact us to the final delivery at your new location, we strive to exceed your expectations with our commitment to excellence.</p>
+          </div>
           <div class="flex-div col-div">
             <p class="white" href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html"><b><u>Useful Links</u></b></p>
             <ul style="text-align: left; line-height: 2.0em;">
@@ -2234,7 +2238,7 @@ function createHtmlContent() {
               <li><a class="white" href="https://www.daynightpackersmovers.com/warehousing-service.html">Warehousing Service</a></li>
             </ul>
           </div>
-          <div class="flex-div col-div">
+          <div class="flex-div col-div" style="gap: 20px;">
             <p class="white" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html"><b><u>Contact Us</u></b></p>
             <a class="white" href="">
               <p>302, 1st floor, Near Jagmal Singh Stadium,</p>
@@ -2251,44 +2255,13 @@ function createHtmlContent() {
                   src=${"assets/email.svg"} /></a>
               <a aria-label="mobile" href=tel:+919911198767><img alt="call" loading="lazy" id="i3gekg-5" height="43px" width="43px" src=${"assets/tel.svg"} /></a>
             </div>
+            <img id="logo" alt="" src=${"assets/logo-white.png"} width="auto" height="80px"></img>
           </div>
         </div>
     </div>
   </div>
-  
-  <!--<div id="contact" class="contact border-bottom-class" style="background: #047d9d;">
-    <div class="iyohgi" style="text-align: center;">
-      <h2 class="contact-details ">Doubts Dismissed: Let Us Clear the Path to Clarity with Day Night Packers and Movers</h2>
-      <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-        <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="500px" height="auto" src="assets/contact-us.webp"></img>
-        </div>
-        <div>
-        <p id="iqrh3-2-2" class="contact-details" style="margin-bottom: 10px; margin-top: 20px;">Contact us</p>
-        <div class="igiuzk flex-div row-div">
-          <a id="i2tpy3" aria-label="facebook" href="https://www.facebook.com/profile.php?id=61559284304658" target="_blank"><img alt="facebook page link" loading="lazy" id="i3gekg" height="49px" width="49px" src=${"assets/fb.svg"} /></a>
-          <a id="i2tpy3-2" aria-label="instagram" href="https://www.instagram.com/daynightpackersand/" target="_blank"><img alt="instagram page link" loading="lazy" id="i3gekg-2" height="33px" width="33px" src=${"assets/insta.svg"} /></a>
-          <a id="i2tpy3-6" aria-label="youtube" href="https://www.youtube.com/@DayNightPackersandMovers" target="_blank"><img alt="youtube page link" loading="lazy" id="i3gekg-2" height="33px" width="33px" src=${"assets/youtube.svg"} /></a>
-          <a id="i2tpy3-7" aria-label="linkedin" href="https://www.linkedin.com/in/day-night-packers-and-movers-a5488a31a" target="_blank"><img alt="linkedin page link" loading="lazy" id="i3gekg-2" height="50px" width="48px" src=${"assets/linkedin.svg"} /></a>
-          <a id="i2tpy3-8" aria-label="X/twitter" href="https://x.com/daynightpackers" target="_blank"><img alt="X/twitter page link" loading="lazy" id="i3gekg-2" height="33px" width="33px" src=${"assets/twitter-x.svg"} /></a>
-          <a id="i2tpy3-5" aria-label="whatsapp" href="https://wa.me/+919911198767" target="_blank"><img alt="chat on whatsapp" loading="lazy" id="i3gekg-3" height="40px" width="40px" src=${"assets/whatsapp.svg"} /></a>
-          <a id="i2tpy3-3" aria-label="email" href="mailto:daynightpackersandmovers@gmail.com"><img alt="compose email" loading="lazy" id="i3gekg-4" height="37px" width="37px"
-              src=${"assets/email.svg"} /></a>
-          <a aria-label="mobile" href=tel:+919911198767><img alt="call" loading="lazy" id="i3gekg-5" height="37px" width="37px" src=${"assets/tel.svg"} /></a>
-        </div>
-      </div>
-    </div>
-  </div>-->
 
-  <div class="copyright-footer" style="background-color: aliceblue;">
-    <!--<div class="igiuzk flex-div row-div" style="gap: 20px;">
-      <a href="https://www.daynightpackersmovers.com/"><b>Home</b></a>
-      <a href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html"><b>About Us</b></a>
-      <a href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html"><b>Blogs</b></a>
-      <a href="https://www.daynightpackersmovers.com/queries-before-shifting.html"><b>FAQs</b></a>
-      <a href="https://www.daynightpackersmovers.com/#our-services"><b>Services</b></a>
-      <a href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html"><b>Contact Us</b></a>
-    </div><br />-->
+  <div class="copyright-footer" style="background-color: #0f0f0f;">
     <p id="iy2lbi">© ${new Date().getFullYear()} powered by Day Night Packers And Movers</p>
   </div>
 
