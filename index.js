@@ -288,7 +288,7 @@ function getBlogsContent(brand) {
       title: "Local Moving Guides",
       content:
         "Detailed guides highlighting key aspects of moving to specific neighbourhoods.",
-      route: "ultimate-checklist",
+      route: "local-moving-guides",
       date: "3 Aug, 24"
     },
     {
@@ -297,7 +297,7 @@ function getBlogsContent(brand) {
       title: "Essential Moving Supplies",
       content:
         "Comprehensive list of necessary items for a smooth and organized move.",
-      route: "ultimate-checklist",
+      route: "essential-moving-supplies",
       date: "31 Jul, 24"
     },
     {
@@ -306,7 +306,7 @@ function getBlogsContent(brand) {
       title: "Customer Success Stories",
       content:
         "Real-life moving experiences showcasing successful and smooth relocations.",
-      route: "ultimate-checklist",
+      route: "customer-success-stories",
       date: "29 Jul, 24"
     },
     {
@@ -315,7 +315,7 @@ function getBlogsContent(brand) {
       title: "Moving with Pets",
       content:
         "Tips for ensuring a safe and smooth move with pets. Click to view more",
-      route: "ultimate-checklist",
+      route: "moving-with-pets",
       date: "15 Jul, 24"
     },
     {
@@ -324,7 +324,7 @@ function getBlogsContent(brand) {
       title: "Safely Packing",
       content:
         "Techniques for securely packing delicate items during a move. Click to view more",
-      route: "ultimate-checklist",
+      route: "safely-packing",
       date: "21 Jun, 24"
     },
     {
@@ -333,7 +333,7 @@ function getBlogsContent(brand) {
       title: "Moving Day Survival Kit",
       content:
         "Essential items to keep handy for a smooth moving day. Click to view more",
-      route: "ultimate-checklist",
+      route: "moving-day-survival-kit",
       date: "10 Jun, 24"
     },
     {
@@ -342,7 +342,7 @@ function getBlogsContent(brand) {
       title: "Packing Electronics",
       content:
         "Protecting and organizing electronic devices during relocation.",
-      route: "ultimate-checklist",
+      route: "packing-electronics",
       date: "30 May, 24"
     },
     {
@@ -351,7 +351,7 @@ function getBlogsContent(brand) {
       title: "Storage Solutions",
       content:
         "Deciding what to move and finding effective storage options. Click to view more",
-      route: "ultimate-checklist",
+      route: "storage-solutions",
       date: "19 May, 24"
     },
     {
@@ -360,7 +360,7 @@ function getBlogsContent(brand) {
       title: "Moving Estimates",
       content:
         "How to interpret moving quotes and estimate costs accurately. Click to view more",
-      route: "ultimate-checklist",
+      route: "moving-estimates",
       date: "16 Apr, 24"
     },
     {
@@ -369,7 +369,7 @@ function getBlogsContent(brand) {
       title: "Budgeting the Move",
       content:
         "Tips and strategies for managing moving expenses and staying on budget.",
-      route: "ultimate-checklist",
+      route: "budgeting-the-move",
       date: "7 Apr, 24"
     },
     {
@@ -479,7 +479,7 @@ function getBlogsContent(brand) {
               <p class="service-cards-text">${blog.content}</p>
               <div class="flex-div row-div" style="justify-content: space-between;">
                 <p style="margin-top: 15px; color: ${brand};"><b>${blog.date}</b></p>
-                <button class="service-btn" onclick="navigate(${blog.route})">View More</button>
+                <button class="service-btn" onclick="navigate('${blog.route}')">View More</button>
               </div>
             </div>
           </div>
@@ -1885,6 +1885,7 @@ function extractLocation(str, startIndex) {
 }
 
 function navigate(route) {
+  console.log("route", route);
   window.location.href = `https://www.daynightpackersmovers.com/${route}.html`;
 }
 
@@ -2013,6 +2014,24 @@ function createHtmlContent() {
       ? getHomeShiftingServiceContent()
       : cityOrLinkName === "warehousing-service"
       ? getWarehousingServiceContent()
+      : cityOrLinkName === "local-moving-guides"
+      ? getLocalMovingGuidesContent()
+      : cityOrLinkName === "essential-moving-supplies"
+      ? getEssentialMovingSuppliesContent()
+      : cityOrLinkName === "moving-with-pets"
+      ? getMovingWithPetsContent()
+      : cityOrLinkName === "safely-moving"
+      ? getSafelyMovingContent()
+      : cityOrLinkName === "moving-day-survival-kit"
+      ? getMovingDaySurvivalKitContent()
+      : cityOrLinkName === "packing-electronics"
+      ? getPackingElectronicsContent()
+      : cityOrLinkName === "storage-solutions"
+      ? getStorageSolutionContent()
+      : cityOrLinkName === "moving-estimates"
+      ? getMovingEstimatesContent()
+      : cityOrLinkName === "budgeting-the-move"
+      ? getBudgetingTheMoveContent()
       : `${
           cityOrLinkName === "index" || cityOrLinkName === ""
             ? `<div id="day-night" class="contact border-bottom-class" style="background: #fffbf6;">
@@ -2210,54 +2229,54 @@ function createHtmlContent() {
 
   <div id="contact-us-section" class="contact border-bottom-class" style="background: #0f0f0f;">
     <div class="iyohgi" style="text-align: center;">
-        <div class="flex-div row-div" style="flex-wrap: wrap; align-items: flex-start; justify-content: space-around;">
-          <div class="white flex-div col-div">
-            <p><u><b>Why Day Night Packers and Movers</b></u></p>
-            <p>Our mission is to make your household shifting experience as smooth and stress-free as possible. We understand that moving can be a daunting task, and our goal is to handle every aspect of your move with care and efficiency. From the moment you search for "household shifting services near me" and contact us to the final delivery at your new location, we strive to exceed your expectations with our commitment to excellence.</p>
-          </div>
-          <div class="flex-div col-div">
-            <p class="white" href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html"><b><u>Useful Links</u></b></p>
-            <ul style="text-align: left; line-height: 2.0em;">
-              <li><a class="white" href="https://www.daynightpackersmovers.com/">Home</a>
-              <li><a class="white" href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html">About Us</a></li>
-              <li><a class="white" href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html">Blogs</a></li>
-              <li><a class="white" href="https://www.daynightpackersmovers.com/queries-before-shifting.html">FAQs</a></li>
-              <li><a class="white" href="https://www.daynightpackersmovers.com/day-night-packers-movers-services.html">Services</a></li>
-              <li><a class="white" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html">Contact Us</a></li>
-            </ul>
-          </div>
-          <div class="flex-div col-div">
-            <p class="white" href="https://www.daynightpackersmovers.com/day-night-packers-movers-services.html"><b><u>Services</u></b></p>
-            <ul style="text-align: left; line-height: 2.0em;">
-              <li><a class="white" href="https://www.daynightpackersmovers.com/packers-movers-service.html">Packers And Movers</a></li>
-              <li><a class="white" href="https://www.daynightpackersmovers.com/car-bike-carrier-service.html">Car And Bike Carrier</a></li>
-              <li><a class="white" href="https://www.daynightpackersmovers.com/shipping-service.html">Shipping Service</a></li>
-              <li><a class="white" href="https://www.daynightpackersmovers.com/air-freight-forwarding-service.html">Air Freight Forwarding</a></li>
-              <li><a class="white" href="https://www.daynightpackersmovers.com/sea-freight-forwarding-service.html">Sea Freight Forwarding</a></li>
-              <li><a class="white" href="https://www.daynightpackersmovers.com/home-shifting-service.html">Home Shifting Services</a></li>
-              <li><a class="white" href="https://www.daynightpackersmovers.com/warehousing-service.html">Warehousing Service</a></li>
-            </ul>
-          </div>
-          <div class="flex-div col-div" style="gap: 20px;">
-            <p class="white" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html"><b><u>Contact Us</u></b></p>
-            <a class="white" href="">
-              <p>302, 1st floor, Near Jagmal Singh Stadium,</p>
-              <p> Bhondsi, Gurugram, Haryana, 122102</p>
-            </a>
-            <div class="igiuzk flex-div row-div">
-              <a id="i2tpy3" aria-label="facebook" href="https://www.facebook.com/profile.php?id=61559284304658" target="_blank"><img alt="facebook page link" loading="lazy" id="i3gekg" height="43px" width="43px" src=${"assets/fb.svg"} /></a>
-              <a id="i2tpy3-2" aria-label="instagram" href="https://www.instagram.com/daynightpackersand/" target="_blank"><img alt="instagram page link" loading="lazy" id="i3gekg-2" height="37px" width="37px" src=${"assets/insta.svg"} /></a>
-              <a id="i2tpy3-6" aria-label="youtube" href="https://www.youtube.com/@DayNightPackersandMovers" target="_blank"><img alt="youtube page link" loading="lazy" id="i3gekg-2" height="37px" width="37px" src=${"assets/youtube.svg"} /></a>
-              <a id="i2tpy3-7" aria-label="linkedin" href="https://www.linkedin.com/in/day-night-packers-and-movers-a5488a31a" target="_blank"><img alt="linkedin page link" loading="lazy" id="i3gekg-2" height="37px" width="37px" src=${"assets/linkedin.svg"} /></a>
-              <a id="i2tpy3-8" aria-label="X/twitter" href="https://x.com/daynightpackers" target="_blank"><img alt="X/twitter page link" loading="lazy" id="i3gekg-2" height="37px" width="37px" src=${"assets/twitter.svg"} /></a>
-              <a id="i2tpy3-5" aria-label="whatsapp" href="https://wa.me/+919911198767" target="_blank"><img alt="chat on whatsapp" loading="lazy" id="i3gekg-3" height="37px" width="37px" src=${"assets/whatsapp.svg"} /></a>
-              <a id="i2tpy3-3" aria-label="email" href="mailto:daynightpackersandmovers@gmail.com"><img alt="compose email" loading="lazy" id="i3gekg-4" height="37px" width="37px"
-                  src=${"assets/email.svg"} /></a>
-              <a aria-label="mobile" href=tel:+919911198767><img alt="call" loading="lazy" id="i3gekg-5" height="43px" width="43px" src=${"assets/tel.svg"} /></a>
-            </div>
-            <img id="logo" alt="" src=${"assets/logo-white.png"} width="auto" height="80px"></img>
-          </div>
+      <div class="flex-div row-div" style="gap: 20px; flex-wrap: wrap; align-items: flex-start; justify-content: space-around;">
+        <div class="white flex-div col-div">
+          <p><u><b>Why Day Night Packers and Movers</b></u></p>
+          <p>We understand that moving can be a daunting task, and our goal is to handle every aspect of your move with care and efficiency. From the moment you search for "household shifting services near me" and contact us to the final delivery at your new location, we strive to exceed your expectations with our commitment to excellence.</p>
         </div>
+        <div class="flex-div col-div">
+          <p class="white" href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html"><b><u>Useful Links</u></b></p>
+          <ul style="text-align: left; line-height: 2.0em;">
+            <li><a class="white" href="https://www.daynightpackersmovers.com/">Home</a>
+            <li><a class="white" href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html">About Us</a></li>
+            <li><a class="white" href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html">Blogs</a></li>
+            <li><a class="white" href="https://www.daynightpackersmovers.com/queries-before-shifting.html">FAQs</a></li>
+            <li><a class="white" href="https://www.daynightpackersmovers.com/day-night-packers-movers-services.html">Services</a></li>
+            <li><a class="white" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="flex-div col-div">
+          <p class="white" href="https://www.daynightpackersmovers.com/day-night-packers-movers-services.html"><b><u>Services</u></b></p>
+          <ul style="text-align: left; line-height: 2.0em;">
+            <li><a class="white" href="https://www.daynightpackersmovers.com/packers-movers-service.html">Packers And Movers</a></li>
+            <li><a class="white" href="https://www.daynightpackersmovers.com/car-bike-carrier-service.html">Car And Bike Carrier</a></li>
+            <li><a class="white" href="https://www.daynightpackersmovers.com/shipping-service.html">Shipping Service</a></li>
+            <li><a class="white" href="https://www.daynightpackersmovers.com/air-freight-forwarding-service.html">Air Freight Forwarding</a></li>
+            <li><a class="white" href="https://www.daynightpackersmovers.com/sea-freight-forwarding-service.html">Sea Freight Forwarding</a></li>
+            <li><a class="white" href="https://www.daynightpackersmovers.com/home-shifting-service.html">Home Shifting Services</a></li>
+            <li><a class="white" href="https://www.daynightpackersmovers.com/warehousing-service.html">Warehousing Service</a></li>
+          </ul>
+        </div>
+        <div class="flex-div col-div" style="gap: 20px;">
+          <p class="white" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html"><b><u>Contact Us</u></b></p>
+          <a class="white" href="">
+            <p>302, 1st floor, Near Jagmal Singh Stadium,</p>
+            <p> Bhondsi, Gurugram, Haryana, 122102</p>
+          </a>
+          <div class="flex-div row-div" style="gap: 10px; flex-wrap: wrap;">
+            <a id="i2tpy3" aria-label="facebook" href="https://www.facebook.com/profile.php?id=61559284304658" target="_blank"><img alt="facebook page link" loading="lazy" id="i3gekg" height="43px" width="43px" src=${"assets/fb.svg"} /></a>
+            <a id="i2tpy3-2" aria-label="instagram" href="https://www.instagram.com/daynightpackersand/" target="_blank"><img alt="instagram page link" loading="lazy" id="i3gekg-2" height="37px" width="37px" src=${"assets/insta.svg"} /></a>
+            <a id="i2tpy3-6" aria-label="youtube" href="https://www.youtube.com/@DayNightPackersandMovers" target="_blank"><img alt="youtube page link" loading="lazy" id="i3gekg-2" height="37px" width="37px" src=${"assets/youtube.svg"} /></a>
+            <a id="i2tpy3-7" aria-label="linkedin" href="https://www.linkedin.com/in/day-night-packers-and-movers-a5488a31a" target="_blank"><img alt="linkedin page link" loading="lazy" id="i3gekg-2" height="37px" width="37px" src=${"assets/linkedin.svg"} /></a>
+            <a id="i2tpy3-8" aria-label="X/twitter" href="https://x.com/daynightpackers" target="_blank"><img alt="X/twitter page link" loading="lazy" id="i3gekg-2" height="37px" width="37px" src=${"assets/twitter.svg"} /></a>
+            <a id="i2tpy3-5" aria-label="whatsapp" href="https://wa.me/+919911198767" target="_blank"><img alt="chat on whatsapp" loading="lazy" id="i3gekg-3" height="37px" width="37px" src=${"assets/whatsapp.svg"} /></a>
+            <a id="i2tpy3-3" aria-label="email" href="mailto:daynightpackersandmovers@gmail.com"><img alt="compose email" loading="lazy" id="i3gekg-4" height="37px" width="37px"
+                src=${"assets/email.svg"} /></a>
+            <a aria-label="mobile" href=tel:+919911198767><img alt="call" loading="lazy" id="i3gekg-5" height="43px" width="43px" src=${"assets/tel.svg"} /></a>
+          </div>
+          <img id="logo" alt="" src=${"assets/logo-white.png"} width="auto" height="80px"></img>
+        </div>
+      </div>
     </div>
   </div>
 

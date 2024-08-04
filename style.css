@@ -175,9 +175,9 @@
     position: relative;
     background: #ffae15;
   }
-  .igiuzk>a{
+  /* .igiuzk>a{
     margin-right:10px;
-  }
+  } */
   .copyright-footer{
     padding: 25px;
     border-top: 1px solid rgb(45 45 46);
@@ -910,9 +910,9 @@
     #logo{
       height: 70px;
     }
-    .igiuzk{
+    /* .igiuzk{
       flex-direction: column;
-    }
+    } */
     .iyohgi{
       padding: 20px;
     }
@@ -988,9 +988,9 @@
     #logo{
       height: 70px;
     }
-    .igiuzk{
+    /* .igiuzk{
       flex-direction: column;
-    }
+    } */
     .iyohgi{
       padding: 20px;
     }
