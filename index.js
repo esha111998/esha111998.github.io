@@ -378,7 +378,7 @@ function getBlogsContent(brand) {
       title: "DIY Moving",
       content:
         "Planning and executing a successful move without professional help.",
-      route: "ultimate-checklist",
+      route: "diy-moving",
       date: "26 Mar, 24"
     },
     {
@@ -387,7 +387,7 @@ function getBlogsContent(brand) {
       title: "Moving in Bad Weather",
       content:
         "Tips for safely handling your move during adverse weather conditions.",
-      route: "ultimate-checklist",
+      route: "moving-in-bad-weather",
       date: "11 Mar, 24"
     },
     {
@@ -396,7 +396,7 @@ function getBlogsContent(brand) {
       title: "Decluttering Before Move",
       content:
         "Effective strategies for reducing clutter before relocating to a new home.",
-      route: "ultimate-checklist",
+      route: "decluttering-before-move",
       date: "19 Feb, 24"
     },
     {
@@ -405,7 +405,7 @@ function getBlogsContent(brand) {
       title: "Organizing New Location",
       content:
         "Tips for setting up and organizing your new space efficiently. Click to view more",
-      route: "ultimate-checklist",
+      route: "organizing-new-location",
       date: "1 Feb, 24"
     },
     {
@@ -414,16 +414,16 @@ function getBlogsContent(brand) {
       title: "Eco-Friendly Moving",
       content:
         "Sustainable moving practices and tips for reducing environmental impact.",
-      route: "ultimate-checklist",
+      route: "eco-friendly-moving",
       date: "27 Jan, 24"
     },
     {
       imgName: "kitchen-items",
-      imgAlt: "kitchen-items",
+      imgAlt: "kitchen items",
       title: "Label Boxes",
       content:
         "Effective box labelling techniques for an organized and easy unpacking.",
-      route: "ultimate-checklist",
+      route: "label-boxes",
       date: "11 Jan, 24"
     },
     {
@@ -497,19 +497,140 @@ function getBlogsContent(brand) {
 
 function getUltimateChecklistContent() {
   return `
-  <section>
-    <div class="cover-img flex-div col-div white" style="text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/check-list.webp');">
-      <h1 class="heading">The Ultimate Moving Checklist</h1>
-      <p style="align-self: flex-start; margin-bottom: 5px; margin-top: 30px;">Moving can be a daunting task, but with the right preparation, it can be a smooth and stress-free experience. Here’s the ultimate moving checklist to ensure you don’t miss a thing.</p><br /><br /> 
-      <ul style="line-height: 2.0em; padding-left: 25px;">
-        <li><span><b>Eight Weeks Before Moving:</b></span> Start decluttering your home and decide what to keep, sell, or donate. Begin researching professional movers and get quotes.</li>          
-        <li><span><b>Six Weeks Before Moving:</b></span> Gather packing supplies such as boxes, bubble wrap, and tape. Start packing items you don’t use daily.</li>          
-        <li><span><b>Four Weeks Before Moving:</b></span> Confirm your moving date with the moving company. Arrange for packing services if needed.</li>
-        <li><span><b>Two Weeks Before Moving:</b></span> Notify utility companies of your move. Pack an essentials box with items you’ll need immediately after moving.</li>
-        <li><span><b>Moving Day:</b></span> Do a final walk-through of your home to ensure nothing is left behind. Supervise the movers and double-check the inventory list.</li><br />
-      </ul>
-    </div>
-  </section>
+    <main class="contact-details border-bottom-class" style="background: #ffffff;">
+      <section class="services-bg-img flex-div col-div white" style="background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/check-list.webp');">
+      </section>
+      <section class="iyohgi" style="text-align: left;">
+        <h1 style="text-align: center;">Comprehensive Moving Checklist</h1>
+        <p>Relocating to a new home can be an overwhelming experience, filled with numerous tasks and details to manage. One of the most effective ways to ensure a smooth move is to use a comprehensive checklist that covers every aspect of the moving process. This guide will help you navigate the complexities of moving while keeping an eye on packers and movers cost, ensuring you stay organized and budget-conscious.</p>
+        <br />
+        <h2>1. Plan Your Move</h2>
+        <h3>Set a Moving Date:</h3>
+        <ul>
+            <li>Choose a moving date that works best for your schedule. Consider factors like weather, peak moving seasons, and your personal calendar.</li>
+            <li>If possible, plan your move during off-peak times to potentially save on packers and movers cost.</li>
+        </ul>
+        <br />
+        <h3>Create a Moving Budget:</h3>
+        <ul>
+            <li>Develop a detailed budget for your move. Include costs for packing materials, moving services, transportation, and any additional expenses like storage or insurance.</li>
+            <li>Obtain quotes from multiple packers and movers to compare prices and find the best value for your budget.</li>
+        </ul>
+        <br />
+        <h3>Research and Hire Movers:</h3>
+        <ul>
+            <li>Research reputable packers and movers. Look for companies with positive reviews, proper licenses, and transparent pricing.</li>
+            <li>Request quotes from several moving companies and compare their services, fees, and customer reviews to make an informed decision.</li>
+        </ul>
+        <br />
+        <h2>2. Prepare for Packing</h2>
+        <h3>Declutter Your Home:</h3>
+        <ul>
+            <li>Sort through your belongings and decide what to keep, donate, sell, or discard. Reducing the number of items you move can lower your packers and movers cost and simplify the packing process.</li>
+            <li>Host a garage sale or use online marketplaces to sell items you no longer need. Donate usable items to local charities.</li>
+        </ul>
+        <br />
+        <h3>Gather Packing Supplies:</h3>
+        <ul>
+            <li>Collect all necessary packing supplies, including boxes, bubble wrap, packing paper, tape, and markers.</li>
+            <li>Consider using specialty boxes for items like dishes, electronics, and clothing. Many moving companies offer packing materials for purchase or rental.</li>
+        </ul>
+        <br />
+        <h3>Create a Packing Plan:</h3>
+        <ul>
+            <li>Plan your packing strategy by prioritizing which rooms to pack first. Start with less frequently used items and work your way to daily essentials.</li>
+            <li>Label each box with its contents and the room it belongs to. Clear labeling helps movers and makes unpacking more organized.</li>
+        </ul>
+        <br />
+        <h2>3. Coordinate with Your Movers</h2>
+        <h3>Schedule Packing and Moving Services:</h3>
+        <ul>
+            <li>Confirm the moving date and time with your packers and movers. Discuss any special requests or requirements you may have.</li>
+            <li>If you opt for professional packing services, schedule this in advance to ensure availability.</li>
+        </ul>
+        <br />
+        <h3>Review the Moving Contract:</h3>
+        <ul>
+            <li>Carefully review the moving contract and ensure it includes all agreed-upon services, costs, and policies.</li>
+            <li>Check for any hidden fees or additional charges that may apply. Clarify any uncertainties with the moving company before signing.</li>
+        </ul>
+        <br />
+        <h3>Prepare a Moving Day Checklist:</h3>
+        <ul>
+            <li>Create a checklist of tasks to complete on moving day. Include items like ensuring utilities are disconnected, finalizing cleaning, and preparing an essentials kit.</li>
+            <li>Provide clear instructions to the movers and ensure they understand your labeling system and any special handling requirements.</li>
+        </ul>
+        <br />
+        <h2>4. Handle Essential Tasks Before the Move</h2>
+        <h3>Notify Change of Address:</h3>
+        <ul>
+            <li>Update your address with the postal service, banks, insurance companies, and other relevant institutions. This ensures that your mail and important documents are redirected to your new home.</li>
+            <li>Notify friends, family, and any subscription services of your new address to avoid missing important correspondence.</li>
+        </ul>
+        <br />
+        <h3>Arrange Utility Services:</h3>
+        <ul>
+            <li>Schedule disconnection of utilities at your current home and setup at your new residence. This includes electricity, water, gas, internet, and any other essential services.</li>
+            <li>Verify that utilities are active and functioning in your new home before moving in.</li>
+        </ul>
+        <br />
+        <h3>Prepare for Moving Day:</h3>
+        <ul>
+            <li>Pack a moving day essentials kit with items you’ll need immediately upon arrival, such as toiletries, snacks, medications, and a change of clothes.</li>
+            <li>Ensure that all packed boxes are labeled and ready for transport. Conduct a final walkthrough of your home to check for any forgotten items.</li>
+        </ul>
+        <br />
+        <h2>5. Execute the Move</h2>
+        <h3>Oversee the Moving Process:</h3>
+        <ul>
+            <li>Be present on moving day to supervise the packing and loading process. Ensure that the movers handle your belongings with care and follow your instructions.</li>
+            <li>Double-check that all items are loaded onto the moving truck and verify that nothing is left behind.</li>
+        </ul>
+        <br />
+        <h3>Manage Your Inventory:</h3>
+        <ul>
+            <li>Keep a detailed inventory of your items as they are loaded and unloaded. This helps ensure that everything arrives at your new home and allows you to address any issues promptly.</li>
+            <li>Take note of any damaged or missing items and report them to the moving company as soon as possible.</li>
+        </ul>
+        <br />
+        <h2>6. Settle into Your New Home</h2>
+        <h3>Unpack Strategically:</h3>
+        <ul>
+            <li>Begin unpacking essential items first, such as kitchenware, bedding, and toiletries. This helps you get settled quickly and comfortably.</li>
+            <li>Follow your labeling system to unpack boxes room by room. This organized approach prevents confusion and ensures that items are placed in their designated rooms.</li>
+        </ul>
+        <br />
+        <h3>Organize and Clean:</h3>
+        <ul>
+            <li>As you unpack, take the opportunity to organize your new space and clean up any packing materials. Dispose of boxes and packing supplies responsibly, recycling where possible.</li>
+            <li>Set up your new home according to your preferences and needs, creating a functional and comfortable living environment.</li>
+        </ul>
+        <br />
+        <h3>Update Your Information:</h3>
+        <ul>
+            <li>Update your address with relevant organizations, such as your employer, healthcare providers, and any other entities that need your new contact information.</li>
+            <li>Register your vehicle, if applicable, and update your driver’s license with your new address.</li>
+        </ul>
+        <br />
+        <h2>7. Post-Move Follow-Up</h2>
+        <h3>Review and Settle Accounts:</h3>
+        <ul>
+            <li>Review the final invoice from your moving company to ensure it aligns with the initial quote and includes all agreed-upon services.</li>
+            <li>Address any discrepancies or concerns with the moving company promptly to resolve issues.</li>
+        </ul>
+        <br />
+        <h3>Provide Feedback:</h3>
+        <ul>
+            <li>Share your moving experience by leaving reviews and feedback for the packers and movers you used. This helps future customers make informed decisions and provides valuable insights for the moving company.</li>
+        </ul>
+        <br />
+        <h3>Plan for Future Needs:</h3>
+        <ul>
+            <li>Consider any additional needs for your new home, such as furniture assembly, home improvement projects, or local services.</li>
+            <li>Keep track of any ongoing maintenance or adjustments needed in your new home to ensure it remains in good condition.</li>
+        </ul>
+      </section>
+    </main>
   ${getChargesTableContent()}
   ${getProcessCardsContent()}
   ${getOurPresenceContent()}
@@ -544,21 +665,135 @@ function getPackingTipsContent() {
 
 function getLongDistanceMovingContent() {
   return `
-  <section>
-    <div class="cover-img flex-div col-div white" style="text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/long-distance-moving.webp');">
-      <h1 class="heading">How to Make Long-Distance Moving Easier</h1>
-      <p style="align-self: flex-start; margin-bottom: 5px; margin-top: 30px;">Long-distance moving comes with its unique set of challenges. Here are some tips to make your cross-country move easier.</p><br /><br /> 
-      <ul style="line-height: 2.0em; padding-left: 25px;">
-        <li><span><b>Plan Ahead:</b></span> Start planning your move as early as possible to avoid last-minute issues.</li>
-        <li><span><b>Choose the Right Movers:</b></span> Hire experienced long-distance movers who are licensed and insured.</li>
-        <li><span><b>Stay Organized:</b></span> Keep a detailed inventory of your belongings and important documents.</li>
-        <li><span><b>Pack Smart:</b></span> Use proper packing materials and techniques to protect your items during transit.</li>
-        <li><span><b>Take Care of Utilities:</b></span> Arrange for utility services to be disconnected at your old home and connected at your new one.</li>
-        <li><span><b>Stay in Touch with Your Movers:</b></span> Maintain open communication with your moving company to stay updated on the status of your move.</li>
-        <li><span><b>Prepare for the Unexpected:</b></span> Have a contingency plan in case of delays or other issues.</li> 
-      </ul>
-    </div>
-  </section>
+    <main class="contact-details border-bottom-class" style="background: #ffffff;">
+      <section class="services-bg-img flex-div col-div white" style="background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/long-distance-moving.webp');">
+      </section>
+      <section class="iyohgi" style="text-align: left;">
+        <h1 style="text-align: center;">Comprehensive Guide to Managing Your Long Distance Move</h1>
+        <p>Long distance moving can be a daunting task, requiring careful planning and execution. Whether you're relocating across states or across the country, a successful long distance move involves more than just packing up your belongings. It requires strategic planning, effective coordination with packers and movers, and attention to detail. Here’s a comprehensive guide to help you manage your long distance move smoothly and efficiently.</p>
+        <br />
+        <h2>1. Plan Your Move Early</h2>
+        <h3>Start Planning in Advance:</h3>
+        <ul>
+            <li>Begin planning your move as early as possible. Ideally, start the process at least 8-12 weeks before your moving date. This allows ample time to organize, pack, and coordinate with packers and movers.</li>
+            <li>Create a moving checklist to keep track of important tasks, deadlines, and items that need attention.</li>
+        </ul>
+        <br />
+        <h3>Research and Hire Packers and Movers:</h3>
+        <ul>
+            <li>Research and hire reputable packers and movers experienced in long distance relocations. Look for companies with positive reviews, valid licenses, and transparent pricing.</li>
+            <li>Obtain multiple quotes from different movers to compare costs and services. Ensure that the quotes include all potential charges and are based on a detailed inventory of your belongings.</li>
+        </ul>
+        <br />
+        <h2>2. Declutter Before Packing</h2>
+        <h3>Sort Through Your Belongings:</h3>
+        <ul>
+            <li>Declutter your home before packing to reduce the volume of items you need to move. Sort your belongings into categories: keep, donate, sell, and discard.</li>
+            <li>Consider holding a garage sale or using online platforms to sell items you no longer need. Donate usable items to local charities or shelters.</li>
+        </ul>
+        <br />
+        <h3>Dispose of Unnecessary Items:</h3>
+        <ul>
+            <li>Properly dispose of items that are no longer usable or needed. Recycle electronics, batteries, and hazardous materials according to local regulations.</li>
+            <li>By reducing the number of items, you can lower moving costs and simplify the packing process.</li>
+        </ul>
+        <br />
+        <h2>3. Pack Efficiently and Safely</h2>
+        <h3>Use Quality Packing Materials:</h3>
+        <ul>
+            <li>Invest in high-quality packing materials to protect your belongings during transit. Use sturdy boxes, bubble wrap, packing paper, and packing tape.</li>
+            <li>Label boxes clearly with their contents and the room they belong to. This helps ensure that items are unpacked in the right rooms and reduces confusion.</li>
+        </ul>
+        <br />
+        <h3>Pack Strategically:</h3>
+        <ul>
+            <li>Pack items room by room to stay organized. Start with non-essential items and gradually move on to essentials as the moving date approaches.</li>
+            <li>Disassemble large furniture and wrap delicate items carefully to prevent damage. Use blankets and padding for extra protection.</li>
+        </ul>
+        <br />
+        <h3>Create an Inventory:</h3>
+        <ul>
+            <li>Create a detailed inventory of your belongings before the move. This helps keep track of items and ensures nothing is lost or damaged during transit.</li>
+            <li>Take photos of valuable or fragile items for insurance purposes and to assist with claims if necessary.</li>
+        </ul>
+        <br />
+        <h2>4. Coordinate with Packers and Movers</h2>
+        <h3>Communicate Clearly:</h3>
+        <ul>
+            <li>Provide clear instructions to your packers and movers regarding the handling of your items. Discuss any special requirements for fragile or valuable items.</li>
+            <li>Confirm the moving date, time, and any additional services you may need, such as packing or unpacking assistance.</li>
+        </ul>
+        <br />
+        <h3>Understand the Moving Contract:</h3>
+        <ul>
+            <li>Review the moving contract carefully before signing. Ensure it includes details about services, pricing, and policies for handling delays or damage.</li>
+            <li>Ask questions about the moving process, insurance coverage, and any potential additional fees.</li>
+        </ul>
+        <br />
+        <h3>Stay in Contact:</h3>
+        <ul>
+            <li>Maintain regular contact with your packers and movers throughout the process. Confirm arrival times, provide updates on any changes, and address any concerns promptly.</li>
+            <li>Provide contact information for both your old and new addresses to facilitate smooth communication.</li>
+        </ul>
+        <br />
+        <h2>5. Prepare for the Moving Day</h2>
+        <h3>Prepare Your Home:</h3>
+        <ul>
+            <li>On moving day, ensure that all items are packed and ready for transport. Clear pathways to make it easier for movers to navigate your home.</li>
+            <li>Prepare a moving day kit with essentials such as toiletries, snacks, medications, and important documents. Keep this kit easily accessible.</li>
+        </ul>
+        <br />
+        <h3>Supervise the Move:</h3>
+        <ul>
+            <li>Supervise the moving process to ensure everything goes smoothly. Confirm that items are loaded correctly and follow your instructions regarding handling and placement.</li>
+            <li>Keep track of the inventory and check off items as they are loaded onto the moving truck.</li>
+        </ul>
+        <br />
+        <h3>Handle Payments and Paperwork:</h3>
+        <ul>
+            <li>Review and sign any necessary paperwork before the movers leave. Make sure you understand the payment process and settle any fees as agreed.</li>
+            <li>Keep copies of all documentation, including the moving contract, inventory list, and payment receipts.</li>
+        </ul>
+        <br />
+        <h2>6. Unpack and Settle into Your New Home</h2>
+        <h3>Inspect Your Belongings:</h3>
+        <ul>
+            <li>Upon arrival at your new home, inspect your belongings for any damage or missing items. Report any issues to the moving company promptly.</li>
+            <li>Unpack essential items first, such as kitchenware, bedding, and personal items. This helps you settle in quickly and comfortably.</li>
+        </ul>
+        <br />
+        <h3>Organize Your Space:</h3>
+        <ul>
+            <li>As you unpack, organize your new space according to your needs and preferences. Place items in their designated rooms and set up furniture and appliances.</li>
+            <li>Use the opportunity to declutter and reorganize your belongings, making your new home functional and welcoming.</li>
+        </ul>
+        <br />
+        <h3>Get Settled:</h3>
+        <ul>
+            <li>Take time to familiarize yourself with your new neighborhood. Locate nearby amenities, such as grocery stores, medical facilities, and schools.</li>
+            <li>Register your new address with relevant institutions, update your address with postal services, and transfer utility services to your new home.</li>
+        </ul>
+        <br />
+        <h2>7. Manage Post-Move Tasks</h2>
+        <h3>Update Your Information:</h3>
+        <ul>
+            <li>Update your address with banks, insurance companies, and other relevant institutions. Ensure that all important documents and correspondence are redirected to your new address.</li>
+            <li>Notify friends, family, and other contacts of your new address and contact information.</li>
+        </ul>
+        <br />
+        <h3>Review the Moving Experience:</h3>
+        <ul>
+            <li>Evaluate your experience with the packers and movers. Provide feedback or reviews based on their performance, which can help future customers make informed decisions.</li>
+            <li>Address any unresolved issues with the moving company, such as damage claims or discrepancies in the inventory.</li>
+        </ul>
+        <br />
+        <h3>Maintain Organization:</h3>
+        <ul>
+            <li>Continue to maintain organization in your new home by setting up systems for managing bills, documents, and household items.</li>
+            <li>Develop a routine for household chores and maintenance to keep your new space in order and functioning smoothly.</li>
+        </ul>
+      </section>
+    </main>
   ${getChargesTableContent()}
   ${getProcessCardsContent()}
   ${getOurPresenceContent()}
@@ -567,19 +802,62 @@ function getLongDistanceMovingContent() {
 
 function getWhyUsContent() {
   return `
-  <section>
-    <div class="cover-img flex-div col-div white" style="text-align: left; background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/professional-packing-services.webp');">
-      <h1 class="heading">Why You Should Consider Professional Packing Services</h1>
-      <p style="align-self: flex-start; margin-bottom: 5px; margin-top: 30px;">Packing can be one of the most time-consuming parts of moving. Here’s why you should consider hiring professional packing services.</p><br /><br /> 
-      <ul style="line-height: 2.0em; padding-left: 25px;">
-        <li><span><b>Save Time:</b></span> Professional packers can efficiently pack your entire home in a fraction of the time it would take you.</li>
-        <li><span><b>Ensure Safety:</b></span> They use high-quality packing materials and techniques to protect your belongings.</li>
-        <li><span><b>Reduce Stress:</b></span> Letting professionals handle the packing frees up your time and reduces moving-related stress.</li>
-        <li><span><b>Experience and Expertise:</b></span> Professional packers have the experience to pack items of all shapes and sizes securely.</li>
-        <li><span><b>Insurance Coverage:</b></span> Many moving companies offer insurance options for items packed by their professionals, providing peace of mind.</li><br />
-      </ul>
-    </div>
-  </section>
+    <main class="contact-details border-bottom-class" style="background: #ffffff;">
+      <section class="services-bg-img flex-div col-div white" style="background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/why-choose-us.webp');">
+      </section>
+      <section class="iyohgi" style="text-align: left;">
+        <h1 style="text-align: center;">Why Choose Us for Your Move?</h2>
+        <p>Moving to a new home is a significant life event that comes with its own set of challenges. It’s not just about transporting your belongings from one place to another; it’s about ensuring a smooth, stress-free transition to your new abode. When it comes to house shifting services, the choice of moving company can make all the difference. At [Your Company Name], we pride ourselves on providing exceptional house shifting services that stand out from the rest. Here’s why choosing us is the best decision for your move.</p>
+        <br />
+        <h3>1. Comprehensive Moving Solutions</h3>
+        <ul>
+            <li><strong>End-to-End Service:</strong> We offer a full range of house shifting services, from packing and loading to transportation and unpacking. Our end-to-end solutions ensure that every aspect of your move is handled with precision and care. Whether you’re moving across the street or across the country, our team is equipped to manage every detail, ensuring a seamless transition.</li>
+            <li><strong>Customizable Packages:</strong> Our services are tailored to meet your specific needs. We provide customizable moving packages that can include everything from packing materials and professional packing services to furniture assembly and storage solutions. You can choose the services that best fit your requirements and budget, ensuring that you receive exactly what you need without paying for unnecessary extras.</li>
+        </ul>
+        <br />
+        <h3>2. Professional and Experienced Team</h3>
+        <ul>
+            <li><strong>Skilled Professionals:</strong> Our team of movers and packers is highly trained and experienced in handling all types of household items. From delicate antiques to bulky furniture, we have the expertise to ensure that your belongings are transported safely. We use the latest techniques and equipment to handle your items with care, minimizing the risk of damage and ensuring a smooth moving process.</li>
+            <li><strong>Customer-Centric Approach:</strong> We prioritize customer satisfaction and strive to exceed your expectations. Our team is dedicated to providing a positive moving experience by addressing your concerns, answering your questions, and keeping you informed throughout the process. We understand that moving can be stressful, and we aim to make the experience as smooth and hassle-free as possible.</li>
+        </ul>
+        <br />
+        <h3>3. Reliable and Efficient Services</h3>
+        <ul>
+            <li><strong>On-Time Delivery:</strong> We understand the importance of punctuality. Our team is committed to delivering your belongings on time, ensuring that your move stays on schedule and you can settle into your new home without unnecessary delays. We provide real-time updates on the status of your move, so you’re always informed about the location of your belongings.</li>
+            <li><strong>Efficient Processes:</strong> Our moving process is designed to be efficient and streamlined. We use advanced logistics and planning techniques to ensure that your move is completed quickly and efficiently. By focusing on organization and time management, we minimize downtime and ensure that your move is completed as smoothly as possible.</li>
+        </ul>
+        <br />
+        <h3>4. Safe and Secure Transport</h3>
+        <ul>
+            <li><strong>Protective Measures:</strong> We take every precaution to ensure the safety of your belongings during transit. Our team uses high-quality packing materials and protective coverings to safeguard your items from damage. Our vehicles are equipped with state-of-the-art tracking and security systems to ensure the safe transport of your belongings.</li>
+            <li><strong>Insurance Coverage:</strong> For added peace of mind, we offer comprehensive insurance coverage for your move. This ensures that in the unlikely event of any damage or loss, you are fully protected and can receive appropriate compensation. Our insurance options provide an extra layer of security, so you can move with confidence knowing that your belongings are covered.</li>
+        </ul>
+        <br />
+        <h3>5. Competitive Pricing</h3>
+        <ul>
+            <li><strong>Transparent Pricing:</strong> We believe in providing transparent pricing with no hidden fees. Our quotes are based on a detailed assessment of your moving requirements, ensuring that you receive an accurate estimate of the cost. We provide clear and detailed pricing information, so you know exactly what to expect and can plan your budget accordingly.</li>
+            <li><strong>Value for Money:</strong> Our house shifting services offer excellent value for money. We combine high-quality service with competitive pricing to provide you with the best possible moving experience. By choosing us, you benefit from professional services that are designed to meet your needs and exceed your expectations, all at a reasonable cost.</li>
+        </ul>
+        <br />
+        <h3>6. Positive Customer Feedback</h3>
+        <ul>
+            <li><strong>Satisfied Clients:</strong> We take pride in the positive feedback we receive from our clients. Our commitment to quality and customer satisfaction has earned us a reputation for excellence in the industry. We encourage you to read our customer reviews and testimonials to see firsthand how our services have made a difference for others.</li>
+            <li><strong>Referrals and Repeat Business:</strong> Many of our clients are repeat customers or referrals from satisfied friends and family. This is a testament to the quality of our services and our dedication to providing an outstanding moving experience. We value long-term relationships with our clients and strive to maintain a high level of service that keeps our customers coming back.</li>
+        </ul>
+        <br />
+        <h3>7. Commitment to Sustainability</h3>
+        <ul>
+            <li><strong>Eco-Friendly Practices:</strong> We are committed to reducing our environmental impact and incorporate eco-friendly practices into our moving services. This includes using sustainable packing materials, recycling, and reducing waste. Our goal is to make your move as environmentally friendly as possible while maintaining the highest standards of service.</li>
+            <li><strong>Community Involvement:</strong> We actively participate in community initiatives and support local causes. By choosing us, you’re not only benefiting from top-notch moving services but also supporting a company that cares about making a positive impact.</li>
+        </ul>
+        <br />
+        <h3>8. Expert Advice and Support</h3>
+        <ul>
+            <li><strong>Moving Tips and Guidance:</strong> We provide expert advice and support to help you prepare for your move. From packing tips and checklists to advice on settling into your new home, we offer valuable resources to make your move easier. Our team is always available to answer your questions and provide guidance throughout the moving process.</li>
+            <li><strong>Post-Move Assistance:</strong> Our commitment to your satisfaction doesn’t end with the completion of your move. We offer post-move assistance to help you with any remaining tasks and ensure that you’re fully settled into your new home. We’re here to support you every step of the way, from start to finish.</li>
+        </ul>
+      </section>
+    </main>
   ${getChargesTableContent()}
   ${getProcessCardsContent()}
   ${getOurPresenceContent()}
@@ -2032,6 +2310,20 @@ function createHtmlContent() {
       ? getMovingEstimatesContent()
       : cityOrLinkName === "budgeting-the-move"
       ? getBudgetingTheMoveContent()
+      : cityOrLinkName === "diy-moving"
+      ? getDiyMovingContent()
+      : cityOrLinkName === "moving-in-bad-weather"
+      ? getMovingInBadWeatherContent()
+      : cityOrLinkName === "decluttering-before-move"
+      ? getDeclutteringBeforeMoveContent()
+      : cityOrLinkName === "organizing-new-location"
+      ? getOrganizingNewLocationContent()
+      : cityOrLinkName === "eco-friendly-moving"
+      ? getEcoFriendlyMovingContent()
+      : cityOrLinkName === "label-boxes"
+      ? getLabelBoxesContent()
+      : cityOrLinkName === "customer-success-stories"
+      ? getCustomerSuccessStoriesContent()
       : `${
           cityOrLinkName === "index" || cityOrLinkName === ""
             ? `<div id="day-night" class="contact border-bottom-class" style="background: #fffbf6;">
