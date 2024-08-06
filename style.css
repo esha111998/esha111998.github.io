@@ -143,6 +143,7 @@
     border: 1px solid #FF5823;
     background-color: #FF5823;
     cursor: pointer;
+    padding: 5px 5px;
   }
   .flip-btn {
     color: black;
@@ -336,6 +337,17 @@
   .service-desc>li{
     text-align: left;
     font-size: 13px;
+  }
+
+  #top-blogs-section {
+    width: 40%;
+  }
+
+  .single-blog-content {
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-around; 
   }
 
   ul{
@@ -597,6 +609,15 @@
 
   #contact-us-section li::marker {
     color: #FF5823;
+  }
+
+  main a {
+    color: #09097c;
+    font-weight: 700;
+  }
+
+  section h1 {
+    font-size: 34px;
   }
 
   /* table css */
@@ -894,6 +915,12 @@
       flex-direction: column;
       gap: 0px;
     }
+    #top-blogs-section {
+      width: 100%;
+    }
+    .single-blog-content {
+      flex-direction: column;
+    }
   }
   @media (max-width: 460px){
     #menus{
@@ -969,6 +996,12 @@
       flex-direction: column;
       gap: 0px;
     }
+    #top-blogs-section {
+      width: 100%;
+    }
+    .single-blog-content {
+      flex-direction: column;
+    }
   }
   @media (max-width: 290px){
     .fill-form-img-div>img {
@@ -1034,6 +1067,12 @@
     .first-section-text {
       flex-direction: column;
       gap: 0px;
+    }
+    #top-blogs-section {
+      width: 100%;
+    }
+    .single-blog-content {
+      flex-direction: column;
     }
   }
   
