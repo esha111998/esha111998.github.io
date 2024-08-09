@@ -340,16 +340,16 @@
   }
 
   #top-blogs-section {
-    flex: 0 0 40%;
+    flex: 0 0 30%;
     border: 2px solid #FF5823;
     border-radius: 15px;
-    padding: 20px;
+    padding: 10px;
   }
 
   .single-blog-content {
     flex-direction: row;
     gap: 30px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
   }
 
