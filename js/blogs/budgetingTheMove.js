@@ -16,10 +16,10 @@ function getBudgetingTheMoveContent() {
             <ul>
                 <li><strong>Packing Supplies:</strong> Boxes, tape, bubble wrap, packing paper, and markers.</li>
                 <li><strong>Household Shifting Services:</strong> Costs for hiring professional movers.</li>
-                <li><strong>Transportation:</strong> Fuel costs, truck rental if doing a DIY move, or airfare if moving long-distance.</li>
+                <li><strong>Transportation:</strong> Fuel costs, truck rental if doing a <a href="${domain}diy-moving.html">DIY move</a>, or airfare if moving long-distance.</li>
                 <li><strong>Insurance:</strong> Coverage for your belongings during the move.</li>
                 <li><strong>Temporary Lodging:</strong> Hotel stays if there’s a gap between moving out and moving in.</li>
-                <li><strong>Storage:</strong> Temporary storage fees if needed.</li>
+                <li><strong>Storage:</strong> <a href="${domain}storage-solution.html">Temporary storage</a> fees if needed.</li>
                 <li><strong>Utility Setup:</strong> Costs for setting up utilities in your new home.</li>
                 <li><strong>Miscellaneous:</strong> Any other costs that might arise unexpectedly.</li>
             </ul>

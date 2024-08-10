@@ -38,7 +38,7 @@ function getMovingEstimatesContent() {
             <br />
             <h3>Distance:</h3>
             <ul>
-                <li>The distance between your current home and your new home is a major factor in determining moving costs. Long-distance moves typically cost more than local moves.</li>
+                <li>The distance between your current home and your new home is a major factor in determining moving costs. <a href="${domain}long-distance-moving.html">Long-distance moves</a> typically cost more than local moves.</li>
             </ul>
             <br />
             <h3>Weight and Volume:</h3>
@@ -49,7 +49,7 @@ function getMovingEstimatesContent() {
             <br />
             <h3>Packing Services:</h3>
             <ul>
-                <li>If you opt for professional packing services, this will increase your moving costs. However, professional packing can save you time and ensure your items are packed securely.</li>
+                <li>If you opt for professional <a href="${domain}packing-tips.html">packing services</a>, this will increase your moving costs. However, professional packing can save you time and ensure your items are packed securely.</li>
                 <li>Some companies offer partial packing services, where they pack only fragile or high-value items.</li>
             </ul>
             <br />
