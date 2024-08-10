@@ -14,7 +14,7 @@ function getCustomerSuccessStoriesContent() {
                 <br />
                 <h3>What Worked:</h3>
                 <ul>
-                    <li><strong>Professional Packing:</strong> The movers arrived on time and expertly packed all belongings, from fragile items to bulky furniture, ensuring everything was secure.</li>
+                    <li><strong>Professional Packing:</strong> The movers arrived on time and expertly packed all belongings, from <a href="${domain}packing-electronics.html">fragile items</a> to bulky furniture, ensuring everything was secure.</li>
                     <li><strong>Efficient Loading and Unloading:</strong> The team swiftly loaded and unloaded the truck, placing boxes in the correct rooms for easy unpacking.</li>
                     <li><strong>Child-Friendly Approach:</strong> The movers were considerate of the children, making the process less stressful for the entire family.</li>
                 </ul>
@@ -60,7 +60,7 @@ function getCustomerSuccessStoriesContent() {
                 <br />
                 <h3>What Worked:</h3>
                 <ul>
-                    <li><strong>Pet-Sensitive Planning:</strong> The movers planned the move with the pets’ needs in mind, minimizing stress for the animals.</li>
+                    <li><strong>Pet-Sensitive Planning:</strong> The movers planned the <a href="${domain}moving-with-pets.html">move with the pets’</a> needs in mind, minimizing stress for the animals.</li>
                     <li><strong>Secure Transport:</strong> They provided safe and secure transportation for the pets, ensuring they were comfortable throughout the journey.</li>
                     <li><strong>Efficient Execution:</strong> The team efficiently handled the packing and unpacking, allowing the Bishts to focus on their pets.</li>
                 </ul>

@@ -7,7 +7,7 @@ function renderSingleBlogContent() {
                 ? getEssentialMovingSuppliesContent()
                 : cityOrLinkName === "moving-with-pets"
                 ? getMovingWithPetsContent()
-                : cityOrLinkName === "safely-moving"
+                : cityOrLinkName === "safely-packing"
                 ? getSafelyMovingContent()
                 : cityOrLinkName === "moving-day-survival-kit"
                 ? getMovingDaySurvivalKitContent()

@@ -15,7 +15,7 @@ function getTopBlogsContent() {
               ${revisedBlogs
                 .map((blog, i) => {
                   return `
-                  <a href="https://www.daynightpackersmovers.com/${blog.route}.html">
+                  <a href="${domain}${blog.route}.html">
                     <div class="flex-div row-div" style="flex: 0 0 100%; gap: 20px; justify-content: unset; border-bottom: ${i < revisedBlogs.length-1 ? '1px solid lightgray' : ''}; padding-bottom: 15px;">
                       <img src="assets/${blog.imgName}.webp" alt="${blog.imgAlt}" width="100px" height="70px" style="object-fit: cover; text-align: left;"></img>
                       <div style="font-size: 16px; text-align: left;">

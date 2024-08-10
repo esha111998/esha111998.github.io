@@ -26,7 +26,7 @@ function getLocalMovingGuidesContent() {
           </ul>
           <br />
           <h2>3. Decluttering and Organizing</h2>
-          <p>Before the movers arrive, take the time to <a href="https://www.daynightpackersmovers.com/decluttering-before-move.html">declutter</a> and organize your belongings. This step will make packing easier and reduce the volume of items to be moved, potentially lowering your moving costs.</p>
+          <p>Before the movers arrive, take the time to <a href="${domain}decluttering-before-move.html">declutter</a> and organize your belongings. This step will make packing easier and reduce the volume of items to be moved, potentially lowering your moving costs.</p>
           <ul>
             <li><strong>Sort Your Items:</strong> Categorize your belongings into items to keep, donate, sell, or discard. Be ruthless in your decision-making to avoid clutter in your new home.</li>
             <li><strong>Garage Sale or Donations:</strong> Organize a garage sale for items you no longer need or donate them to charity. This not only reduces the number of items to move but also benefits others.</li>
@@ -42,7 +42,7 @@ function getLocalMovingGuidesContent() {
           </ul>
           <br />
           <h2>5. Moving Day Tips</h2>
-          <p>The day of the move can be hectic, but with <a href="https://www.daynightpackersmovers.com/moving-day-survival-kit.html">proper preparation</a>, you can ensure everything goes smoothly:</p>
+          <p>The day of the move can be hectic, but with <a href="${domain}moving-day-survival-kit.html">proper preparation</a>, you can ensure everything goes smoothly:</p>
           <ul>
             <li><strong>Be Present:</strong> Be present during the move to supervise the process and answer any questions the movers might have.</li>
             <li><strong>Check Inventory:</strong> Before the movers leave, check the inventory to ensure all your items have been loaded onto the truck. Double-check that nothing is left behind.</li>

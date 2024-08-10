@@ -6,6 +6,8 @@ function getPathAndLocation() {
   return { finalPath, cityOrLinkName };
 }
 
+const domain = "https://www.daynightpackersmovers.com/";
+
 const blogsData = [
     {
       imgName: "best-packer-mover",

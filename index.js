@@ -154,19 +154,19 @@ function getAboutUsContent() {
       <div class="flex-div row-div" style="margin-top: 30px; gap: 20px; flex-wrap: wrap;">
         <div class="card about-us-cards flex-div col-div">
           <p><b>Our Mission</b></p>
-          <a class="service-btn" href="https://www.daynightpackersmovers.com/our-mission.html">View More</a>
+          <a class="service-btn" href="${domain}our-mission.html">View More</a>
         </div>
         <div class="card about-us-cards flex-div col-div">
           <p><b>Our Team</b></p>
-          <a class="service-btn" href="https://www.daynightpackersmovers.com/our-team.html">View More</a>
+          <a class="service-btn" href="${domain}our-team.html">View More</a>
         </div>
         <div class="card about-us-cards flex-div col-div">
           <p><b>Our Services</b></p>
-          <a class="service-btn" href="https://www.daynightpackersmovers.com/our-service.html">View More</a>
+          <a class="service-btn" href="${domain}our-service.html">View More</a>
         </div>
         <div class="card about-us-cards flex-div col-div">
           <p><b>Why Choose Us</b></p>
-          <a class="service-btn" href="https://www.daynightpackersmovers.com/why-choose-us.html">View More</a>
+          <a class="service-btn" href="${domain}why-choose-us.html">View More</a>
         </div>
       </div>
     </div>
@@ -215,7 +215,7 @@ function getOurTeamContent() {
         
         <li><b>Transparent Pricing:</b> No hidden fees, just clear and upfront quotes.</li>
       </ul>
-      <p style="margin-top: 30px;">Let's move forward with Day Night Packers and Movers. <b><a class="white" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html">Contact us today!</a></b></p>
+      <p style="margin-top: 30px;">Let's move forward with Day Night Packers and Movers. <b><a class="white" href="${domain}contact-day-night-packers-movers.html">Contact us today!</a></b></p>
     </div>
   </section>
   ${getChargesTableContent()}
@@ -277,7 +277,7 @@ function getBlogsContent(brand) {
   <section id="blogs" class="contact border-bottom-class" style="background: #e9e7e7;">
     <div class="iyohgi services-bg-img flex-div col-div" style="background-image: url('assets/packers-and-movers-truck.webp');"></div>
     <div class="iyohgi flex-div col-div" style="gap: 30px;">  
-      <h1><u>Blogs</u></h1>
+      <h1>Blogs</h1>
       <div class="flex-div row-div" style="flex-wrap: wrap; gap: 50px;">
         ${blogsData
           .map((blog) => {
@@ -289,7 +289,7 @@ function getBlogsContent(brand) {
               <p class="service-cards-text">${blog.content}</p>
               <div class="flex-div row-div" style="justify-content: space-between;">
                 <p style="margin-top: 15px; color: ${brand};"><b>${blog.date}</b></p>
-                <a class="service-btn" href="https://www.daynightpackersmovers.com/${blog.route}.html">View More</a>
+                <a class="service-btn" href="${domain}${blog.route}.html">View More</a>
               </div>
             </div>
           </div>
@@ -439,7 +439,7 @@ function getServicesContent() {
           <div class="container">
             <h3>Packers And Movers</h3>
             <p class="service-cards-text">Professional packing, transport, and unpacking for hassle-free relocations.</p>
-            <div style="text-align: end;"><a class="service-btn" href="https://www.daynightpackersmovers.com/packers-movers-service.html">View More</a></div>
+            <div style="text-align: end;"><a class="service-btn" href="${domain}packers-movers-service.html">View More</a></div>
           </div>
         </div>
         <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
@@ -447,7 +447,7 @@ function getServicesContent() {
           <div class="container">
             <h3>Car And Bike Carrier</h3>
             <p class="service-cards-text">Safe, reliable vehicle transport with professional handling and care.</p>
-            <div style="text-align: end;"><a class="service-btn" href="https://www.daynightpackersmovers.com/car-bike-carrier-service.html">View More</a></div>
+            <div style="text-align: end;"><a class="service-btn" href="${domain}car-bike-carrier-service.html">View More</a></div>
           </div>
         </div>
         <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
@@ -455,7 +455,7 @@ function getServicesContent() {
           <div class="container">
             <h3>Shipping Service</h3>
             <p class="service-cards-text">We provide reliable transportation of goods, ensuring timely and secure delivery.</p>
-            <div style="text-align: end;"><a class="service-btn" href="https://www.daynightpackersmovers.com/shipping-service.html">View More</a></div>
+            <div style="text-align: end;"><a class="service-btn" href="${domain}shipping-service.html">View More</a></div>
           </div>
         </div>
         <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
@@ -463,7 +463,7 @@ function getServicesContent() {
           <div class="container">
             <h3>Air Freight Forwarding</h3>
             <p class="service-cards-text">Fast, reliable air freight for secure, global delivery with optimized efficiency.</p>
-            <div style="text-align: end;"><a class="service-btn" href="https://www.daynightpackersmovers.com/air-freight-forwarding-service.html">View More</a></div>
+            <div style="text-align: end;"><a class="service-btn" href="${domain}air-freight-forwarding-service.html">View More</a></div>
           </div>
         </div>
         <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
@@ -471,7 +471,7 @@ function getServicesContent() {
           <div class="container">
             <h3>Sea Freight Forwarding</h3>
             <p class="service-cards-text">Cost-effective, reliable international shipping of large goods via ocean transport.</p>
-            <div style="text-align: end;"><a class="service-btn" href="https://www.daynightpackersmovers.com/sea-freight-forwarding-service.html">View More</a></div>
+            <div style="text-align: end;"><a class="service-btn" href="${domain}sea-freight-forwarding-service.html">View More</a></div>
           </div>
         </div>
         <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
@@ -479,7 +479,7 @@ function getServicesContent() {
           <div class="container">
             <h3>Home Shifting Services</h3>
             <p class="service-cards-text">Home Shifting Services: packing, transporting, unpacking for a hassle-free move.</p>
-            <div style="text-align: end;"><a class="service-btn" href="https://www.daynightpackersmovers.com/home-shifting-service.html">View More</a></div>
+            <div style="text-align: end;"><a class="service-btn" href="${domain}home-shifting-service.html">View More</a></div>
           </div>
         </div>
         <div class="card service-card flex-div col-div" style="justify-content: flex-start;">
@@ -487,7 +487,7 @@ function getServicesContent() {
           <div class="container">
             <h3>Warehousing Service</h3>
             <p class="service-cards-text">Secure storage solutions: safety, inventory management, and efficient distribution.</p>
-            <div style="text-align: end;"><a class="service-btn" href="https://www.daynightpackersmovers.com/warehousing-service.html">View More</a></div>
+            <div style="text-align: end;"><a class="service-btn" href="${domain}warehousing-service.html">View More</a></div>
           </div>
         </div>
       </div>
@@ -586,7 +586,7 @@ function getProcessCardsContent() {
         <div style="text-align: left; display: flex; flex-direction: column; gap: 40px; padding: 0px 150px 0px 150px;" class="process-card-parent">
           <div class="card process-cards" style="align-self: flex-start;"><b style="font-size: 30px;">01 </b> Get in touch for a seamless moving experience! 📦✨ <br /> Share your requirements</div>
           <div class="card process-cards" style="align-self: flex-end;"><b style="font-size: 30px;">02 </b> Let's get started with a free survey and quotation! <br />Get the best price with us</div>
-          <div class="card process-cards" style="align-self: flex-start;"><b style="font-size: 30px;">03 </b> Ready to make your move? <a href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html"><b>Book with us today</b></a> and be a part of smooth transition!</div>
+          <div class="card process-cards" style="align-self: flex-start;"><b style="font-size: 30px;">03 </b> Ready to make your move? <a href="${domain}contact-day-night-packers-movers.html"><b>Book with us today</b></a> and be a part of smooth transition!</div>
         </div>
       </div>
     </div>
@@ -712,7 +712,7 @@ function getOurPresenceContent() {
           <ul id="ipekj" class="service-desc">
             ${locations1
               .map((loc) => {
-                return `<li id="packers-movers-in-${loc}"><a class="contact-details" href="https://www.daynightpackersmovers.com/packers-movers-in-${loc}.html">Packers and
+                return `<li id="packers-movers-in-${loc}"><a class="contact-details" href="${domain}packers-movers-in-${loc}.html">Packers and
                   Movers in ${extractLocation(loc, 0)}</a></li>`;
               })
               .join("")}
@@ -722,7 +722,7 @@ function getOurPresenceContent() {
           <ul id="ipekj-2" class="service-desc">
             ${locations2
               .map((loc) => {
-                return `<li id="packers-movers-in-${loc}"><a class="contact-details" href="https://www.daynightpackersmovers.com/packers-movers-in-${loc}.html">Packers and Movers in ${extractLocation(
+                return `<li id="packers-movers-in-${loc}"><a class="contact-details" href="${domain}packers-movers-in-${loc}.html">Packers and Movers in ${extractLocation(
                   loc,
                   0
                 )}</a></li>`;
@@ -734,7 +734,7 @@ function getOurPresenceContent() {
           <ul id="ipekj-3" class="service-desc">
           ${locations3
             .map((loc) => {
-              return `<li id="packers-movers-in-${loc}"><a class="contact-details" href="https://www.daynightpackersmovers.com/packers-movers-in-${loc}.html">Packers and
+              return `<li id="packers-movers-in-${loc}"><a class="contact-details" href="${domain}packers-movers-in-${loc}.html">Packers and
                 Movers in ${extractLocation(loc, 0)}</a></li>`;
             })
             .join("")}
@@ -744,7 +744,7 @@ function getOurPresenceContent() {
           <ul id="ipekj-4" class="service-desc">
           ${locations4
             .map((loc) => {
-              return `<li id="packers-movers-in-${loc}"><a class="contact-details" href="https://www.daynightpackersmovers.com/packers-movers-in-${loc}.html">Packers and
+              return `<li id="packers-movers-in-${loc}"><a class="contact-details" href="${domain}packers-movers-in-${loc}.html">Packers and
                 Movers in ${extractLocation(loc, 0)}</a></li>`;
             })
             .join("")}
@@ -754,7 +754,7 @@ function getOurPresenceContent() {
           <ul id="ipekj-4" class="service-desc">
           ${locations5
             .map((loc) => {
-              return `<li id="packers-movers-in-${loc}"><a class="contact-details" href="https://www.daynightpackersmovers.com/packers-movers-in-${loc}.html">Packers and
+              return `<li id="packers-movers-in-${loc}"><a class="contact-details" href="${domain}packers-movers-in-${loc}.html">Packers and
                 Movers in ${extractLocation(loc, 0)}</a></li>`;
             })
             .join("")}
@@ -1605,7 +1605,7 @@ function extractLocation(str, startIndex) {
 }
 
 function navigate(route) {
-  window.location.href = `https://www.daynightpackersmovers.com/${route}.html`;
+  window.location.href = `${domain}${route}.html`;
 }
 
 function createHtmlContent() {
@@ -1620,55 +1620,55 @@ function createHtmlContent() {
         </button>
       </div>
       <div id="menus" class="flex-div row-div" style="gap: 30px;">
-        <a class="home" href="https://www.daynightpackersmovers.com/"><b>Home</b></a>
+        <a class="home" href="${domain}"><b>Home</b></a>
         <div class="dropdown">
-          <a class="about" href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html"><b>About Us</b></a>
+          <a class="about" href="${domain}about-day-night-packers-movers.html"><b>About Us</b></a>
           <div class="dropdown-content">
-            <a id="our-mission" href="https://www.daynightpackersmovers.com/our-mission.html">Our Mission</a>
-            <a id="our-team" href="https://www.daynightpackersmovers.com/our-team.html">Our Team</a>
-            <a id="our-service" href="https://www.daynightpackersmovers.com/our-service.html">Our Services</a>
-            <a id="why-choose-us" href="https://www.daynightpackersmovers.com/why-choose-us.html">Why Choose Us</a>
+            <a id="our-mission" href="${domain}our-mission.html">Our Mission</a>
+            <a id="our-team" href="${domain}our-team.html">Our Team</a>
+            <a id="our-service" href="${domain}our-service.html">Our Services</a>
+            <a id="why-choose-us" href="${domain}why-choose-us.html">Why Choose Us</a>
           </div>
         </div>
-        <a class="blogs" href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html"><b>Blogs</b></a>
-        <a class="faqs" href="https://www.daynightpackersmovers.com/queries-before-shifting.html"><b>FAQs</b></a>
+        <a class="blogs" href="${domain}self-preparation-before-shifting.html"><b>Blogs</b></a>
+        <a class="faqs" href="${domain}queries-before-shifting.html"><b>FAQs</b></a>
         <div class="dropdown">
-          <a  class="services" href="https://www.daynightpackersmovers.com/day-night-packers-movers-services.html"><b>Services</b></a>
+          <a  class="services" href="${domain}day-night-packers-movers-services.html"><b>Services</b></a>
           <div class="dropdown-content">
-            <a id="packers-movers" href="https://www.daynightpackersmovers.com/packers-movers-service.html">Packers And Movers</a>
-            <a id="car-bike-carrier" href="https://www.daynightpackersmovers.com/car-bike-carrier-service.html">Car And Bike Carrier</a>
-            <a id="shipping" href="https://www.daynightpackersmovers.com/shipping-service.html">Shipping Service</a>
-            <a id="air-freight" href="https://www.daynightpackersmovers.com/air-freight-forwarding-service.html">Air Freight Forwarding</a>
-            <a id="sea-freight" href="https://www.daynightpackersmovers.com/sea-freight-forwarding-service.html">Sea Freight Forwarding</a>
-            <!--<a id="international-relocation" href="https://www.daynightpackersmovers.com/international-relocation-service.html">International Relocation</a>-->
-            <a id="home-shifting" href="https://www.daynightpackersmovers.com/home-shifting-service.html">Home Shifting Services</a>
-            <a id="warehousing" href="https://www.daynightpackersmovers.com/warehousing-service.html">Warehousing Service</a>
+            <a id="packers-movers" href="${domain}packers-movers-service.html">Packers And Movers</a>
+            <a id="car-bike-carrier" href="${domain}car-bike-carrier-service.html">Car And Bike Carrier</a>
+            <a id="shipping" href="${domain}shipping-service.html">Shipping Service</a>
+            <a id="air-freight" href="${domain}air-freight-forwarding-service.html">Air Freight Forwarding</a>
+            <a id="sea-freight" href="${domain}sea-freight-forwarding-service.html">Sea Freight Forwarding</a>
+            <!--<a id="international-relocation" href="${domain}international-relocation-service.html">International Relocation</a>-->
+            <a id="home-shifting" href="${domain}home-shifting-service.html">Home Shifting Services</a>
+            <a id="warehousing" href="${domain}warehousing-service.html">Warehousing Service</a>
           </div>
         </div>
-        <a class="contact-us" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html"><b>Contact Us</b></a>
+        <a class="contact-us" href="${domain}contact-day-night-packers-movers.html"><b>Contact Us</b></a>
       </div>
       <div id="menu-btn">
         <div id="side-panel">
           <button class="closebtn" onclick="closeNav()">×</button>
-          <a class="home" href="https://www.daynightpackersmovers.com/"><b>Home</b></a>
-          <a class="about" href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html"><b>About Us</b></a>
-          <a class="blogs" href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html"><b>Blogs</b></a>
-          <a class="faqs" href="https://www.daynightpackersmovers.com/queries-before-shifting.html"><b>FAQs</b></a>
-          <a class="services" href="https://www.daynightpackersmovers.com/day-night-packers-movers-services.html"><b>Services</b></a>
+          <a class="home" href="${domain}"><b>Home</b></a>
+          <a class="about" href="${domain}about-day-night-packers-movers.html"><b>About Us</b></a>
+          <a class="blogs" href="${domain}self-preparation-before-shifting.html"><b>Blogs</b></a>
+          <a class="faqs" href="${domain}queries-before-shifting.html"><b>FAQs</b></a>
+          <a class="services" href="${domain}day-night-packers-movers-services.html"><b>Services</b></a>
           <!--<div class="dropdown">
             <a href="javascript:void(0)" id="services"><b>Services</b></a>
             <div class="dropdown-content">
-              <a id="packers-movers" href="https://www.daynightpackersmovers.com/packers-movers-service.html">Packers And Movers</a>
-              <a id="car-bike-carrier" href="https://www.daynightpackersmovers.com/car-bike-carrier-service.html">Car And Bike Carrier</a>
-              <a id="shipping" href="https://www.daynightpackersmovers.com/shipping-service.html">Shipping Service</a>
-              <a id="air-freight" href="https://www.daynightpackersmovers.com/air-freight-forwarding-service.html">Air Freight Forwarding</a>
-              <a id="sea-freight" href="https://www.daynightpackersmovers.com/sea-freight-forwarding-service.html">Sea Freight Forwarding</a>
-              <a id="international-relocation" href="https://www.daynightpackersmovers.com/international-relocation-service.html">International Relocation</a>
-              <a id="home-shifting" href="https://www.daynightpackersmovers.com/home-shifting-service.html">Home Shifting Services</a>
-              <a id="warehousing" href="https://www.daynightpackersmovers.com/warehousing-service.html">Warehousing Service</a>
+              <a id="packers-movers" href="${domain}packers-movers-service.html">Packers And Movers</a>
+              <a id="car-bike-carrier" href="${domain}car-bike-carrier-service.html">Car And Bike Carrier</a>
+              <a id="shipping" href="${domain}shipping-service.html">Shipping Service</a>
+              <a id="air-freight" href="${domain}air-freight-forwarding-service.html">Air Freight Forwarding</a>
+              <a id="sea-freight" href="${domain}sea-freight-forwarding-service.html">Sea Freight Forwarding</a>
+              <a id="international-relocation" href="${domain}international-relocation-service.html">International Relocation</a>
+              <a id="home-shifting" href="${domain}home-shifting-service.html">Home Shifting Services</a>
+              <a id="warehousing" href="${domain}warehousing-service.html">Warehousing Service</a>
             </div>
           </div>-->
-          <a class="contact-us" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html"><b>Contact Us</b></a>
+          <a class="contact-us" href="${domain}contact-day-night-packers-movers.html"><b>Contact Us</b></a>
         </div>
         <button class="openbtn" onclick="openNav()">☰</button>
       </div>
@@ -1727,7 +1727,7 @@ function createHtmlContent() {
           "local-moving-guides",
           "essential-moving-supplies",
           "moving-with-pets",
-          "safely-moving",
+          "safely-packing",
           "moving-day-survival-kit",
           "packing-electronics",
           "storage-solution",
@@ -1763,7 +1763,7 @@ function createHtmlContent() {
                   </div>
                   <h1 class="x3-p" style="margin-bottom: 0px;">Packers And Movers</h1>
                 </div>
-                <p><u>Your Moving Partner!</u></p>
+                <p class="underline">Your Moving Partner!</p>
               </div>
             </div>
           </div>
@@ -1946,34 +1946,34 @@ function createHtmlContent() {
     <div class="iyohgi" style="text-align: center;">
       <div class="flex-div row-div" style="gap: 50px; flex-wrap: wrap; align-items: flex-start; justify-content: space-around;">
         <div class="white flex-div col-div">
-          <p><u><b>Why Day Night Packers and Movers</b></u></p>
+          <p class="underline"><b>Why Day Night Packers and Movers</b></p>
           <p>We understand that moving can be a daunting task, and our goal is to handle every aspect of your move with care and efficiency. From the moment you search for "household shifting services near me" and contact us to the final delivery at your new location, we strive to exceed your expectations with our commitment to excellence.</p>
         </div>
         <div class="flex-div col-div">
-          <p class="white" href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html"><b><u>Useful Links</u></b></p>
+          <p class="white" href="${domain}about-day-night-packers-movers.html"><b class="underline">Useful Links</b></p>
           <ul style="text-align: left; line-height: 2.0em;">
-            <li><a class="white" href="https://www.daynightpackersmovers.com/">Home</a>
-            <li><a class="white" href="https://www.daynightpackersmovers.com/about-day-night-packers-movers.html">About Us</a></li>
-            <li><a class="white" href="https://www.daynightpackersmovers.com/self-preparation-before-shifting.html">Blogs</a></li>
-            <li><a class="white" href="https://www.daynightpackersmovers.com/queries-before-shifting.html">FAQs</a></li>
-            <li><a class="white" href="https://www.daynightpackersmovers.com/day-night-packers-movers-services.html">Services</a></li>
-            <li><a class="white" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html">Contact Us</a></li>
+            <li><a class="white" href="${domain}">Home</a>
+            <li><a class="white" href="${domain}about-day-night-packers-movers.html">About Us</a></li>
+            <li><a class="white" href="${domain}self-preparation-before-shifting.html">Blogs</a></li>
+            <li><a class="white" href="${domain}queries-before-shifting.html">FAQs</a></li>
+            <li><a class="white" href="${domain}day-night-packers-movers-services.html">Services</a></li>
+            <li><a class="white" href="${domain}contact-day-night-packers-movers.html">Contact Us</a></li>
           </ul>
         </div>
         <div class="flex-div col-div">
-          <p class="white" href="https://www.daynightpackersmovers.com/day-night-packers-movers-services.html"><b><u>Services</u></b></p>
+          <p class="white" href="${domain}day-night-packers-movers-services.html"><b class="underline">Services</b></p>
           <ul style="text-align: left; line-height: 2.0em;">
-            <li><a class="white" href="https://www.daynightpackersmovers.com/packers-movers-service.html">Packers And Movers</a></li>
-            <li><a class="white" href="https://www.daynightpackersmovers.com/car-bike-carrier-service.html">Car And Bike Carrier</a></li>
-            <li><a class="white" href="https://www.daynightpackersmovers.com/shipping-service.html">Shipping Service</a></li>
-            <li><a class="white" href="https://www.daynightpackersmovers.com/air-freight-forwarding-service.html">Air Freight Forwarding</a></li>
-            <li><a class="white" href="https://www.daynightpackersmovers.com/sea-freight-forwarding-service.html">Sea Freight Forwarding</a></li>
-            <li><a class="white" href="https://www.daynightpackersmovers.com/home-shifting-service.html">Home Shifting Services</a></li>
-            <li><a class="white" href="https://www.daynightpackersmovers.com/warehousing-service.html">Warehousing Service</a></li>
+            <li><a class="white" href="${domain}packers-movers-service.html">Packers And Movers</a></li>
+            <li><a class="white" href="${domain}car-bike-carrier-service.html">Car And Bike Carrier</a></li>
+            <li><a class="white" href="${domain}shipping-service.html">Shipping Service</a></li>
+            <li><a class="white" href="${domain}air-freight-forwarding-service.html">Air Freight Forwarding</a></li>
+            <li><a class="white" href="${domain}sea-freight-forwarding-service.html">Sea Freight Forwarding</a></li>
+            <li><a class="white" href="${domain}home-shifting-service.html">Home Shifting Services</a></li>
+            <li><a class="white" href="${domain}warehousing-service.html">Warehousing Service</a></li>
           </ul>
         </div>
         <div class="flex-div col-div" style="gap: 20px;">
-          <p class="white" href="https://www.daynightpackersmovers.com/contact-day-night-packers-movers.html"><b><u>Contact Us</u></b></p>
+          <p class="white" href="${domain}contact-day-night-packers-movers.html"><b class="underline">Contact Us</b></p>
           <a class="white" href="">
             <p>302, 1st floor, Near Jagmal Singh Stadium,</p>
             <p> Bhondsi, Gurugram, Haryana, 122102</p>

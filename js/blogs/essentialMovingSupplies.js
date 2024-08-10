@@ -31,7 +31,7 @@ function getEssentialMovingSuppliesContent() {
           <p>Mattresses can easily get dirty or damaged during a move. Mattress covers provide a protective barrier against dirt, moisture, and tears. These covers are available in various sizes to fit all types of mattresses, from twin to king size.</p>
           <br />
           <h2>6. Labels and Markers</h2>
-          <p>Proper labeling is key to an organized move. Use <a href="https://www.daynightpackersmovers.com/label-boxes.html">labels</a> and markers to clearly mark each box with its contents and the room it belongs to. This will make unpacking much more manageable and help your packers and movers place boxes in the appropriate rooms. Consider using color-coded labels for each room to further streamline the process.</p>
+          <p>Proper labeling is key to an organized move. Use <a href="${domain}label-boxes.html">labels</a> and markers to clearly mark each box with its contents and the room it belongs to. This will make unpacking much more manageable and help your packers and movers place boxes in the appropriate rooms. Consider using color-coded labels for each room to further streamline the process.</p>
           <br />
           <h2>7. Stretch Wrap</h2>
           <p>Stretch wrap, also known as plastic wrap, is a versatile moving supply. It can be used to bundle items together, secure loose parts, and protect furniture from scratches and dirt. Stretch wrap is also helpful for keeping drawers and cabinet doors closed during transit.</p>
