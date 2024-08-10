@@ -1,5 +1,5 @@
 const { cityOrLinkName } = getPathAndLocation();
-const brand = "#FF5823";
+
 // let dayNightTimeout;
 let dayNightSlideIndex = 0;
 

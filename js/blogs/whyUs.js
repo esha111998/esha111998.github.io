@@ -17,7 +17,7 @@ function getWhyUsContent() {
             <br />
             <h3>2. Professional and Experienced Team</h3>
             <ul>
-                <li><strong>Skilled Professionals:</strong> Our team of movers and packers is highly trained and experienced in handling all types of household items. From delicate antiques to bulky furniture, we have the expertise to ensure that your belongings are transported safely. We use the latest techniques and equipment to handle your items with care, minimizing the risk of damage and ensuring a smooth moving process.</li>
+                <li><strong>Skilled Professionals:</strong> <a href="${domain}our-team.html">Our team of movers and packers</a> is highly trained and experienced in handling all types of household items. From delicate antiques to bulky furniture, we have the expertise to ensure that your belongings are transported safely. We use the latest techniques and equipment to handle your items with care, minimizing the risk of damage and ensuring a smooth moving process.</li>
                 <li><strong>Customer-Centric Approach:</strong> We prioritize customer satisfaction and strive to exceed your expectations. Our team is dedicated to providing a positive moving experience by addressing your concerns, answering your questions, and keeping you informed throughout the process. We understand that moving can be stressful, and we aim to make the experience as smooth and hassle-free as possible.</li>
             </ul>
             <br />
@@ -29,7 +29,7 @@ function getWhyUsContent() {
             <br />
             <h3>4. Safe and Secure Transport</h3>
             <ul>
-                <li><strong>Protective Measures:</strong> We take every precaution to ensure the safety of your belongings during transit. Our team uses high-quality packing materials and protective coverings to safeguard your items from damage. Our vehicles are equipped with state-of-the-art tracking and security systems to ensure the safe transport of your belongings.</li>
+                <li><strong>Protective Measures:</strong> We take every precaution to ensure the safety of your belongings during transit. Our team uses high-quality packing materials and protective coverings to <a href="${domain}safely-packing.html">safeguard your items</a> from damage. Our vehicles are equipped with state-of-the-art tracking and security systems to ensure the safe transport of your belongings.</li>
                 <li><strong>Insurance Coverage:</strong> For added peace of mind, we offer comprehensive insurance coverage for your move. This ensures that in the unlikely event of any damage or loss, you are fully protected and can receive appropriate compensation. Our insurance options provide an extra layer of security, so you can move with confidence knowing that your belongings are covered.</li>
             </ul>
             <br />

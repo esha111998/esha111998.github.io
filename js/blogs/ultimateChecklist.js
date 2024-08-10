@@ -18,7 +18,7 @@ function getUltimateChecklistContent() {
                 <br />
                 <h3>Create a Moving Budget:</h3>
                 <ul>
-                    <li>Develop a detailed budget for your move. Include costs for packing materials, moving services, transportation, and any additional expenses like storage or insurance.</li>
+                    <li>Develop a detailed <a href="${domain}budgeting-the-move.html">budget for your move</a>. Include costs for packing materials, moving services, transportation, and any additional expenses like storage or insurance.</li>
                     <li>Obtain quotes from multiple packers and movers to compare prices and find the best value for your budget.</li>
                 </ul>
                 <br />
@@ -37,7 +37,7 @@ function getUltimateChecklistContent() {
                 <br />
                 <h3>Gather Packing Supplies:</h3>
                 <ul>
-                    <li>Collect all necessary packing supplies, including boxes, bubble wrap, packing paper, tape, and markers.</li>
+                    <li>Collect all <a href="${domain}essential-moving-supplies.html">necessary packing supplies</a>, including boxes, bubble wrap, packing paper, tape, and markers.</li>
                     <li>Consider using specialty boxes for items like dishes, electronics, and clothing. Many moving companies offer packing materials for purchase or rental.</li>
                 </ul>
                 <br />

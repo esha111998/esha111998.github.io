@@ -7,6 +7,7 @@ function getPathAndLocation() {
 }
 
 const domain = "https://www.daynightpackersmovers.com/";
+const brand = "#FF5823";
 
 const blogsData = [
     {

@@ -61,7 +61,7 @@ function getDeclutteringBeforeMoveContent() {
                     </li>
                     <li>
                         <strong>Recycle and Upcycle:</strong>
-                        <p>Recycle materials like paper, cardboard, and certain plastics to reduce waste and make room for essential items. Upcycling old items into new uses can be a creative way to keep belongings while reducing clutter.</p>
+                        <p>Recycle materials like paper, cardboard, and certain plastics to <a href="${domain}eco-friendly-moving.html">reduce waste</a> and make room for essential items. Upcycling old items into new uses can be a creative way to keep belongings while reducing clutter.</p>
                     </li>
                 </ul>
                 <br />
@@ -109,7 +109,7 @@ function getDeclutteringBeforeMoveContent() {
                     </li>
                     <li>
                         <strong>Prepare for Moving Day:</strong>
-                        <p>On moving day, ensure that all items are packed and ready for the movers. Label boxes clearly and make sure fragile items are handled with care. Keep important documents, valuables, and essentials separate and easily accessible.</p>
+                        <p>On <a href="${domain}survival-day-kit.html">moving day</a>, ensure that all items are packed and ready for the movers. Label boxes clearly and make sure fragile items are handled with care. Keep important documents, valuables, and essentials separate and easily accessible.</p>
                     </li>
                     <li>
                         <strong>Inspect and Evaluate:</strong>
