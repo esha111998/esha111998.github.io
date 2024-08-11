@@ -430,7 +430,7 @@ function getServicesContent() {
     ${
       cityOrLinkName === "day-night-packers-movers-services"
         ? `<h1 class="i78bq-2-3 contact-details">Services</h1>`
-        : `<div class="flex-div row-div"><h2 class="i78bq-2-3 contact-details">Available Services At </h2><h2 class="i78bq-2-3" style="color: black;">Day</h2> <h2 class="i78bq-2-3" style="color: ${brand};">Night</h2> <h2 class="i78bq-2-3 contact-details">Packers And Movers</h2></div>`
+        : `<div class="i78bq-2-3 flex-div row-div" style="flex-wrap: wrap;"><h2 class="contact-details">Available Services At </h2><h2 style="color: black;">Day</h2> <h2 style="color: ${brand};">Night</h2> <h2 class="contact-details">Packers And Movers</h2></div>`
     }
     <div id="our-services-content">
       <div class="flex-div row-div" style="flex-wrap: wrap; justify-content: space-around; gap: 20px;">
@@ -581,7 +581,7 @@ function getProcessCardsContent() {
   return `
   <div id="process-steps" class="contact border-bottom-class" style="background: #e9e7e7;">
     <div class="iyohgi" style="text-align: center;">
-      <div class="flex-div row-div"><h2 class="i78bq-2-3 contact-details">How To Book Services At</h2> <h2 style="color: black;" class="i78bq-2-3">Day</h2> <h2 style="color: ${brand};" class="i78bq-2-3">Night</h2> <h2 class="i78bq-2-3 contact-details">Packers And Movers?</h2></div>
+      <div class="i78bq-2-3 flex-div row-div" style="flex-wrap: wrap;"><h2 class="contact-details">How To Book Services At</h2> <h2 style="color: black;">Day</h2> <h2 style="color: ${brand};">Night</h2> <h2 class="contact-details">Packers And Movers?</h2></div>
       <div id="process-steps-content">
         <div style="text-align: left; display: flex; flex-direction: column; gap: 40px; padding: 0px 150px 0px 150px;" class="process-card-parent">
           <div class="card process-cards" style="align-self: flex-start;"><b style="font-size: 30px;">01 </b> Get in touch for a seamless moving experience! 📦✨ <br /> Share your requirements</div>
@@ -698,9 +698,9 @@ function getOurPresenceContent() {
   return `
   <div id="services" class="services border-bottom-class iyohgi">
     <div id="iymxg" class="service-info" style="text-align: center;">
-      <div class="flex-div row-div">
-        <h2 class="i78bq contact-details" data-custom-content="services">
-          Presence of </h2> <h2 style="color: black;" class="i78bq">Day</h2> <h2 style="color: ${brand};" class="i78bq">Night</h2> <h2 class="i78bq contact-details"> Packers And Movers
+      <div class="i78bq flex-div row-div" style="flex-wrap: wrap;">
+        <h2 class="contact-details" data-custom-content="services">
+          Presence of </h2> <h2 style="color: black;">Day</h2> <h2 style="color: ${brand};">Night</h2> <h2 class="contact-details"> Packers And Movers
         </h2></div>
     </div>
     <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
@@ -1854,7 +1854,7 @@ function createHtmlContent() {
 
   <div id="our-team" class="contact border-bottom-class" style="background: #ffffff;">
     <div class="iyohgi" style="text-align: center;">
-      <div class="flex-div row-div"><h2 style="color: black;" class="i78bq-2-3">Day</h2> <h2 style="color: ${brand};" class="i78bq-2-3">Night</h2> <h2 class="i78bq-2-3 contact-details"> Packers And Movers Team</h2></div>
+      <div class="i78bq-2-3 flex-div row-div" style="flex-wrap: wrap;"><h2 style="color: black;">Day</h2> <h2 style="color: ${brand};">Night</h2> <h2 class="contact-details"> Packers And Movers Team</h2></div>
       <div id="our-team-content">
         <div class="fill-form-img-div" style="align-self: center;">
           <img alt="team work" loading="lazy" width="400px" height="auto" src="assets/team-work.webp"></img>
@@ -1882,7 +1882,7 @@ function createHtmlContent() {
 
   <div id="client-reviews" class="contact border-bottom-class" style="background: #e9e7e7;">
     <div class="iyohgi" style="text-align: center;">
-      <div class="flex-div row-div"><h2 class="i78bq-2-3 contact-details">Customer Testimonials For </h2><h2 style="color: black;" class="i78bq-2-3">Day</h2> <h2 style="color: ${brand};" class="i78bq-2-3">Night</h2> <h2 class="i78bq-2-3 contact-details"> Packers And Movers</h2></div>
+      <div class="i78bq-2-3 flex-div row-div" style="flex-wrap: wrap;"><h2 class="contact-details">Customer Testimonials For </h2><h2 style="color: black;">Day</h2> <h2 style="color: ${brand};">Night</h2> <h2 class="contact-details"> Packers And Movers</h2></div>
       <div class="flex-div col-div">
         <div>
           <img src="assets/google-reviews.webp" alt="google reviews" height="85px" width="200px"></img>

@@ -354,7 +354,7 @@
   }
 
   h1, section h1 {
-    font-size: 48px !important;
+    font-size: 48px;
   }
 
   ul{
@@ -533,7 +533,10 @@
 
   .day-night-text {
     position: absolute;
-    top: 40%;
+    /* top: 40%; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
     text-align: center;
     width: 100%
@@ -627,9 +630,9 @@
     font-weight: 700;
   }
 
-  section h1 {
+  /* section h1 {
     font-size: 34px;
-  }
+  } */
 
   /* table css */
   table {
@@ -916,6 +919,9 @@
       font-weight: 700;
       margin-bottom: 20px;
     }
+    h1, section h1 {
+      font-size: xx-large;
+    }
     .services-h1 {
       font-size: 24px;
     }
@@ -997,6 +1003,9 @@
       font-weight: 700;
       margin-bottom: 20px;
     }
+    h1, section h1 {
+      font-size: x-large;
+    }
     .services-h1 {
       font-size: 18px;
     }
@@ -1068,6 +1077,9 @@
       font-size: x-large;
       font-weight: 700;
       margin-bottom: 20px;
+    }
+    h1, section h1 {
+      font-size: x-large;
     }
     .services-h1 {
       font-size: 18px;
