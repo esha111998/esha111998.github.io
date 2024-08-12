@@ -38,8 +38,8 @@ const blogsData = [
       date: "29 Jul, 24",
     },
     {
-      imgName: "packers-movers-uniform",
-      imgAlt: "packers movers uniform",
+      imgName: "moving-with-pets",
+      imgAlt: "moving with pets",
       title: "Moving with Pets",
       content:
         "Tips for ensuring a safe and smooth move with pets. Click to view more",

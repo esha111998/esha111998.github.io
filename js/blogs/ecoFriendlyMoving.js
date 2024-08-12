@@ -81,7 +81,7 @@ function getEcoFriendlyMovingContent() {
                 </li>
                 <li>
                     <strong>Repurpose and Upcycle:</strong>
-                    <p>Repurpose moving boxes and packing materials for storage or other uses around your new home. Upcycling can extend the life of materials and reduce waste. Get creative with DIY projects using leftover packing materials. For example, turn old boxes into storage solutions or craft projects.</p>
+                    <p>Repurpose moving boxes and packing materials for storage or other uses around your new home. Upcycling can extend the life of materials and reduce waste. Get creative with <a href="${domain}diy-moving.html">DIY projects</a> using leftover packing materials. For example, turn old boxes into storage solutions or craft projects.</p>
                 </li>
             </ul>
             <br />

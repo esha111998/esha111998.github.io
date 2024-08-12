@@ -49,7 +49,7 @@ function getMovingInBadWeatherContent() {
                 </li>
                 <li>
                     <strong>Protect Your Items:</strong>
-                    <p>Wrap furniture and other items in plastic to shield them from rain. Use waterproof covers for boxes. Make sure that all electronics and important documents are packed in waterproof bags or containers.</p>
+                    <p>Wrap furniture and other items in plastic to shield them from rain. Use waterproof covers for boxes. Make sure that all <a href="${domain}packing-electronics.html">electronics</a> and important documents are packed in waterproof bags or containers.</p>
                 </li>
                 <li>
                     <strong>Optimize Loading and Unloading:</strong>
@@ -113,7 +113,7 @@ function getMovingInBadWeatherContent() {
                 </li>
                 <li>
                     <strong>Review Your Budget:</strong>
-                    <p>Review the final cost of the move, including any additional fees incurred due to weather conditions. Compare this with the original estimate to ensure there are no discrepancies.</p>
+                    <p>Review the <a href="${domain}budgeting-the-move.html">final cost of the move</a>, including any additional fees incurred due to weather conditions. Compare this with the original estimate to ensure there are no discrepancies.</p>
                 </li>
                 <li>
                     <strong>Evaluate the Experience:</strong>

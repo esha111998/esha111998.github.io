@@ -2,7 +2,7 @@ function getMovingWithPetsContent() {
     return (
       `
     <main class="contact-details border-bottom-class" style="background: #ffffff;">
-      <section class="services-bg-img flex-div col-div white" style="background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/packers-movers-uniform.webp');">
+      <section class="services-bg-img flex-div col-div white" style="background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/moving-with-pets.webp');">
         <h1 style="text-align: center;">Moving with Pets: Essential Tips for a Smooth Transition</h1>
       </section>
       <section class="iyohgi flex-div single-blog-content" style="text-align: left;">
@@ -52,7 +52,7 @@ function getMovingWithPetsContent() {
           </ul>
           <br />
           <h2>6. Settling into Your New Home</h2>
-          <p>Once you arrive at your new home, help your pet settle in by creating a familiar and comfortable environment:</p>
+          <p>Once you arrive at your <a href="${domain}organizing-new-location.html">new home</a>, help your pet settle in by creating a familiar and comfortable environment:</p>
           <ul>
               <li><strong>Unpack Pet Items First:</strong> Set up your pet’s bed, toys, and food and water bowls before unpacking the rest of your belongings.</li>
               <li><strong>Explore Gradually:</strong> Allow your pet to explore their new home gradually. Start with one room and slowly introduce them to other areas.</li>

@@ -41,7 +41,7 @@ function getOrganizingNewLocationContent() {
             <ul>
                 <li>
                     <strong>Start with Essentials:</strong>
-                    <p>Begin by unpacking the essential items you need immediately, such as toiletries, kitchenware, and basic clothing. This ensures you have the necessities on hand while you tackle the rest of the unpacking process. Set up your bed and basic furniture so you can get comfortable as soon as possible.</p>
+                    <p>Begin by unpacking the <a href="${domain}essential-moving-supplies.html">essential items</a> you need immediately, such as toiletries, kitchenware, and basic clothing. This ensures you have the necessities on hand while you tackle the rest of the unpacking process. Set up your bed and basic furniture so you can get comfortable as soon as possible.</p>
                 </li>
                 <li>
                     <strong>Tackle One Room at a Time:</strong>
@@ -65,7 +65,7 @@ function getOrganizingNewLocationContent() {
                 </li>
                 <li>
                     <strong>Label Storage Areas:</strong>
-                    <p>Label storage bins, shelves, and closets to maintain organization and make it easier to find items. This is particularly useful for seasonal items, cleaning supplies, and pantry goods. Use clear bins or labels to help you quickly identify contents and maintain order.</p>
+                    <p>Label storage bins, shelves, and closets to maintain organization and make it easier to find items. This is particularly useful for seasonal items, cleaning supplies, and pantry goods. Use clear bins or <a href="${domain}label-boxes.html">labels</a> to help you quickly identify contents and maintain order.</p>
                 </li>
             </ul>
             <br />

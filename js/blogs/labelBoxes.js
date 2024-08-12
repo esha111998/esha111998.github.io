@@ -17,7 +17,7 @@ function getLabelBoxesContent() {
                 </li>
                 <li>
                     <strong>Avoiding Confusion and Damage:</strong>
-                    <p>Proper labels reduce the risk of confusion and mistakes. You’ll avoid the common issue of opening the wrong box or mixing up items. Labels help movers handle boxes with care, especially if you mark fragile or delicate items.</p>
+                    <p>Proper labels reduce the risk of confusion and mistakes. You’ll avoid the common issue of opening the wrong box or mixing up items. Labels help movers handle boxes with care, especially if you mark <a href="${domain}packing-electronics.html">fragile or delicate items</a>.</p>
                 </li>
                 <li>
                     <strong>Managing Your Inventory:</strong>

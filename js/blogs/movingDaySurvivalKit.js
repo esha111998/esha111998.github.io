@@ -22,7 +22,7 @@ function getMovingDaySurvivalKitContent() {
             </ul>
             <br />
             <h2>2. Basic Tools and Supplies</h2>
-            <p>Having a few <a href="${doamin}diy-moving.html">basic tools</a> and supplies on hand can be incredibly helpful for any last-minute tasks:</p>
+            <p>Having a few <a href="${domain}diy-moving.html">basic tools</a> and supplies on hand can be incredibly helpful for any last-minute tasks:</p>
             <ul>
                 <li><strong>Toolkit:</strong> Screwdrivers, pliers, a hammer, and Allen wrenches.</li>
                 <li><strong>Utility Knife:</strong> For opening boxes and cutting packing tape.</li>

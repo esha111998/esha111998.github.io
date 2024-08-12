@@ -1888,7 +1888,7 @@ function createHtmlContent() {
           <img src="assets/google-reviews.webp" alt="google reviews" height="85px" width="200px"></img>
         </div>
         <div class="slideshow-container">
-          <!-- Full-width images with number and caption text -->
+          <!-- Full-width images with caption text -->
           <div class="mySlides fade">
             <img alt="" loading="lazy" src=${"assets/testimonial1.png"} height="200px" width="200px">
             <div class="text">Rahul Maan, Kapurthala, Punjab <br /><br />

@@ -18,7 +18,7 @@ function getDiyMovingContent() {
                 </li>
                 <li>
                     <strong>Packing Supplies:</strong>
-                    <p>Packing materials include boxes, tape, bubble wrap, and markers. While these are necessary for a secure move, they can add up quickly. Source supplies from local stores, online marketplaces, or even obtain used boxes from community groups.</p>
+                    <p>Packing materials include boxes, tape, bubble wrap, and markers. While these are necessary for a secure move, they can add up quickly. Source supplies from <a href="${domain}diy-moving.html">local stores</a>, online marketplaces, or even obtain used boxes from community groups.</p>
                 </li>
                 <li>
                     <strong>Fuel Costs:</strong>
@@ -30,7 +30,7 @@ function getDiyMovingContent() {
                 </li>
                 <li>
                     <strong>Miscellaneous Costs:</strong>
-                    <p>Additional expenses might include tolls, parking fees, and any repairs or cleaning needed at the old or new home.</p>
+                    <p>Additional expenses might include tolls, parking fees, and any repairs or cleaning needed at the old or <a href="${domain}organizing-new-location.html">new home</a>.</p>
                 </li>
             </ul>
             <br />

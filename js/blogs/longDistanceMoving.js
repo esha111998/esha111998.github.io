@@ -13,7 +13,7 @@ function getLongDistanceMovingContent() {
                 <h3>Start Planning in Advance:</h3>
                 <ul>
                     <li>Begin planning your move as early as possible. Ideally, start the process at least 8-12 weeks before your moving date. This allows ample time to organize, pack, and coordinate with packers and movers.</li>
-                    <li>Create a moving checklist to keep track of important tasks, deadlines, and items that need attention.</li>
+                    <li>Create a <a href="${domain}ultimate-checklist.html">moving checklist</a> to keep track of important tasks, deadlines, and items that need attention.</li>
                 </ul>
                 <br />
                 <h3>Research and Hire Packers and Movers:</h3>
@@ -38,7 +38,7 @@ function getLongDistanceMovingContent() {
                 <h2>3. Pack Efficiently and Safely</h2>
                 <h3>Use Quality Packing Materials:</h3>
                 <ul>
-                    <li>Invest in high-quality packing materials to protect your belongings during transit. Use sturdy boxes, bubble wrap, packing paper, and packing tape.</li>
+                    <li>Invest in high-quality packing materials to <a href="${domain}safely-packing.html">protect your belongings</a> during transit. Use sturdy boxes, bubble wrap, packing paper, and packing tape.</li>
                     <li>Label boxes clearly with their contents and the room they belong to. This helps ensure that items are unpacked in the right rooms and reduces confusion.</li>
                 </ul>
                 <br />

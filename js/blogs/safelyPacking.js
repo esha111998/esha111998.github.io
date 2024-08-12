@@ -27,8 +27,8 @@ function getSafelyMovingContent() {
             <h2>3. Properly Pack Fragile Items</h2>
             <p>Protecting fragile items during a move is crucial to prevent damage. Here’s how to pack them safely:</p>
             <ul>
-                <li><strong>Use Quality Packing Materials:</strong> Wrap fragile items individually in bubble wrap or packing paper. Fill any empty spaces in boxes with packing peanuts or crumpled paper to cushion them.</li>
-                <li><strong>Label Boxes:</strong> Clearly mark boxes containing fragile items with “Fragile” labels. This alerts near me packers and movers to handle them with extra care.</li>
+                <li><strong>Use Quality Packing Materials:</strong> Wrap fragile items individually in <a href="${domain}eco-friendly-moving.html">bubble wrap or packing paper</a>. Fill any empty spaces in boxes with packing peanuts or crumpled paper to cushion them.</li>
+                <li><strong>Label Boxes:</strong> Clearly <a href="${domain}label-boxes.html">mark boxes</a> containing fragile items with “Fragile” labels. This alerts near me packers and movers to handle them with extra care.</li>
             </ul>
             <br />
             <h2>4. Pack Heavy Items Carefully</h2>
