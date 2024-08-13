@@ -604,7 +604,7 @@ function getOurPresenceContent() {
     "aurangabad",
     "bangalore",
     "bathinda",
-    "belapur Mumbai",
+    "belapur-mumbai",
     "bhiwandi",
     "bhopal",
     "bhuvneshwar",
