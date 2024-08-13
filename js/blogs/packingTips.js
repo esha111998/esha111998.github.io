@@ -1,11 +1,11 @@
 
 function getPackingTipsContent() {
     return `
-    <section>
-      <div class="services-bg-img flex-div col-div white" style="background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/packing-tips.webp');">
+    <main>
+      <section class="services-bg-img flex-div col-div white" style="background-image: linear-gradient(rgb(0 0 0 / 56%), rgb(0 0 0 / 62%)), url('assets/packing-tips.webp');">
         <h1 class="heading">Packing Tips for a Stress-Free Move</h1>
-      </div>
-      <div class="iyohgi flex-div single-blog-content" style="text-align: left;">
+      </section>
+      <section class="contact-details  iyohgi flex-div single-blog-content" style="text-align: left;">
         <div>
           <p>Whether you're moving across town or across the country, packing efficiently is crucial for a successful move. Here are some expert packing tips to ensure your belongings arrive safely and you have a stress-free experience with your packers and movers.</p>
           <br />
@@ -71,7 +71,7 @@ function getPackingTipsContent() {
           <p>Effective packing is the key to a successful move. By following these packing tips, you’ll ensure that your belongings are safely packed and organized, making the moving process with your packers and movers, or through a household shifting service, as smooth as possible. For additional moving services and expert assistance, don’t hesitate to contact professional movers who can help streamline your transition.</p>
         </div>
         ${getTopBlogsContent()}
-      </div>
-    </section>
+      </section>
+    </main>
     `;
   }
