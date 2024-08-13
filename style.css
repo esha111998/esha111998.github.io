@@ -768,9 +768,14 @@
     color: white;
   }
 
+  .apply-max-width {
+    width: 1150px;
+  }
+
   @media (max-width: 1125px){
     .services-box, #city-section-content, #our-team-content, #our-services-content, #get-a-quote,
-    .inquire-tos-content, #take-our-service-content, #table-parent, #process-steps-content, .nav-inner {
+    .inquire-tos-content, #take-our-service-content, #table-parent, #process-steps-content, .nav-inner,
+    .apply-max-width {
       width: 100%;
       margin: none;
     }
