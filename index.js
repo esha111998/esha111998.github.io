@@ -394,6 +394,13 @@ function getInquiryFormContent() {
     <div class="iyohgi" class="flex-div col-div" style="align-items: unset;">
       <div id="get-a-quote"><p class="i78bq-2-3 contact-details" style="font-size: 20px; text-align: center; border-bottom: 70px;">Relocate with ease! Our professional packers and movers ensure a seamless transition for your home or office. From meticulous packing to safe transportation, trust us for a stress-free move. <b style="font-size: 24px;">Get a quote today!</b></p></div>
       <div class="inquire-tos-content">
+        ${
+          window.innerWidth <= 575
+            ? `<div class="fill-form-img-div" style="align-self: center;">
+          <img alt="" loading="lazy" width="600px" height="auto" src="assets/delivery-truck.webp"></img>
+        </div>`
+            : ``
+        }
         <div id="customer-form">
           <form id="inquiry-form" class="flex-div col-div" style="align-items: flex-start;">
             <label for="name">Name*</label>
@@ -421,9 +428,13 @@ function getInquiryFormContent() {
             <button id="submit-btn" type="submit">Submit</button>
           </form>
         </div>
-        <div class="fill-form-img-div" style="align-self: center;">
+        ${
+          window.innerWidth > 575
+            ? `<div class="fill-form-img-div" style="align-self: center;">
           <img alt="" loading="lazy" width="600px" height="auto" src="assets/delivery-truck.webp"></img>
-        </div>
+        </div>`
+            : ``
+        }
       </div>  
     </div>
   </div>
@@ -1750,7 +1761,7 @@ function createHtmlContent() {
           "ultimate-checklist",
           "packing-tips",
           "why-us",
-          "long-distance-moving"
+          "long-distance-moving",
         ].includes(cityOrLinkName)
       ? renderSingleBlogContent()
       : `${
