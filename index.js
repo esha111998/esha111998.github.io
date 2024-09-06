@@ -390,15 +390,19 @@ function getFAQsContent() {
 
 function getInquiryFormContent() {
   return `
-  <div id="form-detail" class="contact border-bottom-class">
+  <div id="form-detail" class="contact border-bottom-class" style="background: #e9e7e7;">
     <div class="iyohgi" class="flex-div col-div" style="align-items: unset;">
-      <div id="get-a-quote"><p class="i78bq-2-3 contact-details" style="font-size: 20px; text-align: center; border-bottom: 70px;">Relocate with ease! Our professional packers and movers ensure a seamless transition for your home or office. From meticulous packing to safe transportation, trust us for a stress-free move. <b style="font-size: 24px;">Get a quote today!</b></p></div>
       <div class="inquire-tos-content">
         ${
           window.innerWidth <= 575
-            ? `<div class="fill-form-img-div" style="align-self: center;">
+            ? `<!--<div class="fill-form-img-div" style="align-self: center;">
           <img alt="" loading="lazy" width="600px" height="auto" src="assets/delivery-truck.webp"></img>
-        </div>`
+        </div>-->
+        <div id="inquiry-text">
+          <div class="flex-div row-div x3-p" style="font-weight: 700; flex-wrap: wrap;"><p style="color: black;">Trusted </p> <p style="color: #FF5823;"> Packers and Movers</p></div>
+          <p class="i78bq-2-3 contact-details" style="font-size: 18px;">Experience a hassle-free move with our team of professional packers and movers. Whether you’re relocating your home or office, we ensure a seamless transition from start to finish. Our services include meticulous packing of your belongings, secure transportation, and careful handling to prevent any damage. We pride ourselves on making your move as smooth and stress-free as possible. Trust us for a reliable and efficient moving experience. <b style="color: #FF5823;">Contact us today</b> for a personalized quote and let us help you with your next move!</p>
+        </div>
+      `
             : ``
         }
         <div id="customer-form">
@@ -430,9 +434,14 @@ function getInquiryFormContent() {
         </div>
         ${
           window.innerWidth > 575
-            ? `<div class="fill-form-img-div" style="align-self: center;">
+            ? `<!--<div class="fill-form-img-div" style="align-self: center;">
           <img alt="" loading="lazy" width="600px" height="auto" src="assets/delivery-truck.webp"></img>
-        </div>`
+        </div>-->
+        <div id="inquiry-text">
+          <div class="flex-div row-div x3-p" style="font-weight: 700; flex-wrap: wrap;"><p style="color: black;">Trusted </p> <p style="color: #FF5823;"> Packers and Movers</p></div>
+          <p class="i78bq-2-3 contact-details" style="font-size: 18px;">Experience a hassle-free move with our team of professional packers and movers. Whether you’re relocating your home or office, we ensure a seamless transition from start to finish. Our services include meticulous packing of your belongings, secure transportation, and careful handling to prevent any damage. We pride ourselves on making your move as smooth and stress-free as possible. Trust us for a reliable and efficient moving experience. <b style="color: #FF5823;">Contact us today</b> for a personalized quote and let us help you with your next move!</p>
+        </div>
+      `
             : ``
         }
       </div>  
@@ -1629,7 +1638,7 @@ function navigate(route) {
 function createHtmlContent() {
   return `
   <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="iu9w" class="navbar-cont" style="background: #fffbf6;">
+  <div id="iu9w" class="navbar-cont" style="background: #e9e7e7;">
     
     <div id="ibulz" class="nav-inner">
       <div>
@@ -1850,11 +1859,11 @@ function createHtmlContent() {
   ${
     cityOrLinkName !== "contact-day-night-packers-movers" &&
     cityOrLinkName !== "day-night-packers-movers-services"
-      ? `<div id="take-our-services" class="contact border-bottom-class" style="background: #94ddd7;">
+      ? `<div id="take-our-services" class="contact border-bottom-class" style="background: white;">
     <div class="iyohgi" style="text-align: center;">
       <div class="inquire-tos-content">
         <div class="fill-form-img-div" style="align-self: center;">
-          <img alt="" loading="lazy" width="600px" height="auto" src="assets/take-our-services.webp"></img>
+          <img alt="young delivery men moving parcel boxes" loading="lazy" width="400px" height="auto" src="assets/young-delivery-men-moving-parcel-boxes.webp"></img>
         </div>
         <div id="take-our-service-content" class="contact-details">
           <p style="font-size: 19px; font-weight: 700;" class="fading-text">Worried About Your Next Relocation During Busy Schedule??</p><br />
